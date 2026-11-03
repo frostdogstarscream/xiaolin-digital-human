@@ -1,0 +1,28 @@
+{
+  "backend": "LiteAvatar",
+  "avatar_id": "20250612/P1VtV9PVTqDj7CiZx2CCme2A",
+  "source_repository": "https://github.com/HumanAIGC/lite-avatar",
+  "source_revision": "5b7ec850945e03d56fb290b05fb68440c359fa86",
+  "gallery": "https://modelscope.cn/models/HumanAIGC-Engineering/LiteAvatarGallery",
+  "source_license": "MIT; see vendor/lite-avatar/LICENSE",
+  "gallery_weight_sha256": [
+    {
+      "path": "lite_avatar_weights/model.pb",
+      "revision": "c58e2e46d779636b4a09e183ec7b3e97f7fbc4f7",
+      "sha256": "5bba782a5e9196166233b9ab12ba04cadff9ef9212b4ff6153ed9290ff679025",
+      "size": 880502012
+    },
+    {
+      "path": "lite_avatar_weights/model_1.onnx",
+      "revision": "92dcea68113e16a6a866884046ad4a995e06a6d7",
+      "sha256": "312f0213a23a1c17ecb66f9edf8413b8ef193c0d4d2f5f9dd6714a178492c34c",
+      "size": 184415825
+    },
+    {
+      "path": "20250612/P1VtV9PVTqDj7CiZx2CCme2A.zip",
+      "revision": "3a811d3b053f2338bf627bab0f5a053709ff87e1",
+      "sha256": "b3738d4b2e64580533643e53d5e81577c03389b8bbbfa7123b3f4bb77d72fee1",
+      "size": 24707516
+    }
+  ]
+}

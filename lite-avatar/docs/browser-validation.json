@@ -1,0 +1,54 @@
+{
+  "browser_video": {
+    "ended": true,
+    "readyState": 4,
+    "videoWidth": 1024,
+    "videoHeight": 1408,
+    "observed_via": "CUA DOM video element"
+  },
+  "native_browser_playback_receipts": [
+    {
+      "event": "playback_started",
+      "epoch": 2,
+      "time": 1793694391.0646565,
+      "job_id": "b46afebbab24409881f78cdaada8b034"
+    },
+    {
+      "event": "playback_ended",
+      "epoch": 2,
+      "time": 1793694391.0646565,
+      "job_id": "b46afebbab24409881f78cdaada8b034"
+    },
+    {
+      "event": "playback_started",
+      "epoch": 3,
+      "time": 1793694396.7603674,
+      "job_id": "a4d3051c57d4499081da0660ded2c5e0"
+    },
+    {
+      "event": "playback_started",
+      "epoch": 7,
+      "time": 1793694458.4876695,
+      "job_id": "1d325563ea9a4a80a0c700e834ee711f"
+    },
+    {
+      "event": "playback_ended",
+      "epoch": 7,
+      "time": 1793694461.459158,
+      "job_id": "1d325563ea9a4a80a0c700e834ee711f"
+    },
+    {
+      "event": "playback_started",
+      "epoch": 7,
+      "time": 1793694461.490495,
+      "job_id": "350fc4989b2a4587a6e78330e961912b"
+    },
+    {
+      "event": "playback_ended",
+      "epoch": 7,
+      "time": 1793694463.2354517,
+      "job_id": "350fc4989b2a4587a6e78330e961912b"
+    }
+  ],
+  "physical_microphone_verified": false
+}

@@ -1,0 +1,69 @@
+{
+  "Code": 200,
+  "Data": {
+    "Files": [
+      {
+        "CommitMessage": "Upload /lite_avatar_weights/lm.pb to ModelScope hub",
+        "CommittedDate": 1750947898,
+        "CommitterName": "sudowind",
+        "InCheck": false,
+        "IsLFS": true,
+        "Mode": "33188",
+        "Name": "lm.pb",
+        "Path": "lite_avatar_weights/lm.pb",
+        "Revision": "0e152c59e4a3e77adeb93be0891c9650b162f586",
+        "Sha256": "5b59db5f607fde57bd8d6c8df8f22ce5b37ec7adcdb7b4ee785a4478f06c1c50",
+        "Size": 237373385,
+        "Type": "blob"
+      },
+      {
+        "CommitMessage": "Upload /lite_avatar_weights/model.pb to ModelScope hub",
+        "CommittedDate": 1750948008,
+        "CommitterName": "sudowind",
+        "InCheck": false,
+        "IsLFS": true,
+        "Mode": "33188",
+        "Name": "model.pb",
+        "Path": "lite_avatar_weights/model.pb",
+        "Revision": "c58e2e46d779636b4a09e183ec7b3e97f7fbc4f7",
+        "Sha256": "5bba782a5e9196166233b9ab12ba04cadff9ef9212b4ff6153ed9290ff679025",
+        "Size": 880502012,
+        "Type": "blob"
+      },
+      {
+        "CommitMessage": "Upload /lite_avatar_weights/model_1.onnx to ModelScope hub",
+        "CommittedDate": 1750948046,
+        "CommitterName": "sudowind",
+        "InCheck": false,
+        "IsLFS": true,
+        "Mode": "33188",
+        "Name": "model_1.onnx",
+        "Path": "lite_avatar_weights/model_1.onnx",
+        "Revision": "92dcea68113e16a6a866884046ad4a995e06a6d7",
+        "Sha256": "312f0213a23a1c17ecb66f9edf8413b8ef193c0d4d2f5f9dd6714a178492c34c",
+        "Size": 184415825,
+        "Type": "blob"
+      }
+    ],
+    "IsVisual": 0,
+    "LatestCommitter": {
+      "AuthorEmail": "",
+      "AuthorName": "sudowind",
+      "AuthoredDate": 0,
+      "CommittedDate": 1750948046,
+      "CommitterEmail": "",
+      "CommitterName": "sudowind",
+      "CreatedAt": 1750948046,
+      "Id": "",
+      "Message": "Upload /lite_avatar_weights/model_1.onnx to ModelScope hub",
+      "ParentIds": [
+        "edf071062af6141b125827f688407a3abda88a82"
+      ],
+      "ShortId": "92dcea68",
+      "Title": "Upload /lite_avatar_weights/model_1.onnx to ModelScope hub"
+    }
+  },
+  "Message": "success",
+  "RequestId": "2a12869f-b020-4f7d-8a58-919a5c89bfef",
+  "Success": true
+}

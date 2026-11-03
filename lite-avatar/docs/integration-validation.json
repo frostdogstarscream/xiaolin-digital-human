@@ -1,0 +1,76 @@
+{
+  "backend": "LiteAvatar",
+  "physical_microphone_verified": false,
+  "browser_playback_verified": false,
+  "cases": [
+    {
+      "route": "voice-input",
+      "ready_seconds": 2.875,
+      "artifacts": [
+        {
+          "text": "您好，我是小霖，很高兴为您服务，",
+          "frames": 73.0,
+          "audio_seconds": 2.88,
+          "render": {
+            "backend": "LiteAvatar",
+            "avatar_id": "20250612/P1VtV9PVTqDj7CiZx2CCme2A",
+            "frames": 73,
+            "fps": 25,
+            "feature_seconds": 0.33904630000006364,
+            "render_seconds": 1.2127128000001903,
+            "render_fps": 60.195620925241776,
+            "device": "cuda"
+          }
+        },
+        {
+          "text": "请问有什么可以帮您？",
+          "frames": 42.0,
+          "audio_seconds": 1.728,
+          "render": {
+            "backend": "LiteAvatar",
+            "avatar_id": "20250612/P1VtV9PVTqDj7CiZx2CCme2A",
+            "frames": 42,
+            "fps": 25,
+            "feature_seconds": 0.17010700000037104,
+            "render_seconds": 0.5362261999998736,
+            "render_fps": 78.32515457098123,
+            "device": "cuda"
+          }
+        }
+      ]
+    },
+    {
+      "route": "chat",
+      "ready_seconds": 5.516000000000076,
+      "artifacts": [
+        {
+          "text": "懂展馆、会聊天、陪您逛。",
+          "frames": 60.0,
+          "audio_seconds": 2.432,
+          "render": {
+            "backend": "LiteAvatar",
+            "avatar_id": "20250612/P1VtV9PVTqDj7CiZx2CCme2A",
+            "frames": 60,
+            "fps": 25,
+            "feature_seconds": 0.2906679000002441,
+            "render_seconds": 0.9053509000000304,
+            "render_fps": 66.27264632972474,
+            "device": "cuda"
+          }
+        }
+      ]
+    }
+  ],
+  "asr": {
+    "text": "您好，欢迎来到展厅。",
+    "seconds": 2.0,
+    "inference_seconds": 0.16800540000031106,
+    "empty": false,
+    "backend": "FunASR",
+    "model": "SenseVoiceSmall",
+    "cloud_calls": 0
+  },
+  "unwoken_question_blocked": true,
+  "interrupt_and_sleep": true,
+  "status": "REAL_FAY_LITEAVATAR_AUDIOVIDEO_PASSED"
+}
