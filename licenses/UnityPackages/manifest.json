@@ -1,0 +1,96 @@
+[
+  {
+    "name": "com.cysharp.unitask",
+    "version": "2.5.4",
+    "notices": []
+  },
+  {
+    "name": "com.unity.burst",
+    "version": "1.8.21",
+    "notices": [
+      "com.unity.burst\\LICENSE.md",
+      "com.unity.burst\\Third Party Notices.md"
+    ]
+  },
+  {
+    "name": "com.unity.collections",
+    "version": "2.5.1",
+    "notices": [
+      "com.unity.collections\\LICENSE.md"
+    ]
+  },
+  {
+    "name": "com.unity.ext.nunit",
+    "version": "2.0.3",
+    "notices": [
+      "com.unity.ext.nunit\\LICENSE.md",
+      "com.unity.ext.nunit\\Third Party Notices.md"
+    ]
+  },
+  {
+    "name": "com.unity.mathematics",
+    "version": "1.3.2",
+    "notices": [
+      "com.unity.mathematics\\LICENSE.md",
+      "com.unity.mathematics\\Unity.Mathematics\\Noise\\LICENSE"
+    ]
+  },
+  {
+    "name": "com.unity.nuget.mono-cecil",
+    "version": "1.11.4",
+    "notices": [
+      "com.unity.nuget.mono-cecil\\LICENSE.md",
+      "com.unity.nuget.mono-cecil\\Third Party Notices.md"
+    ]
+  },
+  {
+    "name": "com.unity.nuget.newtonsoft-json",
+    "version": "3.2.1",
+    "notices": [
+      "com.unity.nuget.newtonsoft-json\\LICENSE.md",
+      "com.unity.nuget.newtonsoft-json\\Third Party Notices.md"
+    ]
+  },
+  {
+    "name": "com.unity.test-framework",
+    "version": "1.4.6",
+    "notices": [
+      "com.unity.test-framework\\LICENSE.md"
+    ]
+  },
+  {
+    "name": "com.unity.test-framework.performance",
+    "version": "3.0.3",
+    "notices": [
+      "com.unity.test-framework.performance\\LICENSE.md",
+      "com.unity.test-framework.performance\\Third Party Notices.md"
+    ]
+  },
+  {
+    "name": "com.unity.timeline",
+    "version": "1.8.7",
+    "notices": [
+      "com.unity.timeline\\LICENSE.md"
+    ]
+  },
+  {
+    "name": "com.vrmc.gltf",
+    "version": "0.131.4",
+    "notices": [
+      "com.vrmc.gltf\\LICENSE.md"
+    ]
+  },
+  {
+    "name": "com.vrmc.univrm",
+    "version": "0.131.4",
+    "notices": [
+      "com.vrmc.univrm\\LICENSE.md",
+      "com.vrmc.univrm\\MToon\\LICENSE"
+    ]
+  },
+  {
+    "name": "com.vrmc.vrm",
+    "version": "0.131.4",
+    "notices": []
+  }
+]

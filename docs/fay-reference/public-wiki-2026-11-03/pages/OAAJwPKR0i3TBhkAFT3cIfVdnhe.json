@@ -1,0 +1,363 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,7,0",
+  "title": "Prompt调优教程",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=OAAJwPKR0i3TBhkAFT3cIfVdnhe",
+  "x": 62,
+  "y": -89.5,
+  "token": "OAAJwPKR0i3TBhkAFT3cIfVdnhe",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/OAAJwPKR0i3TBhkAFT3cIfVdnhe",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 7,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "使用langsmith调试fay的prompt",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程ID：langsmith-course",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "•\n作者：郭泽斌",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "•\n版本：1.0.0",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "•\n章节数：6",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://player.fay-agent.com/",
+          "text": "https://player.fay-agent.com/"
+        }
+      ],
+      "text": "•\n课程制作工具：https://player.fay-agent.com/",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程包:",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "\nlangsmith-course (1).zip\n1.61MB\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "目录",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "1.\n配置langsmith",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "2.\n创建key",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "3.\n添加环境变量",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "4.\n安装langsmith库",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "5.\ntracking prompt",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "6.\nfay的llm请求",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "第1节 配置langsmith",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "图片",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "20",
+      "images": 2,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://smith.langchain.com/",
+          "text": "https://smith.langchain.com/"
+        }
+      ],
+      "text": "访问网站https://smith.langchain.com/ 并注册登录",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n访问网站https://smith.langchain.com/ 并注册登录\n",
+      "type": "block docx-fallback-block fallback-async-code fallback-async-align-"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [],
+      "text": "第2节 创建key",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "图片",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "27",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "text": "登录后点击左下角的Setting，再进入API Keys栏目，再创建一个Key.",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "第3节 添加环境变量",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "图片",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "32",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "在系统上添加如图4个环境变量，这里key就是上一步保存下来的，project自由填写，待会自动创建的。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "第4节 安装langsmith库",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "请在启动fay的python环境里执行如下命令安装langsmith库",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\npip install langsmith\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "text": "第5节 tracking prompt",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [],
+      "text": "图片",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "42",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "44",
+      "images": 0,
+      "links": [],
+      "text": "此时重启命令终端，再重新启动fay，就可以在平台的Tracking栏目监测到向llm发送的每条消息，也可以看到llm返回的消息。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "45",
+      "images": 0,
+      "links": [],
+      "text": "第6节 fay的llm请求",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "text": "耐心观察，可以看到fay向llm的请求有5情况，分别是： 1.langGraph，这类型是存在可用的mcp工具时，会由llm决定是否调用工具； 2.没有可用mcp工具时的聊天，表现为ChatOpenAI； 3.通过fay向下游提供直链的llm服务，表现为ChatOpenAI，与第2点的区别是没有组合人设、记忆等上下文； 4.用户画象分析，表现为ChatOpenAI，每天执行一次； 5.行为反思，表现为ChatOpenAI，每表执行一次。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "49",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n耐心观察，可以看到fay向llm的请求有5情况，分别是：\n1.langGraph，这类型是存在可用的mcp工具时，会由llm决定是否调用工具；\n2.没有可用mcp工具时的聊天，表现为ChatOpenAI；\n3.通过fay向下游提供直链的llm服务，表现为ChatOpenAI，与第2点的区别是没有组合人设、记忆等上下文；\n4.用户画象分析，表现为ChatOpenAI，每天执行一次；\n5.行为反思，表现为ChatOpenAI，每天执行一次。\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 1131,
+  "captured_at": "2026-11-03T10:41:39.727Z"
+}

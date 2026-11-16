@@ -1,0 +1,48 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,1,4",
+  "title": "如何让最小化的UE也保持运行",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=AG06wXzMoiF02LkeCn4colSyn4d",
+  "x": 82,
+  "y": 702.5,
+  "token": "AG06wXzMoiF02LkeCn4colSyn4d",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/AG06wXzMoiF02LkeCn4colSyn4d",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://localhost",
+          "text": "localhost"
+        }
+      ],
+      "text": "通过以下参数运行ue导出包：E:\\fay\\UE\\emily\\Windows\\emily.exe -AudioMixer -PixelStreamingIP=localhost -PixelStreamingPort=8800",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "这里，添加像素流配置只是让ue保持后台运行，不需要真开启像素流服务端",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 146,
+  "last_scroll": {
+    "top": 54,
+    "height": 656,
+    "total": 710
+  },
+  "captured_at": "2026-11-03T10:45:12.648Z"
+}

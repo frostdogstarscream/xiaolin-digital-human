@@ -89,6 +89,7 @@ class Presenter(LipReal):
         self.lock = threading.Lock()
         self.reset_requested = threading.Event()
         self.motion_requested = None
+        self.preserve_motion_on_reset = False
         self.pose = ('welcome-wave', 0)
         self.motion = None
         self.motion_index = 0
@@ -96,12 +97,22 @@ class Presenter(LipReal):
         self.stats = dict(video_frames=0, speech_frames=0, motion_frames=0,
                           inference_seconds=0., inference_frames=0, last_motion=None)
 
-    def flush_talk(self):
+    def flush_talk(self,preserve_motion=False):
         with self.lock:
             self.generation += 1
             self.reset_requested.set()
+            self.preserve_motion_on_reset = preserve_motion
             self.motion_requested = None
             clear_queue(self.asr.queue)
+            if not preserve_motion:
+                self.motion = None
+                self.pose = ('welcome-wave', 0)
+            # Clear packets already handed to RTC synchronously. Waiting for the
+            # next render batch would leave up to one buffered batch after stop.
+            player = getattr(self.output, '_player', None)
+            if player is not None:
+                clear_queue(player.audio._queue)
+                clear_queue(player.video._queue)
 
     def request_motion(self, action):
         if action not in self.assets.clips:
@@ -141,6 +152,7 @@ class Presenter(LipReal):
                 self.motion = info['action']
                 self.motion_index = 0
                 self.stats['last_motion'] = self.motion
+                info['motion_start'] = self.motion
         with self.lock:
             if self.motion_requested:
                 self.motion = self.motion_requested
@@ -194,8 +206,10 @@ class Presenter(LipReal):
                     generation = self.generation
                     if self.reset_requested.is_set():
                         self.reset_requested.clear()
-                        self.motion = None
-                        self.pose = ('welcome-wave', 0)
+                        if not self.preserve_motion_on_reset:
+                            self.motion = None
+                            self.pose = ('welcome-wave', 0)
+                        self.preserve_motion_on_reset = False
                         self.asr.frames = []
                         clear_queue(self.asr.output_queue)
                         clear_queue(self.asr.feat_queue)

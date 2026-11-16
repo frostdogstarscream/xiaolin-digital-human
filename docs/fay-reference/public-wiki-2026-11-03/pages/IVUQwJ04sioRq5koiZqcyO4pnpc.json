@@ -1,0 +1,113 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,1,6",
+  "title": "OMP: Error #15: Initializing libomp140.x86_64.dll, but found libiomp5md.dll already initialized.",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=IVUQwJ04sioRq5koiZqcyO4pnpc",
+  "x": 82,
+  "y": 774.5,
+  "token": "IVUQwJ04sioRq5koiZqcyO4pnpc",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/IVUQwJ04sioRq5koiZqcyO4pnpc",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "在命令行中设置环境变量",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "对于 Windows",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "1.\n打开命令提示符（CMD）或PowerShell。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "2.\n输入以下命令来设置环境变量（这将只影响当前打开的命令行窗口）：",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\nset KMP_DUPLICATE_LIB_OK=TRUE\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "1.\n在同一个命令行窗口中运行您的程序，以确保程序运行时环境变量是有效的。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "对于 Linux 或 macOS",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "1.\n打开终端。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "2.\n输入以下命令来设置环境变量（这将只影响当前打开的终端窗口）：",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nBash\n复制\nexport KMP_DUPLICATE_LIB_OK=TRUE\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "1.\n在同一个终端窗口中运行您的程序。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 291,
+  "last_scroll": {
+    "top": 393,
+    "height": 656,
+    "total": 1049
+  },
+  "captured_at": "2026-11-03T10:45:17.598Z"
+}

@@ -1,0 +1,104 @@
+{
+  "status": "LOCAL_PREVIEW_RENDER_CHECKS_PASSED",
+  "manifest_sha256": "3545166bc3e24fc50e89db9461d5b960afe20d215b90edbbc0f30162b660d03a",
+  "actions": [
+    {
+      "action": "idle",
+      "loop": true,
+      "screenshots": 3,
+      "recorded_frames": 89,
+      "end_state": "idle"
+    },
+    {
+      "action": "wave",
+      "loop": false,
+      "screenshots": 3,
+      "recorded_frames": 49,
+      "end_state": "idle"
+    },
+    {
+      "action": "explain",
+      "loop": false,
+      "screenshots": 3,
+      "recorded_frames": 59,
+      "end_state": "idle"
+    },
+    {
+      "action": "nod",
+      "loop": false,
+      "screenshots": 3,
+      "recorded_frames": 39,
+      "end_state": "idle"
+    },
+    {
+      "action": "bow",
+      "loop": false,
+      "screenshots": 3,
+      "recorded_frames": 49,
+      "end_state": "idle"
+    },
+    {
+      "action": "point",
+      "loop": false,
+      "screenshots": 3,
+      "recorded_frames": 49,
+      "end_state": "idle"
+    },
+    {
+      "action": "walk",
+      "loop": true,
+      "screenshots": 3,
+      "recorded_frames": 65,
+      "end_state": "walk"
+    },
+    {
+      "action": "turn_left",
+      "loop": false,
+      "screenshots": 3,
+      "recorded_frames": 49,
+      "end_state": "idle"
+    },
+    {
+      "action": "turn_right",
+      "loop": false,
+      "screenshots": 3,
+      "recorded_frames": 49,
+      "end_state": "idle"
+    },
+    {
+      "action": "speaking",
+      "loop": true,
+      "screenshots": 3,
+      "recorded_frames": 49,
+      "end_state": "speaking"
+    },
+    {
+      "action": "welcome",
+      "loop": false,
+      "screenshots": 3,
+      "recorded_frames": 49,
+      "end_state": "idle"
+    },
+    {
+      "action": "goodbye",
+      "loop": false,
+      "screenshots": 3,
+      "recorded_frames": 49,
+      "end_state": "idle"
+    }
+  ],
+  "screenshots": 36,
+  "recorded_frames": 644,
+  "python_tests": "48 passed; 1 dependency deprecation warning",
+  "native_automation_report": "runtime/motion-automation-v2-verified/index.json",
+  "visual_review": "Front full-body key poses inspected; wrist direction corrected after first pass",
+  "limits": [
+    "In-place walking, without scene navigation",
+    "Turn is a 75-degree pivot and return, without turn-in-place footwork",
+    "Welcome and goodbye reuse wave",
+    "No cloth or hair simulation",
+    "No production registration or packaged EXE/GTX1660 acceptance"
+  ],
+  "native_automation": "1 passed; engine exited cleanly with OculusVR disabled for this command only",
+  "interactive_audio_gesture": "Verified local audio -> wave -> speaking resumed -> audio drained and mouth neutral"
+}

@@ -1,0 +1,710 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,10,4",
+  "title": "live2d网页数字人",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=C5ORwSBGeiDibhkD4MdcPBHpnih",
+  "x": 62,
+  "y": -197.5,
+  "token": "C5ORwSBGeiDibhkD4MdcPBHpnih",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/C5ORwSBGeiDibhkD4MdcPBHpnih",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 16,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "Live2D工程对接Fay数字人框架",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程ID：fay-live2d-course",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "•\n作者：郭泽斌",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "•\n版本：1.0.0",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "•\n章节数：8",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://player.fay-agent.com/",
+          "text": "https://player.fay-agent.com/"
+        }
+      ],
+      "text": "•\n课程制作工具：https://player.fay-agent.com/",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程包:",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "\nfay-live2d-course.zip\n420.77KB\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "封面",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "12",
+      "images": 2,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "目录",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "1.\n项目介绍与架构概览",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "2.\n启动Fay后端",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "3.\n启动Live2D前端",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "4.\nWebSocket对接：连接Fay",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "5.\n消息协议与数据结构",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "6.\n语音播放与口型同步",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "7.\n动作语义与表情联动",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "8.\n总结与扩展方向",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "第1节 项目介绍与架构概览",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "今天我们来讲解如何将一个Live2D前端工程对接到Fay数字人框架，让2D角色能够说话、做表情、做动作，成为一个有交互能力的数字人。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://gitee.com/xszyou/fay",
+          "text": "mate-human"
+        }
+      ],
+      "text": "这个项目叫mate-human，是一个开源的Live2D数字人前端工程。它基于Live2D官方的Cubism SDK for Web搭建，使用TypeScript和Vite构建，通过WebSocket连接到Fay数字人后端，实现语音播放、口型同步、表情切换和动作驱动。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "整体架构分为三层。第一层是Fay后端，负责对话、语音合成、情感分析和动作语义输出。第二层是WebSocket通道，Fay通过10002端口向前端推送音频和动作指令。第三层是Live2D前端，接收消息后播放语音、驱动口型、触发表情和动作。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://gitee.com/xszyou/fay",
+          "text": "gitee.com/xszyou/fay"
+        }
+      ],
+      "text": "这个项目的开源地址在屏幕上，Fay框架的开源地址是gitee.com/xszyou/fay。准备好了的话，咱们从启动开始讲起。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# 项目开源地址\nLive2D前端工程：https://gitee.com/garveyer/mate-human\nFay数字人框架：https://gitee.com/xszyou/fay\n\n# 架构概览\n┌──────────────┐    WebSocket     ┌──────────────┐\n│   Fay 后端    │ ──────────────→ │  Live2D 前端  │\n│              │   ws://10002    │              │\n│ - LLM对话    │                 │ - 语音播放    │\n│ - TTS语音    │  ← 音频/动作 →  │ - 口型同步    │\n│ - 情感分析   │                 │ - 表情切换    │\n│ - 动作语义   │                 │ - 动作驱动    │\n└──────────────┘                 └──────────────┘\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "第2节 启动Fay后端",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://gitee.com/xszyou/fay",
+          "text": "gitee.com/xszyou/fay"
+        }
+      ],
+      "text": "首先我们来启动Fay后端。到Fay的Gitee仓库克隆源码，地址是gitee.com/xszyou/fay。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "text": "克隆完成后，进入fay目录。首先找到system.conf文件，如果没有，把system.conf.bak重命名为system.conf。然后根据你使用的大语言模型服务，配置里面的LLM地址和API Key。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "接下来安装Python依赖。建议使用Python 3.12，先创建虚拟环境再安装。命令是pip install -r requirements.txt。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "依赖安装完成后，运行python main.py启动Fay。启动成功后，你会看到控制台输出\"Fay started\"，同时会自动打开一个Web控制面板。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "text": "这里要注意几个关键点：第一，Fay启动后会在10002端口开启一个WebSocket服务，这就是我们Live2D前端要连接的接口。第二，你需要在Fay的控制面板里配置好TTS语音合成，否则前端收不到语音数据。第三，确保配置了大语言模型的接入，可以用LM Studio本地模型，也可以用在线API。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# 1. 克隆 Fay 源码\ngit clone https://gitee.com/xszyou/fay.git\ncd fay\n\n# 2. 配置 system.conf\n# 如果没有 system.conf，从备份创建：\ncp system.conf.bak system.conf\n# 然后编辑 system.conf，填入 LLM 地址和 Key\n\n# 3. 创建虚拟环境并安装依赖\npython -m venv venv\nvenv\\Scripts\\activate        # Windows\npip install -r requirements.txt\n\n# 4. 启动 Fay\npython main.py\n\n# 启动后：\n# - Web控制面板自动打开\n# - WebSocket 服务监听 ws://127.0.0.1:10002\n# - 在控制面板配置 TTS 和 LLM\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "第3节 启动Live2D前端",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://gitee.com/garveyer/mate-human",
+          "text": "gitee.com/garveyer/mate-human"
+        }
+      ],
+      "text": "接下来启动Live2D前端工程。先从Gitee克隆mate-human项目，地址是gitee.com/garveyer/mate-human。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "42",
+      "images": 0,
+      "links": [],
+      "text": "克隆完成后，进入前端工程目录。具体路径是CubismSdkForWeb-5-r.4/Samples/TypeScript/Demo。这是一个标准的TypeScript加Vite工程。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://localhost:5173",
+          "text": "http://localhost:5173"
+        }
+      ],
+      "text": "先运行npm install安装依赖，然后运行npm start启动开发服务器。启动成功后，Vite会在5173端口提供服务，在浏览器打开http://localhost:5173就能看到Live2D角色了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "44",
+      "images": 0,
+      "links": [],
+      "text": "如果Fay后端已经在运行，前端会自动通过WebSocket连接到Fay的10002端口。连接成功后，你在Fay的控制面板发送一条消息，就能看到Live2D角色开口说话、做表情了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "45",
+      "images": 0,
+      "links": [],
+      "text": "如果浏览器因为自动播放策略阻止了音频，页面上会出现一个\"Enable Audio\"按钮，点击它即可解除限制。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# 1. 克隆 Live2D 前端工程\ngit clone https://gitee.com/garveyer/mate-human.git\ncd mate-human\n\n# 2. 进入前端工程目录\ncd CubismSdkForWeb-5-r.4/Samples/TypeScript/Demo\n\n# 3. 安装依赖\nnpm install\n\n# 4. 启动开发服务器\nnpm start\n\n# 启动后访问：http://localhost:5173\n# 前端会自动连接 ws://127.0.0.1:10002\n\n# 项目结构\n# Demo/src/\n#   ├── main.ts           # 入口文件\n#   ├── fayclient.ts      # Fay WebSocket 客户端\n#   ├── lappmodel.ts      # Live2D 模型（含音频/动作）\n#   ├── lipsync.ts        # 口型同步引擎\n#   ├── lappview.ts       # 视图与吧台模式\n#   ├── lappdefine.ts     # 常量定义\n#   ├── live2d-action-adapter.ts  # 动作适配器\n#   └── live2d-action-map.ts      # 动作映射表\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "text": "第4节 WebSocket对接：连接Fay",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "49",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "text": "现在我们来看核心对接代码。整个对接的关键在fayclient.ts这个文件，它封装了一个FayClient类，负责WebSocket通信。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "51",
+      "images": 0,
+      "links": [],
+      "text": "FayClient的构造函数接收两个参数：WebSocket地址和用户名。地址默认是ws://127.0.0.1:10002，也就是Fay后端的human接口。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "52",
+      "images": 0,
+      "links": [],
+      "text": "连接建立后，客户端会立即发送一条握手消息，包含用户名和Output为true，告诉Fay\"我是一个输出端，请把音频和动作数据推送给我\"。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "53",
+      "images": 0,
+      "links": [],
+      "text": "收到消息后，FayClient会把JSON解析成FayMessage对象，然后通过回调函数传给Live2D模型处理。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "54",
+      "images": 0,
+      "links": [],
+      "text": "FayClient还内置了自动重连机制，最多重试5次，每次间隔翻倍，最长不超过30秒。这样即使Fay重启，前端也能自动恢复连接。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "55",
+      "images": 0,
+      "links": [],
+      "text": "在lappmodel.ts中，模型初始化时会创建FayClient实例并注册消息回调，整个对接就这样串起来了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "56",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "57",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n// fayclient.ts - Fay WebSocket 客户端\n\nexport class FayClient {\n  private ws: WebSocket | null = null;\n  private url: string;\n  private username: string;\n\n  constructor(url: string, username: string = 'User') {\n    this.url = url;\n    this.username = username;\n  }\n\n  connect(): void {\n    this.ws = new WebSocket(this.url);\n\n    this.ws.onopen = () => {\n      // 握手：告知 Fay 我是输出端\n      this.send({\n        Username: this.username,\n        Output: true\n      });\n    };\n\n    this.ws.onmessage = event => {\n      const message = JSON.parse(event.data);\n      this.onMessageCallback?.(message);\n    };\n\n    this.ws.onclose = () => {\n      this.scheduleReconnect(); // 自动重连\n    };\n  }\n}\n\n// lappmodel.ts 中初始化连接\nthis._fayClient = new FayClient(\n  'ws://127.0.0.1:10002', 'User'\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "58",
+      "images": 0,
+      "links": [],
+      "text": "第5节 消息协议与数据结构",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "59",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "60",
+      "images": 0,
+      "links": [],
+      "text": "接下来看Fay推送给前端的消息结构。每条消息是一个JSON对象，核心字段都在Data里面。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "61",
+      "images": 0,
+      "links": [],
+      "text": "Key字段标识消息类型，值为audio时表示这是一条语音消息。Text是当前语音对应的文字内容。HttpValue是音频文件的HTTP下载地址，前端通过这个地址获取wav音频并播放。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "62",
+      "images": 0,
+      "links": [],
+      "text": "Lips是口型数据数组，每个元素包含一个Lip字段（音素名称，如aa、ou、sil等）和一个Time字段（持续时间，单位毫秒）。前端根据这个数据驱动模型的嘴巴开合。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "63",
+      "images": 0,
+      "links": [],
+      "text": "IsFirst和IsEnd用于标识一次完整回复中的首尾片段，因为Fay的TTS是流式的，一句话会被切成多个音频片段依次推送。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "64",
+      "images": 0,
+      "links": [],
+      "text": "Sentiment是情感分析值，范围从负2到正2，表示这段话的情绪倾向。Action是动作语义对象，包含code、behavior、affect、intensity等字段，告诉前端应该做什么动作、配什么表情。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "65",
+      "images": 0,
+      "links": [],
+      "text": "这套协议的设计使得Fay后端和前端完全解耦，Fay只输出语义，不关心具体模型的动作编号。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "66",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "67",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n    \"Text\": \"这边请\",\n    \"HttpValue\": \"http://127.0.0.1:5000/audio/xxx.wav\",\n    \"IsFirst\": 1,\n    \"IsEnd\": 0,\n    \"Lips\": [\n      { \"Lip\": \"sil\", \"Time\": 80 },\n      { \"Lip\": \"aa\",  \"Time\": 120 },\n      { \"Lip\": \"ou\",  \"Time\": 100 }\n    ],\n    \"Sentiment\": 0.7,\n    \"Action\": {\n      \"code\": \"guidance.invite\",\n      \"behavior\": \"invite\",\n      \"affect\": \"warm\",\n      \"intensity\": 0.74,\n      \"priority\": 82,\n      \"matchedKeywords\": [\"这边请\"]\n    }\n  },\n  \"Username\": \"User\"\n}\n\n// TypeScript 接口定义 (fayclient.ts)\nexport interface FayMessage {\n  Topic: string;\n  Data: {\n    Key: string;        // \"audio\" = 语音消息\n    HttpValue?: string; // 音频下载地址\n    Text: string;       // 文字内容\n    Lips?: LipData[];   // 口型数据\n    Sentiment?: number; // 情感值 -2~2\n    Action?: FayAction; // 动作语义\n    IsFirst: number;    // 首片段标记\n    IsEnd: number;      // 末片段标记\n  };\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "68",
+      "images": 0,
+      "links": [],
+      "text": "第6节 语音播放与口型同步",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "69",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "70",
+      "images": 0,
+      "links": [],
+      "text": "语音播放和口型同步是数字人体验的核心。我们来看具体是怎么实现的。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "71",
+      "images": 0,
+      "links": [],
+      "text": "当前端收到Fay的音频消息后，会把它加入一个音频队列。队列按顺序依次播放，保证多个语音片段不会重叠。每个片段包含音频URL、口型数据、文字内容和预估时长。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "72",
+      "images": 0,
+      "links": [],
+      "text": "播放时，前端创建一个HTML5 Audio对象，通过HttpValue获取音频文件并播放。同时把Lips口型数据传给LipSync引擎。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "73",
+      "images": 0,
+      "links": [],
+      "text": "LipSync引擎的工作原理是：根据每个音素的持续时间，计算当前时刻应该播放哪个音素，然后把音素映射成嘴巴张开程度。比如\"aa\"对应张嘴0.9，\"sil\"对应闭嘴0.0，\"ou\"对应0.8。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "74",
+      "images": 0,
+      "links": [],
+      "text": "每一帧渲染时，LipSync引擎输出当前嘴巴的开合值，写入模型的ParamMouthOpenY参数，Live2D模型就会跟着说话了。为了让嘴巴运动更自然，还加了一个平滑因子0.3，避免嘴巴突然跳变。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "75",
+      "images": 0,
+      "links": [],
+      "text": "如果浏览器阻止了自动播放，系统会检测到NotAllowedError错误，自动显示一个\"Enable Audio\"按钮，用户点击后即可恢复正常播放。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "76",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "77",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n// lipsync.ts - 口型同步引擎\n\n// 音素到嘴巴张开程度的映射\nconst VISEME_MAP: Record<string, number> = {\n  'sil': 0.0,   // 静音 - 闭嘴\n  'aa': 0.9,    // 张嘴最大\n  'ou': 0.8,    // 圆唇\n  'oh': 0.7,    // 半圆\n  'E': 0.6,     // 前元音\n  'kk': 0.6,    // 舌根音\n  'ih': 0.4,    // 短元音\n  'PP': 0.1,    // 双唇音\n  // ... 共15种音素\n};\n\n// 每帧更新嘴巴参数\nupdate(deltaTime: number): number {\n  // 找到当前时刻对应的音素\n  const targetValue = VISEME_MAP[currentViseme];\n  // 平滑过渡，避免跳变\n  currentValue += (targetValue - currentValue) * 0.3;\n  return currentValue;\n}\n\n// lappmodel.ts - 写入模型参数\nconst value = this._lipSync.update(deltaTime);\nthis._model.setParameterValueById(\n  this._idParamMouthOpenY, value\n);\n\n// 音频队列播放\nconst audio = new Audio(nextSegment.url);\naudio.onended = () => playNextSegment();\nawait audio.play();\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "78",
+      "images": 0,
+      "links": [],
+      "text": "第7节 动作语义与表情联动",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "79",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "80",
+      "images": 0,
+      "links": [],
+      "text": "除了语音和口型，数字人还需要表情和动作。这部分是通过Fay的动作语义系统实现的。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "81",
+      "images": 0,
+      "links": [],
+      "text": "Fay后端在config/action_rules.csv中维护了一张动作规则表，定义了20种标准动作。比如用户说\"你好\"，Fay会匹配到greeting.hello这条规则，输出behavior为nod（点头）、affect为smile（微笑）。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "82",
+      "images": 0,
+      "links": [],
+      "text": "前端收到Action字段后，通过一个三层映射链来驱动模型。第一层是live2d-action-adapter.ts，它把语义动作翻译成模型能理解的动作组和表情名。第二层是live2d-action-map.ts，它定义了具体模型的映射关系，比如\"invite\"映射到TapBody的第21号动作，\"smile\"映射到F01表情。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "83",
+      "images": 0,
+      "links": [],
+      "text": "如果没有匹配到Action，系统会回退到Sentiment情感值来驱动。比如Sentiment大于0.3就触发微笑表情，小于负0.7就触发悲伤表情。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "84",
+      "images": 0,
+      "links": [],
+      "text": "这套设计的好处是：Fay后端完全不知道模型的具体动作编号，只输出\"点头\"\"微笑\"这样的语义。换一个模型时，只需要修改前端的映射表，Fay那边完全不用动。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "85",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "86",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n// Fay后端：config/action_rules.csv（可用Excel编辑）\n// code,behavior,affect,intensity,priority,sentimentHint,keywords\n// greeting.hello,nod,smile,0.35,60,0.4,你好|您好|hello|hi\n// guidance.invite,invite,warm,0.74,82,0.7,请进|这边请|跟我来\n// emotion.celebrate,celebrate,excited,0.95,92,1.6,太好了|成功|真棒\n\n// live2d-action-map.ts - Haru模型映射表\nconst BEHAVIOR_MOTION_MAP = {\n  nod:       { group: 'TapBody', candidates: [1, 3] },\n  invite:    { group: 'TapBody', candidates: [21] },\n  wave:      { group: 'TapBody', candidates: [10] },\n  think:     { group: 'TapBody', candidates: [11, 12] },\n  celebrate: { group: 'TapBody', candidates: [6, 13] },\n  // ...\n};\n\nconst AFFECT_EXPRESSION_MAP = {\n  smile: 'F01',     // 微笑\n  serious: 'F02',   // 严肃\n  sad: 'F03',       // 悲伤\n  excited: 'F04',   // 兴奋\n};\n\n// 优先级链：Action > Sentiment > 默认\n// 1. 有 Action → 触发对应动作+表情\n// 2. 无 Action 有 Sentiment → 按情感值选动作\n// 3. 都没有 → 播放待机动画\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "87",
+      "images": 0,
+      "links": [],
+      "text": "第8节 总结与扩展方向",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "88",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "89",
+      "images": 0,
+      "links": [],
+      "text": "最后我们来总结一下整个对接的要点，以及未来的扩展方向。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "90",
+      "images": 0,
+      "links": [],
+      "text": "这个工程对接了Fay的三个核心接口：第一是WebSocket 10002端口，用于接收音频和动作指令；第二是HTTP音频接口，通过HttpValue下载TTS合成的语音文件；第三是动作语义协议，通过Action和Sentiment字段驱动表情动作。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "91",
+      "images": 0,
+      "links": [],
+      "text": "如果你想换一个自己的Live2D模型，需要做三件事：第一，把模型文件放到Resources目录下；第二，修改lappdefine.ts中的ModelDir指向你的模型目录名；第三，修改live2d-action-map.ts中的映射表，把behavior和affect映射到你模型的动作组和表情上。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "92",
+      "images": 0,
+      "links": [],
+      "text": "未来可以扩展的方向有很多。比如把动作映射表从代码常量改成外部配置文件，方便非开发人员维护。比如给Action增加cooldown冷却时间和interruptible可中断属性，实现更复杂的动作排队。还可以接入摄像头实现面部追踪，让数字人\"看着\"用户。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "93",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://gitee.com/garveyer/mate-human",
+          "text": "gitee.com/garveyer/mate-human"
+        }
+      ],
+      "text": "项目的完整源码在gitee.com/garveyer/mate-human，欢迎star和贡献代码。到这里，咱们的课程就结束了，希望对大家有所帮助。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "94",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "95",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# 对接的 Fay 接口总结\n\n接口1：WebSocket ws://127.0.0.1:10002\n  → 接收音频消息、口型数据、动作指令\n  → 文件：fayclient.ts\n\n接口2：HTTP 音频下载\n  → Data.HttpValue 提供 wav 文件地址\n  → 文件：lappmodel.ts (queueFayAudio)\n\n接口3：动作语义协议\n  → Data.Action (behavior/affect/intensity)\n  → Data.Sentiment (情感值 -2~2)\n  → 文件：live2d-action-adapter.ts\n\n# 换模型只需三步\n1. 放模型文件 → Resources/你的模型名/\n2. 改配置     → lappdefine.ts: ModelDir = ['你的模型名']\n3. 改映射表   → live2d-action-map.ts\n\n# 开源地址\nLive2D前端：https://gitee.com/garveyer/mate-human\nFay框架：  https://gitee.com/xszyou/fay\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "96",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 9297,
+  "captured_at": "2026-11-03T10:42:29.042Z"
+}

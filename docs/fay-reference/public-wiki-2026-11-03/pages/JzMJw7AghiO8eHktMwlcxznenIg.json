@@ -1,0 +1,547 @@
+{
+  "collapsed": false,
+  "level": 1,
+  "position": "0",
+  "title": "Fay",
+  "uid": "level=1&rootNodeId=TOC-ROOT&wikiToken=JzMJw7AghiO8eHktMwlcxznenIg",
+  "x": 22,
+  "y": -449.5,
+  "token": "JzMJw7AghiO8eHktMwlcxznenIg",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/JzMJw7AghiO8eHktMwlcxznenIg",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 11,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "Fay介绍（面向开发者）",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程ID：course-1775033182011",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "•\n作者：郭泽斌",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "•\n版本：1.0.0",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "•\n章节数：8",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://player.fay-agent.com/",
+          "text": "https://player.fay-agent.com/"
+        }
+      ],
+      "text": "•\n课程制作工具（可把本文修改及导出为视频）：https://player.fay-agent.com/",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程包:",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "\nFay开源社区介绍（面向开发者）.zip\n2.00MB\n",
+      "type": "block docx-fallback-block fallback-async-file fallback-async-align-"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "封面",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "目录",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "1.\n封面：Fay开源社区介绍",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "2.\n目录：六大议程",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "3.\nFay是什么：三层架构",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "4.\n能做什么：三大场景",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "5.\n为什么选Fay：四大优势",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "6.\n社区与生态",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "7.\n团队与愿景",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "8.\n加入我们",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "第1节 封面：Fay开源社区介绍",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "22",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "大家好，我是Fay项目的负责人。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [],
+      "text": "今天想花十分钟的时间，跟大家聊聊Fay这个项目——我们在做什么，为什么做这件事，以及你可以怎么参与进来。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "一句话概括Fay的定位：接通数字人的首选开源Agent框架。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "什么意思呢？你可以把Fay理解为一个中间层——向上，它能对接各种数字人模型，让数字人有脸、有声音、有表情；向下，它能接入各种大语言模型，让数字人有脑子、能思考、能行动；中间，它提供Agent能力，让数字人不只是被动回答问题，而是能自主决策、调用工具、完成任务。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "第2节 目录：六大议程",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "29",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "今天的分享分六个部分：Fay是什么、能做什么、为什么选它、社区生态、团队愿景、以及怎么加入我们。我尽量讲干货，不说废话。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [],
+      "text": "第3节 Fay是什么：三层架构",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "33",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "看这张架构图，Fay的设计理念很清晰——三层结构。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "text": "最上面是数字人模型层。UE5的Metahuman、Live2D、Unity、移动端、网页端、DUIX，还有星云在线数字人，主流的数字人技术方案Fay都能对接。你不需要被绑定在某一种数字人方案上。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "最下面是大语言模型层。DeepSeek、通义千问、智谱、OpenAI兼容接口、本地部署的模型，你想用什么就用什么，随时可以切换。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "text": "中间这一层就是Fay的核心——Agent框架。它包含四个关键模块：Agent决策引擎负责自主思考和规划，ASR做语音识别，TTS做语音合成，MCP工具调用让数字人能操作外部系统。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "这四个模块都是可以独立替换的。比如你不喜欢默认的TTS引擎，换一个就行，不需要改框架代码。这种模块化设计是我们从一开始就坚持的架构原则。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "text": "第4节 能做什么：三大场景",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "41",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "42",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "text": "光说框架太抽象，我直接用两个实际项目来展示Fay能做什么。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "44",
+      "images": 0,
+      "links": [],
+      "text": "OfficeEcho，办公室数字人。它是基于Fay做的一个垂直场景应用——AI驱动的办公场景交互，有数字人形象，能语音对话，能连接企业的办公系统。你可以把它理解为一个看得见的AI助理。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "45",
+      "images": 0,
+      "links": [],
+      "text": "Easy-Deal，这个更有意思。它是一个金融量化交易Agent，基于Fay的ReAct决策引擎和MCP工具调用能力，对接MT5量化交易平台，能自动监管交易策略的执行情况，甚至能主动和你讨论策略该怎么改进。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "text": "OpenClaw数字人Skills。Fay可以作为OpenClaw的数字人Skill，让AI Agent有一个友好的、有形态的交互前端。简单说，让小龙虾有脸有声音。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "text": "这三个方向展示了Fay的完整能力谱系：OfficeEcho展示数字人交互能力，Easy-Deal展示Agent决策能力，OpenClaw Skills展示生态协作能力。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "text": "第5节 为什么选Fay：四大优势",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "49",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "51",
+      "images": 0,
+      "links": [],
+      "text": "你可能会问，市面上做数字人的、做Agent的项目那么多，凭什么选Fay？四个理由。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "52",
+      "images": 0,
+      "links": [],
+      "text": "第一，完全开源。代码全部开放，GPL-3.0协议，不区分免费版和商业版。你自己编译源码，功能和我们发布的安装包一模一样。我个人特别讨厌那种开源但核心功能收费的做法，Fay不会这样。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "53",
+      "images": 0,
+      "links": [],
+      "text": "第二，模块化可替换。TTS、ASR、LLM引擎都是插件式的，想换什么换什么。这一点对做二次开发的同学特别重要——你不需要改我的代码，只需要写一个适配层，就能接入你自己的模块。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "54",
+      "images": 0,
+      "links": [],
+      "text": "第三，Agent加数字人一体化。这是Fay最独特的定位。市面上要么是纯Agent框架没有数字人，要么是纯数字人没有Agent能力。Fay把两者结合在一起——ReAct决策、MCP工具调用、数字人形象，三位一体。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "55",
+      "images": 0,
+      "links": [],
+      "text": "第四，多端全覆盖。PC桌面、网页端、UE5、Unity、Android，一套框架适配所有平台。你不需要为每个端重新做一套。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "56",
+      "images": 0,
+      "links": [],
+      "text": "第6节 社区与生态",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "57",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "58",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "59",
+      "images": 0,
+      "links": [],
+      "text": "Fay在GitHub上目前有12000多个Star，2200多个Fork。这些数字说明什么？说明有一批人在真正使用Fay，不只是收藏。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "60",
+      "images": 0,
+      "links": [],
+      "text": "我们有多个微信和QQ技术交流群，日常答疑和技术讨论一直很活跃。另外还有付费专项群，分UE方向、搭建方向、LLM方向、案例方向等等，适合想深度学习某个方向的同学。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "61",
+      "images": 0,
+      "links": [],
+      "text": "生态方面，除了Fay框架本身，我们还提供了配套的UE5工程、Android App、课程播放器等完整产品。如果你有更深度的需求，我们也提供一对一的顾问技术指导服务。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "62",
+      "images": 0,
+      "links": [],
+      "text": "我特别想强调一点：Fay是一个持续维护、不会突然弃坑的项目。我们团队全职在做这件事，这是我们的事业，不是业余爱好。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "63",
+      "images": 0,
+      "links": [],
+      "text": "第7节 团队与愿景",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "64",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "65",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "66",
+      "images": 0,
+      "links": [],
+      "text": "我们是蜻蜓菲菲智能科技，一家广州的技术公司，专注做数字人Agent框架。团队虽然不大，但我们的理念很明确——致力于思考面向终端的数字人落地应用，并通过完整的开源代码把思考结果呈现给社区。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "67",
+      "images": 0,
+      "links": [],
+      "text": "我们不是做完扔出去就不管了，每一次更新都经过了实际场景的验证，都是我们在顾问服务和企业合作中遇到真实问题后做出的改进。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "68",
+      "images": 0,
+      "links": [],
+      "text": "说说愿景。我们相信一件事：数字人将成为未来信息系统的交互入口。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "69",
+      "images": 0,
+      "links": [],
+      "text": "想想看，过去二十年，我们和信息系统的交互方式从命令行变成了GUI，从PC变成了手机触屏。下一步呢？我们认为是AI驱动的自然交互——你对着一个数字人说话，它理解你的意图，帮你完成任务。Fay要做的就是这个领域的开源基础设施。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "70",
+      "images": 0,
+      "links": [],
+      "text": "第8节 加入我们",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "71",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "72",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "73",
+      "images": 0,
+      "links": [],
+      "text": "最后一页，也是最重要的——怎么行动。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "74",
+      "images": 0,
+      "links": [],
+      "text": "如果你想快速体验：GitHub搜索 xszyou/Fay，Gitee上也有镜像。我们的Release安装包即将上线，到时候下载下来五分钟就能看到数字人跑起来。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "75",
+      "images": 0,
+      "links": [],
+      "text": "如果你想加入社区：关注微信公众号fay数字人，里面有交流群的入口、最新的动态和教程。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "76",
+      "images": 0,
+      "links": [],
+      "text": "如果你想参与贡献：提Issue、发PR、分享你用Fay做出来的场景案例，都非常欢迎。开源项目最大的价值就是社区的集体智慧，每一个贡献都在让Fay变得更好。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "77",
+      "images": 0,
+      "links": [],
+      "text": "最后送大家一句话，也是我们的愿景：让每一个业务系统都有自己的数字人。谢谢大家。",
+      "type": "block docx-text-block"
+    }
+  ],
+  "chars": 2605,
+  "captured_at": "2026-11-03T10:38:55.426Z"
+}

@@ -1,0 +1,166 @@
+{
+  "id": "course-fay-think-tag",
+  "title": "Fay 的 think 标签处理逻辑",
+  "author": "Fay 开源社区",
+  "date": "",
+  "version": "1.1.0",
+  "color": "#9333ea",
+  "icon": "🧠",
+  "cover_image": "course-cover.png",
+  "description": "",
+  "robot": {
+    "normal": "robot/Normal.jpg",
+    "speaking": "robot/Speaking.png",
+    "listening": "robot/Listening.png",
+    "thinking": "robot/Thinking.png",
+    "angry": "robot/Angry.png",
+    "crying": "robot/Crying.png",
+    "gentle": "robot/Gentle.png"
+  },
+  "sections": [
+    {
+      "id": "s01",
+      "title": "为什么 Fay 需要处理 think 标签",
+      "script": "sections/01-s01/script.txt",
+      "font_color": "#9333ea",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/01-s01/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/01-s01/assets/demo.code.json",
+          "font_color": "#9333ea",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/01-s01/quiz.json"
+    },
+    {
+      "id": "s02",
+      "title": "think 状态机：进入、退出与超时音频",
+      "script": "sections/02-s02/script.txt",
+      "font_color": "#9333ea",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/02-s02/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/02-s02/assets/demo.code.json",
+          "font_color": "#9333ea",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/02-s02/quiz.json"
+    },
+    {
+      "id": "s03",
+      "title": "前端 GUI：parseThinkContent 与折叠面板",
+      "script": "sections/03-s03/script.txt",
+      "font_color": "#9333ea",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/03-s03/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/03-s03/assets/demo.code.json",
+          "font_color": "#9333ea",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/03-s03/quiz.json"
+    },
+    {
+      "id": "s04",
+      "title": "数字人 10002：text 与 audio 的对称剥离",
+      "script": "sections/04-s04/script.txt",
+      "font_color": "#9333ea",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/04-s04/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/04-s04/assets/demo.code.json",
+          "font_color": "#9333ea",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/04-s04/quiz.json"
+    },
+    {
+      "id": "s05",
+      "title": "进入 LLM 与 embedding 前的 think 清洗",
+      "script": "sections/05-s05/script.txt",
+      "font_color": "#9333ea",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/05-s05/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/05-s05/assets/demo.code.json",
+          "font_color": "#9333ea",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/05-s05/quiz.json"
+    },
+    {
+      "id": "s06",
+      "title": "数据库归档与全链路总结",
+      "script": "sections/06-s06/script.txt",
+      "font_color": "#9333ea",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/06-s06/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/06-s06/assets/demo.code.json",
+          "font_color": "#9333ea",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/06-s06/quiz.json"
+    }
+  ]
+}

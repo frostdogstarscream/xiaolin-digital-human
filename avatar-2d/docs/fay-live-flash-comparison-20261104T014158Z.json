@@ -1,0 +1,746 @@
+{
+  "started_utc": "20261104T014158Z",
+  "question": "请用一句话回答：你叫什么名字？不要超过二十个汉字。",
+  "trials": [
+    {
+      "status": "GO_FAY_STREAMING_TTS_EXISTING_RTC_PASSED",
+      "model": "qwen3.8-flash",
+      "collaboration_mode": "dual",
+      "answer": "我叫小霖，是你的数字讲解员。",
+      "first_answer_text_seconds": 3.679,
+      "first_playback_callback_seconds": 4.597,
+      "tts_first_pcm_seconds": 0.646,
+      "total_seconds": 7.42,
+      "tts_model": "qwen3-tts-flash-realtime",
+      "tts_voice": "Cherry",
+      "all_segments_streamed": true,
+      "segments": 1,
+      "pcm_chunks": 9,
+      "new_speaking_frames": 71,
+      "existing_display_preserved": true,
+      "physical_microphone_verified": false,
+      "physical_audio_hearing_verified": false,
+      "question": "请用一句话回答：你叫什么名字？不要超过二十个汉字。",
+      "request_started_unix": 1793756525.8872046,
+      "first_answer_observed_unix": 1793756529.5666258,
+      "retained_jobs": [
+        {
+          "job_id": "4ec1a0283b494f4b8c852dfa23cc5beb",
+          "status": "ready",
+          "text": "我叫小霖，是你的数字讲解员。",
+          "action": "idle",
+          "epoch": 3,
+          "received_at": 1793756529.5885108,
+          "queued_at": 1793756530.234645,
+          "started_at": 1793756530.4846363,
+          "ended_at": 1793756533.2443001,
+          "voice_seconds": 2.8,
+          "first_delta_at": 1793756530.2341049,
+          "generation_ended_at": 1793756531.7387247,
+          "delta_count": 9,
+          "transport": "WebSocket/PCM",
+          "model": "qwen3-tts-flash-realtime"
+        }
+      ],
+      "small_generation": {
+        "thinking": "default",
+        "reasoning_effort": "none",
+        "effective_reasoning_effort": null
+      },
+      "fay_trace": {
+        "trace_id": "2f1584e7ea9b48a3812ecfc134a8d154",
+        "started_unix": 1793756525.9119895,
+        "marks": {
+          "question_enter": 5.140000575920567e-05,
+          "agent_ready": 7.090000144671649e-05,
+          "role_ready": 0.0001078000059351325,
+          "memory_start": 0.00011480000102892518,
+          "memory_ready": 0.00011640000593615696,
+          "prestart_ready": 0.0004186000005574897,
+          "profile_ready": 0.0022363000025507063,
+          "resources_ready": 0.0022462000051746145,
+          "history_loaded": 0.003514300005917903,
+          "history_ready": 0.003580800002964679,
+          "tools_ready": 0.0035904000033042394,
+          "context_ready": 0.003606199999921955,
+          "prompt_build_start": 0.003628000005846843,
+          "prompt_ready": 0.004182100004982203,
+          "llm_request_start": 0.00418290000379784,
+          "llm_first_event": 3.0460425000055693,
+          "llm_first_text": 3.6099946000031196,
+          "reply_first_text": 3.6100010000009206,
+          "llm_stream_done": 3.64256960000057,
+          "first_sentence_ready": 3.6426036000048043,
+          "first_sentence_enqueued": 3.6426177000030293,
+          "question_done": 3.645350500002678
+        },
+        "meta": {
+          "question_sha256": "092326dd3d3c69b5aaf945dbc28f2ffeb21d85d784cfb37b1de32de90b68d83a",
+          "memory_nodes": 3,
+          "memory_skipped": true,
+          "bionic_memory_enabled": false,
+          "memory_context_chars": 0,
+          "history_records": 30,
+          "history_messages": 20,
+          "tool_count": 0,
+          "route": "direct",
+          "prompt_chars": 1711,
+          "first_sentence_chars": 14,
+          "first_sentence_accepted": true
+        }
+      },
+      "stage_seconds": {
+        "entry_before_question": 0.024836301803588867,
+        "context_and_prompt": 0.004131499998038635,
+        "model_to_first_content": 3.6058116999993217,
+        "model_full_stream": 3.6383866999967722,
+        "first_sentence_buffer": 0.032623099999909755,
+        "sentence_to_tts_ingress": 0.03390359878540039,
+        "tts_to_first_pcm": 0.6455941200256348,
+        "pcm_to_playback": 0.2505314350128174
+      }
+    },
+    {
+      "status": "GO_FAY_STREAMING_TTS_EXISTING_RTC_PASSED",
+      "model": "mimo-v2.6-flash",
+      "collaboration_mode": "dual",
+      "answer": "我叫小霖呀，数字讲解员。",
+      "first_answer_text_seconds": 3.667,
+      "first_playback_callback_seconds": 4.655,
+      "tts_first_pcm_seconds": 0.53,
+      "total_seconds": 7.145,
+      "tts_model": "qwen3-tts-flash-realtime",
+      "tts_voice": "Cherry",
+      "all_segments_streamed": true,
+      "segments": 1,
+      "pcm_chunks": 8,
+      "new_speaking_frames": 61,
+      "existing_display_preserved": true,
+      "physical_microphone_verified": false,
+      "physical_audio_hearing_verified": false,
+      "question": "请用一句话回答：你叫什么名字？不要超过二十个汉字。",
+      "request_started_unix": 1793756533.33026,
+      "first_answer_observed_unix": 1793756536.9968133,
+      "retained_jobs": [
+        {
+          "job_id": "091bfdfce5e9428ba9a7bd4f6851b1a3",
+          "status": "ready",
+          "text": "我叫小霖呀，数字讲解员。",
+          "action": "idle",
+          "epoch": 4,
+          "received_at": 1793756537.0959995,
+          "queued_at": 1793756537.6255755,
+          "started_at": 1793756537.985673,
+          "ended_at": 1793756540.377084,
+          "voice_seconds": 2.4,
+          "first_delta_at": 1793756537.6255755,
+          "generation_ended_at": 1793756539.0836694,
+          "delta_count": 8,
+          "transport": "WebSocket/PCM",
+          "model": "qwen3-tts-flash-realtime"
+        }
+      ],
+      "small_generation": {
+        "thinking": "default",
+        "reasoning_effort": "none",
+        "effective_reasoning_effort": null
+      },
+      "fay_trace": {
+        "trace_id": "48956c631d164a358a37870ec0ff5ff3",
+        "started_unix": 1793756533.3516355,
+        "marks": {
+          "question_enter": 3.120000474154949e-05,
+          "agent_ready": 4.350000381236896e-05,
+          "role_ready": 6.720000237692147e-05,
+          "memory_start": 7.030000415397808e-05,
+          "memory_ready": 7.140000525396317e-05,
+          "prestart_ready": 0.00031740000122226775,
+          "profile_ready": 0.0021017000035499223,
+          "resources_ready": 0.002107899999828078,
+          "history_loaded": 0.003409100005228538,
+          "history_ready": 0.003462600005150307,
+          "tools_ready": 0.003467599999567028,
+          "context_ready": 0.0034779000052367337,
+          "prompt_build_start": 0.00348880000092322,
+          "prompt_ready": 0.0038255000035860576,
+          "llm_request_start": 0.0038262000016402453,
+          "llm_first_event": 2.6087975000045844,
+          "llm_first_text": 3.562232900003437,
+          "reply_first_text": 3.5622354000006453,
+          "llm_stream_done": 3.6408492000045953,
+          "first_sentence_ready": 3.6408785000021453,
+          "first_sentence_enqueued": 3.640889900001639,
+          "question_done": 3.6433453999998164
+        },
+        "meta": {
+          "question_sha256": "092326dd3d3c69b5aaf945dbc28f2ffeb21d85d784cfb37b1de32de90b68d83a",
+          "memory_nodes": 3,
+          "memory_skipped": true,
+          "bionic_memory_enabled": false,
+          "memory_context_chars": 0,
+          "history_records": 30,
+          "history_messages": 20,
+          "tool_count": 0,
+          "route": "direct",
+          "prompt_chars": 1718,
+          "first_sentence_chars": 12,
+          "first_sentence_accepted": true
+        }
+      },
+      "stage_seconds": {
+        "entry_before_question": 0.02140665054321289,
+        "context_and_prompt": 0.003794999996898696,
+        "model_to_first_content": 3.5584067000017967,
+        "model_full_stream": 3.637023000002955,
+        "first_sentence_buffer": 0.07865699999820208,
+        "sentence_to_tts_ingress": 0.10347414016723633,
+        "tts_to_first_pcm": 0.5295760631561279,
+        "pcm_to_playback": 0.36009740829467773
+      }
+    },
+    {
+      "status": "GO_FAY_STREAMING_TTS_EXISTING_RTC_PASSED",
+      "model": "deepseek-v4.1-flash",
+      "collaboration_mode": "dual",
+      "answer": "我叫小霖，数字讲解员。",
+      "first_answer_text_seconds": 3.219,
+      "first_playback_callback_seconds": 4.443,
+      "tts_first_pcm_seconds": 0.777,
+      "total_seconds": 6.91,
+      "tts_model": "qwen3-tts-flash-realtime",
+      "tts_voice": "Cherry",
+      "all_segments_streamed": true,
+      "segments": 1,
+      "pcm_chunks": 8,
+      "new_speaking_frames": 61,
+      "existing_display_preserved": true,
+      "physical_microphone_verified": false,
+      "physical_audio_hearing_verified": false,
+      "question": "请用一句话回答：你叫什么名字？不要超过二十个汉字。",
+      "request_started_unix": 1793756540.5015054,
+      "first_answer_observed_unix": 1793756543.7203386,
+      "retained_jobs": [
+        {
+          "job_id": "73343c44a44145edb147779212df4e68",
+          "status": "ready",
+          "text": "我叫小霖，数字讲解员。",
+          "action": "idle",
+          "epoch": 5,
+          "received_at": 1793756543.829803,
+          "queued_at": 1793756544.6067169,
+          "started_at": 1793756544.9444728,
+          "ended_at": 1793756547.315616,
+          "voice_seconds": 2.4,
+          "first_delta_at": 1793756544.6067169,
+          "generation_ended_at": 1793756546.1071045,
+          "delta_count": 8,
+          "transport": "WebSocket/PCM",
+          "model": "qwen3-tts-flash-realtime"
+        }
+      ],
+      "small_generation": {
+        "thinking": "disabled",
+        "reasoning_effort": "low",
+        "effective_reasoning_effort": null
+      },
+      "fay_trace": {
+        "trace_id": "70442f0f9be54dc280752a7bb188e490",
+        "started_unix": 1793756540.5245438,
+        "marks": {
+          "question_enter": 4.079999780515209e-05,
+          "agent_ready": 5.389999569160864e-05,
+          "role_ready": 8.159999561030418e-05,
+          "memory_start": 8.479999814881012e-05,
+          "memory_ready": 8.600000001024455e-05,
+          "prestart_ready": 0.00027799999952549115,
+          "profile_ready": 0.0020176999969407916,
+          "resources_ready": 0.002023599998210557,
+          "history_loaded": 0.0034524999937275425,
+          "history_ready": 0.003505399996356573,
+          "tools_ready": 0.003510199996526353,
+          "context_ready": 0.0035201999999117106,
+          "prompt_build_start": 0.0035312999971210957,
+          "prompt_ready": 0.003703799993672874,
+          "llm_request_start": 0.00370439999824157,
+          "llm_first_event": 3.1020321999967564,
+          "llm_first_text": 3.10220069999923,
+          "reply_first_text": 3.102203099995677,
+          "llm_stream_done": 3.1873426999954972,
+          "first_sentence_ready": 3.1873718999995617,
+          "first_sentence_enqueued": 3.1873825999937253,
+          "question_done": 3.1895352999999886
+        },
+        "meta": {
+          "question_sha256": "092326dd3d3c69b5aaf945dbc28f2ffeb21d85d784cfb37b1de32de90b68d83a",
+          "memory_nodes": 3,
+          "memory_skipped": true,
+          "bionic_memory_enabled": false,
+          "memory_context_chars": 0,
+          "history_records": 30,
+          "history_messages": 20,
+          "tool_count": 0,
+          "route": "direct",
+          "prompt_chars": 1728,
+          "first_sentence_chars": 11,
+          "first_sentence_accepted": true
+        }
+      },
+      "stage_seconds": {
+        "entry_before_question": 0.02307915687561035,
+        "context_and_prompt": 0.0036636000004364178,
+        "model_to_first_content": 3.0984963000009884,
+        "model_full_stream": 3.1836382999972557,
+        "first_sentence_buffer": 0.08518189999449532,
+        "sentence_to_tts_ingress": 0.11787652969360352,
+        "tts_to_first_pcm": 0.7769138813018799,
+        "pcm_to_playback": 0.3377559185028076
+      }
+    },
+    {
+      "status": "GO_FAY_STREAMING_TTS_EXISTING_RTC_PASSED",
+      "model": "deepseek-v4.1-flash",
+      "collaboration_mode": "dual",
+      "answer": "我叫小霖，随时为你讲解。",
+      "first_answer_text_seconds": 4.456,
+      "first_playback_callback_seconds": 5.549,
+      "tts_first_pcm_seconds": 0.695,
+      "total_seconds": 7.66,
+      "tts_model": "qwen3-tts-flash-realtime",
+      "tts_voice": "Cherry",
+      "all_segments_streamed": true,
+      "segments": 1,
+      "audio_path": "streamed_pcm",
+      "pcm_chunks": 7,
+      "new_speaking_frames": 51,
+      "existing_display_preserved": true,
+      "physical_microphone_verified": false,
+      "physical_audio_hearing_verified": false,
+      "question": "请用一句话回答：你叫什么名字？不要超过二十个汉字。",
+      "request_started_unix": 1793756647.1984453,
+      "first_answer_observed_unix": 1793756651.654869,
+      "retained_jobs": [
+        {
+          "job_id": "1eb683f08ddc4df392c0689a9d90d318",
+          "status": "ready",
+          "text": "我叫小霖，随时为你讲解。",
+          "action": "idle",
+          "epoch": 7,
+          "received_at": 1793756651.7229955,
+          "queued_at": 1793756652.4178247,
+          "started_at": 1793756652.7472484,
+          "ended_at": 1793756654.7282658,
+          "voice_seconds": 2.0,
+          "first_delta_at": 1793756652.4178247,
+          "generation_ended_at": 1793756653.8686414,
+          "delta_count": 7,
+          "transport": "WebSocket/PCM",
+          "model": "qwen3-tts-flash-realtime"
+        }
+      ],
+      "small_generation": {
+        "thinking": "disabled",
+        "reasoning_effort": "low",
+        "effective_reasoning_effort": null
+      },
+      "fay_trace": {
+        "trace_id": "f43091ef5a934749adeca349558daf54",
+        "started_unix": 1793756647.2208662,
+        "marks": {
+          "question_enter": 3.489999653538689e-05,
+          "agent_ready": 4.7299996367655694e-05,
+          "role_ready": 7.46000005165115e-05,
+          "memory_start": 7.819999882485718e-05,
+          "memory_ready": 7.94000006862916e-05,
+          "prestart_ready": 0.0002773000014713034,
+          "profile_ready": 0.0019237000014982186,
+          "resources_ready": 0.001930099999299273,
+          "history_loaded": 0.0030786999996053055,
+          "history_ready": 0.003134500002488494,
+          "tools_ready": 0.0031396999984281138,
+          "context_ready": 0.0031506000013905577,
+          "prompt_build_start": 0.003162799999699928,
+          "prompt_ready": 0.00337769999896409,
+          "llm_request_start": 0.0033785999985411763,
+          "llm_first_event": 4.362237100001948,
+          "llm_first_text": 4.403620699995372,
+          "reply_first_text": 4.403625300001295,
+          "llm_stream_done": 4.428846399998292,
+          "first_sentence_ready": 4.428874500001257,
+          "first_sentence_enqueued": 4.428885699999228,
+          "question_done": 4.4312676999979885
+        },
+        "meta": {
+          "question_sha256": "092326dd3d3c69b5aaf945dbc28f2ffeb21d85d784cfb37b1de32de90b68d83a",
+          "memory_nodes": 3,
+          "memory_skipped": true,
+          "bionic_memory_enabled": false,
+          "memory_context_chars": 0,
+          "history_records": 30,
+          "history_messages": 20,
+          "tool_count": 0,
+          "route": "direct",
+          "prompt_chars": 1694,
+          "first_sentence_chars": 12,
+          "first_sentence_accepted": true
+        }
+      },
+      "stage_seconds": {
+        "entry_before_question": 0.022455692291259766,
+        "context_and_prompt": 0.0033437000020057894,
+        "model_to_first_content": 4.400242099996831,
+        "model_full_stream": 4.425467799999751,
+        "first_sentence_buffer": 0.025265000003855675,
+        "sentence_to_tts_ingress": 0.07324361801147461,
+        "tts_to_first_pcm": 0.6948292255401611,
+        "pcm_to_playback": 0.3294236660003662,
+        "sentence_to_file_ingress": null,
+        "file_ingress_to_playback": null
+      }
+    },
+    {
+      "status": "GO_FAY_STREAMING_TTS_EXISTING_RTC_PASSED",
+      "model": "mimo-v2.6-flash",
+      "collaboration_mode": "dual",
+      "answer": "我叫小霖，陪你聊天的数字讲解员。",
+      "first_answer_text_seconds": 4.994,
+      "first_playback_callback_seconds": 6.144,
+      "tts_first_pcm_seconds": 0.752,
+      "total_seconds": 9.309,
+      "tts_model": "qwen3-tts-flash-realtime",
+      "tts_voice": "Cherry",
+      "all_segments_streamed": true,
+      "segments": 1,
+      "audio_path": "streamed_pcm",
+      "pcm_chunks": 10,
+      "new_speaking_frames": 77,
+      "existing_display_preserved": true,
+      "physical_microphone_verified": false,
+      "physical_audio_hearing_verified": false,
+      "question": "请用一句话回答：你叫什么名字？不要超过二十个汉字。",
+      "request_started_unix": 1793756654.876306,
+      "first_answer_observed_unix": 1793756659.869973,
+      "retained_jobs": [
+        {
+          "job_id": "06f760f118fa4e0083a18fad707acd38",
+          "status": "ready",
+          "text": "我叫小霖，陪你聊天的数字讲解员。",
+          "action": "idle",
+          "epoch": 8,
+          "received_at": 1793756659.928184,
+          "queued_at": 1793756660.6799796,
+          "started_at": 1793756661.0202274,
+          "ended_at": 1793756664.1344855,
+          "voice_seconds": 3.04,
+          "first_delta_at": 1793756660.6799796,
+          "generation_ended_at": 1793756662.509232,
+          "delta_count": 10,
+          "transport": "WebSocket/PCM",
+          "model": "qwen3-tts-flash-realtime"
+        }
+      ],
+      "small_generation": {
+        "thinking": "default",
+        "reasoning_effort": "none",
+        "effective_reasoning_effort": null
+      },
+      "fay_trace": {
+        "trace_id": "cba813b4ba5e4a1ead085eeebc2eec56",
+        "started_unix": 1793756654.9012349,
+        "marks": {
+          "question_enter": 3.480000304989517e-05,
+          "agent_ready": 4.86999997519888e-05,
+          "role_ready": 7.320000440813601e-05,
+          "memory_start": 7.660000119358301e-05,
+          "memory_ready": 7.77000022935681e-05,
+          "prestart_ready": 0.00031600000511389226,
+          "profile_ready": 0.001984000002266839,
+          "resources_ready": 0.0019908000031136908,
+          "history_loaded": 0.004855800005316269,
+          "history_ready": 0.0049196000036317855,
+          "tools_ready": 0.0049265000052400865,
+          "context_ready": 0.00495000000228174,
+          "prompt_build_start": 0.004967400003806688,
+          "prompt_ready": 0.005165900001884438,
+          "llm_request_start": 0.005166599999938626,
+          "llm_first_event": 3.775272300001234,
+          "llm_first_text": 4.893345700002101,
+          "reply_first_text": 4.893352300001425,
+          "llm_stream_done": 4.967730900003517,
+          "first_sentence_ready": 4.967792000003101,
+          "first_sentence_enqueued": 4.967806200002087,
+          "question_done": 4.970725600003789
+        },
+        "meta": {
+          "question_sha256": "092326dd3d3c69b5aaf945dbc28f2ffeb21d85d784cfb37b1de32de90b68d83a",
+          "memory_nodes": 3,
+          "memory_skipped": true,
+          "bionic_memory_enabled": false,
+          "memory_context_chars": 0,
+          "history_records": 30,
+          "history_messages": 20,
+          "tool_count": 0,
+          "route": "direct",
+          "prompt_chars": 1667,
+          "first_sentence_chars": 16,
+          "first_sentence_accepted": true
+        }
+      },
+      "stage_seconds": {
+        "entry_before_question": 0.0249636173248291,
+        "context_and_prompt": 0.005131799996888731,
+        "model_to_first_content": 4.888179100002162,
+        "model_full_stream": 4.962564300003578,
+        "first_sentence_buffer": 0.0744604999999865,
+        "sentence_to_tts_ingress": 0.05914306640625,
+        "tts_to_first_pcm": 0.7517955303192139,
+        "pcm_to_playback": 0.34024786949157715,
+        "sentence_to_file_ingress": null,
+        "file_ingress_to_playback": null
+      }
+    },
+    {
+      "status": "GO_FAY_STREAMING_TTS_EXISTING_RTC_PASSED",
+      "model": "qwen3.8-flash",
+      "collaboration_mode": "dual",
+      "answer": "我叫小霖。",
+      "first_answer_text_seconds": 4.849,
+      "first_playback_callback_seconds": 6.54,
+      "tts_first_pcm_seconds": null,
+      "total_seconds": 7.408,
+      "tts_model": "qwen3-tts-flash-realtime",
+      "tts_voice": "Cherry",
+      "all_segments_streamed": false,
+      "segments": 1,
+      "audio_path": "file_audio",
+      "pcm_chunks": 0,
+      "new_speaking_frames": 21,
+      "existing_display_preserved": true,
+      "physical_microphone_verified": false,
+      "physical_audio_hearing_verified": false,
+      "question": "请用一句话回答：你叫什么名字？不要超过二十个汉字。",
+      "request_started_unix": 1793756664.2026362,
+      "first_answer_observed_unix": 1793756669.0519686,
+      "retained_jobs": [
+        {
+          "job_id": "d2c7ac106e884484b66ba9a65126685f",
+          "status": "ready",
+          "text": "我叫小霖。",
+          "action": "idle",
+          "epoch": 9,
+          "received_at": 1793756670.2753475,
+          "queued_at": 1793756670.3404887,
+          "started_at": 1793756670.7429464,
+          "ended_at": 1793756671.483928,
+          "voice_seconds": 0.8,
+          "first_delta_at": null,
+          "generation_ended_at": null,
+          "delta_count": null,
+          "transport": null,
+          "model": null
+        }
+      ],
+      "small_generation": {
+        "thinking": "default",
+        "reasoning_effort": "none",
+        "effective_reasoning_effort": null
+      },
+      "fay_trace": {
+        "trace_id": "aa167c6aa7da4f4c80b1a81834c45dca",
+        "started_unix": 1793756664.229673,
+        "marks": {
+          "question_enter": 3.100000321865082e-05,
+          "agent_ready": 4.3499996536411345e-05,
+          "role_ready": 6.720000237692147e-05,
+          "memory_start": 7.020000339252874e-05,
+          "memory_ready": 7.139999797800556e-05,
+          "prestart_ready": 0.00030610000248998404,
+          "profile_ready": 0.0025173999965772964,
+          "resources_ready": 0.002524000003177207,
+          "history_loaded": 0.004112299997359514,
+          "history_ready": 0.004167300001427066,
+          "tools_ready": 0.004172399996605236,
+          "context_ready": 0.004183700002613477,
+          "prompt_build_start": 0.0041944999975385144,
+          "prompt_ready": 0.0043701999966287985,
+          "llm_request_start": 0.004370900001958944,
+          "llm_first_event": 4.480479999998352,
+          "llm_first_text": 4.815727699999115,
+          "reply_first_text": 4.815732900002331,
+          "llm_stream_done": 4.816438100002415,
+          "first_sentence_ready": 4.816465900003095,
+          "first_sentence_enqueued": 4.816477300002589,
+          "question_done": 4.818670399996336
+        },
+        "meta": {
+          "question_sha256": "092326dd3d3c69b5aaf945dbc28f2ffeb21d85d784cfb37b1de32de90b68d83a",
+          "memory_nodes": 3,
+          "memory_skipped": true,
+          "bionic_memory_enabled": false,
+          "memory_context_chars": 0,
+          "history_records": 30,
+          "history_messages": 20,
+          "tool_count": 0,
+          "route": "direct",
+          "prompt_chars": 1655,
+          "first_sentence_chars": 5,
+          "first_sentence_accepted": true
+        }
+      },
+      "stage_seconds": {
+        "entry_before_question": 0.02706766128540039,
+        "context_and_prompt": 0.004339899998740293,
+        "model_to_first_content": 4.8113567999971565,
+        "model_full_stream": 4.812067200000456,
+        "first_sentence_buffer": 0.0007496000034734607,
+        "sentence_to_tts_ingress": null,
+        "tts_to_first_pcm": null,
+        "pcm_to_playback": null,
+        "sentence_to_file_ingress": 1.2291972637176514,
+        "file_ingress_to_playback": 0.46759891510009766
+      }
+    }
+  ],
+  "preflight": [
+    {
+      "case": "mimo-off-none",
+      "requested_model": "mimo-v2.6-flash",
+      "parameters": {
+        "reasoning_effort": "none"
+      },
+      "round": 1,
+      "question": "请用一句话回答：你叫什么名字？不要超过二十个汉字。",
+      "request_body": {
+        "model": "mimo-v2.6-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "请用一句话回答：你叫什么名字？不要超过二十个汉字。"
+          }
+        ],
+        "reasoning_effort": "none"
+      },
+      "events": [
+        {
+          "ms": 6844.22,
+          "text": "你好"
+        },
+        {
+          "ms": 6877.54,
+          "text": "，我是数字"
+        },
+        {
+          "ms": 6910.49,
+          "text": "人讲解员小霖，"
+        },
+        {
+          "ms": 6944.16,
+          "text": "很高兴"
+        },
+        {
+          "ms": 7009.06,
+          "text": "为你服务"
+        },
+        {
+          "ms": 7034.12,
+          "text": "。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 84,
+        "completion_tokens": 15,
+        "total_tokens": 99,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 1.596e-05,
+          "allowance": 1.596e-05,
+          "tokens": {
+            "input": 84,
+            "output": 15,
+            "reasoning": 0,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 6844.15,
+      "returned_model": "mimo-v2.6-flash",
+      "first_content_ms": 6844.22,
+      "chars20_ms": 7009.06,
+      "tts_buffer_ms": 7009.06,
+      "first_sentence_ms": 7034.12,
+      "finish_reason": "stop",
+      "total_ms": 7034.22,
+      "reply": "你好，我是数字人讲解员小霖，很高兴为你服务。",
+      "reply_chars": 22,
+      "reasoning_chars": 0,
+      "sse_done": true
+    }
+  ],
+  "design": "Two warm-service trials per model; Qwen/MiMo/DeepSeek then reverse order; sequential requests; same live history policy; history retained and naturally appended, not frozen.",
+  "scope": "Existing Fay, streaming Bailian TTS and RTC display; no restart, new RTC offer, owner claim or database edits.",
+  "restored": true,
+  "original_config_sha256": "0beaab32d057b6776eeab0ba6ad757fb92e61673eebcbfa8ddc03d62a493f64d",
+  "display_session": "733d504c-f849-4272-b6c9-96a5206bdb79",
+  "restored_config_sha256": "0beaab32d057b6776eeab0ba6ad757fb92e61673eebcbfa8ddc03d62a493f64d",
+  "exact_config_bytes_restored": true,
+  "summary": {
+    "deepseek-v4.1-flash": {
+      "samples": 2,
+      "model_to_first_content_median": 3.7493691999989096,
+      "first_visible_text_median": 3.8375000000000004,
+      "first_playback_median": 4.996,
+      "streamed_pcm_samples": 2,
+      "file_audio_samples": 0,
+      "first_playback_median_scope": "All audio paths; cache/file audio included where marked",
+      "streamed_first_playback_median": 4.996
+    },
+    "mimo-v2.6-flash": {
+      "samples": 2,
+      "model_to_first_content_median": 4.223292900001979,
+      "first_visible_text_median": 4.3305,
+      "first_playback_median": 5.3995,
+      "streamed_pcm_samples": 2,
+      "file_audio_samples": 0,
+      "first_playback_median_scope": "All audio paths; cache/file audio included where marked",
+      "streamed_first_playback_median": 5.3995
+    },
+    "qwen3.8-flash": {
+      "samples": 2,
+      "model_to_first_content_median": 4.208584249998239,
+      "first_visible_text_median": 4.264,
+      "first_playback_median": 5.5685,
+      "streamed_pcm_samples": 1,
+      "file_audio_samples": 1,
+      "first_playback_median_scope": "All audio paths; cache/file audio included where marked",
+      "streamed_first_playback_median": 4.597
+    }
+  },
+  "previous_run_error": "AssertionError: Unexpected TTS fallback",
+  "resumed_after": "File audio/cache hit was rejected by the prior streaming-only observer; now retain transport labels and exclude file rows from TTS streaming stats.",
+  "notes": {
+    "cache_file_confirmed_for_trial_6": "Fay stdout 2026-11-04 09:44:29 TTS cache hit; file audio excluded from streaming TTS stats",
+    "excluded_attempts": 1,
+    "total_live_attempts": 7,
+    "total_preflight_calls": 1,
+    "history_not_frozen": true
+  }
+}

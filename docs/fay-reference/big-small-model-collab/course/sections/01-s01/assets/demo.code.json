@@ -1,0 +1,4 @@
+{
+  "code": "# system.conf - 两套模型并存\n# 小模型：扛首句响应、闲聊判断\ngpt_model_engine = qwen/qwen3-4b-2507\ngpt_base_url = https://...\nkey_gpt_api_key = sk-...\n\n# 大模型：扛后台工具执行循环\nbig_model_engine = MiniMax-M2.7\nbig_model_base_url = https://api.minimax.chat/v1\nbig_model_api_key = sk-cp-...\n\n# 大模型未配置时会自动降级为小模型\n# 也就是说：小配置可以单跑，协同是可选增强",
+  "font_color": "#0ea5e9"
+}

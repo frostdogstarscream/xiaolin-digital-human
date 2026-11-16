@@ -1,0 +1,257 @@
+{
+    "source": "Quaternius Universal Animation Library Standard (CC0 1.0)",
+    "actions": [
+        {
+            "name": "Crouch_Fwd_Loop",
+            "parameter": 100,
+            "duration": 2.0,
+            "loop": true
+        },
+        {
+            "name": "Crouch_Idle_Loop",
+            "parameter": 101,
+            "duration": 2.933333396911621,
+            "loop": true
+        },
+        {
+            "name": "Dance_Loop",
+            "parameter": 102,
+            "duration": 1.0,
+            "loop": true
+        },
+        {
+            "name": "Death01",
+            "parameter": 103,
+            "duration": 2.4000000953674318,
+            "loop": false
+        },
+        {
+            "name": "Driving_Loop",
+            "parameter": 104,
+            "duration": 1.6666667461395264,
+            "loop": true
+        },
+        {
+            "name": "Fixing_Kneeling",
+            "parameter": 105,
+            "duration": 5.200000286102295,
+            "loop": false
+        },
+        {
+            "name": "Hit_Chest",
+            "parameter": 106,
+            "duration": 0.3333333432674408,
+            "loop": false
+        },
+        {
+            "name": "Hit_Head",
+            "parameter": 107,
+            "duration": 0.4333333671092987,
+            "loop": false
+        },
+        {
+            "name": "Idle_Loop",
+            "parameter": 108,
+            "duration": 2.500000238418579,
+            "loop": true
+        },
+        {
+            "name": "Idle_Talking_Loop",
+            "parameter": 109,
+            "duration": 2.933333396911621,
+            "loop": true
+        },
+        {
+            "name": "Idle_Torch_Loop",
+            "parameter": 110,
+            "duration": 1.2666667699813843,
+            "loop": true
+        },
+        {
+            "name": "Interact",
+            "parameter": 111,
+            "duration": 2.0,
+            "loop": false
+        },
+        {
+            "name": "Jog_Fwd_Loop",
+            "parameter": 112,
+            "duration": 0.9333333969116211,
+            "loop": true
+        },
+        {
+            "name": "Jump_Land",
+            "parameter": 113,
+            "duration": 1.2666667699813843,
+            "loop": false
+        },
+        {
+            "name": "Jump_Loop",
+            "parameter": 114,
+            "duration": 2.500000238418579,
+            "loop": true
+        },
+        {
+            "name": "Jump_Start",
+            "parameter": 115,
+            "duration": 1.3333333730697632,
+            "loop": false
+        },
+        {
+            "name": "PickUp_Table",
+            "parameter": 116,
+            "duration": 0.8333333730697632,
+            "loop": false
+        },
+        {
+            "name": "Pistol_Aim_Down",
+            "parameter": 117,
+            "duration": 0.1666666716337204,
+            "loop": false
+        },
+        {
+            "name": "Pistol_Aim_Neutral",
+            "parameter": 118,
+            "duration": 0.1666666716337204,
+            "loop": false
+        },
+        {
+            "name": "Pistol_Aim_Up",
+            "parameter": 119,
+            "duration": 0.1666666716337204,
+            "loop": false
+        },
+        {
+            "name": "Pistol_Idle_Loop",
+            "parameter": 120,
+            "duration": 1.6666667461395264,
+            "loop": true
+        },
+        {
+            "name": "Pistol_Reload",
+            "parameter": 121,
+            "duration": 1.6666667461395264,
+            "loop": false
+        },
+        {
+            "name": "Pistol_Shoot",
+            "parameter": 122,
+            "duration": 0.6333333849906921,
+            "loop": false
+        },
+        {
+            "name": "Punch_Cross",
+            "parameter": 123,
+            "duration": 1.0,
+            "loop": false
+        },
+        {
+            "name": "Punch_Jab",
+            "parameter": 124,
+            "duration": 0.8666667342185974,
+            "loop": false
+        },
+        {
+            "name": "Push_Loop",
+            "parameter": 125,
+            "duration": 2.6666667461395265,
+            "loop": true
+        },
+        {
+            "name": "Roll",
+            "parameter": 126,
+            "duration": 1.4666666984558106,
+            "loop": false
+        },
+        {
+            "name": "Sitting_Enter",
+            "parameter": 127,
+            "duration": 1.3000000715255738,
+            "loop": false
+        },
+        {
+            "name": "Sitting_Exit",
+            "parameter": 128,
+            "duration": 1.033333420753479,
+            "loop": false
+        },
+        {
+            "name": "Sitting_Idle_Loop",
+            "parameter": 129,
+            "duration": 1.6666667461395264,
+            "loop": true
+        },
+        {
+            "name": "Sitting_Talking_Loop",
+            "parameter": 130,
+            "duration": 2.933333396911621,
+            "loop": true
+        },
+        {
+            "name": "Spell_Simple_Enter",
+            "parameter": 131,
+            "duration": 0.5333333611488342,
+            "loop": false
+        },
+        {
+            "name": "Spell_Simple_Exit",
+            "parameter": 132,
+            "duration": 0.4333333671092987,
+            "loop": false
+        },
+        {
+            "name": "Spell_Simple_Idle_Loop",
+            "parameter": 133,
+            "duration": 2.1000001430511476,
+            "loop": true
+        },
+        {
+            "name": "Spell_Simple_Shoot",
+            "parameter": 134,
+            "duration": 0.5,
+            "loop": false
+        },
+        {
+            "name": "Sprint_Loop",
+            "parameter": 135,
+            "duration": 0.6666666865348816,
+            "loop": true
+        },
+        {
+            "name": "Swim_Fwd_Loop",
+            "parameter": 136,
+            "duration": 1.3333333730697632,
+            "loop": true
+        },
+        {
+            "name": "Swim_Idle_Loop",
+            "parameter": 137,
+            "duration": 3.3333334922790529,
+            "loop": true
+        },
+        {
+            "name": "Sword_Attack",
+            "parameter": 138,
+            "duration": 1.533333420753479,
+            "loop": false
+        },
+        {
+            "name": "Sword_Idle",
+            "parameter": 139,
+            "duration": 1.6666667461395264,
+            "loop": false
+        },
+        {
+            "name": "Walk_Formal_Loop",
+            "parameter": 140,
+            "duration": 1.3333333730697632,
+            "loop": true
+        },
+        {
+            "name": "Walk_Loop",
+            "parameter": 141,
+            "duration": 1.3333333730697632,
+            "loop": true
+        }
+    ]
+}

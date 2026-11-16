@@ -1,0 +1,7 @@
+{
+  "status": "SINGLE_PLAYBACK_OWNER_TEST_PASSED",
+  "job_id": "3f25e9f8b95c4ad59ebdf52dc9a61036",
+  "owner_received_ready": true,
+  "second_console_received_ready": false,
+  "cloud_calls": 0
+}

@@ -1,0 +1,17 @@
+{
+  "probe": {
+    "ok": true,
+    "model": "deepseek-v4.1-flash",
+    "reply": "连接成功。",
+    "first_text_ms": 2337,
+    "total_ms": 2345,
+    "saved": false,
+    "tts_called": false
+  },
+  "saved": true,
+  "previous_model": "qwen-plus",
+  "provider": "opencode_go",
+  "model": "deepseek-v4.1-flash",
+  "base_url": "https://opencode.ai/inference/go/openai/v1",
+  "tts_unchanged": true
+}

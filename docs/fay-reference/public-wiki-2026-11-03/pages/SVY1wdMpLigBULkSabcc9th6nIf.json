@@ -1,0 +1,57 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,1,12",
+  "title": "huggingface无法访问",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=SVY1wdMpLigBULkSabcc9th6nIf",
+  "x": 82,
+  "y": 990.5,
+  "token": "SVY1wdMpLigBULkSabcc9th6nIf",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/SVY1wdMpLigBULkSabcc9th6nIf",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "linux下：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJavaScript\n复制\nexport HF_ENDPOINT=https://hf-mirror.com\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "windows下：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJavaScript\n复制\nset HF_ENDPOINT=https://hf-mirror.com\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 133,
+  "last_scroll": {
+    "top": 54,
+    "height": 656,
+    "total": 710
+  },
+  "captured_at": "2026-11-03T10:45:41.821Z"
+}

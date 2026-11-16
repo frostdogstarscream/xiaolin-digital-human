@@ -1,0 +1,31 @@
+{
+  "status": "NATIVE_DUAL_COLLABORATION_PASSED",
+  "real_model_calls": true,
+  "cloud_calls": 2,
+  "native_mode": "dual",
+  "submit_ms": 1.068,
+  "background_thread": true,
+  "one_task_per_user": true,
+  "tool_calls": 1,
+  "same_conversation_callback": true,
+  "end_marker_written": true,
+  "result_consumed": true,
+  "final_reply": "本地只读测试状态正常，状态码是 **DUAL_TEST_OK**。这次读取的是本地测试状态，未涉及任何正式内容。测试结果一切正常。",
+  "roles": [
+    {
+      "role": "big",
+      "streaming": false,
+      "model": "deepseek-v4.1-flash"
+    },
+    {
+      "role": "small",
+      "streaming": true,
+      "model": "deepseek-v4.1-flash"
+    }
+  ],
+  "total_seconds": 8.655,
+  "production_tools_registered": false,
+  "production_history_written": false,
+  "production_tts_called": false,
+  "scope": "Native execution manager and native completion callback; local read-only probe and isolated output sink"
+}

@@ -1,0 +1,38 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,11,0",
+  "title": "edge-tts",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=WCtXwNnCciFtZrkqedzc3Awnnpb",
+  "x": 62,
+  "y": -89.5,
+  "token": "WCtXwNnCciFtZrkqedzc3Awnnpb",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/WCtXwNnCciFtZrkqedzc3Awnnpb",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "免费的tts api。在fay/system.conf 中tts配置为azure,但不填写azure的key即为edge-tts。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "2024.10.30 更新到6.1.13可以继续免费使用。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 94,
+  "captured_at": "2026-11-03T10:42:43.101Z"
+}

@@ -1,0 +1,45 @@
+{
+  "fixtures": [
+    {
+      "id": "short",
+      "file": "fixtures/short.wav",
+      "sha256": "a8795ff3d8bf016ab9ccb1126235a29e82424936e350f17c98b5f45a62545025",
+      "sources": [
+        {
+          "path": "D:\\Code\\3D数字人\\fay-ue4\\runtime\\fay-local\\app\\samples\\bailian-4d5c8233594740b285bb34d25bda1c98.wav",
+          "sha256": "cbe6945b499f88ddee15ee08178c1e8e1e5be849f90c854738b4cf37815d24c2"
+        }
+      ],
+      "sample_rate": 16000,
+      "channels": 1,
+      "seconds": 2.0,
+      "inserted_silence_seconds": 0.0,
+      "rms": 0.07616909225875947
+    },
+    {
+      "id": "long",
+      "file": "fixtures/long.wav",
+      "sha256": "9b08764337873e9a52a1604ec421213b23d79bcca67aa9032a907eb54d9f6cf9",
+      "sources": [
+        {
+          "path": "D:\\Code\\3D数字人\\fay-ue4\\runtime\\fay-local\\app\\samples\\bailian-realtime-ebde51a351504baeaa3ea20e3fa45d6a.wav",
+          "sha256": "d8100001022a59eba663d8fc878abeca8e10dbd37e1c332b8b137c2fe94d9bde"
+        },
+        {
+          "path": "D:\\Code\\3D数字人\\fay-ue4\\runtime\\fay-local\\app\\samples\\bailian-realtime-ac9f7b0939484edfa77d2fc1e9b38492.wav",
+          "sha256": "93129849a237347c3dcd4ae7c1a2eab97ae6cc506a98e602b530db5c028aac02"
+        },
+        {
+          "path": "D:\\Code\\3D数字人\\fay-ue4\\runtime\\fay-local\\app\\samples\\bailian-realtime-0d714b1e5f324abbbe54be0aa8e2ad90.wav",
+          "sha256": "c4a366e499a1f1a0d1f514198a572bbbc1cd7e89f4fabf170f0821a8aabcf967"
+        }
+      ],
+      "sample_rate": 16000,
+      "channels": 1,
+      "seconds": 16.28,
+      "inserted_silence_seconds": 1.0,
+      "rms": 0.06129301076784519
+    }
+  ],
+  "cloud_calls": 0
+}

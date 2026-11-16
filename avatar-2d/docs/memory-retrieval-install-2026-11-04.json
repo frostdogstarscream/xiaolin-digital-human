@@ -1,0 +1,30 @@
+{
+  "changes": [],
+  "installed": [
+    {
+      "file": "utils/config_util.py",
+      "sha256": "175629cdd87746036aa5e878bbb7eb4b1c9b487470f9bb5179d7aca49bcacaa1"
+    },
+    {
+      "file": "utils/api_embedding_service.py",
+      "sha256": "e47cf3f25d1d301d537d8cdfac63498f9899793c835492c390739c89456d56af"
+    },
+    {
+      "file": "simulation_engine/gpt_structure.py",
+      "sha256": "f3bc9cce736dc2e0539ea5a9035cf69e4d58898dcf99c3c32a31f6b53b4a5ce8"
+    },
+    {
+      "file": "genagents/modules/memory_stream.py",
+      "sha256": "553db576b9866572b230ccfef81136412b52eae0989749140ba2ea13cffd39be"
+    },
+    {
+      "file": "llm/nlp_cognitive_stream.py",
+      "sha256": "d9b0ff91ee64fbcd34b7aadbd731fb4b420b97e40af032839a2016922df8af52"
+    },
+    {
+      "file": "core/memory_service.py",
+      "sha256": "998d2ba65e394fc9cefaf4ac6ebaad4e9c1b24f9291bd62471a843a80964d0d9"
+    }
+  ],
+  "code_backups": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\memory-retrieval-patches"
+}

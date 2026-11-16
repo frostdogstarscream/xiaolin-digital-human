@@ -1,0 +1,1968 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,6,0",
+  "title": "Yueshen RAG知识库",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=M5OewhhAliHYCWkUxP2cghPKn6b",
+  "x": 62,
+  "y": -197.5,
+  "token": "M5OewhhAliHYCWkUxP2cghPKn6b",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/M5OewhhAliHYCWkUxP2cghPKn6b",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 18,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "position": 235.25,
+      "record_id": "KgmPdzlVNoGaAYx3HnPc8Oovned",
+      "text": "Fay数字人MCP知识库配置指南",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "position": 281.640625,
+      "record_id": "KQrpdLpo6o5AXEx8ZOKcjlr9nRf",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "position": 315.640625,
+      "record_id": "RFi0dsQXCo56TSx8gKjcRDunngc",
+      "text": "\n本文介绍如何在Fay数字人中通过MCP工具配置知识库，实现智能问答增强。\n",
+      "type": "block docx-quote_container-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "position": 357.625,
+      "record_id": "Eo2AdnWz6oitQcx2mHHc4V5Zn0b",
+      "text": "\n",
+      "type": "block docx-iframe-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "position": 842.546875,
+      "record_id": "RUnVdFPTkoP5RxxlXEocwy2znTh",
+      "text": "一、实现效果",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "position": 881.34375,
+      "record_id": "VjfDd7Er4o2Ei7xOpDucBxCsn4f",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "position": 927.34375,
+      "record_id": "Vvn8doaajo3E9exSIEbc0VEinwd",
+      "text": "1. 通过MCP工具灵活配置",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "position": 963.34375,
+      "record_id": "Xz2AdWuA5o4LaIxrFVdcKG9Ynhd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "position": 997.34375,
+      "record_id": "VPHSdYUV7oMzktxLN1ZckGxTnoc",
+      "text": "Fay采用MCP（Model Context Protocol）协议实现知识库集成，具有以下优势：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "position": 1031.34375,
+      "record_id": "JRQJd11dLoaZ1sxGCUAcVeGrn5f",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "position": 1065.34375,
+      "record_id": "MetIdaI8CowEsExR1AccjMsBn1c",
+      "text": "- 模块化设计：知识库作为独立的MCP服务器运行，与Fay主程序解耦",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "position": 1099.34375,
+      "record_id": "QG3jdb3qVohKCbx8QbUcSjLjnvg",
+      "text": "- 灵活扩展：支持同时接入多个知识库服务，按需启用",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "position": 1133.34375,
+      "record_id": "OwbqdMVVBoWBRdxhWxKcNHQSnVf",
+      "text": "- 标准协议：遵循MCP标准，可复用社区现有的知识库工具",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "position": 1167.34375,
+      "record_id": "A6MidZor5ogOTmxqeSLcAHJqnhj",
+      "text": "- 可视化管理：通过Web界面完成全部配置，无需修改代码",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "position": 1201.34375,
+      "record_id": "CARvdEdE8okYxNxEbbWcufOVnUd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "position": 1235.34375,
+      "record_id": "Bm6Ud3R63o4u2rxD2hFc6xmondd",
+      "text": "![MCP工具配置界面](../faymcp/static/images/mcp_config.png)",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "position": 1269.34375,
+      "record_id": "IKKOdYaJ6oN3QlxOHM8caEppnSf",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "position": 1315.34375,
+      "record_id": "I4UodCC0KoBBUax1jrNcId0Hnbg",
+      "text": "2. 1次LLM请求即可输出",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "position": 1351.34375,
+      "record_id": "NwdEdO2Q8oWYAUxAEbxcACkLnXb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "position": 1385.34375,
+      "record_id": "S6EQd1N7douLNkxyiAccsgR6nCA",
+      "text": "通过预启动（Prestart）机制，知识库查询在LLM推理前自动执行：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "position": 1419.34375,
+      "record_id": "HWFMd3EZaol4ebxmAyMcjbfyngc",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "position": 1461.34375,
+      "record_id": "IifUd6KaTo5X4yxnZbkcXwFpn6b",
+      "text": "\n代码块\nPlain Text\n复制\n用户提问 → 预启动工具执行(知识库检索) → 检索结果注入上下文 → LLM生成回答\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [],
+      "position": 1574.34375,
+      "record_id": "DlDrdUXLVoBqfDxVACZcLTVCnJh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "position": 1608.34375,
+      "record_id": "PewedsGLIoSNR7xAg5ncHGRLnDg",
+      "text": "整个流程只需1次LLM调用，相比传统RAG方案减少了额外的意图判断步骤，响应更快、成本更低。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "position": 1642.34375,
+      "record_id": "WCbEdEEsXoxMQFxhwe7cvpbxnsO",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "position": 1676.34375,
+      "record_id": "T7r2dJaH2ou4AmxfdqqcfM4Dnid",
+      "text": "工作原理：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "position": 1710.34375,
+      "record_id": "Ej5Edkn7NouOgmx4jvTcl0gDnKd",
+      "text": "•\n预启动工具在每次对话时自动触发",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "position": 1744.34375,
+      "record_id": "RWJad2WNUocUEAx6Wv0cDah0nad",
+      "text": "•\n用户问题通过{{question}}占位符传递给知识库查询",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "position": 1779.34375,
+      "record_id": "P0FCdG3WioOnaRx2sqIc74KCnEg",
+      "text": "•\n检索结果作为背景知识注入到LLM的系统提示词中",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [],
+      "position": 1813.34375,
+      "record_id": "C9NPdzmaQoFUNKxs7yKcI7ZMniN",
+      "text": "•\nLLM基于检索到的知识生成准确回答",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "position": 1859.34375,
+      "record_id": "Ik6JdIoAPo2LVUxoLIMcgRLUnBb",
+      "text": "3. 提供接口可以单独调用",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "position": 1895.34375,
+      "record_id": "DqFldUomlom2OWxvxJVc8xAjnAb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "position": 1929.34375,
+      "record_id": "WVRBd7sKMohkC2x22GxcJB5ynXU",
+      "text": "知识库工具支持通过REST API独立调用，方便集成到其他系统：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "position": 1963.34375,
+      "record_id": "T4zEdQ8jmo8rfuxbJ4Jcjbq4nvh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "position": 1997.34375,
+      "record_id": "AIRidJdTgo16m7xtXQ3cAgffntd",
+      "text": "调用接口：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "position": 2039.34375,
+      "record_id": "BoPIdYya8oS52fxOdoBckpkjnRd",
+      "text": "\n代码块\nHTTP\n复制\nPOST http://127.0.0.1:5010/api/mcp/servers/{server_id}/call\nContent-Type: application/json\n\n{\n    \"method\": \"query_yueshen\",\n    \"params\": {\n        \"query\": \"你的查询问题\",\n        \"top_k\": 5\n    }\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "position": 2343.34375,
+      "record_id": "FiVPdq4PuoTcPMx9BXRcIKbfnKb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "position": 2377.34375,
+      "record_id": "RVbZddJ3notepOxJqmTcknPPnUf",
+      "text": "返回示例：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [],
+      "position": 2419.34375,
+      "record_id": "BICSdpApeoi3TBx4ypSc8P7Unvh",
+      "text": "\n代码块\nJSON\n复制\n{\n    \"success\": true,\n    \"result\": {\n        \"documents\": [...],\n        \"distances\": [...]\n    }\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "42",
+      "images": 0,
+      "links": [],
+      "position": 2657.34375,
+      "record_id": "IP8XdzA7sox8mFxBBZNcptHonSh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "position": 2691.34375,
+      "record_id": "ZaxTdUv5eoR8QIxjgFWc7VgwnU9",
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "44",
+      "images": 0,
+      "links": [],
+      "position": 2725.34375,
+      "record_id": "EaORda74hoJdEfxxPU8cMqf4nqg",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "45",
+      "images": 0,
+      "links": [],
+      "position": 2773.34375,
+      "record_id": "H6VmdLOpro2kF9xnT2mcWkbPn3c",
+      "text": "二、如何配置",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "position": 2812.140625,
+      "record_id": "PEshdT0LNo0ZK1xkXUhcmSp0nKb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "position": 2858.140625,
+      "record_id": "L7Ngd5XHQoeNGtxRYlmcB2RZn8c",
+      "text": "1. MCP工具配置",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "position": 2894.140625,
+      "record_id": "YZfed495voabbHxGL3ZcbC4Snge",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "49",
+      "images": 0,
+      "links": [],
+      "position": 2938.140625,
+      "record_id": "A5QdddR23oKPj4xMSHycNs6HnJd",
+      "text": "步骤一：访问MCP管理页面",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "position": 2971.328125,
+      "record_id": "UQtHd770toln4TxgBOOcPtIenRd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "51",
+      "images": 0,
+      "links": [],
+      "position": 3005.328125,
+      "record_id": "TmaCdUpEZoqsxYxmMWLcwtLNn3f",
+      "text": "启动Fay后，访问MCP管理界面：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "52",
+      "images": 0,
+      "links": [],
+      "position": 3047.328125,
+      "record_id": "KCb3dwtOgowJtvx9SMcc24KQnyg",
+      "text": "\n代码块\nPlain Text\n复制\nhttp://127.0.0.1:5010/Page3\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "53",
+      "images": 0,
+      "links": [],
+      "position": 3160.328125,
+      "record_id": "Rpe5dKTJ0osDqQxJKO5chcKbnNd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "54",
+      "images": 0,
+      "links": [],
+      "position": 3204.328125,
+      "record_id": "NJZ4dd6suohRmVxlaOdcwYfBn5c",
+      "text": "步骤二：添加知识库服务器",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "55",
+      "images": 0,
+      "links": [],
+      "position": 3237.515625,
+      "record_id": "PpTLdy6AyoooqwxpaxfcOehNncp",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "56",
+      "images": 0,
+      "links": [],
+      "position": 3271.515625,
+      "record_id": "BM63dKU4CoydNLxf0TTcVvRfnSd",
+      "text": "点击\"添加MCP服务器\"按钮，配置以下信息：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "57",
+      "images": 0,
+      "links": [],
+      "position": 3305.515625,
+      "record_id": "W5F8dsr14o6Xycx4p51cj5BSnRg",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "58",
+      "images": 0,
+      "links": [],
+      "position": 3361.015625,
+      "record_id": "F0rndvIv5oqxMVxzsZlcUWZendc",
+      "table_rows": [
+        [
+          "配置项",
+          "说明",
+          "示例值"
+        ],
+        [
+          "服务器名称",
+          "自定义名称",
+          "yueshen rag"
+        ],
+        [
+          "传输方式",
+          "选择STDIO",
+          "stdio"
+        ],
+        [
+          "启动命令",
+          "Python解释器路径",
+          "python"
+        ],
+        [
+          "启动参数",
+          "服务器脚本路径",
+          "mcp_servers/yueshen_rag/server.py"
+        ],
+        [
+          "环境变量",
+          "配置API密钥等",
+          "见下方"
+        ]
+      ],
+      "text": "配置项\t说明\t示例值\n服务器名称\t自定义名称\tyueshen rag\n传输方式\t选择STDIO\tstdio\n启动命令\tPython解释器路径\tpython\n启动参数\t服务器脚本路径\tmcp_servers/yueshen_rag/server.py\n环境变量\t配置API密钥等\t见下方",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "59",
+      "images": 0,
+      "links": [],
+      "position": 3651.015625,
+      "record_id": "JPJwdTVcEoTbcLxS4rZcWG2jnsg",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "60",
+      "images": 0,
+      "links": [],
+      "position": 3695.015625,
+      "record_id": "Dwo1dGQt4oKp39xbx28cusUfnog",
+      "text": "步骤三：配置环境变量",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "61",
+      "images": 0,
+      "links": [],
+      "position": 3728.203125,
+      "record_id": "DopmdjXCko2RYdx9cdmclMkjn69",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "62",
+      "images": 0,
+      "links": [],
+      "position": 3762.203125,
+      "record_id": "DjNHdsLW8oU5obxORE5chNk5nbo",
+      "text": "知识库服务需要配置embedding模型的API：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "63",
+      "images": 0,
+      "links": [],
+      "position": 3796.203125,
+      "record_id": "JswzdrcQForzqzxCJtKcDPN4nDh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "64",
+      "images": 0,
+      "links": [],
+      "position": 3838.203125,
+      "record_id": "QtyedaPHAoEUOIxEFSEclRkDnJf",
+      "text": "\n代码块\nJSON\n复制\n{\n    \"YUESHEN_CORPUS_DIR\": \"新知识库\",\n    \"YUESHEN_PERSIST_DIR\": \"cache_data/chromadb_yueshen\",\n    \"YUESHEN_AUTO_INGEST\": \"1\",\n    \"YUESHEN_AUTO_INTERVAL\": \"300\",\n    \"YUESHEN_EMBED_API_KEY\": \"sk-your-api-key\",\n    \"YUESHEN_EMBED_BASE_URL\": \"https://api.siliconflow.cn/v1\",\n    \"YUESHEN_EMBED_MODEL\": \"Qwen/Qwen3-Embedding-8B\"\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "65",
+      "images": 0,
+      "links": [],
+      "position": 4120.203125,
+      "record_id": "O7iodx7e0oKUaExLdSxcoXzrnlc",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "66",
+      "images": 0,
+      "links": [],
+      "position": 4154.203125,
+      "record_id": "GZLXdjRGyotld8xgmVCc8Sc0n4g",
+      "text": "环境变量说明：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "67",
+      "images": 0,
+      "links": [],
+      "position": 4188.203125,
+      "record_id": "R2fId7UgGoDcrExHs4IcfmQYnid",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "68",
+      "images": 0,
+      "links": [],
+      "position": 4243.703125,
+      "record_id": "OYxLdu82goZaKexINcjc32r4nqd",
+      "table_rows": [
+        [
+          "变量名",
+          "说明",
+          "默认值"
+        ],
+        [
+          "YUESHEN_CORPUS_DIR",
+          "知识库文档目录",
+          "新知识库"
+        ],
+        [
+          "YUESHEN_PERSIST_DIR",
+          "向量数据库存储路径",
+          "cache_data/chromadb_yueshen"
+        ],
+        [
+          "YUESHEN_AUTO_INGEST",
+          "是否自动索引新文档",
+          "1（启用）"
+        ],
+        [
+          "YUESHEN_AUTO_INTERVAL",
+          "自动索引检查间隔（秒）",
+          "300"
+        ],
+        [
+          "YUESHEN_EMBED_API_KEY",
+          "Embedding API密钥",
+          "-"
+        ],
+        [
+          "YUESHEN_EMBED_BASE_URL",
+          "Embedding API地址",
+          "-"
+        ],
+        [
+          "YUESHEN_EMBED_MODEL",
+          "Embedding模型名称",
+          "-"
+        ]
+      ],
+      "text": "变量名\t说明\t默认值\nYUESHEN_CORPUS_DIR\t知识库文档目录\t新知识库\nYUESHEN_PERSIST_DIR\t向量数据库存储路径\tcache_data/chromadb_yueshen\nYUESHEN_AUTO_INGEST\t是否自动索引新文档\t1（启用）\nYUESHEN_AUTO_INTERVAL\t自动索引检查间隔（秒）\t300\nYUESHEN_EMBED_API_KEY\tEmbedding API密钥\t-\nYUESHEN_EMBED_BASE_URL\tEmbedding API地址\t-\nYUESHEN_EMBED_MODEL\tEmbedding模型名称\t-",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "69",
+      "images": 0,
+      "links": [],
+      "position": 4636.703125,
+      "record_id": "EFFCdeD4RoWNljxgATicm6rdnPg",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "70",
+      "images": 0,
+      "links": [],
+      "position": 4680.703125,
+      "record_id": "FSxCdqo5rofdZZxxie8ckcNinLg",
+      "text": "步骤四：连接服务器",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "71",
+      "images": 0,
+      "links": [],
+      "position": 4713.890625,
+      "record_id": "FY7TdwCRAoctruxAMcyc0lG5nzb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "72",
+      "images": 0,
+      "links": [],
+      "position": 4747.890625,
+      "record_id": "GBYadTQgpox6xUxRnNtcmzZVnec",
+      "text": "保存配置后，点击\"连接\"按钮启动知识库服务。连接成功后：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "73",
+      "images": 0,
+      "links": [],
+      "position": 4781.890625,
+      "record_id": "K9bYdQa3DoIiyXxzqXEcHPGdnKb",
+      "text": "•\n服务器状态变为绿色\"在线\"",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "74",
+      "images": 0,
+      "links": [],
+      "position": 4815.890625,
+      "record_id": "PONWdWwbRo578rx7wKZcjYtQnxf",
+      "text": "•\n下方显示可用工具列表：ingest_yueshen、query_yueshen、yueshen_stats",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "75",
+      "images": 0,
+      "links": [],
+      "position": 4862.890625,
+      "record_id": "D224diDe8oGIVNx0z72cJP0bnJb",
+      "text": "2. 参数配置",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "76",
+      "images": 0,
+      "links": [],
+      "position": 4898.890625,
+      "record_id": "SPbwdjBB0omKftxpcEqclpMCnkk",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "77",
+      "images": 0,
+      "links": [],
+      "position": 4942.890625,
+      "record_id": "VOVkdWvQiodrjYx8UFacLuBon3r",
+      "text": "配置预启动参数",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "78",
+      "images": 0,
+      "links": [],
+      "position": 4976.078125,
+      "record_id": "NGFmdqEmEo7QaTxqQCmcMGSunci",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "79",
+      "images": 0,
+      "links": [],
+      "position": 5010.078125,
+      "record_id": "GlYld1gjZougZZxYAY8cMoK1nzf",
+      "text": "1.\n在工具列表中找到 query_yueshen 工具",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "80",
+      "images": 0,
+      "links": [],
+      "position": 5045.078125,
+      "record_id": "CznXdF4NboZTyTx8BBlcn1BZnhd",
+      "text": "2.\n点击工具右侧的\"预启动?\"标签",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "81",
+      "images": 0,
+      "links": [],
+      "position": 5079.078125,
+      "record_id": "Hs1jdch8eoRnKxxSYVCcMvDYnWf",
+      "text": "3.\n在弹出的对话框中配置参数：",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "82",
+      "images": 0,
+      "links": [],
+      "position": 5121.078125,
+      "record_id": "O11Pd6Mdro6lpTxf29rcMIsQnmg",
+      "text": "\n代码块\nJSON\n复制\n{\n    \"query\": \"{{question}}\",\n    \"top_k\": 5,\n    \"where\": {}\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "83",
+      "images": 0,
+      "links": [],
+      "position": 5315.078125,
+      "record_id": "PEqadiZxyobcbNxKfFucu2Udnyf",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "84",
+      "images": 0,
+      "links": [],
+      "position": 5349.078125,
+      "record_id": "EKKfd4lZqo428xx9iiac5F6Lnvf",
+      "text": "参数说明：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "85",
+      "images": 0,
+      "links": [],
+      "position": 5383.078125,
+      "record_id": "LrzjdPoyPov547xA1CmcckHUnAe",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "86",
+      "images": 0,
+      "links": [],
+      "position": 5438.578125,
+      "record_id": "WCMpdNEzNoUGGGxYBcZchl9Vncc",
+      "table_rows": [
+        [
+          "参数",
+          "类型",
+          "说明"
+        ],
+        [
+          "query",
+          "string",
+          "查询文本，{{question}}会被替换为用户实际问题"
+        ],
+        [
+          "top_k",
+          "int",
+          "返回最相关的文档数量"
+        ],
+        [
+          "where",
+          "object",
+          "可选的元数据过滤条件"
+        ]
+      ],
+      "text": "参数\t类型\t说明\nquery\tstring\t查询文本，{{question}}会被替换为用户实际问题\ntop_k\tint\t返回最相关的文档数量\nwhere\tobject\t可选的元数据过滤条件",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "87",
+      "images": 0,
+      "links": [],
+      "position": 5648.578125,
+      "record_id": "H0D1dgF8loKu9pxxxaOc47qonAj",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "88",
+      "images": 0,
+      "links": [],
+      "position": 5692.578125,
+      "record_id": "IMUldob6Co1IpTxCBAKcsvMynzf",
+      "text": "配置选项",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "89",
+      "images": 0,
+      "links": [],
+      "position": 5725.765625,
+      "record_id": "Eu9CdtZJyox64pxFCzkcuTCknsd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "90",
+      "images": 0,
+      "links": [],
+      "position": 5759.765625,
+      "record_id": "PJgRdF1KmoRq7Fx2C8hckyT6n9e",
+      "text": "- 结果保存到记忆：勾选后，检索结果会保存到对话历史中",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "91",
+      "images": 0,
+      "links": [],
+      "position": 5793.765625,
+      "record_id": "TdBadIy8iouJoHxKAMAc4W1znJc",
+      "text": "- 允许函数调用：是否允许LLM在推理时再次调用此工具",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "92",
+      "images": 0,
+      "links": [],
+      "position": 5827.765625,
+      "record_id": "VZVcdez7VoyiU1xMaGocHyn4n9b",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "93",
+      "images": 0,
+      "links": [],
+      "position": 5861.765625,
+      "record_id": "I9sNdZVMVodsAAxDFh2cNbywnEg",
+      "text": "点击\"保存预启动\"完成配置。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "94",
+      "images": 0,
+      "links": [],
+      "position": 5895.765625,
+      "record_id": "ZVqIdTed4oH3fqx9hIUcaPDhnbb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "95",
+      "images": 0,
+      "links": [],
+      "position": 5941.765625,
+      "record_id": "WuGRdiUjtoJ8rqxlLsKcvoxVnNf",
+      "text": "3. 启动方式",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "96",
+      "images": 0,
+      "links": [],
+      "position": 5977.765625,
+      "record_id": "OW7HdOWVcopZcXxfyyYc8MG8nOf",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "97",
+      "images": 0,
+      "links": [],
+      "position": 6021.765625,
+      "record_id": "AYNddhMR3oetEvxjpnwcZQ61niC",
+      "text": "方式一：随Fay自动启动",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "98",
+      "images": 0,
+      "links": [],
+      "position": 6054.953125,
+      "record_id": "MTvFddmCMoXys3xEL67cHY8Un0b",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "99",
+      "images": 0,
+      "links": [],
+      "position": 6088.953125,
+      "record_id": "TW4DdShc3o0XyDxtirfcW5Junxf",
+      "text": "配置完成后，知识库服务会在Fay启动时自动连接。确保：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "100",
+      "images": 0,
+      "links": [],
+      "position": 6122.953125,
+      "record_id": "JbhOdvd6aogKWuxoqUvc44Hsneb",
+      "text": "1.\nMCP服务器已添加并保存",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "101",
+      "images": 0,
+      "links": [],
+      "position": 6156.953125,
+      "record_id": "XSD2dooerofgsqx84oYc1cy1nvf",
+      "text": "2.\n在服务器卡片上启用了自动连接",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "102",
+      "images": 0,
+      "links": [],
+      "position": 6200.953125,
+      "record_id": "XkCSdtCoyobXB4xjlDyc5O4onMt",
+      "text": "方式二：手动连接",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "103",
+      "images": 0,
+      "links": [],
+      "position": 6234.140625,
+      "record_id": "VPgldWXNxolPl8xB17ycC8ZXnAd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "104",
+      "images": 0,
+      "links": [],
+      "position": 6268.140625,
+      "record_id": "FqBRdBdQtoPXDlxagk7cmjxEnbm",
+      "text": "在MCP管理页面：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "105",
+      "images": 0,
+      "links": [],
+      "position": 6302.140625,
+      "record_id": "H3oCdSjggo2HEfxxPx9cKyWCnIh",
+      "text": "1.\n找到目标服务器卡片",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "106",
+      "images": 0,
+      "links": [],
+      "position": 6336.140625,
+      "record_id": "IsIPdxXPOora5GxbwdkctJz8nke",
+      "text": "2.\n点击\"连接\"按钮",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "107",
+      "images": 0,
+      "links": [],
+      "position": 6370.140625,
+      "record_id": "SDeHdG7lIo51Oox1DTocFCk5nwd",
+      "text": "3.\n等待状态变为\"在线\"",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "108",
+      "images": 0,
+      "links": [],
+      "position": 6414.140625,
+      "record_id": "Ce1udByj5oQYxsx0Eamcl9a3nqg",
+      "text": "方式三：通过API连接",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "109",
+      "images": 0,
+      "links": [],
+      "position": 6447.328125,
+      "record_id": "XyN5d3OCuoWk0Zxz1MPcY142nBe",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "110",
+      "images": 0,
+      "links": [],
+      "position": 6489.328125,
+      "record_id": "LXvFd3ymTo8Uhqxhc3EcwL13n8f",
+      "text": "\n代码块\nHTTP\n复制\nPOST http://127.0.0.1:5010/api/mcp/servers/{server_id}/connect\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "111",
+      "images": 0,
+      "links": [],
+      "position": 6602.328125,
+      "record_id": "QlYtdPmweoTNkJxYmZgcvMPsnNd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "112",
+      "images": 0,
+      "links": [],
+      "position": 6646.328125,
+      "record_id": "TKMydqFwRoER65xPVu5cQdcmned",
+      "text": "验证配置",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "113",
+      "images": 0,
+      "links": [],
+      "position": 6679.515625,
+      "record_id": "HsYNdJUunoM6lLxDkV8cVMVGn8c",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "114",
+      "images": 0,
+      "links": [],
+      "position": 6713.515625,
+      "record_id": "BbGadSBKEo9VBVxVlQIcycQqnah",
+      "text": "连接成功后，可以通过以下方式验证：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "115",
+      "images": 0,
+      "links": [],
+      "position": 6747.515625,
+      "record_id": "OvI9d0AkCoTqmnxBs5scicnGnwf",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "116",
+      "images": 0,
+      "links": [],
+      "position": 6781.515625,
+      "record_id": "YK3ddwGZOoqgjPxYuoNciRejnQe",
+      "text": "1. 查看工具列表：确认`query_yueshen`等工具已显示",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "117",
+      "images": 0,
+      "links": [],
+      "position": 6815.515625,
+      "record_id": "Gz6udVHjvoTinNxU9KTcIEmQnCb",
+      "text": "2. 测试查询：在工具面板中手动调用工具测试",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "118",
+      "images": 0,
+      "links": [],
+      "position": 6849.515625,
+      "record_id": "UjkJdyn4SoFSPnxIjbgc6otNnfc",
+      "text": "3. 对话测试：向Fay提问知识库相关问题，观察是否返回准确答案",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "119",
+      "images": 0,
+      "links": [],
+      "position": 6883.515625,
+      "record_id": "Nz7pdD4aMoTftgxigJuckIPVnnb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "120",
+      "images": 0,
+      "links": [],
+      "position": 6917.515625,
+      "record_id": "NX3tdVaKnovTxCxIvZ4cmbShnKc",
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "121",
+      "images": 0,
+      "links": [],
+      "position": 6951.515625,
+      "record_id": "Tk57dMhIfoj8jKxTCoYcSmVnnig",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "122",
+      "images": 0,
+      "links": [],
+      "position": 6999.515625,
+      "record_id": "TVq1dnhSlobe3GxvDaGcN0vPnLe",
+      "text": "三、怎么做到的",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "123",
+      "images": 0,
+      "links": [],
+      "position": 7038.3125,
+      "record_id": "DA9UdqBdRo8c3vxrHBpcUZoEnV0",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "124",
+      "images": 0,
+      "links": [],
+      "position": 7084.3125,
+      "record_id": "NtqEdXiL3oBVSIxwNTBczJALn9X",
+      "text": "Fay MCP工具的预启动功能",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "125",
+      "images": 0,
+      "links": [],
+      "position": 7120.3125,
+      "record_id": "JPk7diz5oopdTqxF4CHcTxv9nId",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "126",
+      "images": 0,
+      "links": [],
+      "position": 7154.3125,
+      "record_id": "WWtxdW80GodHFVxmkKicO2r6n4b",
+      "text": "Fay实现了一套独特的预启动（Prestart）机制，使知识库查询能够无缝集成到对话流程中。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "127",
+      "images": 0,
+      "links": [],
+      "position": 7188.3125,
+      "record_id": "Q4x1dfKANooCJtxX58pc8BRfnoi",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "128",
+      "images": 0,
+      "links": [],
+      "position": 7232.3125,
+      "record_id": "JE3wdrdKuoMgrpxSWN9cA21Nnmd",
+      "text": "核心设计",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "129",
+      "images": 0,
+      "links": [],
+      "position": 7265.5,
+      "record_id": "LJmidMRgHoDKOdxVj6tcfKcEn5A",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "130",
+      "images": 0,
+      "links": [],
+      "position": 7307.5,
+      "record_id": "WO1zdkERToryy2xATBrcXuh6nHh",
+      "text": "\n代码块\nPlain Text\n复制\n┌─────────────────────────────────────────────────────────┐\n│                    用户发送消息                          │\n└─────────────────────────────────────────────────────────┘\n                           │\n                           ▼\n┌─────────────────────────────────────────────────────────┐\n│              获取预启动工具配置列表                       │\n│         GET /api/mcp/prestart/runnable                  │\n└─────────────────────────────────────────────────────────┘\n                           │\n                           ▼\n┌─────────────────────────────────────────────────────────┐\n│              替换参数中的 {{question}} 占位符             │\n│         将用户问题填充到查询参数中                        │\n└─────────────────────────────────────────────────────────┘\n                           │\n                           ▼\n┌─────────────────────────────────────────────────────────┐\n│              并行执行所有预启动工具                       │\n│         POST /api/mcp/servers/{id}/call                 │\n└─────────────────────────────────────────────────────────┘\n                           │\n                           ▼\n┌─────────────────────────────────────────────────────────┐\n│              收集检索结果，注入系统提示词                  │\n│         作为 <prestart> 标签内容传递给LLM                │\n└─────────────────────────────────────────────────────────┘\n                           │\n                           ▼\n┌─────────────────────────────────────────────────────────┐\n│                    LLM 生成回答                          │\n│         基于知识库内容生成准确、相关的回复                 │\n└─────────────────────────────────────────────────────────┘\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "131",
+      "images": 0,
+      "links": [],
+      "position": 8117.5,
+      "record_id": "FvUZdGxncojRxaxRGMkcl1Lzn4g",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "132",
+      "images": 0,
+      "links": [],
+      "position": 8161.5,
+      "record_id": "WQ9adx2jnoFt8Fxoq96c7kdDn1c",
+      "text": "技术实现要点",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "133",
+      "images": 0,
+      "links": [],
+      "position": 8194.6875,
+      "record_id": "CoxLdElTroBodIxi8rgc1imcnTp",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "134",
+      "images": 0,
+      "links": [],
+      "position": 8228.6875,
+      "record_id": "A2e6dn64Bo3jSKxsmuhcTTkVn66",
+      "text": "1. 预启动配置独立于工具启用状态",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "135",
+      "images": 0,
+      "links": [],
+      "position": 8262.6875,
+      "record_id": "DujJdb6Bio2Uxsx61uZcDP2Onug",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "136",
+      "images": 0,
+      "links": [],
+      "position": 8296.6875,
+      "record_id": "CNfvdSJz2oS46pxXPY6cUDoXnUr",
+      "text": "预启动功能与工具的启用/禁用状态相互独立：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "137",
+      "images": 0,
+      "links": [],
+      "position": 8330.6875,
+      "record_id": "IpUOdbDrIoBKTLxQK9IcDSoan0g",
+      "text": "- 启用/禁用：控制LLM是否可以主动调用该工具",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "138",
+      "images": 0,
+      "links": [],
+      "position": 8364.6875,
+      "record_id": "BS8qdMXoJoqE49xdx2Hcl8Rinid",
+      "text": "- 预启动：控制工具是否在每次对话前自动执行",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "139",
+      "images": 0,
+      "links": [],
+      "position": 8398.6875,
+      "record_id": "TqB0duNzGotELrx2TvlcPB1Lnce",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "140",
+      "images": 0,
+      "links": [],
+      "position": 8432.6875,
+      "record_id": "ZUVkdtSUiopJmwxDw8IcwNronHN",
+      "text": "这意味着你可以：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "141",
+      "images": 0,
+      "links": [],
+      "position": 8466.6875,
+      "record_id": "ZcoNdVSDioD4nbxknP2cDkesn7f",
+      "text": "•\n禁用工具的LLM调用权限，但保留预启动功能",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "142",
+      "images": 0,
+      "links": [],
+      "position": 8500.6875,
+      "record_id": "DIMUd4HZMoEIiuxRYqyczaJ1nmG",
+      "text": "•\n让知识库查询仅在对话开始时执行，避免LLM重复调用",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "143",
+      "images": 0,
+      "links": [],
+      "position": 8534.6875,
+      "record_id": "L2jhdo6bVoRE82xYvQjcmjGKnyg",
+      "text": "2. 参数模板与占位符替换",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "144",
+      "images": 0,
+      "links": [],
+      "position": 8568.6875,
+      "record_id": "Dh9VdaUgWo6gtTxLMmucTy24nEf",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "145",
+      "images": 0,
+      "links": [],
+      "position": 8602.6875,
+      "record_id": "OmvbdPUFkoZpZqxE7eecJVlPnDd",
+      "text": "预启动支持{{question}}占位符，在执行时自动替换为用户的实际问题：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "146",
+      "images": 0,
+      "links": [],
+      "position": 8637.6875,
+      "record_id": "R76idq0gjoAGuRxi9KVcpoCcnDf",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "147",
+      "images": 0,
+      "links": [],
+      "position": 8679.6875,
+      "record_id": "RWq9djYAuoz1zYxcqM3cOKB2n5f",
+      "text": "\n代码块\nPython\n复制\n# 参数模板\n{\"query\": \"{{question}}\", \"top_k\": 5}\n\n# 用户问题：\"Fay如何配置语音识别？\"\n# 实际执行参数\n{\"query\": \"Fay如何配置语音识别？\", \"top_k\": 5}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "148",
+      "images": 0,
+      "links": [],
+      "position": 8895.6875,
+      "record_id": "YSWwdESEpoYrEBx3LkZcAJIgnBg",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "149",
+      "images": 0,
+      "links": [],
+      "position": 8929.6875,
+      "record_id": "OKqTdTEvKogygDxzshYcEFt7n2c",
+      "text": "3. 结果处理与记忆管理",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "150",
+      "images": 0,
+      "links": [],
+      "position": 8963.6875,
+      "record_id": "EiHGdxhuGo27oGx2ovzcuKI6n0e",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "151",
+      "images": 0,
+      "links": [],
+      "position": 8997.6875,
+      "record_id": "XCt3dwj2LoOMbKxeh41c9EeCnIb",
+      "text": "预启动结果可以选择是否保存到对话记忆：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "152",
+      "images": 0,
+      "links": [],
+      "position": 9031.6875,
+      "record_id": "BmCTdE4Zhoj69Yx0laWcwkGBnUh",
+      "text": "•\ninclude_history: true - 结果保存到历史，后续对话可引用",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "153",
+      "images": 0,
+      "links": [],
+      "position": 9066.6875,
+      "record_id": "GIaOdUvPGoW5wpxVdKscnHkXnQh",
+      "text": "•\ninclude_history: false - 仅用于当前对话，不污染历史记录",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "154",
+      "images": 0,
+      "links": [],
+      "position": 9101.6875,
+      "record_id": "DhJTdIeZ5onmaXxuvaBcPSUDnwe",
+      "text": "4. 多知识库并行查询",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "155",
+      "images": 0,
+      "links": [],
+      "position": 9135.6875,
+      "record_id": "DOmFdAUPHoUoCnx8Cqcc8hmWnWb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "156",
+      "images": 0,
+      "links": [],
+      "position": 9169.6875,
+      "record_id": "FOQfdGW2aokTA8xCcGFcWDr5nMh",
+      "text": "支持配置多个预启动工具，它们会并行执行：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "157",
+      "images": 0,
+      "links": [],
+      "position": 9203.6875,
+      "record_id": "CI52dY7ygoEAl7xP0uucFAafnvc",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "158",
+      "images": 0,
+      "links": [],
+      "position": 9245.6875,
+      "record_id": "Bmx3d6EduoJ6kyxLdgbcgvzDn3d",
+      "text": "\n代码块\nPlain Text\n复制\n预启动工具1: 产品知识库查询\n预启动工具2: FAQ知识库查询\n预启动工具3: 用户手册查询\n         │\n         ▼\n    结果合并后一起注入LLM上下文\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "159",
+      "images": 0,
+      "links": [],
+      "position": 9461.6875,
+      "record_id": "LnEbd3tdQoJTbcx9U4IcWXiOn8e",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "160",
+      "images": 0,
+      "links": [],
+      "position": 9505.6875,
+      "record_id": "LJq8d1KsIoUIA9xGOvIcFQUkngy",
+      "text": "相关代码位置",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "161",
+      "images": 0,
+      "links": [],
+      "position": 9538.875,
+      "record_id": "P6IJdS5neoZiPixBdVzclL4Tnyh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "162",
+      "images": 0,
+      "links": [],
+      "position": 9594.375,
+      "record_id": "CWKQdRCtKoDtwlxGMU4ciE28nte",
+      "table_rows": [
+        [
+          "模块",
+          "文件",
+          "说明"
+        ],
+        [
+          "预启动注册表",
+          "faymcp/prestart_registry.py",
+          "预启动配置的存储与管理"
+        ],
+        [
+          "预启动执行",
+          "llm/nlp_cognitive_stream.py",
+          "_run_prestart_tools() 函数"
+        ],
+        [
+          "API路由",
+          "faymcp/mcp_service.py",
+          "/api/mcp/prestart/runnable 接口"
+        ],
+        [
+          "前端配置",
+          "faymcp/templates/Page3.html",
+          "预启动配置对话框"
+        ]
+      ],
+      "text": "模块\t文件\t说明\n预启动注册表\tfaymcp/prestart_registry.py\t预启动配置的存储与管理\n预启动执行\tllm/nlp_cognitive_stream.py\t_run_prestart_tools() 函数\nAPI路由\tfaymcp/mcp_service.py\t/api/mcp/prestart/runnable 接口\n前端配置\tfaymcp/templates/Page3.html\t预启动配置对话框",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "163",
+      "images": 0,
+      "links": [],
+      "position": 9913.375,
+      "record_id": "NGm9dWUEdoje78xQAL6c9lVFnRh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "164",
+      "images": 0,
+      "links": [],
+      "position": 9947.375,
+      "record_id": "ZFsndoeUxoEwUBxdBhTcu8Fxnab",
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "165",
+      "images": 0,
+      "links": [],
+      "position": 9981.375,
+      "record_id": "XFUrdXn5Bo6N84xesx3cdBMPnKb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "166",
+      "images": 0,
+      "links": [],
+      "position": 10029.375,
+      "record_id": "UinDdCQjhoYLCqx0e3NcNE1RnQg",
+      "text": "常见问题",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "167",
+      "images": 0,
+      "links": [],
+      "position": 10068.171875,
+      "record_id": "DZdNdJcLbob0SZxKmDaccgjtnrh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "168",
+      "images": 0,
+      "links": [],
+      "position": 10114.171875,
+      "record_id": "YaYmdBJnXokmPhx6w0Ec8L0Dnoh",
+      "text": "Q1: 知识库服务连接失败？",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "169",
+      "images": 0,
+      "links": [],
+      "position": 10150.171875,
+      "record_id": "EyFJdqhf6o1GgtxkxoncfZmMnOb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "170",
+      "images": 0,
+      "links": [],
+      "position": 10184.171875,
+      "record_id": "XdvKdzA3IocL2SxKHa3cPAmongh",
+      "text": "检查以下几点：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "171",
+      "images": 0,
+      "links": [],
+      "position": 10218.171875,
+      "record_id": "KzEvdg2nRo0US4xkhkicAR4Rnkg",
+      "text": "1.\nPython环境是否正确配置",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "172",
+      "images": 0,
+      "links": [],
+      "position": 10252.171875,
+      "record_id": "KJqodcoXXoJe2pxDsk4c9FpAnQd",
+      "text": "2.\n依赖包是否安装完整（chromadb, pdfplumber等）",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "173",
+      "images": 0,
+      "links": [],
+      "position": 10286.171875,
+      "record_id": "QV3AdVHh8owMUVxZHS3c7kVBncd",
+      "text": "3.\n环境变量中的API密钥是否正确",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "174",
+      "images": 0,
+      "links": [],
+      "position": 10320.171875,
+      "record_id": "EDMzdr0KRoE1qmx7Qp2cfyXYnXd",
+      "text": "4.\n知识库文档目录是否存在",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "175",
+      "images": 0,
+      "links": [],
+      "position": 10366.171875,
+      "record_id": "OK1cdE8jJo8Tf3xqdiDczQSonJh",
+      "text": "Q2: 检索结果不准确？",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "176",
+      "images": 0,
+      "links": [],
+      "position": 10402.171875,
+      "record_id": "MlwPdKXDIomU1sx3oawcJ2XfnMd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "177",
+      "images": 0,
+      "links": [],
+      "position": 10436.171875,
+      "record_id": "Ptiid1MhWoHFsKxLyBncsrvfn9g",
+      "text": "优化建议：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "178",
+      "images": 0,
+      "links": [],
+      "position": 10470.171875,
+      "record_id": "APPyd6a5to0Lo3xYrCRcdwI8nBe",
+      "text": "1.\n调整top_k参数，增加返回文档数量",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "179",
+      "images": 0,
+      "links": [],
+      "position": 10505.171875,
+      "record_id": "J5zpdswSDo54TDx3o6DcCvUnnWc",
+      "text": "2.\n检查文档分块策略是否合理",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "180",
+      "images": 0,
+      "links": [],
+      "position": 10539.171875,
+      "record_id": "QNXbdASw0oaO6uxrtO3cKQaMn1e",
+      "text": "3.\n尝试更换Embedding模型",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "181",
+      "images": 0,
+      "links": [],
+      "position": 10573.171875,
+      "record_id": "D6nZdWNNqoznNQxFNV9cXjEanfE",
+      "text": "4.\n优化知识库文档的质量和格式",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "182",
+      "images": 0,
+      "links": [],
+      "position": 10619.171875,
+      "record_id": "TeKOdy7RloOZY0xnHSKcK7MynEg",
+      "text": "Q3: 如何添加新文档到知识库？",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "183",
+      "images": 0,
+      "links": [],
+      "position": 10655.171875,
+      "record_id": "Y5z8dG7njoetU4xIF9OcyHjgnFh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "184",
+      "images": 0,
+      "links": [],
+      "position": 10689.171875,
+      "record_id": "U1VSdBvUSo04TrxmftOcw7d2n4f",
+      "text": "将文档（支持PDF、DOCX、TXT）放入YUESHEN_CORPUS_DIR配置的目录中：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "185",
+      "images": 0,
+      "links": [],
+      "position": 10724.171875,
+      "record_id": "XoRJduNY4ovO2sxWWjWcpEUXnpc",
+      "text": "•\n如果启用了YUESHEN_AUTO_INGEST，系统会自动索引",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "186",
+      "images": 0,
+      "links": [],
+      "position": 10759.171875,
+      "record_id": "FGQ5dbEkvo5HJYxnrdzcCoiDnQb",
+      "text": "•\n也可以手动调用ingest_yueshen工具触发索引",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "187",
+      "images": 0,
+      "links": [],
+      "position": 10806.171875,
+      "record_id": "EcLDdlYu1o7gnux67obcGxtUnAb",
+      "text": "Q4: 预启动工具执行超时？",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "188",
+      "images": 0,
+      "links": [],
+      "position": 10842.171875,
+      "record_id": "WPAvdjd8Yo2bEoxfLdSc83uHnpg",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "189",
+      "images": 0,
+      "links": [],
+      "position": 10876.171875,
+      "record_id": "PoJgda0rDoiMlBxoBxRc80ApnkG",
+      "text": "检查：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "190",
+      "images": 0,
+      "links": [],
+      "position": 10910.171875,
+      "record_id": "L8GDdHnm4oaWGuxGxUScMEGynrf",
+      "text": "1.\nEmbedding API服务是否正常",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "191",
+      "images": 0,
+      "links": [],
+      "position": 10944.171875,
+      "record_id": "N3IPdYCX8ongJQx5dxGcqxeAnNp",
+      "text": "2.\n网络连接是否稳定",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "192",
+      "images": 0,
+      "links": [],
+      "position": 10978.171875,
+      "record_id": "F3tbdTiiKoBYmcxLg7RcN368n6c",
+      "text": "3.\n可适当增加超时时间配置",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "193",
+      "images": 0,
+      "links": [],
+      "position": 11012.171875,
+      "record_id": "Xrv5d5jchoUkAwx3AkgcAKwJnBg",
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "194",
+      "images": 0,
+      "links": [],
+      "position": 11046.171875,
+      "record_id": "R13BdPAV0oFkSzx2crLcDD9inlg",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "195",
+      "images": 0,
+      "links": [],
+      "position": 11094.171875,
+      "record_id": "GIR3dtq5xojD9Ox2M7Bch1OLnrb",
+      "text": "总结",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "196",
+      "images": 0,
+      "links": [],
+      "position": 11132.96875,
+      "record_id": "P1nEd3GeWohSk7xHqRMckTzInQc",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "197",
+      "images": 0,
+      "links": [],
+      "position": 11166.96875,
+      "record_id": "ZAxIdVa77ozCzXxdxHhcHtxynrb",
+      "text": "Fay数字人通过MCP协议和预启动机制，实现了：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "198",
+      "images": 0,
+      "links": [],
+      "position": 11200.96875,
+      "record_id": "YGZndfwh4o5XIXxI4hscreHMnKe",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "199",
+      "images": 0,
+      "links": [],
+      "position": 11234.96875,
+      "record_id": "WaWydS5QBoR2RHxOV0fcarNynMf",
+      "text": "- 零代码配置：可视化界面完成全部设置",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "200",
+      "images": 0,
+      "links": [],
+      "position": 11268.96875,
+      "record_id": "G3u4d4JcCoWU6KxyMt6cOw5qnzg",
+      "text": "- 高效查询：1次LLM请求完成知识增强回答",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "201",
+      "images": 0,
+      "links": [],
+      "position": 11302.96875,
+      "record_id": "GPJ7dEo5PoU9oHxMf7ucsa0DnN6",
+      "text": "- 灵活扩展：支持多知识库、多工具并行",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "202",
+      "images": 0,
+      "links": [],
+      "position": 11336.96875,
+      "record_id": "EiONdkHvooBuAtxLK4SczMZknCg",
+      "text": "- 接口开放：REST API支持外部系统集成",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "203",
+      "images": 0,
+      "links": [],
+      "position": 11370.96875,
+      "record_id": "BvGgdrv6SowAxJxiJ6PcAZBynQb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "204",
+      "images": 0,
+      "links": [],
+      "position": 11404.96875,
+      "record_id": "ZgE4dEnRVoUbTMxtd9ScdI5CnKd",
+      "text": "这套方案既保持了系统的简洁性，又提供了强大的知识库集成能力，是构建智能数字人的理想选择。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "205",
+      "images": 0,
+      "links": [],
+      "position": 11438.96875,
+      "record_id": "Xyg4dBv08oUlSXxnIlzczGZjnul",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 5655,
+  "block_representation": "top_level_with_structured_tables",
+  "captured_at": "2026-11-03T11:04:54.306Z"
+}

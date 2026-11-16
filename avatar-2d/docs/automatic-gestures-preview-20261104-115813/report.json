@@ -1,0 +1,49 @@
+{
+  "audio_file": "D:\\Code\\3D数字人\\fay-ue4\\runtime\\fay-local\\app\\samples\\bailian-realtime-59f8d04a41d0484bb3cc5124b2e349d0_44k.wav",
+  "audio_sha256": "b72982dbfd3b8b8c386382b87fc995539be4449a8bec17fa8c493e51031c0a8c",
+  "sample_rate": 16000,
+  "backend": "Wav2Lip256 / actual Presenter._advance + _infer + _compose",
+  "cases": [
+    {
+      "action": "welcome-wave",
+      "motion_frames": 175,
+      "held_frames": 25,
+      "frames": 200,
+      "video": "D:\\Code\\3D数字人\\avatar-2d\\docs\\automatic-gestures-preview-20261104-115813\\welcome-wave.mp4",
+      "generation_seconds": 4.588,
+      "geometry_bounds_valid": true,
+      "hold_last_frame": true
+    },
+    {
+      "action": "goodbye-wave",
+      "motion_frames": 175,
+      "held_frames": 25,
+      "frames": 200,
+      "video": "D:\\Code\\3D数字人\\avatar-2d\\docs\\automatic-gestures-preview-20261104-115813\\goodbye-wave.mp4",
+      "generation_seconds": 4.752,
+      "geometry_bounds_valid": true,
+      "hold_last_frame": true
+    },
+    {
+      "action": "explain-open-palms",
+      "motion_frames": 225,
+      "held_frames": 25,
+      "frames": 250,
+      "video": "D:\\Code\\3D数字人\\avatar-2d\\docs\\automatic-gestures-preview-20261104-115813\\explain-open-palms.mp4",
+      "generation_seconds": 6.354,
+      "geometry_bounds_valid": true,
+      "hold_last_frame": true
+    },
+    {
+      "action": "acknowledge-nod",
+      "motion_frames": 100,
+      "held_frames": 25,
+      "frames": 125,
+      "video": "D:\\Code\\3D数字人\\avatar-2d\\docs\\automatic-gestures-preview-20261104-115813\\acknowledge-nod.mp4",
+      "generation_seconds": 3.441,
+      "geometry_bounds_valid": true,
+      "hold_last_frame": true
+    }
+  ],
+  "contact_sheet": "D:\\Code\\3D数字人\\avatar-2d\\docs\\automatic-gestures-preview-20261104-115813\\four-gestures-full-and-face.jpg"
+}

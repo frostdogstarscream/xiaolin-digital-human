@@ -1,0 +1,11 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "4.27",
+  "Category": "DigitalHuman",
+  "Description": "Fay + UE4 kiosk; Maya/FBX character integration",
+  "Modules": [{"Name": "HoloKiosk", "Type": "Runtime", "LoadingPhase": "Default"}],
+  "Plugins": [
+    {"Name": "PythonScriptPlugin", "Enabled": true},
+    {"Name": "EditorScriptingUtilities", "Enabled": true}
+  ]
+}

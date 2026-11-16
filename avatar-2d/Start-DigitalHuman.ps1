@@ -6,6 +6,11 @@ $runtime=Join-Path $PSScriptRoot 'runtime\presenter-service'
 $stateFile=Join-Path $runtime 'process.json'
 if(-not $Legacy){& (Join-Path $PSScriptRoot 'Start-LocalASR.ps1')}
 & (Join-Path (Split-Path -Parent $PSScriptRoot) 'fay-ue4\Start-Fay.ps1')
+$attendanceRegistration=Join-Path (Split-Path -Parent $PSScriptRoot) 'attendance-mcp\runtime\registration.json'
+if(Test-Path -LiteralPath $attendanceRegistration){
+    $attendanceSettings=Get-Content -LiteralPath $attendanceRegistration -Raw -Encoding UTF8 | ConvertFrom-Json
+    if($attendanceSettings.enabled){& (Join-Path (Split-Path -Parent $PSScriptRoot) 'attendance-mcp\Start-AttendanceMcp.ps1')}
+}
 if(Test-Path -LiteralPath $stateFile){
     $saved=Get-Content -LiteralPath $stateFile -Raw -Encoding UTF8 | ConvertFrom-Json
     $existing=Get-Process -Id $saved.pid -ErrorAction SilentlyContinue

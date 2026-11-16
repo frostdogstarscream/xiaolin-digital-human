@@ -1,0 +1,989 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,17",
+  "title": "关注中的项目",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=UrxkwMcEDifbenkP3d0c9vZjnid",
+  "x": 42,
+  "y": 1170.5,
+  "token": "UrxkwMcEDifbenkP3d0c9vZjnid",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/UrxkwMcEDifbenkP3d0c9vZjnid",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 6,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/GHevwqxwfiX4hCk8yJCcoJ54nqg",
+          "text": "数字人模型栏目"
+        }
+      ],
+      "text": "数字人模型(不在列表的项目请到数字人模型栏目找找)",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/feima09/GMTalker",
+          "text": "https://github.com/feima09/GMTalker"
+        }
+      ],
+      "text": "https://github.com/feima09/GMTalker",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/alibaba/MNN/tree/master/apps/Android/MnnTaoAvatar",
+          "text": "https://github.com/alibaba/MNN/tree/master/apps/Android/MnnTaoAvatar"
+        }
+      ],
+      "text": "https://github.com/alibaba/MNN/tree/master/apps/Android/MnnTaoAvatar",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/Omni-Avatar/OmniAvatar",
+          "text": "https://github.com/Omni-Avatar/OmniAvatar"
+        }
+      ],
+      "text": "https://github.com/Omni-Avatar/OmniAvatar",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/worm128/AI-YinMei",
+          "text": "https://github.com/worm128/AI-YinMei"
+        }
+      ],
+      "text": "https://github.com/worm128/AI-YinMei 二次元ai主播",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/wan-h/awesome-digital-human-live2d",
+          "text": "https://github.com/wan-h/awesome-digital-human-live2d"
+        }
+      ],
+      "text": "https://github.com/wan-h/awesome-digital-human-live2d  live2d交互数字人",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://fudan-generative-vision.github.io/hallo3/#/",
+          "text": "https://fudan-generative-vision.github.io/hallo3/#/"
+        }
+      ],
+      "text": "https://fudan-generative-vision.github.io/hallo3/#/ 复旦开源的由图到说话视频的推理模型",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/jhj0517/AdvancedLivePortrait-WebUI",
+          "text": "https://github.com/jhj0517/AdvancedLivePortrait-WebUI"
+        }
+      ],
+      "text": "https://github.com/jhj0517/AdvancedLivePortrait-WebUI 表情控制工具",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://lucaria-academy.github.io/Animate-X/",
+          "text": "https://lucaria-academy.github.io/Animate-X/"
+        }
+      ],
+      "text": "https://lucaria-academy.github.io/Animate-X/ 阿里开源的动作迁移工具",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/bytedance/LatentSync",
+          "text": "https://github.com/bytedance/LatentSync"
+        }
+      ],
+      "text": "https://github.com/bytedance/LatentSync",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/lipku/livetalking",
+          "text": "https://github.com/lipku/livetalking"
+        }
+      ],
+      "text": "https://github.com/lipku/livetalking",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/kleinlee/DH_live",
+          "text": "https://github.com/kleinlee/DH_live"
+        }
+      ],
+      "text": "https://github.com/kleinlee/DH_live",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/NetEase-GameAI/Face2FaceRHO",
+          "text": "https://github.com/NetEase-GameAI/Face2FaceRHO"
+        }
+      ],
+      "text": "https://github.com/NetEase-GameAI/Face2FaceRHO",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/kleinlee/MiniMates",
+          "text": "https://github.com/kleinlee/MiniMates"
+        }
+      ],
+      "text": "https://github.com/kleinlee/MiniMates",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://antgroup.github.io/ai/echomimic_v2/",
+          "text": "https://antgroup.github.io/ai/echomimic_v2/"
+        }
+      ],
+      "text": "https://antgroup.github.io/ai/echomimic_v2/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/TMElyralab/MuseTalk",
+          "text": "https://github.com/TMElyralab/MuseTalk"
+        }
+      ],
+      "text": "https://github.com/TMElyralab/MuseTalk",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/anliyuan/Ultralight-Digital-Human",
+          "text": "https://github.com/anliyuan/Ultralight-Digital-Human"
+        }
+      ],
+      "text": "https://github.com/anliyuan/Ultralight-Digital-Human",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/Kedreamix/Linly-Talker",
+          "text": "https://github.com/Kedreamix/Linly-Talker"
+        }
+      ],
+      "text": "https://github.com/Kedreamix/Linly-Talker",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/TencentARC/GFPGAN",
+          "text": "https://github.com/TencentARC/GFPGAN"
+        }
+      ],
+      "text": "https://github.com/TencentARC/GFPGAN",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/CyberAgentAILab/TANGO",
+          "text": "https://github.com/CyberAgentAILab/TANGO"
+        }
+      ],
+      "text": "https://github.com/CyberAgentAILab/TANGO",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "说话头",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/OpenTalker/SadTalker",
+          "text": "https://github.com/OpenTalker/SadTalker"
+        }
+      ],
+      "text": "https://github.com/OpenTalker/SadTalker",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/ShenhanQian/GaussianAvatars",
+          "text": "https://github.com/ShenhanQian/GaussianAvatars"
+        }
+      ],
+      "text": "https://github.com/ShenhanQian/GaussianAvatars",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/cvlab-kaist/GaussianTalker",
+          "text": "https://github.com/cvlab-kaist/GaussianTalker"
+        }
+      ],
+      "text": "https://github.com/cvlab-kaist/GaussianTalker",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "知识库",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/TheDataStation/pneuma",
+          "text": "https://github.com/TheDataStation/pneuma"
+        }
+      ],
+      "text": "https://github.com/TheDataStation/pneuma 表格问答",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://huggingface.co/segment-any-text",
+          "text": "https://huggingface.co/segment-any-text"
+        }
+      ],
+      "text": "https://huggingface.co/segment-any-text SAT",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/zylon-ai/private-gpt",
+          "text": "https://github.com/zylon-ai/private-gpt"
+        }
+      ],
+      "text": "https://github.com/zylon-ai/private-gpt ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/infiniflow/ragflow",
+          "text": "https://github.com/infiniflow/ragflow"
+        }
+      ],
+      "text": "https://github.com/infiniflow/ragflow",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "text": "拾音处理",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/modelscope/ClearerVoice-Studio",
+          "text": "https://github.com/modelscope/ClearerVoice-Studio"
+        }
+      ],
+      "text": "https://github.com/modelscope/ClearerVoice-Studio",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "声音增强、分离",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "RPA",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/microsoft/UFO",
+          "text": "https://github.com/microsoft/UFO"
+        }
+      ],
+      "text": "https://github.com/microsoft/UFO",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/FellouAI/eko",
+          "text": "https://github.com/FellouAI/eko"
+        }
+      ],
+      "text": "https://github.com/FellouAI/eko",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/microsoft/OmniParser",
+          "text": "https://github.com/microsoft/OmniParser"
+        }
+      ],
+      "text": "https://github.com/microsoft/OmniParser",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [],
+      "text": "浏览器上的rpa",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "42",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://x-plug.github.io/MobileAgent/",
+          "text": "https://x-plug.github.io/MobileAgent/"
+        }
+      ],
+      "text": "https://x-plug.github.io/MobileAgent/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "44",
+      "images": 0,
+      "links": [],
+      "text": "Cv",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "45",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/serengil/deepface",
+          "text": "https://github.com/serengil/deepface"
+        }
+      ],
+      "text": "https://github.com/serengil/deepface",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/AILab-CVC/YOLO-World",
+          "text": "https://github.com/AILab-CVC/YOLO-World"
+        }
+      ],
+      "text": "https://github.com/AILab-CVC/YOLO-World",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "text": "JARVIS/第二大脑",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "49",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/microsoft/JARVIS",
+          "text": "https://github.com/microsoft/JARVIS"
+        }
+      ],
+      "text": "https://github.com/microsoft/JARVIS",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/khoj-ai/khoj",
+          "text": "https://github.com/khoj-ai/khoj"
+        }
+      ],
+      "text": "https://github.com/khoj-ai/khoj",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "51",
+      "images": 0,
+      "links": [],
+      "text": "LLM",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "52",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/thudm/cogvideo",
+          "text": "https://github.com/thudm/cogvideo"
+        }
+      ],
+      "text": "https://github.com/thudm/cogvideo",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "53",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://huggingface.co/THUDM/glm-4-voice-9b",
+          "text": "https://huggingface.co/THUDM/glm-4-voice-9b"
+        }
+      ],
+      "text": "https://huggingface.co/THUDM/glm-4-voice-9b  GLM-4-Voice 是智谱 AI 推出的端到端语音模型。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "54",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/hiyouga/LLaMA-Factory",
+          "text": "https://github.com/hiyouga/LLaMA-Factory"
+        }
+      ],
+      "text": "https://github.com/hiyouga/LLaMA-Factory",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "55",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/THUDM/CodeGeeX4",
+          "text": "https://github.com/THUDM/CodeGeeX4"
+        }
+      ],
+      "text": "https://github.com/THUDM/CodeGeeX4",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "56",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/Eladlev/AutoPrompt",
+          "text": "https://github.com/Eladlev/AutoPrompt"
+        }
+      ],
+      "text": "https://github.com/Eladlev/AutoPrompt 提示词优化",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "57",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/dzhng/deep-research",
+          "text": "https://github.com/dzhng/deep-research"
+        }
+      ],
+      "text": "https://github.com/dzhng/deep-research     Deep research",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "58",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/mem0ai/mem0",
+          "text": "https://github.com/mem0ai/mem0"
+        }
+      ],
+      "text": "https://github.com/mem0ai/mem0   数字人记忆",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "59",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/InternLM/lmdeploy",
+          "text": "https://github.com/InternLM/lmdeploy"
+        }
+      ],
+      "text": "https://github.com/InternLM/lmdeploy   LMDeploy 是一个用于压缩、部署和服务 LLM 的工具包。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "60",
+      "images": 0,
+      "links": [],
+      "text": "ASR",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "61",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/alphacep/vosk-api",
+          "text": "https://github.com/alphacep/vosk-api"
+        }
+      ],
+      "text": "https://github.com/alphacep/vosk-api",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "62",
+      "images": 0,
+      "links": [],
+      "text": "适合实时语音识别，支持多种语言，并且在资源受限的设备上运行良好。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "63",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "64",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/k2-fsa/sherpa-onnx",
+          "text": "https://github.com/k2-fsa/sherpa-onnx"
+        }
+      ],
+      "text": "https://github.com/k2-fsa/sherpa-onnx",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "65",
+      "images": 0,
+      "links": [],
+      "text": "基于 Kaldi 和 ONNX 的实时语音识别系统，适合需要高性能的场景，但可能对资源要求较高。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "66",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "67",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/kaldi-asr/kaldi",
+          "text": "https://github.com/kaldi-asr/kaldi"
+        }
+      ],
+      "text": "https://github.com/kaldi-asr/kaldi",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "68",
+      "images": 0,
+      "links": [],
+      "text": " 一个非常强大的语音识别工具包，适合需要自定义模型和复杂处理的用户，但学习曲线较陡，可能不太适合快速实现。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "69",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "70",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/openai/whisper",
+          "text": "https://github.com/openai/whisper"
+        }
+      ],
+      "text": "https://github.com/openai/whisper",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "71",
+      "images": 0,
+      "links": [],
+      "text": "性能优秀，能够处理嘈杂环境下的语音识别，支持多种语言，但对硬件要求较高。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "72",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "73",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/ggerganov/whisper.cpp",
+          "text": "https://github.com/ggerganov/whisper.cpp"
+        }
+      ],
+      "text": "https://github.com/ggerganov/whisper.cpp",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "74",
+      "images": 0,
+      "links": [],
+      "text": "whisper在c++上的实现。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "75",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "76",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/vilassn/whisper_android",
+          "text": "https://github.com/vilassn/whisper_android"
+        }
+      ],
+      "text": "https://github.com/vilassn/whisper_android",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "77",
+      "images": 0,
+      "links": [],
+      "text": "whisper.cpp在安卓上的实现。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "78",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "79",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.modelscope.cn/models/iic/speech_eres2net_sv_zh-cn_16k-common",
+          "text": "https://www.modelscope.cn/models/iic/speech_eres2net_sv_zh-cn_16k-common"
+        }
+      ],
+      "text": "https://www.modelscope.cn/models/iic/speech_eres2net_sv_zh-cn_16k-common",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "80",
+      "images": 0,
+      "links": [],
+      "text": "说话人识别。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "81",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "82",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.modelscope.cn/collections/SenseVoice-d84b249bb6d990",
+          "text": "https://www.modelscope.cn/collections/SenseVoice-d84b249bb6d990"
+        }
+      ],
+      "text": "https://www.modelscope.cn/collections/SenseVoice-d84b249bb6d990",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "83",
+      "images": 0,
+      "links": [],
+      "text": "funasr，来通义实验室的语音识别，支持vad、符号恢复、实时转写。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "84",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "85",
+      "images": 0,
+      "links": [],
+      "text": "TTS",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "86",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/QwenLM/Qwen3-TTS",
+          "text": "https://github.com/QwenLM/Qwen3-TTS"
+        }
+      ],
+      "text": "https://github.com/QwenLM/Qwen3-TTS",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "87",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/fishaudio/fish-speech",
+          "text": "https://github.com/fishaudio/fish-speech"
+        }
+      ],
+      "text": "https://github.com/fishaudio/fish-speech",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "88",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/RVC-Boss/GPT-SoVITS",
+          "text": "https://github.com/RVC-Boss/GPT-SoVITS"
+        }
+      ],
+      "text": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "89",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/index-tts/index-tts",
+          "text": "https://github.com/index-tts/index-tts"
+        }
+      ],
+      "text": "https://github.com/index-tts/index-tts",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "90",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "91",
+      "images": 0,
+      "links": [],
+      "text": "背景处理",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "92",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://huggingface.co/briaai/RMBG-2.0",
+          "text": "https://huggingface.co/briaai/RMBG-2.0"
+        }
+      ],
+      "text": "https://huggingface.co/briaai/RMBG-2.0",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "93",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "94",
+      "images": 0,
+      "links": [],
+      "text": "3d资产生成",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "95",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/tencent/Hunyuan3D-2",
+          "text": "https://github.com/tencent/Hunyuan3D-2"
+        }
+      ],
+      "text": "https://github.com/tencent/Hunyuan3D-2",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "96",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/microsoft/TRELLIS",
+          "text": "https://github.com/microsoft/TRELLIS"
+        }
+      ],
+      "text": "https://github.com/microsoft/TRELLIS",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "97",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 2846,
+  "last_scroll": {
+    "top": 3224,
+    "height": 656,
+    "total": 3880
+  },
+  "captured_at": "2026-11-03T10:45:58.441Z"
+}

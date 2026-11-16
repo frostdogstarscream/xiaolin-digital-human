@@ -1,0 +1,435 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,9",
+  "title": "大语言模型",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=ExE5wrr9biIJZ6k4qUYcYUPEnmg",
+  "x": 42,
+  "y": -413.5,
+  "token": "ExE5wrr9biIJZ6k4qUYcYUPEnmg",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/ExE5wrr9biIJZ6k4qUYcYUPEnmg",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 11,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "给fay搭建本地llm",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程ID：fay-lmstudio-course",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "•\n作者：郭泽斌",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "•\n版本：1.0.0",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "•\n章节数：9",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://player.fay-agent.com/",
+          "text": "https://player.fay-agent.com/"
+        }
+      ],
+      "text": "•\n课程制作工具：https://player.fay-agent.com/",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程包:",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "\nfay-lmstudio-course.zip\n2.46MB\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "目录",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "1.\n背景",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "2.\n安装lm studio",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "3.\n下载大语言模型",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "4.\n下载embedding模型",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "5.\n加载模型",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "6.\n开启内网通讯",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "7.\n关闭模型的Thinking模式",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "8.\n在fay上完成配置",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "9.\n远程访问模型",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "第1节 背景",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "23",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [],
+      "text": "今天我们演示如何给fay配置本地大语言模型。在人人养虾的今年，线上模型严重超负荷，远远慢于数字人正常对话的要求（五十 token 每秒以上），故咱们需要一个本地的对话模型。如果你有一张3060以上的显卡，请跟着我一步步来搭建这个本地模型，并完成与fay的对接。以windows系统为样板，准备好了的话，咱们就开始吧。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "第2节 安装lm studio",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "27",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "text": "首先，咱们到lm studio的官网下载一个安装包并完成安装。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\nhttps://lmstudio.ai\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [],
+      "text": "第3节 下载大语言模型",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "33",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "在lm studio应用中搜索qwen 3.5 9b并点击下载，等待下载完成。如果你的电脑配置并不高可以选择qwen 3.5 4b。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "text": "第4节 下载embedding模型",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "以同样的方式下载qwen 3 embedding模型。等待下载完成。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "text": "第5节 加载模型",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "41",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "42",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "text": "两个模型都下载完成后，进行开发者栏目（左侧第2个），通过“load model”按钮，分别加载刚才下载的两个模型。此时记得选择弹窗下方的“允许多模型加载”。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "44",
+      "images": 0,
+      "links": [],
+      "text": "第6节 开启内网通讯",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "45",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "text": "在\"server setting\"这里打开“serve on local network”，便可以在内网上实现模型请求了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "text": "第7节 关闭模型的Thinking模式",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "49",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "51",
+      "images": 0,
+      "links": [],
+      "text": "选中qwen 3.5 9b 模型，在右侧的inference栏中关闭模式，便可以在模型输出阶段关闭思考内容，以更快获得回复。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "52",
+      "images": 0,
+      "links": [],
+      "text": "第8节 在fay上完成配置",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "53",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "54",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "55",
+      "images": 0,
+      "links": [],
+      "text": "在fay的源码目录找到system.conf文件，如果没有可以把system.conf.bak重命名过来，并配置图中的四项。如果你没有在lm studio上设定key，请随意填写。若你使用的是fay release版，可在安装过程中依引导完成这四项的配置。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "56",
+      "images": 0,
+      "links": [],
+      "text": "第9节 远程访问模型",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "57",
+      "images": 0,
+      "links": [],
+      "text": "讲稿",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "58",
+      "images": 0,
+      "links": [],
+      "text": "若你和我一样，算力主机在异地，又没有ip专线网络，可以到ngrok.cc购买穿透服务，把lm studio服务端口映射到互联网。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "59",
+      "images": 0,
+      "links": [],
+      "text": "代码/文案",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "60",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\nhttps://ngrok.cc\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "61",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 1142,
+  "captured_at": "2026-11-03T10:41:47.382Z"
+}

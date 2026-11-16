@@ -1,0 +1,130 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,0,0",
+  "title": "文字交互接口（5000）",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=PNKFwVgUKig6fDkMH03cMPiInIb",
+  "x": 82,
+  "y": 306.5,
+  "token": "PNKFwVgUKig6fDkMH03cMPiInIb",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/PNKFwVgUKig6fDkMH03cMPiInIb",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 5,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "目的：通个文本信息与fay联通",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "1.\n类 GPT 接口",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "接口地址",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/api/send/v1/chat/completions",
+          "text": "http://127.0.0.1:5000/api/send/v1/chat/completions"
+        }
+      ],
+      "text": "•\nhttp://127.0.0.1:5000/api/send/v1/chat/completions",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/v1/chat/completions",
+          "text": "http://127.0.0.1:5000/v1/chat/completions"
+        }
+      ],
+      "text": "•\nhttp://127.0.0.1:5000/v1/chat/completions",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000",
+          "text": "http://127.0.0.1:5000"
+        }
+      ],
+      "text": "对于所有兼容 GPT 的项目，只需将 base_url 配置为 http://127.0.0.1:5000，即可与 Fay 进行对接。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "参数",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "Model ",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "•\nfay：非流式",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "•\nfay-streaming：流式",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "•\nllm：直通大语言模型，fay也不做记录",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "参考代码",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\n复制\nimport requests\nimport json\n\ndef test_gpt(prompt):\n    url = 'http://127.0.0.1:5000/v1/chat/completions'  # 替换为您的接口地址\n    headers = {\n        'Content-Type': 'application/json',\n        'Authorization': f'Bearer YOUR_API_KEY',  # 如果您的接口需要身份验证\n    }\n    data = {\n        'model': 'fay-streaming',\n        'messages': [\n            {'role': '张三', 'content': prompt}\n        ],\n        'no_reply':False #是否不需要fay回复\n    }\n\n    response = requests.post(url, headers=headers, data=json.dumps(data), stream=True)\n\n    if response.status_code != 200:\n        print(f\"请求失败，状态码：{response.status_code}\")\n        print(f\"响应内容：{response.text}\")\n        return\n\n    # 处理流式响应\n    for line in response.iter_lines(decode_unicode=True):\n        if line:\n            if line.strip() == 'data: [DONE]':\n                print(\"\\n流式传输完成\")\n                break\n            # 每一行数据以 'data: ' 开头，去掉这个前缀\n            if line.startswith('data:'):\n                line = line[5:].strip()\n                # 将 JSON 字符串解析为字典\n                try:\n                    data = json.loads(line)\n                    # 从数据中提取生成的内容\n                    choices = data.get('choices')\n                    if choices:\n                        delta = choices[0].get('delta', {})\n                        content = delta.get('content', '')\n                        print(content, end='', flush=True)\n                        \n                except json.JSONDecodeError:\n                    print(f\"\\n无法解析的 JSON 数据：{line}\")\n            else:\n                print(f\"\\n收到未知格式的数据：{line}\")\n\nif __name__ == \"__main__\":\n    user_input = \"当前时间\"\n    print(\"GPT 的回复:\")\n    test_gpt(user_input)\n    print(\"\\n请求完成\")\n\n",
+      "type": "block docx-code-block"
+    }
+  ],
+  "chars": 1927,
+  "captured_at": "2026-11-03T10:43:24.704Z"
+}

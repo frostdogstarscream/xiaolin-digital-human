@@ -1,0 +1,403 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,14",
+  "title": "数字人课程",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=N6Qrwm7ciiXiJEk9pktcvBV9n3f",
+  "x": 42,
+  "y": 1062.5,
+  "token": "N6Qrwm7ciiXiJEk9pktcvBV9n3f",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/N6Qrwm7ciiXiJEk9pktcvBV9n3f",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 3,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "\n\n",
+      "type": "block docx-fallback-block fallback-async-synced_source fallback-async-align-left"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block synced-source-render-unit isEmpty"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1Dz9WBHESu/",
+          "text": "https://www.bilibili.com/video/BV1Dz9WBHESu/"
+        }
+      ],
+      "text": "\nFay介绍(面向开发者)：https://www.bilibili.com/video/BV1Dz9WBHESu/\n",
+      "type": "block docx-fallback-block fallback-async-synced_source fallback-async-align-left"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1Dz9WBHESu/",
+          "text": "https://www.bilibili.com/video/BV1Dz9WBHESu/"
+        }
+      ],
+      "text": "Fay介绍(面向开发者)：https://www.bilibili.com/video/BV1Dz9WBHESu/",
+      "type": "block docx-text-block synced-source-render-unit"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV17MopBvEkC/",
+          "text": "https://www.bilibili.com/video/BV17MopBvEkC/"
+        }
+      ],
+      "text": "\neasydeal claude code版搭建教程：https://www.bilibili.com/video/BV17MopBvEkC/\n",
+      "type": "block docx-fallback-block fallback-async-synced_source fallback-async-align-left"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV17MopBvEkC/",
+          "text": "https://www.bilibili.com/video/BV17MopBvEkC/"
+        }
+      ],
+      "text": "easydeal claude code版搭建教程：https://www.bilibili.com/video/BV17MopBvEkC/",
+      "type": "block docx-text-block synced-source-render-unit"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1MZoNBME8R/",
+          "text": "https://www.bilibili.com/video/BV1MZoNBME8R/"
+        }
+      ],
+      "text": "教程制作器的数字人功能1分钟讲清楚，新手也会：https://www.bilibili.com/video/BV1MZoNBME8R/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1gXoNBrExv/",
+          "text": "https://www.bilibili.com/video/BV1gXoNBrExv/"
+        }
+      ],
+      "text": "Fay 的大小模型协同工作逻辑：https://www.bilibili.com/video/BV1gXoNBrExv/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1R4oKBEEVm/",
+          "text": "https://www.bilibili.com/video/BV1R4oKBEEVm/"
+        }
+      ],
+      "text": "Fay 数字人解决方案(案例介绍：https://www.bilibili.com/video/BV1R4oKBEEVm/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1wPd8BtE2Y/",
+          "text": "https://www.bilibili.com/video/BV1wPd8BtE2Y/"
+        }
+      ],
+      "text": "fay的funasr的使用：https://www.bilibili.com/video/BV1wPd8BtE2Y/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1S3Q4BnEuh/",
+          "text": "https://www.bilibili.com/video/BV1S3Q4BnEuh/"
+        }
+      ],
+      "text": "内网多机连接fay使用：https://www.bilibili.com/video/BV1S3Q4BnEuh/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1vJDkBTEQ7/",
+          "text": "https://www.bilibili.com/video/BV1vJDkBTEQ7/"
+        }
+      ],
+      "text": "ue数字人启动：https://www.bilibili.com/video/BV1vJDkBTEQ7/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1enDkBiEoH/",
+          "text": "https://www.bilibili.com/video/BV1enDkBiEoH/"
+        }
+      ],
+      "text": "ue数字人工程编辑：https://www.bilibili.com/video/BV1enDkBiEoH/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1hbDkBcEh1/",
+          "text": "https://www.bilibili.com/video/BV1hbDkBcEh1/"
+        }
+      ],
+      "text": "开启MT5算法交易：https://www.bilibili.com/video/BV1hbDkBcEh1/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV188DkB8Emu/",
+          "text": "https://www.bilibili.com/video/BV188DkB8Emu/"
+        }
+      ],
+      "text": "Fay全新图文知识库说明：https://www.bilibili.com/video/BV188DkB8Emu/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1a4DkBaEub/",
+          "text": "https://www.bilibili.com/video/BV1a4DkBaEub/"
+        }
+      ],
+      "text": "Fay的多用户消息对话分发逻辑：https://www.bilibili.com/video/BV1a4DkBaEub/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1icDCBuEc8/",
+          "text": "https://www.bilibili.com/video/BV1icDCBuEc8/"
+        }
+      ],
+      "text": "fay多通道打断对话逻辑：https://www.bilibili.com/video/BV1icDCBuEc8/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1gXDCBeEQ6/",
+          "text": "https://www.bilibili.com/video/BV1gXDCBeEQ6/"
+        }
+      ],
+      "text": "Fay 的 think 标签处理逻辑：https://www.bilibili.com/video/BV1gXDCBeEQ6/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1ziDCBLEPZ/",
+          "text": "https://www.bilibili.com/video/BV1ziDCBLEPZ/"
+        }
+      ],
+      "text": "Fay 的 prestart 标签处理逻辑：https://www.bilibili.com/video/BV1ziDCBLEPZ/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1oqDCBCEXe/",
+          "text": "https://www.bilibili.com/video/BV1oqDCBCEXe/"
+        }
+      ],
+      "text": "easydeal小龙虾搭建教程：https://www.bilibili.com/video/BV1oqDCBCEXe/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1feDCB1ErG/",
+          "text": "https://www.bilibili.com/video/BV1feDCB1ErG/"
+        }
+      ],
+      "text": "easydeal fay版搭建教程：https://www.bilibili.com/video/BV1feDCB1ErG/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1nsXkBDEbN/",
+          "text": "https://www.bilibili.com/video/BV1nsXkBDEbN/"
+        }
+      ],
+      "text": "OfficeEcho功能介绍：https://www.bilibili.com/video/BV1nsXkBDEbN/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1jfXpBdEPV/",
+          "text": "https://www.bilibili.com/video/BV1jfXpBdEPV/"
+        }
+      ],
+      "text": "Live2D工程对接Fay数字人框架：https://www.bilibili.com/video/BV1jfXpBdEPV/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1q9Q2BWEb1/",
+          "text": "https://www.bilibili.com/video/BV1q9Q2BWEb1/"
+        }
+      ],
+      "text": "fay-course-builder技能使用指南：https://www.bilibili.com/video/BV1q9Q2BWEb1/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1RFQBBtEmD/",
+          "text": "https://www.bilibili.com/video/BV1RFQBBtEmD/"
+        }
+      ],
+      "text": "给fay搭建本地llm：https://www.bilibili.com/video/BV1RFQBBtEmD/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1XtXwBsEc6/",
+          "text": "https://www.bilibili.com/video/BV1XtXwBsEc6/"
+        }
+      ],
+      "text": "使用langsmith调试fay的prompt：https://www.bilibili.com/video/BV1XtXwBsEc6/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1AmAnzXETk/",
+          "text": "https://www.bilibili.com/video/BV1AmAnzXETk/"
+        }
+      ],
+      "text": "AIGC在线学习平台全景介绍：https://www.bilibili.com/video/BV1AmAnzXETk/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV12bwkznEUN/",
+          "text": "https://www.bilibili.com/video/BV12bwkznEUN/"
+        }
+      ],
+      "text": "Fay播放器使用指南：https://www.bilibili.com/video/BV12bwkznEUN/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1MDwezPECj/",
+          "text": "https://www.bilibili.com/video/BV1MDwezPECj/"
+        }
+      ],
+      "text": "OpenClaw:从工具到数字生命的进化之路：https://www.bilibili.com/video/BV1MDwezPECj/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV14UcZzfEbZ/",
+          "text": "https://www.bilibili.com/video/BV14UcZzfEbZ/"
+        }
+      ],
+      "text": "Fay安装教程：https://www.bilibili.com/video/BV14UcZzfEbZ/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV13ePQzdELG/",
+          "text": "https://www.bilibili.com/video/BV13ePQzdELG/"
+        }
+      ],
+      "text": "Fay 课程播放器使用指南：https://www.bilibili.com/video/BV13ePQzdELG/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/video/BV1Cqv8BGEsu/",
+          "text": "https://www.bilibili.com/video/BV1Cqv8BGEsu/"
+        }
+      ],
+      "text": "Fay数字人MCP知识库配置指南：https://www.bilibili.com/video/BV1Cqv8BGEsu/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 1814,
+  "last_scroll": {
+    "top": 873,
+    "height": 656,
+    "total": 1529
+  },
+  "captured_at": "2026-11-03T10:45:48.535Z"
+}

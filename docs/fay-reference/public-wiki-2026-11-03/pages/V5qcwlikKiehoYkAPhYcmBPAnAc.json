@@ -1,0 +1,247 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,1",
+  "title": "安装教程",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=V5qcwlikKiehoYkAPhYcmBPAnAc",
+  "x": 42,
+  "y": -377.5,
+  "token": "V5qcwlikKiehoYkAPhYcmBPAnAc",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/V5qcwlikKiehoYkAPhYcmBPAnAc",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 12,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "IDE：建议使用vscode！强烈不推荐pycharm！！！",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "一、线上镜像",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "\nhttps://www.compshare.cn/images/compshareImage-1cft3sk9gvta\nFay数字人-3.1.1一键部署 | 优云智算\nFay数字人3.1.1最小可运行版。fay是一个帮助数字人(2.5d、3d、移动、pc、网页)或大语言模型(openai兼容、deepseek)连通业务系统的mcp框架。\n",
+      "type": "block docx-bookmark-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "二、Release安装",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://pan.baidu.com/s/1J-W9PZQEMA49wXrWT1wOpA?pwd=kxca",
+          "text": "https://pan.baidu.com/s/1J-W9PZQEMA49wXrWT1wOpA?pwd=kxca"
+        }
+      ],
+      "text": "https://pan.baidu.com/s/1J-W9PZQEMA49wXrWT1wOpA?pwd=kxca",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "二、代码安装（推荐）",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-fallback-block fallback-async-iframe fallback-async-align-"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://player.fay-agent.com/?load=https%3A%2F%2Ffay-agent.com%2Fcourse%2Fcourse-fay%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.zip&course=course-1772786522595",
+          "text": "点击使用独立页面播放"
+        }
+      ],
+      "text": "点击使用独立页面播放",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "1、下载安装 python 3.12（可以考虑试用conda管理虚拟环境，同样是创建python3.12的虚拟环境）",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://gitee.com/xszyou/fay",
+          "text": "https://gitee.com/xszyou/fay"
+        }
+      ],
+      "text": "2、下载代码包：https://gitee.com/xszyou/fay",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "17",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "18",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "3.解压进入目录",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "21",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "4.安装依赖",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "点击路径栏-->输入cmd-->回车",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "24",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [],
+      "text": "输入 pip install -r requirments.txt 回车",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "26",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "5.运行",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "输入 python main.py start",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "29",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000",
+          "text": "http://127.0.0.1:5000"
+        }
+      ],
+      "text": "6.浏览器访问 http://127.0.0.1:5000进入管理界面",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "专业交流：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "32",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 531,
+  "captured_at": "2026-11-03T10:39:26.032Z"
+}

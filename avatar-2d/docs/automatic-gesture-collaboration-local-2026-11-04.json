@@ -1,0 +1,36 @@
+{
+  "status": "NATIVE_DUAL_COLLABORATION_PASSED",
+  "real_model_calls": false,
+  "cloud_calls": 0,
+  "native_mode": "dual",
+  "submit_ms": 0.865,
+  "background_thread": true,
+  "one_task_per_user": true,
+  "tool_calls": 1,
+  "same_conversation_callback": true,
+  "end_marker_written": true,
+  "result_consumed": true,
+  "final_reply": "测试通过，状态码为 DUAL_TEST_OK。",
+  "roles": [
+    {
+      "role": "big",
+      "streaming": false,
+      "model": "flash-placeholder",
+      "reasoning_effort": null,
+      "thinking": null
+    },
+    {
+      "role": "small",
+      "streaming": true,
+      "model": "flash-placeholder",
+      "reasoning_effort": null,
+      "thinking": null
+    }
+  ],
+  "total_seconds": 0.002,
+  "production_tools_registered": false,
+  "production_history_written": false,
+  "production_tts_called": false,
+  "scope": "Native execution manager and native completion callback; local read-only probe and isolated output sink",
+  "role_reasoning_verified": false
+}

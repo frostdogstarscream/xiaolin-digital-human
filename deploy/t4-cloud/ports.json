@@ -1,0 +1,13 @@
+{
+  "origin": "https://36.133.88.94:6443",
+  "ssh_external": 6025,
+  "https": 6443,
+  "turn": 6478,
+  "turn_fallback_transport": "tcp",
+  "relay_min": 10000,
+  "relay_max": 10049,
+  "ice_min": 10050,
+  "ice_max": 10099,
+  "approved_source_cidr": "120.195.55.128/28",
+  "approved_port_range": [6025, 10999]
+}

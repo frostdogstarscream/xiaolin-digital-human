@@ -1,0 +1,807 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,4",
+  "title": "MCP模块",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=LjUIwcXRmic1LHk5l57cK4NcnBd",
+  "x": 42,
+  "y": -305.5,
+  "token": "LjUIwcXRmic1LHk5l57cK4NcnBd",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/LjUIwcXRmic1LHk5l57cK4NcnBd",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 12,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:8765/sse",
+          "text": "http://127.0.0.1:8765/sse"
+        }
+      ],
+      "text": "2026/01/07升级：Fay支持向其它MCP客户端暴露自带及开启的工具： http://127.0.0.1:8765/sse",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "2025/12/31升级：修复mcp server进程管理的bug；修复不开启MCP工具无法使用预启动工具的bug。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "2025/12/17升级：支持预启动工具运行结果保存到记忆；预启动工具及llm可调用工具单独开关。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "2025/12/10升级：支持工具预启动，使用mcp工具重构知识库，补充窗口截图工具。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "2025/10/15升级：全新的工具调用机制，实现ai ide级的工具调用稳定性。（参考openai codex cli的实现逻辑）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "一、功能操作",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "添加、删除、连接、断开、刷新、管理、开关单独工具、支持工具预启动、支持向其它MCP客户端暴露自带及开启的工具",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "二、Fay内置MCP服务器",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "1、tools",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "功能：为fay提供常用工具",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "工具：add、echo、now、ping、upper",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "配置：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n        \"id\": 1,\n        \"name\": \"tools\",\n        \"ip\": \"\",\n        \"connection_time\": \"2025-12-10 20:52:40\",\n        \"key\": \"\",\n        \"transport\": \"stdio\",\n        \"command\": \"python\",\n        \"args\": [\n            \"test/mcp_stdio_example.py\"\n        ],\n        \"cwd\": \"\",\n        \"env\": {}\n    }\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "2、日程管理",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "功能：为fay提供日程管理功能，日程执行时会主动触发fay，以实现主动AI功能",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "工具：add_schedule、delete_schedule、get_schedules、send_message_to_fay、update_schedule",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5011",
+          "text": "http://127.0.0.1:5011"
+        }
+      ],
+      "text": "管理UI: http://127.0.0.1:5011 (fay连接mcp服务后就会自动启动此管理页面)",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "配置：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n        \"id\": 2,\n        \"name\": \"Fay日程管理\",\n        \"ip\": \"\",\n        \"connection_time\": \"2025-12-10 20:52:44\",\n        \"key\": \"\",\n        \"transport\": \"stdio\",\n        \"command\": \"python\",\n        \"args\": [\n            \"server.py\"\n        ],\n        \"cwd\": \"mcp_servers/schedule_manager\",\n        \"env\": {}\n    }\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "3、logseq",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [],
+      "text": "功能：连接logseq笔记工具，以实现个人笔记的管理及todo管理",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "工具：append_text_to_page、append_todo_to_page、create_page、get_pages_by_tag、save_asset、search_tag、search_text、update_task_status",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "配置：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n        \"id\": 3,\n        \"name\": \"logseq\",\n        \"ip\": \"\",\n        \"connection_time\": \"2025-12-10 20:52:46\",\n        \"key\": \"\",\n        \"transport\": \"stdio\",\n        \"command\": \"python\",\n        \"args\": [\n            \"server.py\"\n        ],\n        \"cwd\": \"mcp_servers/logseq\",\n        \"env\": {\n            \"LOGSEQ_GRAPH_DIR\": \"D:/iCloudDrive/iCloud~com~logseq~logseq/第二大脑\"\n        }\n    }\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "4、知识库",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/M5OewhhAliHYCWkUxP2cghPKn6b",
+          "text": "Yueshen RAG知识库"
+        }
+      ],
+      "text": "详见：\nYueshen RAG知识库",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "text": "配置：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n        \"id\": 4,\n        \"name\": \"yueshen rag\",\n        \"ip\": \"\",\n        \"connection_time\": \"2025-12-10 20:52:52\",\n        \"key\": \"\",\n        \"transport\": \"stdio\",\n        \"command\": \"C:\\\\Users\\\\Lenovo\\\\anaconda3\\\\envs\\\\rag\\\\python.exe\",\n        \"args\": [\n            \"mcp_servers/yueshen_rag/server.py\"\n        ],\n        \"cwd\": \"\",\n        \"env\": {\n            \"YUESHEN_CORPUS_DIR\":\"新知识库目录\",\n            \"YUESHEN_PERSIST_DIR\":\"cache_data/chromadb_yueshen\",\n            \"YUESHEN_AUTO_INGEST\": \"1\",\n            \"YUESHEN_AUTO_INTERVAL\": \"300\",\n            \"YUESHEN_AUTO_RESET_ON_START\": \"0\",\n            \"YUESHEN_EMBED_API_KEY\": \"sk-xxxx\",\n            \"YUESHEN_EMBED_BASE_URL\": \"https://api.siliconflow.cn/v1\",\n            \"YUESHEN_EMBED_MODEL\": \"Qwen/Qwen3-Embedding-8B\"\n        }\n    }\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "text": "5、窗口截图工具",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "Window Capture MCP Server",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "text": "功能：windows 窗口截图保存，本为量化交易agent截图保存当前盘面状态而设计的工具",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "工具：list_windows、capture_window",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "text": "配置：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "42",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nBash\n复制\n{\n        \"id\": 5,\n        \"name\": \"window capture\",\n        \"ip\": \"\",\n        \"connection_time\": \"2025-12-10 20:52:54\",\n        \"key\": \"\",\n        \"transport\": \"stdio\",\n        \"command\": \"python\",\n        \"args\": [\n            \"mcp_servers/window_capture/server.py\"\n        ],\n        \"cwd\": \"\",\n        \"env\": {}\n    }\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "44",
+      "images": 0,
+      "links": [],
+      "text": "三、获取更多的工具",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "45",
+      "images": 0,
+      "links": [],
+      "text": "1、github、gitee",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "text": "2、modelscope",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "text": "四、MCP 工具外部调用接口",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "49",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "text": "本文整理 Fay 内置 MCP 管理服务（默认端口 5010）的外部调用接口，覆盖 MCP 工具调用与预启用工具调用。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "51",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "52",
+      "images": 0,
+      "links": [],
+      "text": "基础信息",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "53",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "54",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5010",
+          "text": "http://127.0.0.1:5010"
+        }
+      ],
+      "text": "•\nBase URL: http://127.0.0.1:5010",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "55",
+      "images": 0,
+      "links": [],
+      "text": "•\nContent-Type: application/json",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "56",
+      "images": 0,
+      "links": [],
+      "text": "MCP 工具调用接口",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "57",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "58",
+      "images": 0,
+      "links": [],
+      "text": "调用指定服务器工具",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "59",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "60",
+      "images": 0,
+      "links": [],
+      "text": "POST /api/mcp/servers/{server_id}/call",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "61",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "62",
+      "images": 0,
+      "links": [],
+      "text": "请求体示例：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "63",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n  \"method\": \"tool_name\",\n  \"params\": {\n    \"key\": \"value\"\n  },\n  \"is_prestart\": false\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "64",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "65",
+      "images": 0,
+      "links": [],
+      "text": "说明：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "66",
+      "images": 0,
+      "links": [],
+      "text": "•\nis_prestart=true 会跳过工具启用状态检查（用于预启用调用）。",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "67",
+      "images": 0,
+      "links": [],
+      "text": "调用工具（自动选择在线服务器）",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "68",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "69",
+      "images": 0,
+      "links": [],
+      "text": "POST /api/mcp/tools/{tool_name}",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "70",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "71",
+      "images": 0,
+      "links": [],
+      "text": "请求体示例：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "72",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n  \"key\": \"value\"\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "73",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "74",
+      "images": 0,
+      "links": [],
+      "text": "获取指定服务器工具列表",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "75",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "76",
+      "images": 0,
+      "links": [],
+      "text": "GET /api/mcp/servers/{server_id}/tools",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "77",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "78",
+      "images": 0,
+      "links": [],
+      "text": "获取在线服务器工具列表（聚合）",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "79",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "80",
+      "images": 0,
+      "links": [],
+      "text": "GET /api/mcp/servers/online/tools",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "81",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "82",
+      "images": 0,
+      "links": [],
+      "text": "预启用工具调用接口",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "83",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "84",
+      "images": 0,
+      "links": [],
+      "text": "配置预启用工具",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "85",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "86",
+      "images": 0,
+      "links": [],
+      "text": "POST /api/mcp/servers/{server_id}/tools/{tool_name}/prestart",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "87",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "88",
+      "images": 0,
+      "links": [],
+      "text": "请求体示例：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "89",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n  \"enabled\": true,\n  \"params\": {\n    \"query\": \"{{question}}\"\n  },\n  \"include_history\": true,\n  \"allow_function_call\": false\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "90",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "91",
+      "images": 0,
+      "links": [],
+      "text": "获取可运行的预启用工具列表",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "92",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "93",
+      "images": 0,
+      "links": [],
+      "text": "GET /api/mcp/prestart/runnable",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "94",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "95",
+      "images": 0,
+      "links": [],
+      "text": "调用单个预启用工具（自动连接服务器）",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "96",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "97",
+      "images": 0,
+      "links": [],
+      "text": "POST /api/mcp/servers/{server_id}/prestart/{tool_name}/call",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "98",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "99",
+      "images": 0,
+      "links": [],
+      "text": "请求体示例：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "100",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n  \"params\": {\n    \"query\": \"{{question}}\"\n  },\n  \"question\": \"用户问题\",\n  \"keep_connection\": true\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "101",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "102",
+      "images": 0,
+      "links": [],
+      "text": "批量调用所有预启用工具（自动连接服务器）",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "103",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "104",
+      "images": 0,
+      "links": [],
+      "text": "POST /api/mcp/prestart/call",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "105",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "106",
+      "images": 0,
+      "links": [],
+      "text": "请求体示例：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "107",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n  \"question\": \"用户问题\",\n  \"keep_connection\": true,\n  \"server_ids\": [1, 2],\n  \"tool_names\": [\"tool_a\", \"tool_b\"]\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "108",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "109",
+      "images": 0,
+      "links": [],
+      "text": "说明：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "110",
+      "images": 0,
+      "links": [],
+      "text": "•\nquestion 必填，用于替换 params 中的 {{question}} 占位符。",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "111",
+      "images": 0,
+      "links": [],
+      "text": "•\nserver_ids 与 tool_names 为空时表示对全部预启用工具生效。",
+      "type": "block docx-bullet-block"
+    }
+  ],
+  "chars": 4378,
+  "captured_at": "2026-11-03T10:40:46.872Z"
+}

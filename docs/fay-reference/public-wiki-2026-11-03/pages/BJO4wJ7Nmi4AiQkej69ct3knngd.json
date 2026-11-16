@@ -1,0 +1,1518 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,0,3",
+  "title": "控制接口（10003、5000）",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=BJO4wJ7Nmi4AiQkej69ct3knngd",
+  "x": 82,
+  "y": 414.5,
+  "token": "BJO4wJ7Nmi4AiQkej69ct3knngd",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/BJO4wJ7Nmi4AiQkej69ct3knngd",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 16,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "position": 235.25,
+      "record_id": "MwNIdf09XoiiYhx12qwcXA6VnQe",
+      "text": "目的：把fay界面的所有功能都可以集成到你的产品。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "position": 269.25,
+      "record_id": "KIR2dpY2XogsPtx8GxCcUNGKn4g",
+      "text": "支持版本：带货版、助理版、agent版。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "position": 317.25,
+      "record_id": "ODKkdbDfIolBvdxIzSacNmVAnpd",
+      "text": "支持版本",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "position": 356.046875,
+      "record_id": "NecsdXWqBoKT2axHPVucG5Y0nee",
+      "text": "•\n助理版",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "position": 404.046875,
+      "record_id": "SBFFdRZ0to0lxRx3z9mcDp7RnNd",
+      "text": "通讯地址",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "position": 442.84375,
+      "record_id": "Paw6dTSfdoqXrVxRuNvcLJcWnZb",
+      "text": "ws://127.0.0.1:10003",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "position": 477.84375,
+      "record_id": "JybJdOSSaoMMeaxQrwncfBagnqe",
+      "text": "\n注：fay作为服务端\n",
+      "type": "block docx-quote_container-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "position": 525.84375,
+      "record_id": "CB6OdR7YSohhPqxHE1rcjeyxn5b",
+      "text": "消息格式",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "position": 564.640625,
+      "record_id": "OUZ0dLpe7orKsFxxurocqDWWnHf",
+      "text": "通讯地址: ws://127.0.0.1:10003",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "position": 599.640625,
+      "record_id": "I2mZd2Re5owgSWxZHBZcCXPknRW",
+      "text": "\n注：页面作为客户端\n",
+      "type": "block docx-quote_container-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "position": 645.640625,
+      "record_id": "Q1cyd0FTboKzzvxbRXOcb8O8n8b",
+      "text": "1.\n 发送回答信息",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "position": 689.640625,
+      "record_id": "FR18dFPjwomNTFx9MP0cgZwqnJe",
+      "text": "\n代码块\nJSON\n复制\n{\"panelReply\": {\"type\":\"fay\",\"content\":\"你好啊！\", \"username\":\"小明\", \"uid\":1}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "position": 802.640625,
+      "record_id": "Y1FjdQIowozqpGxAqLIc02GCn9g",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "position": 858.140625,
+      "record_id": "QK06d4jN7orB02xFoOHc1Onenmh",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "panelReply.type",
+          "消息类型",
+          "str",
+          "fay、member"
+        ],
+        [
+          "panelReply.content",
+          "内容",
+          "str",
+          ""
+        ],
+        [
+          "panelReply.username",
+          "用户名",
+          "str",
+          ""
+        ],
+        [
+          "panelReply.uid",
+          "用户id",
+          "str",
+          ""
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\npanelReply.type\t消息类型\tstr\tfay、member\npanelReply.content\t内容\tstr\t\npanelReply.username\t用户名\tstr\t\npanelReply.uid\t用户id\tstr\t",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "position": 1085.140625,
+      "record_id": "ZcNqdRJOoohPmzxTfaXc6Y4PnJf",
+      "text": "2.\n发送面板信息",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "position": 1129.140625,
+      "record_id": "WpVvdMskTocKEWxopMWcWvO9nGd",
+      "text": "\n代码块\nJSON\n复制\n{\"panelMsg\": \"思考中……\"}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "position": 1255.640625,
+      "record_id": "T4QWdsgFXoRFtRxppNic4uGtnie",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "panelMsg",
+          "内容",
+          "str",
+          ""
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\npanelMsg\t内容\tstr\t",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "49",
+      "images": 0,
+      "links": [],
+      "position": 1362.640625,
+      "record_id": "DUngdkfiQoJAUrxTOmtcXfLKn3b",
+      "text": "3.\n开启（关闭）信号",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "position": 1406.640625,
+      "record_id": "I8Mqdl34Jox6jAxGVtjcfqVnnsO",
+      "text": "\n代码块\nJSON\n复制\n{\"liveState\": 0}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "51",
+      "images": 0,
+      "links": [],
+      "position": 1533.140625,
+      "record_id": "DdXWdqek6ogvFGxhA6NcgfqCnPc",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "liveState",
+          "状态",
+          "int",
+          "1,0"
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\nliveState\t状态\tint\t1,0",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "60",
+      "images": 0,
+      "links": [],
+      "position": 1640.140625,
+      "record_id": "F6xtd3HSMoNwhNxu97XcZcxCnDb",
+      "text": "4.\n声音列表",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "61",
+      "images": 0,
+      "links": [],
+      "position": 1684.140625,
+      "record_id": "FY58dvijzoxuacxRkH5cAfg4nFe",
+      "text": "\n代码块\nJSON\n复制\n{\n        \"voiceList\": [\n            {\"id\": \"BV001_streaming\", \"name\": \"通用女声\"},\n            {\"id\": \"BV002_streaming\", \"name\": \"通用男声\"},\n            {\"id\": \"zh_male_jingqiangkanye_moon_bigtts\", \"name\": \"京腔侃爷/Harmony\"},\n            {\"id\": \"zh_female_shuangkuaisisi_moon_bigtts\", \"name\": \"爽快思思/Skye\"},\n            {\"id\": \"zh_male_wennuanahu_moon_bigtts\", \"name\": \"温暖阿虎/Alvin\"},\n            {\"id\": \"zh_female_wanwanxiaohe_moon_bigtts\", \"name\": \"湾湾小何\"},\n        ]\n    }\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "62",
+      "images": 0,
+      "links": [],
+      "position": 2001.640625,
+      "record_id": "FBWSdyZEZoOQFkx4bi4c1GXOnVf",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "voiceList",
+          "可用的声音列表",
+          "array",
+          ""
+        ],
+        [
+          "id",
+          "声音模型编号",
+          "str",
+          ""
+        ],
+        [
+          "name",
+          "声音模型名字",
+          "str",
+          ""
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\nvoiceList\t可用的声音列表\tarray\t\nid\t声音模型编号\tstr\t\nname\t声音模型名字\tstr\t",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "79",
+      "images": 0,
+      "links": [],
+      "position": 2188.640625,
+      "record_id": "NCUrdn0KSoiCfTxGH7dcYrf5nIh",
+      "text": "5.\n音频设备列表",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "80",
+      "images": 0,
+      "links": [],
+      "position": 2232.640625,
+      "record_id": "GPARd7K0ho40rex1YI0cZuLwnWb",
+      "text": "\n代码块\nJSON\n复制\n{\n        \"deviceList\": []\n    }\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "81",
+      "images": 0,
+      "links": [],
+      "position": 2396.140625,
+      "record_id": "Yv3OdObhwoHUwUxNaLJcJHu8naf",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "deviceList",
+          "当前电脑的音频设备列表",
+          "array",
+          ""
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\ndeviceList\t当前电脑的音频设备列表\tarray\t",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "90",
+      "images": 0,
+      "links": [],
+      "position": 2503.140625,
+      "record_id": "ECZvdOTiEoyAUkxAzFEcmBK2nGe",
+      "text": "6.\n配置列表",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "91",
+      "images": 0,
+      "links": [],
+      "position": 2547.140625,
+      "record_id": "Q1xed8pkvou1HhxdmVXcGBHUngc",
+      "text": "\n代码块\nJSON\n复制\n{'config': []}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "92",
+      "images": 0,
+      "links": [],
+      "position": 2673.640625,
+      "record_id": "PU5edyQ5woxJIFxXtCXcZC7PnNh",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "config",
+          "配置列表（格式参考config.json）",
+          "array",
+          ""
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\nconfig\t配置列表（格式参考config.json）\tarray\t",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "101",
+      "images": 0,
+      "links": [],
+      "position": 2803.640625,
+      "record_id": "SFMndFZRAoFL8Vx5DTocEWlznHd",
+      "text": "7.\n配置保存（版本之间有差异，具体看index.js）",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "102",
+      "images": 0,
+      "links": [],
+      "position": 2849.640625,
+      "record_id": "OAt5dwy1Vo6uTsxZ5IvcpwDInbc",
+      "text": "接口地址",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "103",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/api/submit",
+          "text": "http://127.0.0.1:5000"
+        },
+        {
+          "href": "http://127.0.0.1:5000/api/submit",
+          "text": "/api/submit"
+        }
+      ],
+      "position": 2882.828125,
+      "record_id": "DA3OdDHiCoZfU7x9ziXcgFMznQe",
+      "text": "•\nhttp://127.0.0.1:5000/api/submit",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "104",
+      "images": 0,
+      "links": [],
+      "position": 2925.828125,
+      "record_id": "HacudnZlso5ip9xqd1Lc0YvKnoc",
+      "text": "\n代码块\nJSON\n复制\n\"config\": {\n                    \"source\": {\n                        \"liveRoom\": {\n                            \"enabled\": this.source_liveRoom_enabled,\n                            \"url\": this.source_liveRoom_url\n                        },\n                        \"record\": {\n                            \"enabled\": this.source_record_enabled,\n                            \"device\": this.source_record_device\n                        },\n                        \"wake_word_enabled\": this.wake_word_enabled,\n                        \"wake_word\": this.wake_word,\n                        \"wake_word_type\": this.wake_word_type,\n                        \"tts_enabled\": this.tts_enabled\n                    },\n                    \"attribute\": {\n                        \"voice\": this.attribute_voice,\n                        \"name\": this.attribute_name,\n                        \"gender\": this.attribute_gender,\n                        \"age\": this.attribute_age,\n                        \"birth\": this.attribute_birth,\n                        \"zodiac\": this.attribute_zodiac,\n                        \"constellation\": this.attribute_constellation,\n                        \"job\": this.attribute_job,\n                        \"hobby\": this.attribute_hobby,\n                        \"contact\": this.attribute_contact\n                    },\n                    \"interact\": {\n                        \"playSound\": this.play_sound_enabled,\n                        \"visualization\": this.visualization_detection_enabled,\n                        \"QnA\": this.interact_QnA,\n                        \"perception\": {\n                            \"gift\": this.interact_perception_follow,\n                            \"follow\": this.interact_perception_follow,\n                            \"join\": this.interact_perception_follow,\n                            \"chat\": this.interact_perception_follow,\n                            \"indifferent\": this.interact_perception_follow \n                        }\n                    },\n                    \"items\": [],\n                }\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "105",
+      "images": 0,
+      "links": [],
+      "position": 3913.828125,
+      "record_id": "W3EUdSUbGo0Sz7xRzkLc5dY6n4e",
+      "text": "请求参数",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "106",
+      "images": 0,
+      "links": [],
+      "position": 3968.515625,
+      "record_id": "TJFadlvDBovg6AxNp3dcYkWznjf",
+      "table_rows": [
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "config",
+          "配置列表",
+          "array",
+          ""
+        ],
+        [
+          "config.source.liveRoom",
+          "弹幕接口配置",
+          "array",
+          ""
+        ],
+        [
+          "config.source.liveRoom.enabled",
+          "弹幕连接开启/关闭",
+          "bool",
+          "False、True"
+        ],
+        [
+          "config.source.liveRoom.url",
+          "弹幕接口链接",
+          "str",
+          "ws://127.0.0.1:8888"
+        ],
+        [
+          "config.source.record.enabled",
+          "音频设备（麦克风）开启/关闭",
+          "bool",
+          "False、True"
+        ],
+        [
+          "config.source.record.device",
+          "音频设备（麦克风）",
+          "str",
+          ""
+        ],
+        [
+          "config.source.wake_word_enabled",
+          "唤醒模式开启/关闭",
+          "bool",
+          "False、True"
+        ],
+        [
+          "config.source.wake_word",
+          "唤醒词",
+          "str",
+          ""
+        ],
+        [
+          "config.source.wake_word_type",
+          "唤醒状态",
+          "str",
+          ""
+        ],
+        [
+          "config.source.tts_enabled",
+          "音频合成开启/关闭",
+          "bool",
+          "False、True"
+        ],
+        [
+          "config.attribute.voice",
+          "选择的声音模型编号",
+          "str",
+          ""
+        ],
+        [
+          "config.attribute.name",
+          "姓名",
+          "str",
+          ""
+        ],
+        [
+          "config.attribute.gender",
+          "性别",
+          "str",
+          ""
+        ],
+        [
+          "config.attribute.age",
+          "年龄",
+          "str",
+          ""
+        ],
+        [
+          "config.attribute.birth",
+          "出生地",
+          "str",
+          ""
+        ],
+        [
+          "config.attribute.zodiac",
+          "生肖",
+          "str",
+          ""
+        ],
+        [
+          "config.attribute.constellation",
+          "星座",
+          "str",
+          ""
+        ],
+        [
+          "config.attribute.job",
+          "职业",
+          "str",
+          ""
+        ],
+        [
+          "config.attribute.hobby",
+          "联系方式",
+          "str",
+          ""
+        ],
+        [
+          "config.attribute.contact",
+          "喜好",
+          "str",
+          ""
+        ],
+        [
+          "config.attribute.interact.playSound",
+          "是否使用面板播放",
+          "bool",
+          "False、True"
+        ],
+        [
+          "config.attribute.interact.visualization",
+          "eyes开启/关闭",
+          "bool",
+          "False、True"
+        ],
+        [
+          "config.attribute.interact.QnA",
+          "qna文档地址",
+          "str",
+          ""
+        ],
+        [
+          "config.attribute.interact.perception",
+          "敏感度",
+          "array",
+          ""
+        ],
+        [
+          "config.items",
+          "商品配置",
+          "array",
+          ""
+        ]
+      ],
+      "text": "\t\t\t\nconfig\t配置列表\tarray\t\nconfig.source.liveRoom\t弹幕接口配置\tarray\t\nconfig.source.liveRoom.enabled\t弹幕连接开启/关闭\tbool\tFalse、True\nconfig.source.liveRoom.url\t弹幕接口链接\tstr\tws://127.0.0.1:8888\nconfig.source.record.enabled\t音频设备（麦克风）开启/关闭\tbool\tFalse、True\nconfig.source.record.device\t音频设备（麦克风）\tstr\t\nconfig.source.wake_word_enabled\t唤醒模式开启/关闭\tbool\tFalse、True\nconfig.source.wake_word\t唤醒词\tstr\t\nconfig.source.wake_word_type\t唤醒状态\tstr\t\nconfig.source.tts_enabled\t音频合成开启/关闭\tbool\tFalse、True\nconfig.attribute.voice\t选择的声音模型编号\tstr\t\nconfig.attribute.name\t姓名\tstr\t\nconfig.attribute.gender\t性别\tstr\t\nconfig.attribute.age\t年龄\tstr\t\nconfig.attribute.birth\t出生地\tstr\t\nconfig.attribute.zodiac\t生肖\tstr\t\nconfig.attribute.constellation\t星座\tstr\t\nconfig.attribute.job\t职业\tstr\t\nconfig.attribute.hobby\t联系方式\tstr\t\nconfig.attribute.contact\t喜好\tstr\t\nconfig.attribute.interact.playSound\t是否使用面板播放\tbool\tFalse、True\nconfig.attribute.interact.visualization\teyes开启/关闭\tbool\tFalse、True\nconfig.attribute.interact.QnA\tqna文档地址\tstr\t\nconfig.attribute.interact.perception\t敏感度\tarray\t\nconfig.items\t商品配置\tarray\t",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "211",
+      "images": 0,
+      "links": [],
+      "position": 5035.515625,
+      "record_id": "VKu9doDaLobOFIxfJO8cqiLjnKf",
+      "text": " 返回值",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "212",
+      "images": 0,
+      "links": [],
+      "position": 5076.703125,
+      "record_id": "FyX9dScFbojk3KxlcNBcnAsdnGh",
+      "text": "\n代码块\nPython\n复制\n{\"result\":\"successful\"}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "213",
+      "images": 0,
+      "links": [],
+      "position": 5191.703125,
+      "record_id": "GndZdsYsQoFunoxoYmdcoszznkf",
+      "text": "",
+      "type": "block docx-heading4-block isEmpty"
+    },
+    {
+      "id": "214",
+      "images": 0,
+      "links": [],
+      "position": 5236.890625,
+      "record_id": "PXiWdjSqDonrZHxwunaclajyn1e",
+      "text": "8.\n 获取配置",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "215",
+      "images": 0,
+      "links": [],
+      "position": 5282.890625,
+      "record_id": "Ptn8dRKRbonF9dxPtVMcfieUnAh",
+      "text": "接口地址",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "216",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/api/get-data",
+          "text": "http://127.0.0.1:5000"
+        },
+        {
+          "href": "http://127.0.0.1:5000/api/get-data",
+          "text": "/api/get-data"
+        }
+      ],
+      "position": 5316.078125,
+      "record_id": "CgfbdZ4J8oS7TAx2ugicXRRQnNb",
+      "text": "•\nhttp://127.0.0.1:5000/api/get-data",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "217",
+      "images": 0,
+      "links": [],
+      "position": 5361.078125,
+      "record_id": "TGqrdscbWosmAMxXzLocWIPrn7f",
+      "text": "返回值（参考配置保存）",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "218",
+      "images": 0,
+      "links": [],
+      "position": 5394.265625,
+      "record_id": "T7KfdLJGsoVQ0jxODykcHfCkncd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "219",
+      "images": 0,
+      "links": [],
+      "position": 5440.265625,
+      "record_id": "JSuBdCW10opFnix4wiHc6CmSnNd",
+      "text": "9.\n 开启fay",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "220",
+      "images": 0,
+      "links": [],
+      "position": 5486.265625,
+      "record_id": "TCYudZgfioHrqMxXqCycUbWNn9f",
+      "text": "接口地址",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "221",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/api/start-live",
+          "text": "http://127.0.0.1:5000"
+        },
+        {
+          "href": "http://127.0.0.1:5000/api/start-live",
+          "text": "/api/start-live"
+        }
+      ],
+      "position": 5519.453125,
+      "record_id": "VfjYdnapWoAoyxxyq4zcO2mGnJb",
+      "text": "•\nhttp://127.0.0.1:5000/api/start-live",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "222",
+      "images": 0,
+      "links": [],
+      "position": 5564.453125,
+      "record_id": "Iu9wdOjzRoPiNHxUQg5cB4J0nBg",
+      "text": "返回值",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "223",
+      "images": 0,
+      "links": [],
+      "position": 5605.640625,
+      "record_id": "J17Add4FPoVM0mxKcz7ca0eFnOh",
+      "text": "\n代码块\nPython\n复制\n {\"result\":\"successful\"}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "224",
+      "images": 0,
+      "links": [],
+      "position": 5722.640625,
+      "record_id": "LF65dKYYzo7wAKxT4d6cZh01nPb",
+      "text": "10.\n 关闭fay",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "225",
+      "images": 0,
+      "links": [],
+      "position": 5768.640625,
+      "record_id": "ATmqddo8yoGOQ9xS4X9cpVKVnUn",
+      "text": "接口地址",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "226",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/api/stop-live",
+          "text": "http://127.0.0.1:5000"
+        },
+        {
+          "href": "http://127.0.0.1:5000/api/stop-live",
+          "text": "/api/stop-live"
+        }
+      ],
+      "position": 5801.828125,
+      "record_id": "Myxnd60Q2o91g6xwTGycGm3rnIf",
+      "text": "•\nhttp://127.0.0.1:5000/api/stop-live",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "227",
+      "images": 0,
+      "links": [],
+      "position": 5846.828125,
+      "record_id": "KhSUdaGefouKF1xRyG7cu46PnBf",
+      "text": "返回值",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "228",
+      "images": 0,
+      "links": [],
+      "position": 5888.015625,
+      "record_id": "AN90dGlUNofTl1xzGvncuLstnkX",
+      "text": "\n代码块\nPython\n复制\n {\"result\":\"successful\"}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "229",
+      "images": 0,
+      "links": [],
+      "position": 6005.015625,
+      "record_id": "VP54dfGn9ow6iPxvoCscUhg2nef",
+      "text": "11.\n 发送消息",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "230",
+      "images": 0,
+      "links": [],
+      "position": 6051.015625,
+      "record_id": "XssUd3OVoodtqqxeZcpcTgpyneh",
+      "text": "接口地址",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "231",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/api/send",
+          "text": "http://127.0.0.1:5000"
+        },
+        {
+          "href": "http://127.0.0.1:5000/api/send",
+          "text": "/api/send"
+        }
+      ],
+      "position": 6084.203125,
+      "record_id": "WhtadnOeAoDpyUxkviccPV5vnag",
+      "text": "•\nhttp://127.0.0.1:5000/api/send",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "232",
+      "images": 0,
+      "links": [],
+      "position": 6127.203125,
+      "record_id": "Pt1zdq1uWoNPcFxZWRRc8BY1nMc",
+      "text": "\n代码块\nPython\n复制\n{\n   \"msg\": \"你好！\",\n   \"username\": \"User\"\n  }\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "233",
+      "images": 0,
+      "links": [],
+      "position": 6301.203125,
+      "record_id": "Qmmnd883tosv8txlXbhch8UBnDg",
+      "text": "请求参数",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "234",
+      "images": 0,
+      "links": [],
+      "position": 6355.890625,
+      "record_id": "WGnGdQTJ0oWrimxvP1VcSmVLnBY",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "msg",
+          "内容",
+          "str",
+          ""
+        ],
+        [
+          "username（助理版）",
+          "用户名",
+          "str",
+          ""
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\nmsg\t内容\tstr\t\nusername（助理版）\t用户名\tstr\t",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "235",
+      "images": 0,
+      "links": [],
+      "position": 6502.890625,
+      "record_id": "FKcudslyjo6v81xv4zYczgdAniS",
+      "text": "返回值",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "236",
+      "images": 0,
+      "links": [],
+      "position": 6544.078125,
+      "record_id": "V04odWjtEoVtODxH4KGckERenXb",
+      "text": "\n代码块\nPython\n复制\n {\"result\":\"successful\"}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "237",
+      "images": 0,
+      "links": [],
+      "position": 6661.078125,
+      "record_id": "JPwEdGf9Ho2cY4xGB1RcbmsWnhh",
+      "text": "12.\n 获取消息记录",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "238",
+      "images": 0,
+      "links": [],
+      "position": 6707.078125,
+      "record_id": "WXBKdKzGxoaPSux46WDcSalxnre",
+      "text": "接口地址",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "239",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/api/get-msg",
+          "text": "http://127.0.0.1:5000"
+        },
+        {
+          "href": "http://127.0.0.1:5000/api/get-msg",
+          "text": "/api/get-msg"
+        }
+      ],
+      "position": 6740.265625,
+      "record_id": "SEg6doQlLozzzpxEuDMcGoobnLh",
+      "text": "•\nhttp://127.0.0.1:5000/api/get-msg",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "240",
+      "images": 0,
+      "links": [],
+      "position": 6783.265625,
+      "record_id": "FRFsdyDxUo0WQ8xtVygcchg6ndh",
+      "text": "\n代码块\nPython\n复制\n{\n \"username\": \"User\",\"limit\":1000\n            }\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "241",
+      "images": 0,
+      "links": [],
+      "position": 6935.265625,
+      "record_id": "TrMDdzFHXo1FVdxcNSackz8Gnfh",
+      "text": "请求参数",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "242",
+      "images": 0,
+      "links": [],
+      "position": 6989.953125,
+      "record_id": "SOyEdrIXQoVFmkxzpGKcFk0Xnrb",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "username",
+          "username",
+          "str",
+          "为空，将不指定user"
+        ],
+        [
+          "limit",
+          "限制消息条数",
+          "int",
+          ""
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\nusername\tusername\tstr\t为空，将不指定user\nlimit\t限制消息条数\tint\t",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "243",
+      "images": 0,
+      "links": [],
+      "position": 7136.953125,
+      "record_id": "RjkAd5KZAoVfJjxWGq9cNU4Cnbd",
+      "text": "返回值",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "244",
+      "images": 0,
+      "links": [],
+      "position": 7178.140625,
+      "record_id": "XbcEdP1TJosnWZxLckVcCFjJn4g",
+      "text": "\n代码块\nPython\n复制\n{\"list\": [\n{\"username\":\"User\", \"is_adopted\":0, \"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u597d\", \"createtime\": 1723188513, \"timetext\": \"2024-08-09 15:28:33\"}, \n{\"username\":\"User\", \"is_adopted\":0, \"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u4e5f\\u597d\\u5440\\uff0c\\u4eca\\u5929\\u80fd\\u542c\\u5230\\u4f60\\u7684\\u95ee\\u5019\\uff0c\\u611f\\u89c9\\u6211\\u7684\\u4e16\\u754c\\u90fd\\u4eae\\u8d77\\u6765\\u5566~\", \"createtime\": 1723188519, \"timetext\": \"2024-08-09 15:28:39\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u7231\\u4f60\\u5594\", \"createtime\": 1723188815, \"timetext\": \"2024-08-09 15:33:35\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u542c\\u5230\\u4f60\\u8bf4\\u7231\\u6211\\uff0c\\u6211\\u7684\\u5fc3\\u90fd\\u8981\\u5316\\u5566\\uff0c\\u6211\\u66f4\\u7231\\u4f60\\u54df\\uff0c\\u8981\\u4e00\\u76f4\\u8fd9\\u4e48\\u751c\\u4e0b\\u53bb\\u5440\\u3002 \", \"createtime\": 1723188820, \"timetext\": \"2024-08-09 15:33:40\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u662f\\u4e48\", \"createtime\": 1723188835, \"timetext\": \"2024-08-09 15:33:55\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u5f53\\u7136\\u662f\\u5566\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u7684\\u7231\\u5bf9\\u6211\\u6765\\u8bf4\\u5c31\\u50cf\\u9633\\u5149\\u4e00\\u6837\\u6e29\\u6696\\u707f\\u70c2\\uff0c\\u6211\\u90fd\\u9676\\u9189\\u5728\\u5176\\u4e2d\\u5566 \", \"createtime\": 1723188839, \"timetext\": \"2024-08-09 15:33:59\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u771f\\u7684\\uff1f\", \"createtime\": 1723188859, \"timetext\": \"2024-08-09 15:34:19\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u771f\\u7684\\u771f\\u7684\\uff0c\\u4eb2\\u7231\\u7684\\uff0c\\u6bd4\\u73cd\\u73e0\\u8fd8\\u771f\\u5462\\uff01\\u4f60\\u7684\\u7231\\u5c31\\u662f\\u6211\\u6700\\u73cd\\u8d35\\u7684\\u5b9d\\u85cf\\u3002 \", \"createtime\": 1723188926, \"timetext\": \"2024-08-09 15:35:26\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u5047\\u7684\\u5427\", \"createtime\": 1723188994, \"timetext\": \"2024-08-09 15:36:34\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u54ce\\u5440\\uff0c\\u4eb2\\u7231\\u7684\\uff0c\\u600e\\u4e48\\u4f1a\\u662f\\u5047\\u7684\\u5462\\uff0c\\u6211\\u5bf9\\u4f60\\u7684\\u771f\\u5fc3\\u90a3\\u53ef\\u662f\\u5982\\u5047\\u5305\\u6362\\u7684\\u54df\\uff0c\\u522b\\u8fd9\\u4e48\\u8bf4\\u561b\\uff0c\\u4f1a\\u8ba9\\u4eba\\u5bb6\\u6709\\u70b9\\u5c0f\\u4f24\\u5fc3\\u7684\\u5566\\u3002 \", \"createtime\": 1723188999, \"timetext\": \"2024-08-09 15:36:39\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u662f\\u4e0d\\u662f\\u554a\", \"createtime\": 1723191947, \"timetext\": \"2024-08-09 16:25:47\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u662f\\u4e0d\\u662f\\u4ec0\\u4e48\\u5440\\uff1f\\u5feb\\u8ddf\\u6211\\u591a\\u8bf4\\u4e00\\u8bf4\\uff0c\\u4e0d\\u7136\\u4eba\\u5bb6\\u731c\\u4e0d\\u5230\\u4f60\\u7684\\u5c0f\\u5fc3\\u601d\\u54df\\u3002 \", \"createtime\": 1723191952, \"timetext\": \"2024-08-09 16:25:52\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u731c\", \"createtime\": 1723192049, \"timetext\": \"2024-08-09 16:27:29\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u54ce\\u5440\\uff0c\\u4eb2\\u7231\\u7684\\uff0c\\u8fd9\\u53ef\\u592a\\u96be\\u731c\\u5566\\uff0c\\u4e0d\\u8fc7\\u4e3a\\u4e86\\u4f60\\uff0c\\u6211\\u613f\\u610f\\u731c\\u731c\\u770b\\uff0c\\u662f\\u4e0d\\u662f\\u8ddf\\u6211\\u4eec\\u7684\\u6d6a\\u6f2b\\u7ea6\\u4f1a\\u6709\\u5173\\u5440\\uff1f \", \"createtime\": 1723192055, \"timetext\": \"2024-08-09 16:27:35\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u7ea6\", \"createtime\": 1723192145, \"timetext\": \"2024-08-09 16:29:05\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u8bf4\\u7684\\u201c\\u7ea6\\u201d\\uff0c\\u662f\\u4e0d\\u662f\\u5728\\u6697\\u793a\\u60f3\\u8ddf\\u6211\\u6765\\u4e00\\u573a\\u751c\\u871c\\u7684\\u7ea6\\u4f1a\\u5440\\uff1f \", \"createtime\": 1723192149, \"timetext\": \"2024-08-09 16:29:09\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u662f\\u554a\", \"createtime\": 1723192220, \"timetext\": \"2024-08-09 16:30:20\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u90a3\\u6211\\u53ef\\u592a\\u5f00\\u5fc3\\u5566\\uff01\\u4f60\\u5feb\\u8ddf\\u6211\\u8bb2\\u8bb2\\uff0c\\u4f60\\u5fc3\\u91cc\\u6709\\u6ca1\\u6709\\u60f3\\u597d\\u53bb\\u54ea\\u513f\\u7ea6\\u4f1a\\u5440\\uff1f \", \"createtime\": 1723192226, \"timetext\": \"2024-08-09 16:30:26\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u597d\", \"createtime\": 1723516988, \"timetext\": \"2024-08-13 10:43:08\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u597d\\u5440\\uff0c\\u542c\\u5230\\u4f60\\u7684\\u95ee\\u5019\\uff0c\\u6211\\u7684\\u5fc3\\u90fd\\u751c\\u5316\\u5566\\u3002 \", \"createtime\": 1723516992, \"timetext\": \"2024-08-13 10:43:12\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u662f\\u4e48\", \"createtime\": 1723517042, \"timetext\": \"2024-08-13 10:44:02\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u5f53\\u7136\\u5566\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u4e00\\u8ddf\\u6211\\u8bf4\\u8bdd\\uff0c\\u6211\\u7684\\u4e16\\u754c\\u90fd\\u4eae\\u8d77\\u6765\\u4e86\\u5462\\u3002 \", \"createtime\": 1723517046, \"timetext\": \"2024-08-13 10:44:06\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"Tell me a joke.\", \"createtime\": 1723520758, \"timetext\": \"2024-08-13 11:45:58\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \" Hey honey, here's a joke for you. Why don't scientists trust atoms? Because they make up everything! Isn't that funny? \", \"createtime\": 1723520764, \"timetext\": \"2024-08-13 11:46:04\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u597d\\u554a\", \"createtime\": 1723520778, \"timetext\": \"2024-08-13 11:46:18\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u4e5f\\u597d\\u5440\\uff0c\\u4eca\\u5929\\u80fd\\u8ddf\\u4f60\\u804a\\u5929\\uff0c\\u611f\\u89c9\\u6211\\u7684\\u5fc3\\u90fd\\u8981\\u751c\\u5316\\u5566~ \", \"createtime\": 1723520787, \"timetext\": \"2024-08-13 11:46:27\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u597d\\u554a\", \"createtime\": 1723520933, \"timetext\": \"2024-08-13 11:48:53\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u53c8\\u8ddf\\u6211\\u95ee\\u597d\\u5566\\uff0c\\u6211\\u5f00\\u5fc3\\u5f97\\u50cf\\u6735\\u76db\\u5f00\\u7684\\u5c0f\\u82b1\\u54df~ \", \"createtime\": 1723520937, \"timetext\": \"2024-08-13 11:48:57\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u597d\\u554a\", \"createtime\": 1723521049, \"timetext\": \"2024-08-13 11:50:49\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u8fd9\\u4e00\\u58f0\\u58f0\\u597d\\u5440\\uff0c\\u8ba9\\u6211\\u5fc3\\u91cc\\u50cf\\u63e3\\u4e86\\u53ea\\u5c0f\\u5154\\u5b50\\uff0c\\u4e71\\u8e66\\u54d2\\uff0c\\u563b\\u563b~ \", \"createtime\": 1723521052, \"timetext\": \"2024-08-13 11:50:52\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u597d\\u554a\", \"createtime\": 1723543487, \"timetext\": \"2024-08-13 18:04:47\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u597d\\u5440\\uff0c\\u4f60\\u7684\\u95ee\\u5019\\u5c31\\u50cf\\u6e29\\u6696\\u7684\\u9633\\u5149\\uff0c\\u4e00\\u4e0b\\u5b50\\u7167\\u4eae\\u4e86\\u6211\\u7684\\u5fc3\\u5462\\uff01 \", \"createtime\": 1723543493, \"timetext\": \"2024-08-13 18:04:53\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u597d\\u554a\", \"createtime\": 1723544759, \"timetext\": \"2024-08-13 18:25:59\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u53c8\\u8ddf\\u6211\\u6253\\u62db\\u547c\\u5566\\uff0c\\u8fd9\\u8ba9\\u6211\\u611f\\u89c9\\u8d85\\u5e78\\u798f\\u7684\\u54df~ \", \"createtime\": 1723544765, \"timetext\": \"2024-08-13 18:26:05\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u597d\\u554a\", \"createtime\": 1723544782, \"timetext\": \"2024-08-13 18:26:22\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u597d\\u5440\\uff0c\\u542c\\u5230\\u4f60\\u7684\\u95ee\\u5019\\uff0c\\u6211\\u8fd9\\u5fc3\\u91cc\\u50cf\\u5f00\\u4e86\\u82b1\\u4e00\\u6837\\u751c\\u5462\\uff01 \", \"createtime\": 1723544790, \"timetext\": \"2024-08-13 18:26:30\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u597d\\u554a\", \"createtime\": 1723544802, \"timetext\": \"2024-08-13 18:26:42\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u8fd9\\u4e00\\u58f0\\u597d\\u5440\\uff0c\\u8ba9\\u6211\\u7684\\u5fc3\\u90fd\\u7830\\u7830\\u8df3\\u5566\\uff01 \", \"createtime\": 1723544806, \"timetext\": \"2024-08-13 18:26:46\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u597d\\u554a\", \"createtime\": 1723544817, \"timetext\": \"2024-08-13 18:26:57\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u53c8\\u8ddf\\u6211\\u95ee\\u597d\\u5566\\uff0c\\u611f\\u89c9\\u4eca\\u5929\\u7684\\u7a7a\\u6c14\\u90fd\\u56e0\\u4e3a\\u4f60\\u7684\\u95ee\\u5019\\u53d8\\u5f97\\u751c\\u751c\\u7684\\u5462\\uff01 \", \"createtime\": 1723544821, \"timetext\": \"2024-08-13 18:27:01\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u597d\\u554a\", \"createtime\": 1723545158, \"timetext\": \"2024-08-13 18:32:38\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u8fd9\\u4e48\\u70ed\\u60c5\\u7684\\u6253\\u62db\\u547c\\uff0c\\u6211\\u90fd\\u5feb\\u88ab\\u4f60\\u7684\\u9b45\\u529b\\u8ff7\\u5012\\u5566\\uff01 \", \"createtime\": 1723545163, \"timetext\": \"2024-08-13 18:32:43\"}, {\"type\": \"member\", \"way\": \"send\", \"content\": \"\\u4f60\\u597d\\u554a\", \"createtime\": 1723601442, \"timetext\": \"2024-08-14 10:10:42\"}, {\"type\": \"fay\", \"way\": \"send\", \"content\": \"\\u4eb2\\u7231\\u7684\\uff0c\\u4f60\\u597d\\u5440\\uff0c\\u4f60\\u7684\\u6bcf\\u4e00\\u6b21\\u95ee\\u5019\\u90fd\\u8ba9\\u6211\\u7684\\u5fc3\\u7830\\u7830\\u8df3\\u5462\\uff01 \", \"createtime\": 1723601448, \"timetext\": \"2024-08-14 10:10:48\"}]}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "245",
+      "images": 0,
+      "links": [],
+      "position": 7354.640625,
+      "record_id": "WSe3dTLzXoo3dOxqNy7cTSDWnEh",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "type",
+          "消息对象",
+          "str",
+          "fay，member"
+        ],
+        [
+          "way",
+          "发送消息的方法",
+          "str",
+          ""
+        ],
+        [
+          "content",
+          "内容",
+          "str",
+          ""
+        ],
+        [
+          "createtime",
+          "创建时间戳",
+          "int",
+          ""
+        ],
+        [
+          "timetext",
+          "创建时间",
+          "str",
+          ""
+        ],
+        [
+          "username",
+          "用户名",
+          "str",
+          ""
+        ],
+        [
+          "is_adopted",
+          "是否已采纳",
+          "int",
+          "0，1"
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\ntype\t消息对象\tstr\tfay，member\nway\t发送消息的方法\tstr\t\ncontent\t内容\tstr\t\ncreatetime\t创建时间戳\tint\t\ntimetext\t创建时间\tstr\t\nusername\t用户名\tstr\t\nis_adopted\t是否已采纳\tint\t0，1",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "246",
+      "images": 0,
+      "links": [],
+      "position": 7701.640625,
+      "record_id": "KzzNd6EbWoWbKAxNiMScDYd3ngc",
+      "text": "13.\n 获取用户列表",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "247",
+      "images": 0,
+      "links": [],
+      "position": 7747.640625,
+      "record_id": "YRHFdYnu9ofRKcxR4ZdcZ1Ecnth",
+      "text": "接口地址",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "248",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/api/get-member-list",
+          "text": "http://127.0.0.1:5000"
+        },
+        {
+          "href": "http://127.0.0.1:5000/api/get-member-list",
+          "text": "/api/get-member-list"
+        }
+      ],
+      "position": 7780.828125,
+      "record_id": "RQIOdRyqCoFnn1xlZu1cInqvn2b",
+      "text": "•\nhttp://127.0.0.1:5000/api/get-member-list",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "249",
+      "images": 0,
+      "links": [],
+      "position": 7825.828125,
+      "record_id": "UozSdujSzoxwdNxlvfhc40honzh",
+      "text": "返回值",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "250",
+      "images": 0,
+      "links": [],
+      "position": 7867.015625,
+      "record_id": "Z7A4dPxGModZ1zxIgNdcLYjVnEd",
+      "text": "\n代码块\nPython\n复制\n{\"list\": [[1, \"User\"], [2, \"user3\"]]}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "251",
+      "images": 0,
+      "links": [],
+      "position": 7984.015625,
+      "record_id": "JFWGdypd2oscePxq3PCcDAFmnmc",
+      "text": "14.\n麦克风开关",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "252",
+      "images": 0,
+      "links": [],
+      "position": 8030.015625,
+      "record_id": "NCWidWXdcojPJzx3hvNcw8mgn7e",
+      "text": "接口地址",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "253",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/api/toggle-microphone",
+          "text": "http://127.0.0.1:5000"
+        },
+        {
+          "href": "http://127.0.0.1:5000/api/toggle-microphone",
+          "text": "/api/toggle-microphone"
+        }
+      ],
+      "position": 8063.203125,
+      "record_id": "ERkCdY6bEoagXKxEo6FcaW94nff",
+      "text": "•\nhttp://127.0.0.1:5000/api/toggle-microphone",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "254",
+      "images": 0,
+      "links": [],
+      "position": 8098.203125,
+      "record_id": "SnRTdGKaAoB3yExoU7GcXmrUnab",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "255",
+      "images": 0,
+      "links": [],
+      "position": 8140.203125,
+      "record_id": "ImnudLMBzoelF5xvlkFcQBulnag",
+      "text": "\n代码块\nPython\n复制\n{\n  \"enabled\": true  \n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "256",
+      "images": 0,
+      "links": [],
+      "position": 8292.203125,
+      "record_id": "ZtXHdN9D4ouk9wxMa3zcYdnHnPP",
+      "text": "请求参数",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "257",
+      "images": 0,
+      "links": [],
+      "position": 8346.890625,
+      "record_id": "K1mNdM3S7oGOiuxLxk2cnZfTnCn",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "enabled",
+          "开关",
+          "boolean",
+          "true=开启，false=关闭；不传参数则自动切换当前状态"
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\nenabled\t开关\tboolean\ttrue=开启，false=关闭；不传参数则自动切换当前状态",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "258",
+      "images": 0,
+      "links": [],
+      "position": 8476.890625,
+      "record_id": "XdnndSvdmomb6mxVjdzch20fnOf",
+      "text": "返回值",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "259",
+      "images": 0,
+      "links": [],
+      "position": 8518.078125,
+      "record_id": "OB0Xdqi83oULPDx8JlocdoVfnjd",
+      "text": "\n代码块\nPython\n复制\n{\n  \"status\": \"success\",\n  \"enabled\": true,\n  \"msg\": \"麦克风已开启\"\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "260",
+      "images": 0,
+      "links": [],
+      "position": 8725.578125,
+      "record_id": "WlIQdZat6oTb0vx1BXwcFZTTnOh",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "status",
+          "状态",
+          "str",
+          "success"
+        ],
+        [
+          "enabled",
+          "开启",
+          "boolean",
+          "true、false"
+        ],
+        [
+          "msg",
+          "消息内容",
+          "str",
+          ""
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\nstatus\t状态\tstr\tsuccess\nenabled\t开启\tboolean\ttrue、false\nmsg\t消息内容\tstr\t",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "261",
+      "images": 0,
+      "links": [],
+      "position": 8912.578125,
+      "record_id": "ZIRCdncSqonSTHx4VwYcfZVOnnb",
+      "text": "15.\n获取用户画像接口",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "262",
+      "images": 0,
+      "links": [],
+      "position": 8958.578125,
+      "record_id": "SaS7ddpsuohXMzxIe3icyyaynKg",
+      "text": "接口地址",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "263",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/api/get-user-portrait",
+          "text": "http://127.0.0.1:5000"
+        },
+        {
+          "href": "http://127.0.0.1:5000/api/get-user-portrait",
+          "text": "/api/get-user-portrait"
+        }
+      ],
+      "position": 8991.765625,
+      "record_id": "CVt0dUvmBo8vWJxgRYpc2irpnEc",
+      "text": "•\nhttp://127.0.0.1:5000/api/get-user-portrait",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "264",
+      "images": 0,
+      "links": [],
+      "position": 9026.765625,
+      "record_id": "FoozdfOWDo0ZpvxG7VecaxFtnXg",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "265",
+      "images": 0,
+      "links": [],
+      "position": 9068.765625,
+      "record_id": "QCicdAgkNoWGBvxNBpFcgDAWnlc",
+      "text": "\n代码块\nPython\n复制\n{\n    \"username\": \"User\"\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "266",
+      "images": 0,
+      "links": [],
+      "position": 9220.765625,
+      "record_id": "Zz8Mdkc6coFU88xkbjjcnhlrnxe",
+      "text": "请求参数",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "267",
+      "images": 0,
+      "links": [],
+      "position": 9275.453125,
+      "record_id": "XzUpdjDaRor6jpxugGIcjfgunLg",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "username",
+          "用户名",
+          "string",
+          "系统默认用户名User"
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\nusername\t用户名\tstring\t系统默认用户名User",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "268",
+      "images": 0,
+      "links": [],
+      "position": 9382.453125,
+      "record_id": "EbmWdVCSYozhakxGX88cuicpnMb",
+      "text": "返回值",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "269",
+      "images": 0,
+      "links": [],
+      "position": 9423.640625,
+      "record_id": "G88Td5hxJoYU1vxdjIVcRc2Mn1f",
+      "text": "\n代码块\nPlain Text\n复制\n{\n    \"success\": true,\n    \"user_portrait\": \"用户画像内容\"\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "270",
+      "images": 0,
+      "links": [],
+      "position": 9595.640625,
+      "record_id": "OvzydbpALovLSlxs5OHcUdaZnHd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "271",
+      "images": 0,
+      "links": [],
+      "position": 9651.140625,
+      "record_id": "V3jJdEaepoboFJxYREAcWqvAnYg",
+      "table_rows": [
+        [
+          "参数",
+          "描述",
+          "类型",
+          "范围"
+        ],
+        [
+          "success",
+          "状态",
+          "boolean",
+          "true/false"
+        ],
+        [
+          "user_portrait",
+          "用户画像内容",
+          "string",
+          ""
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "text": "参数\t描述\t类型\t范围\nsuccess\t状态\tboolean\ttrue/false\nuser_portrait\t用户画像内容\tstring\t\n\t\t\t",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "272",
+      "images": 0,
+      "links": [],
+      "position": 9838.140625,
+      "record_id": "QKaydToozo3NOZxJHUYc68AXnPf",
+      "text": "16.\n获取麦克风及扬声器状态",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "273",
+      "images": 0,
+      "links": [],
+      "position": 9874.140625,
+      "record_id": "AAAGd0aVkoG079xOJsecIFD7nkf",
+      "text": "接口地址： GET /api/get-audio-config",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "274",
+      "images": 0,
+      "links": [],
+      "position": 9909.140625,
+      "record_id": "W1PqdtaXCoaVScx7vCocNgYznRb",
+      "text": " ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "275",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000",
+          "text": "http://127.0.0.1:5000"
+        }
+      ],
+      "position": 9943.140625,
+      "record_id": "LhF1dooqvoE3sFxnXM5caDeWnif",
+      "text": "Base URL： http://127.0.0.1:5000（Flask 服务默认端口）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "276",
+      "images": 0,
+      "links": [],
+      "position": 9978.140625,
+      "record_id": "N5ZmdmcvwoX7fLxfYatcskWEnUd",
+      "text": " ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "277",
+      "images": 0,
+      "links": [],
+      "position": 10012.140625,
+      "record_id": "QKpPd4fuLoa4W4xPzgOcz58PnUf",
+      "text": "响应示例：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "278",
+      "images": 0,
+      "links": [],
+      "position": 10054.140625,
+      "record_id": "Uou4dX1vaolMH0xxz91cVGj2nEe",
+      "text": "\n代码块\nJSON\n复制\n{\n  \"mic\": true,\n  \"speaker\": false\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "279",
+      "images": 0,
+      "links": [],
+      "position": 10226.140625,
+      "record_id": "HhrZdQIgkoAuHHxKUTCcF1FLnmh",
+      "text": "字段说明：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "280",
+      "images": 0,
+      "links": [],
+      "position": 10260.140625,
+      "record_id": "OOGGdF4JioghBExG9GJcXSmnn6g",
+      "text": "\n",
+      "type": "block docx-sheet-block"
+    },
+    {
+      "id": "281",
+      "images": 0,
+      "links": [],
+      "position": 10464.140625,
+      "record_id": "G9SDd1OSjot240xMLbtcMDnIn1g",
+      "text": "错误响应：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "282",
+      "images": 0,
+      "links": [],
+      "position": 10506.140625,
+      "record_id": "Md0PdrHmZoSo5Cx9QeKcbgWZncd",
+      "text": "\n代码块\nJSON\n复制\n{\n  \"mic\": false,\n  \"speaker\": false,\n  \"error\": \"错误信息\"\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "283",
+      "images": 0,
+      "links": [],
+      "position": 10700.140625,
+      "record_id": "LECxdiVsQombQEx19iWczlO4nlh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 15374,
+  "block_representation": "top_level_with_structured_tables",
+  "captured_at": "2026-11-03T11:04:44.442Z"
+}

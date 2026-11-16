@@ -1,0 +1,596 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,3,3",
+  "title": "prestart标签处理逻辑",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=Z8KOwATXBij7VykAqOxcftkXn6d",
+  "x": 62,
+  "y": -413.5,
+  "token": "Z8KOwATXBij7VykAqOxcftkXn6d",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/Z8KOwATXBij7VykAqOxcftkXn6d",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 19,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程ID：course-fay-prestart-tag",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "•\n作者：Fay 开源社区",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "•\n版本：1.0.0",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "•\n章节数：6",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://player.fay-agent.com/",
+          "text": "https://player.fay-agent.com/"
+        }
+      ],
+      "text": "•\n播放及修改：https://player.fay-agent.com/",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "•\n导入课程包：",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "\ncourse-fay-prestart-tag.zip\n1.97MB\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "封面",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "11",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "目录",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "1.\n什么是 prestart 与为什么需要它",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "2.\n注册与调度：从 registry 到 _run_prestart_tools",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "3.\n双通道注入：上下文 vs 流式标签",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "4.\nfay_core 的七项特殊待遇",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "5.\n前端折叠面板与图片缩略图",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "6.\ninclude_history 与全链路总结",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "第1节 什么是 prestart 与为什么需要它",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "20",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "欢迎来到《Fay 的 prestart 标签处理逻辑》课程。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "什么是 prestart？想象一下你问数字人\"我今天的日程是什么\"——理论上 LLM 应该先调用日程查询工具，再用工具结果作答。但如果每次都让 LLM 自己决定要不要调工具，会有两个问题：一是延迟，规划阶段要走一遍 LLM；二是不稳定，规划失败就拿不到上下文。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "Fay 的解法是 prestart——预启动工具。在 MCP 配置里把某些工具勾选为\"预启动\"，比如知识库搜索、日程查询、当前位置查询。这些工具会在每一次用户提问到达 LLM 之前，由 Fay 自动跑一遍，把结果作为上下文塞进 system prompt。LLM 拿到的不再是空白上下文，而是已经备好的\"预启动工具结果\"区段。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "为了让前端面板上能看到\"哪些预启动工具被跑了、跑出了什么\"，Fay 会把每个预启动工具的输出包成 <prestart>...</prestart> 标签，作为流式响应的第一段内容发给 GUI，但是这段内容不会进入 TTS、不会进入数字人音频、不会触发表情切换——它纯粹是给用户看的\"幕后过程\"。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [],
+      "text": "这一门课会沿着 prestart 的全生命周期走：注册（prestart_registry）、调度（_run_prestart_tools）、双通道注入（system prompt 与流式标签）、fay_core 的特殊处理（不进 TTS、不重置状态）、GUI 渲染（折叠面板）、最后到记忆存档时的完全剥离。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# llm/nlp_cognitive_stream.py - 主流程触发预启动\nprestart_context = \"\"\nprestart_stream_text = \"\"\ntry:\n    prestart_results = _run_prestart_tools(content)\n    if prestart_results:\n        # 用于注入 system prompt 的上下文（纯文本）\n        prestart_context = \"\\n\\n\".join(r[\"text\"] for r in prestart_results)\n\n        # 用于流式输出给前端面板的（带 <prestart> 标签）\n        stream_parts = []\n        for r in prestart_results:\n            if r.get(\"include_history\"):\n                stream_parts.append(f'<prestart keep=\"true\">{r[\"text\"]}</prestart>')\n            else:\n                stream_parts.append(f'<prestart>{r[\"text\"]}</prestart>')\n        prestart_stream_text = \"\\n\".join(stream_parts)\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "第2节 注册与调度：从 registry 到 _run_prestart_tools",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "28",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "text": "这一节看 prestart 工具是如何被注册和调度的。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "注册侧：faymcp/prestart_registry.py 是一个文件持久化的注册表，数据落在 faymcp/data/mcp_prestart_tools.json。用户在 MCP 管理页面（Page3）勾选某个工具为\"预启动\"时，会调用 set_prestart(server_id, tool_name, params, include_history, allow_function_call) 把这条配置写入注册表。每条配置包含：所属服务器 ID、工具名、参数模板、是否把结果保留进对话历史 (include_history)、是否允许函数式调用。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "参数模板里可以使用一个特殊占位符 {{question}}。比如知识库工具的参数模板可能是 {\"query\": \"{{question}}\"}，运行时 _apply_question_placeholder 会把它替换成真正的用户问题。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [],
+      "text": "调度侧：faymcp/mcp_service.py 的 list_runnable_prestart_tools 会把注册表与\"当前在线的 MCP 服务器、可用工具列表\"做交集，过滤掉服务器离线或工具不可用的项，得到实际可跑的预启动工具集合。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "text": "主流程：llm/nlp_cognitive_stream.py 的 _run_prestart_tools 拿到这个集合后，依次执行每个工具：先把 {{question}} 替换成用户问题、再调 mcp_runtime.call_tool 拿到结果、把结果格式化为 【工具名】(key=value)\\n输出 文本，最后按 include_history 决定是包成 <prestart> 还是 <prestart keep=\"true\">。整个过程发生在 LLM 还没收到任何 token 的时候。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# faymcp/prestart_registry.py\ndef set_prestart(server_id, tool_name, params, include_history=True, allow_function_call=False):\n    server_map = _prestart.setdefault(int(server_id), {})\n    server_map[str(tool_name)] = {\n        \"params\": params or {},\n        \"include_history\": include_history,\n        \"allow_function_call\": allow_function_call,\n    }\n    _save_locked()\n\n# llm/nlp_cognitive_stream.py\ndef _run_prestart_tools(user_question):\n    tools = mcp_runtime.list_runnable_prestart_tools()\n    results = []\n    for item in tools:\n        params = item.get(\"params\") or {}\n        include_history = item.get(\"include_history\", True)\n        filled_params = _apply_question_placeholder(params, user_question)\n\n        success, result = mcp_runtime.call_tool(\n            int(item[\"server_id\"]), item[\"tool\"],\n            filled_params, skip_enabled_check=True,\n        )\n        if success:\n            output = _normalize_tool_output(result)\n            params_str = \"(\" + \", \".join(f\"{k}={v}\" for k, v in filled_params.items()) + \")\"\n            results.append({\n                \"text\": f\"【{item['tool']}】{params_str}\\n{output.strip()}\",\n                \"include_history\": include_history,\n            })\n    return results\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "第3节 双通道注入：上下文 vs 流式标签",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "36",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "prestart 结果产生后，会沿着两条独立的通道注入到下游，这一节就讲清楚这两条通道。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "text": "通道一：system prompt 注入。prestart_context 变量是把所有预启动工具的 text 用 \\n\\n 拼起来的纯文本，没有任何标签。它会被 _build_planner_messages 和 _build_final_messages 通过 _format_context_section(\"预启动工具结果\", prestart_context) 拼到 system prompt 里。这是 LLM 真正看得到的部分，它会根据这些预取结果作答，比如\"根据日程查询，今天下午 3 点有会议\"。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "通道二：流式标签输出。prestart_stream_text 变量则把每条预启动结果包装成 <prestart>...</prestart> 标签（include_history=true 时是 <prestart keep=\"true\">...</prestart>），用 send_prestart_content() 函数在 LLM 真正吐第一个 token 之前就以流式句子的形式发出去。这一段是给前端面板看的，让用户能展开看到\"刚才幕后跑了哪些工具\"。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "text": "两条通道完全解耦：通道一只影响 LLM 输入，通道二只影响前端展示。LLM 看不见 <prestart> 标签本身，前端也看不到拼接到 system prompt 的 prestart_context 文本——前端只能看到带标签的 stream_text。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [],
+      "text": "include_history 标志在第一通道里没有作用（system prompt 总是注入），它只在记忆环节有意义，下一节会讲。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "42",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# llm/nlp_cognitive_stream.py\ndef send_prestart_content() -> None:\n    \"\"\"在 LLM 生成之前先发送预启动工具结果\"\"\"\n    nonlocal accumulated_text, full_response_text, is_first_sentence\n    if prestart_stream_text and prestart_stream_text.strip():\n        # prestart_stream_text 已经包含 <prestart> 标签\n        write_sentence(prestart_stream_text, force_first=is_first_sentence)\n        full_response_text += prestart_stream_text\n        is_first_sentence = False\n\n# 拼到 system prompt 的位置\nfinal_system = _merge_system_input(\n    system_prompt,\n    tool_grounding_instruction,\n    _format_context_section(\"关联记忆\", memory_context),\n    _format_context_section(\"最新工具结果\", latest_tool_result_text),\n    _format_context_section(\"预启动工具结果\", prestart_context),  # ← 通道一\n    _format_context_section(\"其他观察\", observation),\n    ...\n)\n\n# 主流程的调用顺序\ninitial_state = {\n    \"context\": {\n        \"system_prompt\": system_prompt,\n        \"prestart_context\": prestart_context,  # ← 通道一最终落点\n        ...\n    },\n}\nsend_prestart_content()  # ← 通道二在 LLM 生成前先发标签\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "text": "第4节 fay_core 的七项特殊待遇",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "44",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "45",
+      "images": 0,
+      "links": [],
+      "text": "prestart 标签流到 fay_core 之后，会触发一系列\"特殊待遇\"，这一节是整门课最重要的一节。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "text": "fay_core 在 say() 方法里收到带  标签的文本片段时，会用 __has_prestart 判断这是不是预启动内容。一旦判断为 prestart，下面这些副作用会被全部跳过或绕开：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "text": "1.\n不影响 thinking 状态。在 is_first 阶段，正常情况下会清掉 think_mode_users[uid]，但如果是 prestart，则保留 thinking 状态——因为 prestart 是 LLM 真正生成前的内容，此时数字人还应该处于\"思考中\"的视觉状态。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "text": "2.\n不进入 TTS。tts_text 用 __remove_prestart_tags 把所有 prestart 标签内容剥掉，再送去合成音频。这意味着即使预启动结果是大段知识库内容，数字人也不会朗读。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "49",
+      "images": 0,
+      "links": [],
+      "text": "3.\n不发送给数字人 10002。__send_digital_human_message 同样调 __remove_prestart_tags 剥离后才打包到 Topic=human / Data.Key=text 的消息里。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "text": "4.\n不进入音频处理流程。is_prestart_content 为真时，__process_output_audio 会被绕过，直接 return result，避免触发表情重置和音频回放队列。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "51",
+      "images": 0,
+      "links": [],
+      "text": "5.\n不重置机器人表情。is_end 时正常会把头像切回 Normal.jpg，但如果是 prestart 内容则不切，保持\"思考中\"的 Thinking.jpg。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "52",
+      "images": 0,
+      "links": [],
+      "text": "6.\n不更新面板日志区。__send_panel_message 里 if not is_prestart 才会发 panelMsg，避免预启动文本覆盖掉\"思考中...\"的状态显示。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "53",
+      "images": 0,
+      "links": [],
+      "text": "7.\npanelReply 仍然会发。聊天窗的 panelReply（也就是消息气泡）一定会带上 prestart 内容，因为这就是给用户展示\"幕后过程\"的入口，前端 parseThinkContent 会进一步把它拆出来渲染。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "54",
+      "images": 0,
+      "links": [],
+      "text": "简单概括 fay_core 对 prestart 的策略：只让它出现在 GUI 聊天窗气泡里，其他通道一律屏蔽。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "55",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# core/fay_core.py\ndef __has_prestart(self, text):\n    return re.search(r'<prestart[^>]*>[\\s\\S]*?</prestart>', text,\n                     flags=re.IGNORECASE) is not None\n\ndef __remove_prestart_tags(self, text):\n    cleaned = re.sub(r'<prestart[^>]*>[\\s\\S]*?</prestart>', '', text,\n                     flags=re.IGNORECASE)\n    return cleaned.strip()\n\n# say 主流程里\nis_prestart_content = self.__has_prestart(text)\n\n# 1) is_first 时不重置 thinking\nif is_first and uid is not None and not is_prestart_content:\n    self.think_mode_users[uid] = False\n    ...\n\n# 2) TTS 前剥离\ntts_text = self.__remove_prestart_tags(text) if text else text\n\n# 3) 不进入音频处理流程\nif is_prestart_content:\n    return result   # 直接返回，不走 __process_output_audio\n\n# 4) is_end 时不重置表情\nif is_end and not is_prestart_content and ...:\n    wsa_server.get_web_instance().add_cmd({\n        \"panelMsg\": \"\",\n        'robot': f'{cfg.fay_url}/robot/Normal.jpg'\n    })\n\n# 5) 面板日志区跳过 prestart\ndef __send_panel_message(self, text, ...):\n    is_prestart = self.__has_prestart(text)\n    if not is_prestart:\n        wsa_server.get_web_instance().add_cmd({\n            \"panelMsg\": display_text,\n            \"Username\": username,\n        })\n    # 但 panelReply 聊天窗仍然会带上 prestart 内容\n    wsa_server.get_web_instance().add_cmd({\n        \"panelReply\": {\"type\": \"fay\", \"content\": display_text, ...},\n        \"Username\": username,\n    })\n\n# 6) 数字人 10002 通道剥离\ndef __send_digital_human_message(self, text, username, ...):\n    cleaned_text = self.__remove_prestart_tags(text) if text else \"\"\n    full_text = self.__remove_emojis(cleaned_text.replace(\"*\", \"\"))\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "56",
+      "images": 0,
+      "links": [],
+      "text": "第5节 前端折叠面板与图片缩略图",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "57",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "58",
+      "images": 0,
+      "links": [],
+      "text": "前端 GUI 收到带  的消息后，会把它拆出来单独渲染成一个折叠面板。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "59",
+      "images": 0,
+      "links": [],
+      "text": "入口在 gui/static/js/index.js 的 parseThinkContent 方法。这个方法虽然名字叫 think，但内部同时处理 prestart 和 think 两种标签。它的处理顺序是：先剥离 prestart，再处理 think。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "60",
+      "images": 0,
+      "links": [],
+      "text": "剥离 prestart 的正则是 /<prestart(?:[^>]*)>([\\s\\S]*)<\\/prestart>/i，注意是贪婪匹配——这是为了处理多个 prestart 连在一起的情况（多个预启动工具的结果会合并成一段）。匹配到之后把内容存到 prestartContent，然后把所有 prestart 标签从 mainContent 中清掉，剩下的 mainContent 才进入 think 处理。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "61",
+      "images": 0,
+      "links": [],
+      "text": "模板上，prestart 渲染成一个独立的 prestart-toggle 折叠按钮，点击展开后显示 prestart-content-inline 容器。容器里调用 convertImagePaths(prestartContent)，会把工具输出里如果包含本地图片路径转换成可点击的缩略图（比如知识库工具返回了截图）。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "62",
+      "images": 0,
+      "links": [],
+      "text": "这里有一个关键点：fay 的渲染顺序是 prestart 在前、think 在前、最后才是真正的 mainContent 答案。这让用户能在折叠面板里看到完整的\"幕后过程\"，又不会被它干扰阅读最终答案。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "63",
+      "images": 0,
+      "links": [],
+      "text": "另一个关键点：v-html 渲染。prestart-content-inline 用了 v-html 而不是 v-text，是为了让 convertImagePaths 注入的 <img> 标签生效。所以预启动工具的输出不能包含未转义的 HTML（比如用户拼接的脚本）——这是注入风险，但因为 prestart 输出来自可信的 MCP 工具，所以可控。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "64",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n// gui/static/js/index.js\nparseThinkContent(content) {\n  if (!content) return { thinkContent: '', mainContent: '', prestartContent: '' };\n\n  let mainContent = content;\n  let prestartContent = '';\n\n  // 贪婪匹配，支持多个 prestart 串联\n  const prestartRegex = /<prestart(?:[^>]*)>([\\s\\S]*)<\\/prestart>/i;\n  const pm = mainContent.match(prestartRegex);\n  if (pm && pm[1]) {\n    prestartContent = this.trimThinkLines(pm[1]);\n    mainContent = mainContent.replace(/<prestart(?:[^>]*)>[\\s\\S]*<\\/prestart>/gi, '');\n  }\n  // ... 接着处理 think\n}\n\ntogglePrestart(index) {\n  const message = this.messages[index];\n  this.$set(message, 'prestartExpanded', !message.prestartExpanded);\n}\n\n// 模板片段（gui/templates/index.html）\n// <div v-if=\"parseThinkContent(item.content).prestartContent\"\n//      class=\"prestart-toggle\"\n//      @click.stop=\"togglePrestart(index)\">\n//   <span class=\"prestart-arrow\"\n//         :class=\"{'expanded': item.prestartExpanded}\">▶</span>\n//   <span class=\"prestart-label\">预启动工具</span>\n// </div>\n// <div v-if=\"parseThinkContent(item.content).prestartContent && item.prestartExpanded\"\n//      class=\"prestart-content-inline\"\n//      v-html=\"convertImagePaths(parseThinkContent(item.content).prestartContent)\">\n// </div>\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "65",
+      "images": 0,
+      "links": [],
+      "text": "第6节 include_history 与全链路总结",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "66",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "67",
+      "images": 0,
+      "links": [],
+      "text": "最后一节看 prestart 在历史和记忆里的命运，这是 include_history 标志真正起作用的地方。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "68",
+      "images": 0,
+      "links": [],
+      "text": "回顾一下：每个预启动工具配置时都有一个 include_history 字段（默认 true）。这决定了它在流式输出阶段被包成 <prestart keep=\"true\"> 还是 <prestart>。这两个标签在 fay_core 阶段都会被 __remove_prestart_tags 剥掉（数字人和 TTS 都看不到内容），但是在 LLM 上下文构建阶段，处理就不一样了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "69",
+      "images": 0,
+      "links": [],
+      "text": "llm/nlp_cognitive_stream.py 顶部有一个 _remove_prestart_from_text 函数，它接收一个 keep_marked 参数：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "70",
+      "images": 0,
+      "links": [],
+      "text": "•\nkeep_marked=True（默认）：只剥离没有 keep=\"true\" 属性的 prestart 标签及其内容。带 keep=\"true\" 的整段保留，让 LLM 在下一轮对话时能看到上一轮的预启动结果。这用在 _build_dialogue_messages 构造历史消息时——让历史里那些\"重要\"的预启动结果（比如长期生效的画像类信息）继续提供上下文。",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "71",
+      "images": 0,
+      "links": [],
+      "text": "•\nkeep_marked=False：移除所有 prestart 内容（包括 keep=\"true\" 的）。这用在响应结束后写入记忆系统时——记忆需要的是干净的对话事实，工具临时结果不应该污染长期记忆。",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "72",
+      "images": 0,
+      "links": [],
+      "text": "数据库 T_Msg 这边的处理和 think 一样：fay_core 写入时是原始 text 包括 prestart 标签，没有任何剥离。这样 GUI 历史回放时还能看到当时的预启动过程。剥离只发生在喂回 LLM 上下文（按 include_history 决定保不保留）和向量化进入记忆（一律剥掉）两个地方。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "73",
+      "images": 0,
+      "links": [],
+      "text": "全链路总结：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "74",
+      "images": 0,
+      "links": [],
+      "text": "1.\n注册：prestart_registry 文件持久化，每条配置带 params 模板和 include_history 标志。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "75",
+      "images": 0,
+      "links": [],
+      "text": "2.\n调度：list_runnable_prestart_tools 取交集 → _run_prestart_tools 执行 → 双通道产出。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "76",
+      "images": 0,
+      "links": [],
+      "text": "3.\n注入：prestart_context 进 system prompt；prestart_stream_text 进流式输出。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "77",
+      "images": 0,
+      "links": [],
+      "text": "4.\nfay_core：__has_prestart 判断 → 屏蔽 TTS / 数字人 / 表情 / 状态 / 日志区，只保留 panelReply。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "78",
+      "images": 0,
+      "links": [],
+      "text": "5.\nGUI：parseThinkContent 拆出 → 折叠面板 + 图片缩略图。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "79",
+      "images": 0,
+      "links": [],
+      "text": "6.\n数据库：T_Msg 保留原文。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "80",
+      "images": 0,
+      "links": [],
+      "text": "7.\n历史回放进 LLM：_remove_prestart_from_text(keep_marked=True) 保留 keep=\"true\" 项。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "81",
+      "images": 0,
+      "links": [],
+      "text": "8.\n进入记忆系统：_remove_prestart_from_text(keep_marked=False) 全部剥掉。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "82",
+      "images": 0,
+      "links": [],
+      "text": "一句话：prestart 是给\"用户\"和\"当前 LLM 推理\"双方临时铺路用的工具结果，在记忆和长链路里默认遗忘，只有显式标记 keep=\"true\" 的才会留下。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "83",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# llm/nlp_cognitive_stream.py\ndef _remove_prestart_from_text(text: str, keep_marked: bool = True) -> str:\n    \"\"\"\n    keep_marked=True  → 保留 keep=\"true\" 的 prestart\n    keep_marked=False → 移除所有 prestart 内容\n    \"\"\"\n    if not text:\n        return text\n    if keep_marked:\n        # 只移除没有 keep 属性的\n        text = re.sub(r'<prestart>[\\s\\S]*?</prestart>', '',\n                      text, flags=re.IGNORECASE)\n    else:\n        # 移除所有（包括 keep=\"true\" 的）\n        text = re.sub(r'<prestart[^>]*>[\\s\\S]*?</prestart>', '',\n                      text, flags=re.IGNORECASE)\n    return text.strip()\n\n# 1) 构造历史 messages 时（保留 keep）\ndef _build_dialogue_messages(conversation, username, fallback_request):\n    for msg in conversation:\n        content = msg.get(\"content\", \"\")\n        content = _remove_prestart_from_text(content)            # keep_marked=True\n        content = _remove_think_from_text(content)\n        ...\n\n# 2) 写入记忆前（全部剥离）\nfinal_text = _remove_think_from_text(full_response_text) if full_response_text else \"\"\nfinal_text = _remove_prestart_from_text(final_text, keep_marked=False)\nMyThread(target=remember_conversation_thread,\n         args=(username, content, final_text)).start()\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "84",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 12677,
+  "captured_at": "2026-11-03T10:40:13.155Z"
+}

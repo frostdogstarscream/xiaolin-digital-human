@@ -1,0 +1,50 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,1,11",
+  "title": "http验证用户配置",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=EKsOwkLpeix5zbkkOnyc4cupnRc",
+  "x": 82,
+  "y": 954.5,
+  "token": "EKsOwkLpeix5zbkkOnyc4cupnRc",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/EKsOwkLpeix5zbkkOnyc4cupnRc",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "只在web模式下使用\n\n打开users.json填写，为空时默认不进行不验证",
+      "type": "block docx-heading8-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "例子：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJavaScript\n复制\n{\n    \"admin\": \"123456\",\n    \"user1\": \"123456\",\n    \"user2\": \"123456\"\n}\n\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 133,
+  "last_scroll": {
+    "top": 54,
+    "height": 656,
+    "total": 710
+  },
+  "captured_at": "2026-11-03T10:45:38.931Z"
+}

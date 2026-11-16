@@ -1,0 +1,10 @@
+{
+  "id": "maya_reception",
+  "name": "职业女性接待员",
+  "source_fbx": "character.fbx",
+  "animation_fbx": {"idle": "idle.fbx", "speaking": "speaking.fbx", "welcome": "welcome.fbx"},
+  "morphs": {"jaw_open": "faceBS_jawOpen", "blink_left": "faceBS_eyeBlinkLeft", "blink_right": "faceBS_eyeBlinkRight", "smile": "faceBS_smile"},
+  "mesh_yaw": 0,
+  "mesh_scale": 1,
+  "license_note": "请填写实际模型来源、作者和使用授权；本文件是配置示例，不含人物模型。"
+}

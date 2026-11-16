@@ -1,0 +1,97 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,1,7",
+  "title": "mac上安装pyaudio失败",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=DivDwgPsSi1WYkkGaNZca9lYn2f",
+  "x": 82,
+  "y": 810.5,
+  "token": "DivDwgPsSi1WYkkGaNZca9lYn2f",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/DivDwgPsSi1WYkkGaNZca9lYn2f",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "1、安装brew\nbrew是mac的一个包管理工具，但使用官网的源去安装会非常慢，而且经常出错，可以使用下面命令选择国内的源去安装。若出错，请多试几次。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "2、安装portaudio",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://so.csdn.net/so/search?q=pyaudio&spm=1001.2101.3001.7020",
+          "text": "pyaudio"
+        }
+      ],
+      "text": "portaudio是一个pyaudio上的一个依赖库，mac在安装pyaudio前需要先行安装。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "brew install portaudio",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "3、安装pyaudio",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 171,
+  "last_scroll": {
+    "top": 54,
+    "height": 656,
+    "total": 710
+  },
+  "captured_at": "2026-11-03T10:45:19.893Z"
+}

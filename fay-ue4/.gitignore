@@ -1,0 +1,16 @@
+.venv/
+.venv-fay/
+vendor/
+installers/
+assets/incoming/
+runtime/
+dist/
+.env.local
+__pycache__/
+.pytest_cache/
+ue4/Binaries/
+ue4/Intermediate/
+ue4/Saved/
+ue4/DerivedDataCache/
+ue4/*.sln
+ue4/.vs/

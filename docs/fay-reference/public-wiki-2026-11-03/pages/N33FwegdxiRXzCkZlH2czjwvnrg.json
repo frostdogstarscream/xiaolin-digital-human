@@ -1,0 +1,912 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,10,0",
+  "title": "metahuman(ue)",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=N33FwegdxiRXzCkZlH2czjwvnrg",
+  "x": 62,
+  "y": -341.5,
+  "token": "N33FwegdxiRXzCkZlH2czjwvnrg",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/N33FwegdxiRXzCkZlH2czjwvnrg",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 21,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "一、UE 数字人启动",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程ID：course-1775792095810",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "•\n作者：郭泽斌",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "•\n版本：1.0.0",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "•\n章节数：5",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://player.fay-agent.com/",
+          "text": "https://player.fay-agent.com/"
+        }
+      ],
+      "text": "•\n播放及修改：https://player.fay-agent.com/",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "•\n导入课程包：",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "\nUE 数字人启动.zip\n2.63MB\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "封面",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "13",
+      "images": 2,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "目录",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "1.\n机器要求",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "2.\n安装并启动 Fay 框架",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "3.\n开麦克风及唤醒、关扬声器",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "4.\n下载并运行 UE 数字人运行包",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "5.\n验证连接与对话测试",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "第1节 机器要求",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "21",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "本教程要求主机配置不低于：RTX 2050显卡、7代i7、16G内存、100G硬盘、win 10以上操作系统。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n本教程要求主机配置不低于：RTX 2050显卡、7代i7、16G内存、100G硬盘、win 10以上操作系统。\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "第2节 安装并启动 Fay 框架",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "25",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "启动 UE 数字人的第一步，是安装并启动 Fay 框架。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "Fay 是本次数字人方案的核心驱动框架，负责处理语音识别、对话生成以及语音合成等关键环节。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "请先按照右侧代码块中提供的官方文档网址，完成 Fay 的下载与安装。官方文档中包含了完整的环境依赖说明和安装步骤，请严格按照要求操作。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "text": "安装完成后，打开 Fay 的主界面。你会看到一个简洁的控制台页面，左侧菜单包含了消息、人设、MCP 等功能入口。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "在 Fay 主页上，左下角有一个醒目的绿色圆形开机按钮。点击这个按钮，就可以一键启动 Fay 的核心服务。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "启动成功后，Fay 的状态指示灯会亮起，代表系统已经进入运行状态，准备好与 UE 数字人进行对接了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# Fay 数字人框架官方文档\n# 请按照以下网址的说明完成 Fay 的下载、安装与启动\n\nhttps://qqk9ntwbcit.feishu.cn/wiki/V5qcwlikKiehoYkAPhYcmBPAnAc\n\n# 安装完成后，点击 Fay 主页左下角的绿色圆形按钮即可启动 Fay 服务。\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "text": "第3节 开麦克风及唤醒、关扬声器",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "34",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "Fay 启动完成之后，接下来要做的一件非常关键的事情，就是确认麦克风处于开启状态，扬声器关闭，及唤醒开启。 今天演示的这个ue数字人模型并没有独立的拾音模块，得依赖本地机器上的fay。但有独立的声音播放模块，会播放fay合城的音频，但这音频仍须在同一台机器上。 在 Fay 的唤醒功能关闭之后，如果你没有专业的拾音硬件支持，那么 Fay 可能会把数字人自己发出的声音重新拾取进去，造成回声循环，严重影响对话体验。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "text": "配置完成后，你就可以尝试对着麦克风说一句\"你好，你在吗\"，验证一下 Fay 是否能够正常接收到你的声音。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "第4节 下载并运行 UE 数字人运行包",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "38",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "Fay 一侧的准备工作完成之后，接下来我们需要下载并启动 UE 数字人的运行包。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "text": "请到以下网址下载最新版本的 UE 数字人运行包。下载完成后，将压缩包解压到一个独立的目录中，然后双击运行其中的 exe 可执行文件。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [],
+      "text": "运行包启动之后，UE 数字人会在一个独立的窗口中呈现。你会看到一位身着白色职业装的虚拟形象站在舞台上。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "42",
+      "images": 0,
+      "links": [],
+      "text": "数字人启动后，会自动尝试连接到本地已经运行的 Fay 服务。整个连接过程是自动完成的，你不需要手动进行任何网络配置或地址设置。这种自动连接的设计大大简化了部署流程，让非技术用户也能够快速上手，降低了搭建一套完整数字人系统的门槛。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# UE 数字人运行包下载地址\n# 下载后请解压并双击运行其中的 exe 可执行文件\n# 数字人启动后会自动连接到本地运行中的 Fay 服务\n\n https://pan.baidu.com/s/1olc-Jd9rH-PcWkdBK2Hc6Q?pwd=kwyd\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "44",
+      "images": 0,
+      "links": [],
+      "text": "第5节 验证连接与对话测试",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "45",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "text": "最后一步，是验证 UE 数字人与 Fay 的连接是否成功，并进行一次完整的对话测试。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "text": "UE 数字人启动后，请回到 Fay 的管理界面进行查看。在左上角 Fay 的 Logo 位置，你会看到几个状态指示灯——如果第二个灯点亮，就代表 UE 数字人已经成功连接到了 Fay 服务，双端通信链路已经完全建立。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "text": "确认连接成功之后，你就可以对着麦克风向数字人打招呼了。尝试说一句：\"你好，请介绍一下你自己。\"然后观察数字人的反应。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "49",
+      "images": 0,
+      "links": [],
+      "text": "如果你看到数字人出现了口型与表情的变化，并且从 UE 数字人的运行窗口听到了清晰的语音回复，那么恭喜你，你已经成功完成了 UE 数字人的启动与对接！",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "text": "到这里，整个 UE 数字人启动流程就全部完成了。你现在拥有了一个可以听、可以说、可以互动的数字人伙伴，接下来就可以开始探索更多有趣的应用场景了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "51",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "52",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "53",
+      "images": 0,
+      "links": [],
+      "text": "二、UE 数字人工程编辑",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "54",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程ID：course-1775804088429",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "55",
+      "images": 0,
+      "links": [],
+      "text": "•\n作者：郭泽斌",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "56",
+      "images": 0,
+      "links": [],
+      "text": "•\n版本：1.0.1",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "57",
+      "images": 0,
+      "links": [],
+      "text": "•\n章节数：11",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "58",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://player.fay-agent.com/",
+          "text": "https://player.fay-agent.com/"
+        }
+      ],
+      "text": "•\n播放及修改：https://player.fay-agent.com/",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "59",
+      "images": 0,
+      "links": [],
+      "text": "•\n导入课程包：",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "62",
+      "images": 0,
+      "links": [],
+      "text": "封面",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "63",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "64",
+      "images": 0,
+      "links": [],
+      "text": "目录",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "65",
+      "images": 0,
+      "links": [],
+      "text": "1.\n机器要求",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "66",
+      "images": 0,
+      "links": [],
+      "text": "2.\n安装并启动 Fay 框架",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "67",
+      "images": 0,
+      "links": [],
+      "text": "3.\n开麦克风及唤醒、关扬声器",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "68",
+      "images": 0,
+      "links": [],
+      "text": "4.\n安装epic game launcher",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "69",
+      "images": 0,
+      "links": [],
+      "text": "5.\n安装ue 5.6 引擎",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "70",
+      "images": 0,
+      "links": [],
+      "text": "6.\n下载并解压 UE 数字人工程包",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "71",
+      "images": 0,
+      "links": [],
+      "text": "7.\n安装插件",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "72",
+      "images": 0,
+      "links": [],
+      "text": "8.\n启动工程",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "73",
+      "images": 0,
+      "links": [],
+      "text": "9.\n检查插件",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "74",
+      "images": 0,
+      "links": [],
+      "text": "10.\n运行工程预览",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "75",
+      "images": 0,
+      "links": [],
+      "text": "11.\n验证连接与对话测试",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "76",
+      "images": 0,
+      "links": [],
+      "text": "第1节 机器要求",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "77",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "78",
+      "images": 0,
+      "links": [],
+      "text": "本教程要求主机配置不低于：RTX 3060显卡、10代i7、32G内存、200硬盘、win 10以上操作系统。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "79",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n本教程要求主机配置不低于：RTX 3060显卡、10代i7、32G内存、200硬盘、win 10以上操作系统。\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "80",
+      "images": 0,
+      "links": [],
+      "text": "第2节 安装并启动 Fay 框架",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "81",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "82",
+      "images": 0,
+      "links": [],
+      "text": "启动 UE 数字人的第一步，是安装并启动 Fay 框架。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "83",
+      "images": 0,
+      "links": [],
+      "text": "Fay 是本次数字人方案的核心驱动框架，负责处理语音识别、对话生成以及语音合成等关键环节。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "84",
+      "images": 0,
+      "links": [],
+      "text": "请先按照右侧代码块中提供的官方文档网址，完成 Fay 的下载与安装。官方文档中包含了完整的环境依赖说明和安装步骤，请严格按照要求操作。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "85",
+      "images": 0,
+      "links": [],
+      "text": "安装完成后，打开 Fay 的主界面。你会看到一个简洁的控制台页面，左侧菜单包含了消息、人设、MCP 等功能入口。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "86",
+      "images": 0,
+      "links": [],
+      "text": "在 Fay 主页上，左下角有一个醒目的绿色圆形开机按钮。点击这个按钮，就可以一键启动 Fay 的核心服务。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "87",
+      "images": 0,
+      "links": [],
+      "text": "启动成功后，Fay 的状态指示灯会亮起，代表系统已经进入运行状态，准备好与 UE 数字人进行对接了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "88",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/V5qcwlikKiehoYkAPhYcmBPAnAc",
+          "text": "安装教程"
+        }
+      ],
+      "text": "\n代码块\nPlain Text\n复制\n# Fay 数字人框架官方文档\n# 请按照以下网址的说明完成 Fay 的下载、安装与启动\n\n\n安装教程\n\n# 安装完成后，点击 Fay 主页左下角的绿色圆形按钮即可启动 Fay 服务。\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "89",
+      "images": 0,
+      "links": [],
+      "text": "第3节 开麦克风及唤醒、关扬声器",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "90",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "91",
+      "images": 0,
+      "links": [],
+      "text": "Fay 启动完成之后，接下来要做的一件非常关键的事情，就是确认麦克风处于开启状态，扬声器关闭，及唤醒开启。 今天演示的这个ue数字人模型并没有独立的拾音模块，得依赖本地机器上的fay。但有独立的声音播放模块，会播放fay合城的音频，但这音频仍须在同一台机器上。 在 Fay 的唤醒功能关闭之后，如果你没有专业的拾音硬件支持，那么 Fay 可能会把数字人自己发出的声音重新拾取进去，造成回声循环，严重影响对话体验。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "92",
+      "images": 0,
+      "links": [],
+      "text": "配置完成后，你就可以尝试对着麦克风说一句\"你好，你在吗\"，验证一下 Fay 是否能够正常接收到你的声音。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "93",
+      "images": 0,
+      "links": [],
+      "text": "第4节 安装epic game launcher",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "94",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "95",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.epicgames.com/",
+          "text": "https://www.epicgames.com/"
+        }
+      ],
+      "text": "接下来，我们到ue官网https://www.epicgames.com/ 下载 epic installer ，并完成安装。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "96",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\nue官网：https://www.epicgames.com/\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "97",
+      "images": 0,
+      "links": [],
+      "text": "第5节 安装ue 5.6 引擎",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "98",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "99",
+      "images": 0,
+      "links": [],
+      "text": "接下来，我们打开epic game launcher,选中左侧“虚幻引擎”栏，再从顶栏选择“库”，点击引擎版本那里的加号，在下方出现的引擎方块下拉选择版本5.6，点击安装，等待安装完成。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "100",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n注：作者图示里没有5.6是因为已经安装过\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "101",
+      "images": 0,
+      "links": [],
+      "text": "第6节 下载并解压 UE 数字人工程包",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "102",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "103",
+      "images": 0,
+      "links": [],
+      "text": "接下来我们需要下载并启动 UE 数字人的工程包。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "104",
+      "images": 0,
+      "links": [],
+      "text": "请到以下网址下载最新版本的 UE 数字人工程包。下载完成后，将压缩包解压到一个独立的目录中备用。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "105",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\nhttps://pan.baidu.com/s/1aApeAiIwGNvPXxR-gBj_MQ?pwd=q2jw\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "106",
+      "images": 0,
+      "links": [],
+      "text": "第7节 安装插件",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "107",
+      "images": 0,
+      "links": [],
+      "text": "5.6引擎安装完成后，可到epic launcher搜索并安装图中插件。当然，你也可向fay数字人社区工作人员索取插件包。把插件解压到数字人工程的plugins目录即可。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "108",
+      "images": 0,
+      "links": [],
+      "text": "第8节 启动工程",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "109",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "110",
+      "images": 0,
+      "links": [],
+      "text": "点击目录中的uproject文件，等待启动完成，此时应注意c盘留有100g以上空间，否则很可能会加载失败。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "111",
+      "images": 0,
+      "links": [],
+      "text": "第9节 检查插件",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "112",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "113",
+      "images": 0,
+      "links": [],
+      "text": "工程启动后点击菜单“工具”，选择“插件”，再选择已安装，确保刚才的4个插件已经处于选中状态。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "114",
+      "images": 0,
+      "links": [],
+      "text": "第10节 运行工程预览",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "115",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "116",
+      "images": 0,
+      "links": [],
+      "text": "关闭插件后，点击上方“运行”按钮，将看到数字人处于预览运行状态。数字人会自动连接上fay的。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "117",
+      "images": 0,
+      "links": [],
+      "text": "第11节 验证连接与对话测试",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "118",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "119",
+      "images": 0,
+      "links": [],
+      "text": "最后一步，是验证 UE 数字人与 Fay 的连接是否真正成功，并进行一次完整的对话测试。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "120",
+      "images": 0,
+      "links": [],
+      "text": "UE 数字人启动后，请回到 Fay 的管理界面进行查看。在左上角 Fay 的 Logo 位置，你会看到几个状态指示灯——如果第二个灯点亮，就代表 UE 数字人已经成功连接到了 Fay 服务，双端通信链路已经完全建立。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "121",
+      "images": 0,
+      "links": [],
+      "text": "确认连接成功之后，你就可以对着麦克风向数字人打招呼了。尝试说一句：\"你好，请介绍一下你自己。\"然后观察数字人的反应。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "122",
+      "images": 0,
+      "links": [],
+      "text": "如果你看到数字人出现了口型与表情的变化，并且从 UE 数字人的运行窗口听到了清晰的语音回复，那么恭喜你，你已经成功完成了 UE 数字人的启动与对接！",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "123",
+      "images": 0,
+      "links": [],
+      "text": "到这里，整个 UE 数字人启动流程就全部完成了。你现在拥有了一个可以听、可以说、可以互动的数字人伙伴，接下来就可以开始探索更多有趣的应用场景了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "124",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "125",
+      "images": 0,
+      "links": [],
+      "text": "三、UE专项交流群（插件免费获取及安静交流）",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "126",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "127",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "128",
+      "images": 0,
+      "links": [],
+      "text": "\nUE数字人工程编辑 (2).zip\n4.87MB\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "129",
+      "images": 1,
+      "links": [],
+      "text": "\nUE数字人工程编辑\n",
+      "type": "block docx-file-block is-in-video-v2"
+    }
+  ],
+  "chars": 4155,
+  "captured_at": "2026-11-03T10:41:59.180Z"
+}

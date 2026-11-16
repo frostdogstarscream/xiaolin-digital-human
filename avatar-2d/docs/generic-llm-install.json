@@ -1,0 +1,80 @@
+{
+  "patches": [
+    {
+      "file": "gui/flask_server.py",
+      "before_sha256": "24cb0801c9481d7312a818c1faf3431ddf85d51fa5ed37ad2fcb6b068d92686d",
+      "after_sha256": "5ab65518805fe5ee67640f39d7541a6f67befe82c44d6d583eed1a29fc6aca1a"
+    }
+  ],
+  "installed": [
+    {
+      "file": "llm/execution_manager.py",
+      "sha256": "ab31f546c8425d8170bbcc0a7b3e2d588866d968b3f9f40ef6be923ac287f6e4"
+    },
+    {
+      "file": "llm/nlp_cognitive_stream.py",
+      "sha256": "28de7d760f714aaeb281d6c3dd5329a941feafc1ce2c488ba256f8f3aa635d74"
+    },
+    {
+      "file": "gui/flask_server.py",
+      "sha256": "ea29b9b12797dd979becf72eda6ce1073f5c806bf764e3ca6fe3b3e686ecbc19"
+    },
+    {
+      "file": "gui/templates/index.html",
+      "sha256": "da3a91621c78ffbfb2e5bcf8cc06e565108eb2f14d9332697dcaa11e70310388"
+    },
+    {
+      "file": "gui/templates/setting.html",
+      "sha256": "475b34b27395ce901298ae2a997517be59c5e954364f3d24151f23769e9d057f"
+    }
+  ],
+  "code_backups": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\llm-provider-patches",
+  "public": {
+    "provider": "opencode_go",
+    "label": "OpenCode Go · DeepSeek Flash",
+    "configured": true,
+    "model": "deepseek-v4.1-flash",
+    "base_url": "https://opencode.ai/inference/go/openai/v1",
+    "protocol": "openai_chat_completions",
+    "tts": "bailian",
+    "profiles": {
+      "bailian": {
+        "label": "百炼 · 通义千问",
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "model": "qwen-plus",
+        "configured": true
+      },
+      "opencode_go": {
+        "label": "OpenCode Go · DeepSeek Flash",
+        "base_url": "https://opencode.ai/inference/go/openai/v1",
+        "model": "deepseek-v4.1-flash",
+        "configured": true
+      },
+      "custom": {
+        "label": "自定义 OpenAI 兼容接口",
+        "base_url": "",
+        "model": "",
+        "configured": false
+      }
+    },
+    "big_model_configured": true,
+    "collaboration": {
+      "mode": "dual",
+      "small_model": "deepseek-v4.1-flash",
+      "big_model": "deepseek-v4.1-flash",
+      "big_base_url": "https://opencode.ai/inference/go/openai/v1",
+      "small_generation": {
+        "thinking": "default",
+        "reasoning_effort": "default",
+        "effective_reasoning_effort": "default"
+      },
+      "big_generation": {
+        "thinking": "default",
+        "reasoning_effort": "default",
+        "effective_reasoning_effort": "default"
+      },
+      "same_model_placeholder": true
+    }
+  },
+  "config_secrets_returned": false
+}

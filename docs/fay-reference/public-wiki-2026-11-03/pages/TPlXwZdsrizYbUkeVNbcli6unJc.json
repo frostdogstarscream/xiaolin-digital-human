@@ -1,0 +1,36 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,6",
+  "title": "知识库模块",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=TPlXwZdsrizYbUkeVNbcli6unJc",
+  "x": 42,
+  "y": -233.5,
+  "token": "TPlXwZdsrizYbUkeVNbcli6unJc",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/TPlXwZdsrizYbUkeVNbcli6unJc",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/M5OewhhAliHYCWkUxP2cghPKn6b",
+          "text": "Yueshen RAG知识库"
+        }
+      ],
+      "text": "\nYueshen RAG知识库",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 15,
+  "captured_at": "2026-11-03T10:40:59.288Z"
+}

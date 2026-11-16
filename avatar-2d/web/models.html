@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fay · 大模型配置</title>
+<style>
+:root{color-scheme:dark;font-family:"Microsoft YaHei UI",sans-serif;background:#0d1117;color:#e7ecf2}*{box-sizing:border-box}body{margin:0;padding:32px 18px}main{max-width:760px;margin:auto}h1{font-size:25px;margin:0 0 12px}.small,p{font-size:13px;line-height:1.8;color:#9aabba}a{color:#a7d9cd}.card{border:1px solid #293440;border-radius:14px;background:#151c25;padding:24px;margin-top:22px}summary{font-size:17px;font-weight:bold;cursor:pointer}label{display:block;font-size:13px;margin:18px 0 7px;color:#aebbc9}input,select,button{font:inherit}input{width:100%;padding:12px;background:#0d141d;color:#edf2f6;border:1px solid #354250;border-radius:8px}input:focus{outline:1px solid #76b8a8}.row{display:flex;gap:12px;margin-top:22px}.row button{flex:1;padding:12px;cursor:pointer;border:1px solid #364352;background:#202b38;color:#e6edf5;border-radius:8px}.row button.primary{background:#76d3be;color:#07231d;border-color:#76d3be;font-weight:bold}button:disabled{opacity:.5;cursor:wait}code{overflow-wrap:anywhere}
+</style></head><body><main><a href="/">← 返回数字讲解员</a><h1 style="margin-top:22px">大模型问答配置</h1><p>配置问答使用的模型服务。百炼流式语音合成继续使用独立的语音密钥与音色。</p><p>当前启用：<strong id="active-model">读取中…</strong></p><section class="card">
+<details id="model-config" open><summary>配置大模型问答</summary>
+<label for="llm-provider">模型服务</label>
+<select id="llm-provider" style="width:100%;padding:10px;background:#202b38;color:#e6edf5;border:1px solid #354250;border-radius:8px"><option value="bailian">百炼 · 通义千问</option><option value="opencode_go">OpenCode Go · DeepSeek Flash</option><option value="custom">自定义 OpenAI 兼容接口</option></select>
+<label for="model">模型 ID</label><input id="model" autocomplete="off" placeholder="例如 deepseek-v4.1-flash">
+<label for="base-url">接口基础地址（Base URL）</label><input id="base-url" autocomplete="off" placeholder="https://服务地址/v1">
+<label for="api-key">API Key（仅本机保存，不回显）</label><input id="api-key" type="password" autocomplete="new-password" placeholder="留空保留此地址已保存的密钥">
+<div class="row"><button id="test-provider">测试文字流</button><button id="save-provider" class="primary">保存并启用</button></div>
+<div id="provider-result" class="small" role="status" style="white-space:pre-wrap;overflow-wrap:anywhere;margin-top:10px"></div>
+<p class="small">支持 OpenAI Chat Completions 流式接口。测试会发送一条简短文字请求，不调用 TTS、不修改对话历史。保存后从下一次大模型请求生效，当前回复继续使用原配置；百炼语音配置独立保留。切回服务可使用该服务此前保存的密钥。</p>
+<p class="small" id="opencode-note" hidden>OpenCode Go 预设使用 DeepSeek V4.1 Flash。Go 官方定位为编程代理服务，数字人用途需确认你的套餐适用范围；也可选择自定义接口接入 DeepSeek 官方或其他兼容服务。<a href="https://opencode.ai/v2/docs/console/go/" target="_blank" rel="noreferrer">官方接口说明 ↗</a></p>
+<p class="small" id="big-model-note" hidden>Fay 另有独立的大模型工具执行配置；此处更换主问答模型，不覆盖该独立配置。</p>
+<div style="border-top:1px solid #354250;margin-top:18px;padding-top:14px"><b>大小模型协同</b>
+<p id="collaboration-status" class="small" role="status">读取协同状态…</p>
+<div class="row"><button id="enable-collaboration">使用主模型占位并启用</button><button id="disable-collaboration">关闭协同</button></div>
+<p class="small">占位使用当前已保存的主模型及其接口、密钥，独立保存为后台执行模型。工具任务进入后台线程，完成后由主模型整理回复；没有可用工具时直接问答。普通对话不会固定串行调用两个模型。</p></div>
+</details>
+
+
+</section><p>此页面仅管理模型配置，不会连接或接管数字人的展示会话。<a href="http://127.0.0.1:5000/setting" target="_blank" rel="noreferrer">Fay 人设与服务设置 ↗</a></p></main><script src="/model-config.js"></script></body></html>

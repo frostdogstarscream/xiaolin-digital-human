@@ -1,0 +1,9 @@
+{
+  "controls_present": true,
+  "local_asr_ready_visible": true,
+  "bailian_cherry_visible": true,
+  "permission_request_ui_verified": true,
+  "physical_microphone_verified": false,
+  "reason": "Windows browser Computer Use stopped because current browser URL could not be determined reliably; no safety bypass performed",
+  "user_action": "Allow microphone in Edge or Chrome and speak a short question"
+}

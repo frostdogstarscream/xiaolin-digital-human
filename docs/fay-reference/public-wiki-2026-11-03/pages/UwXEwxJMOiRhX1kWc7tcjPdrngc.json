@@ -1,0 +1,467 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,0,2",
+  "title": "数字人驱动接口（10002）",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=UwXEwxJMOiRhX1kWc7tcjPdrngc",
+  "x": 82,
+  "y": 378.5,
+  "token": "UwXEwxJMOiRhX1kWc7tcjPdrngc",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/UwXEwxJMOiRhX1kWc7tcjPdrngc",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 8,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "position": 235.25,
+      "record_id": "B3QidmAwgo3Tq0xRbUMckXrznVe",
+      "text": "目的：数字人皮肤对接fay的接口，可以对接2d、ue、unity等皮肤。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "position": 269.25,
+      "record_id": "Aynxd04lTo7zoFx0FdIc5hx3nSc",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "position": 317.25,
+      "record_id": "NRz9d7kyzoip8CxBZImc32x2njh",
+      "text": "通讯地址",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "position": 356.046875,
+      "record_id": "BmZidHE8toWncgxFwRGcu2onnCf",
+      "text": "ws://127.0.0.1:10002",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "position": 391.046875,
+      "record_id": "W6G8dhkjXop97mxZrjMcahMAn0e",
+      "text": "\n注：fay作为服务端\n",
+      "type": "block docx-quote_container-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "position": 439.046875,
+      "record_id": "E6LKd1Sefo58qIxZuC2cuoafnlf",
+      "text": "消息格式",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "position": 477.84375,
+      "record_id": "JT8idSG9CoHysJx3OPAcUmBhnSf",
+      "text": "通讯地址: ws://127.0.0.1:10002",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "position": 512.84375,
+      "record_id": "JjCmdbxDXoWmdwxzA0AcxV9ynZb",
+      "text": "\n注：ue作为客户端\n",
+      "type": "block docx-quote_container-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "position": 558.84375,
+      "record_id": "T3fudkVN2oM4FdxL0LecTW4YnPh",
+      "text": "1.  fay向数字人发送音频",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "position": 602.84375,
+      "record_id": "N7sEdvw52owkn7xuWM3culxMn58",
+      "text": "\n代码块\nJSON\n复制\n{\"Topic\": \"human\",\"Data\": {\"Key\": \"audio\",\"Value\": \"c:/fay/sample/audio/sample-1.wav\",\"HttpValue\": \"http://192.168.1.13:5000/audio/sample-1.wav\",\"Text\" : \"很高兴见到你\",\"Lips\":[{\"Lip\": \"sil\", \"Time\": 180}, {\"Lip\": \"FF\", \"Time\": 144}],\"Time\": 10,\"Type\": \"interact\", \"IsFirst\":1, \"IsEnd\":0,\"Sentiment\": 0.7,\n    \"Action\": {\n      \"code\": \"guidance.invite\",\n      \"behavior\": \"invite\",\n      \"affect\": \"warm\",\n      \"intensity\": 0.74,\n      \"priority\": 82\n    }}}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "position": 928.84375,
+      "record_id": "RcgmdE8mio94dqxcymQcay2rn3d",
+      "text": "唇形（只支持windows）的定义：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "15",
+      "images": 1,
+      "links": [],
+      "position": 970.84375,
+      "record_id": "FQimdCJttoQPZyxzghjcSHnVn5d",
+      "text": "\n\n唇型定义.docx\n\n",
+      "type": "block docx-view-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "position": 1439.84375,
+      "record_id": "Uq70dzXLFoZyc6xL9jEc2BUnn7d",
+      "text": "\n",
+      "type": "block docx-sheet-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "position": 2522.84375,
+      "record_id": "X3ncdevhgoHaWgxFqi5cYxX6ngc",
+      "text": "关键词及动作、表情对应表：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "position": 2578.34375,
+      "record_id": "K2FdddqVWo2fx0xVIHWcCN6Sn4b",
+      "table_rows": [
+        [
+          "关键词或意图示例",
+          "code",
+          "behavior",
+          "affect",
+          "intensity",
+          "priority"
+        ],
+        [
+          "你好、您好、hello、hi",
+          "greeting.hello",
+          "nod",
+          "smile",
+          "0.35",
+          "60"
+        ],
+        [
+          "欢迎、欢迎光临、欢迎来到",
+          "greeting.welcome",
+          "invite",
+          "warm",
+          "0.78",
+          "80"
+        ],
+        [
+          "再见、拜拜、goodbye",
+          "farewell.goodbye",
+          "wave",
+          "smile",
+          "0.62",
+          "72"
+        ],
+        [
+          "是的、没错、收到、明白",
+          "dialogue.confirm",
+          "nod",
+          "smile",
+          "0.42",
+          "58"
+        ],
+        [
+          "不是、不行、不能、no",
+          "dialogue.reject",
+          "reject",
+          "serious",
+          "0.58",
+          "70"
+        ],
+        [
+          "让我想想、考虑一下",
+          "dialogue.think",
+          "think",
+          "neutral",
+          "0.44",
+          "74"
+        ],
+        [
+          "为什么、怎么回事、真的吗",
+          "dialogue.question",
+          "question",
+          "curious",
+          "0.52",
+          "55"
+        ],
+        [
+          "也就是说、其实、比如",
+          "dialogue.explain",
+          "explain",
+          "neutral",
+          "0.56",
+          "63"
+        ],
+        [
+          "建议、推荐、你可以试试",
+          "dialogue.recommend",
+          "recommend",
+          "smile",
+          "0.63",
+          "66"
+        ],
+        [
+          "总之、综上、最后总结",
+          "dialogue.summary",
+          "summary",
+          "neutral",
+          "0.40",
+          "57"
+        ],
+        [
+          "请进、这边请、跟我来",
+          "guidance.invite",
+          "invite",
+          "warm",
+          "0.74",
+          "82"
+        ],
+        [
+          "稍等、等一下、请稍等",
+          "guidance.wait",
+          "wait",
+          "neutral",
+          "0.26",
+          "65"
+        ],
+        [
+          "提醒、别忘了、记得",
+          "guidance.remind",
+          "remind",
+          "neutral",
+          "0.48",
+          "62"
+        ],
+        [
+          "注意、小心、警告",
+          "guidance.warn",
+          "warn",
+          "serious",
+          "0.80",
+          "84"
+        ],
+        [
+          "谢谢、感谢、多谢",
+          "social.thanks",
+          "thanks",
+          "warm",
+          "0.46",
+          "61"
+        ],
+        [
+          "抱歉、对不起、不好意思",
+          "social.apology",
+          "apology",
+          "sorry",
+          "0.60",
+          "71"
+        ],
+        [
+          "还好吗、没事吧、别担心",
+          "social.care",
+          "care",
+          "warm",
+          "0.50",
+          "64"
+        ],
+        [
+          "太好了、成功了、真棒",
+          "emotion.celebrate",
+          "celebrate",
+          "excited",
+          "0.95",
+          "92"
+        ],
+        [
+          "天啊、竟然、不会吧",
+          "emotion.surprise",
+          "surprise",
+          "surprised",
+          "0.88",
+          "86"
+        ],
+        [
+          "难过、可惜、遗憾、糟糕",
+          "emotion.sad",
+          "sad",
+          "sad",
+          "0.82",
+          "83"
+        ]
+      ],
+      "text": "关键词或意图示例\tcode\tbehavior\taffect\tintensity\tpriority\n你好、您好、hello、hi\tgreeting.hello\tnod\tsmile\t0.35\t60\n欢迎、欢迎光临、欢迎来到\tgreeting.welcome\tinvite\twarm\t0.78\t80\n再见、拜拜、goodbye\tfarewell.goodbye\twave\tsmile\t0.62\t72\n是的、没错、收到、明白\tdialogue.confirm\tnod\tsmile\t0.42\t58\n不是、不行、不能、no\tdialogue.reject\treject\tserious\t0.58\t70\n让我想想、考虑一下\tdialogue.think\tthink\tneutral\t0.44\t74\n为什么、怎么回事、真的吗\tdialogue.question\tquestion\tcurious\t0.52\t55\n也就是说、其实、比如\tdialogue.explain\texplain\tneutral\t0.56\t63\n建议、推荐、你可以试试\tdialogue.recommend\trecommend\tsmile\t0.63\t66\n总之、综上、最后总结\tdialogue.summary\tsummary\tneutral\t0.40\t57\n请进、这边请、跟我来\tguidance.invite\tinvite\twarm\t0.74\t82\n稍等、等一下、请稍等\tguidance.wait\twait\tneutral\t0.26\t65\n提醒、别忘了、记得\tguidance.remind\tremind\tneutral\t0.48\t62\n注意、小心、警告\tguidance.warn\twarn\tserious\t0.80\t84\n谢谢、感谢、多谢\tsocial.thanks\tthanks\twarm\t0.46\t61\n抱歉、对不起、不好意思\tsocial.apology\tapology\tsorry\t0.60\t71\n还好吗、没事吧、别担心\tsocial.care\tcare\twarm\t0.50\t64\n太好了、成功了、真棒\temotion.celebrate\tcelebrate\texcited\t0.95\t92\n天啊、竟然、不会吧\temotion.surprise\tsurprise\tsurprised\t0.88\t86\n难过、可惜、遗憾、糟糕\temotion.sad\tsad\tsad\t0.82\t83",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "146",
+      "images": 0,
+      "links": [],
+      "position": 3445.34375,
+      "record_id": "PbemdlqC4ofs4eximRZcYA4Dnxe",
+      "text": "2.  fay向数字人发送回复文字",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "147",
+      "images": 0,
+      "links": [],
+      "position": 3489.34375,
+      "record_id": "U2OMdpMYsoD5h8xm1e0cRJbVnwb",
+      "text": "\n代码块\nJSON\n复制\n{\"Topic\": \"human\",\"Data\": {\"Key\": \"text\",\"Value\": \"很高兴见到你\", \"IsFirst\":1, \"IsEnd\":0}}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "148",
+      "images": 0,
+      "links": [],
+      "position": 3602.34375,
+      "record_id": "NTdAdIiGTo5AMQxnkDUc21XFnxd",
+      "text": "\n",
+      "type": "block docx-sheet-block"
+    },
+    {
+      "id": "149",
+      "images": 0,
+      "links": [],
+      "position": 3715.34375,
+      "record_id": "DkQEdqF52oWuiHxpZmicNAZJnee",
+      "text": "4.  fay向数字人发送询问文字",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "150",
+      "images": 0,
+      "links": [],
+      "position": 3759.34375,
+      "record_id": "OtRbdkUaJoWlzqx1BodckLnun1d",
+      "text": "\n代码块\nJSON\n复制\n{\"Topic\": \"human\",\"Data\": {\"Key\": \"question\",\"Value\": \"很高兴见到你\"}}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "151",
+      "images": 0,
+      "links": [],
+      "position": 3872.34375,
+      "record_id": "GJBqdckByocfskxcPBmcprG6nft",
+      "text": "\n",
+      "type": "block docx-sheet-block"
+    },
+    {
+      "id": "152",
+      "images": 0,
+      "links": [],
+      "position": 3985.34375,
+      "record_id": "PfMjdcQ54oi90ux32b7csLZInse",
+      "text": "5.  fay向数字人发送实时日志文字",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "153",
+      "images": 0,
+      "links": [],
+      "position": 4029.34375,
+      "record_id": "M0rEd3D5Ooe0m0xJ0kJckzj9nBg",
+      "text": "\n代码块\nJSON\n复制\n{\"Topic\": \"human\",\"Data\": {\"Key\": \"log\",\"Value\": \"很高... \"}, \"robot\": \"http://127.0.0.1:5000/robot/Thinking.jpg\"}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "154",
+      "images": 0,
+      "links": [],
+      "position": 4148.34375,
+      "record_id": "UqRzdUkU6oVM59xo2E6cDazznbf",
+      "text": "\n",
+      "type": "block docx-sheet-block"
+    },
+    {
+      "id": "155",
+      "images": 0,
+      "links": [],
+      "position": 4292.34375,
+      "record_id": "UBu3dJgT8oR2UWxCGILcKG5VnGd",
+      "text": "6.  数字人向fay指定输出用户",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "156",
+      "images": 0,
+      "links": [],
+      "position": 4336.34375,
+      "record_id": "C8dRdjsTIoVFhrxdYsxcDQxgnug",
+      "text": "\n代码块\nJSON\n复制\n{\"Username\": \"张三\"}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "157",
+      "images": 0,
+      "links": [],
+      "position": 4449.34375,
+      "record_id": "DwnTdHNwyofST3x3uAicUN4Onie",
+      "text": "\n",
+      "type": "block docx-sheet-block"
+    },
+    {
+      "id": "158",
+      "images": 0,
+      "links": [],
+      "position": 4562.34375,
+      "record_id": "MKHqd2qtbohnFcxMM4XcK1aMnQe",
+      "text": "6.  通知fay不用合成音频",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "159",
+      "images": 0,
+      "links": [],
+      "position": 4606.34375,
+      "record_id": "LxMvd42E3o9Z8GxoON8cxVOWnRh",
+      "text": "\n代码块\nJSON\n复制\n{\"Output\": false}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "160",
+      "images": 0,
+      "links": [],
+      "position": 4719.34375,
+      "record_id": "PVQidW7BeoWto4xnuw5ceSvSnBd",
+      "text": "\n",
+      "type": "block docx-sheet-block"
+    },
+    {
+      "id": "161",
+      "images": 0,
+      "links": [],
+      "position": 4874.34375,
+      "record_id": "KOpEdPrw8oztcYxBeprcKEAdnBc",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 2121,
+  "block_representation": "top_level_with_structured_tables",
+  "captured_at": "2026-11-03T11:04:32.033Z"
+}

@@ -1,0 +1,14 @@
+{
+  "result": "passed",
+  "checked_at_unix": 1793589470.1033762,
+  "checks": [
+    "both_frozen_services_started",
+    "settings_write_read",
+    "knowledge_import",
+    "demo_switch_status_http",
+    "cached_pcm_websocket_and_completion_ack"
+  ],
+  "cloud_calls": 0,
+  "audio": "isolated Windows SAPI Chinese test; not Bailian",
+  "note": "Does not validate Unity rendering, real speakers, ASR or cloud model permissions."
+}

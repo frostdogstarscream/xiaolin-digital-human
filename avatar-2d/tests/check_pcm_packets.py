@@ -33,7 +33,7 @@ async def main():
         async def emit(self,*args,**kwargs):pass
     ingress=Ingress();ingress.presenter=FakePresenter();ingress.epoch=2;ingress.tts_token='test'
     job=dict(id='test',epoch=2,generation=4,seq=0,bytes=0,delta_count=0,pending=b'',rate_state=None,
-             frame_started=False,status='preparing',action='welcome-wave')
+             frame_started=False,status='preparing',action='welcome-wave',plan={'turn_id':'unit-turn','plan_id':'unit-plan'})
     ingress.stream_jobs={'test':job}
     raw=(np.sin(np.arange(24001)*.12)*15000).astype('<i2').tobytes()
     class Request:
@@ -52,6 +52,7 @@ async def main():
     np.testing.assert_array_equal(actual[:len(expected)],expected)
     assert not np.any(actual[len(expected):]) and len(actual)-len(expected)<320
     assert sum(m.get('status')=='start' for _,m in packets)==1
+    assert all(m.get('turn_id')=='unit-turn' and m.get('plan_id')=='unit-plan' for _,m in packets)
     assert sum(bool(m.get('end')) for _,m in packets)==1 and packets[-1][1]['end']
     count=len(packets)
     ingress.presenter.generation+=1

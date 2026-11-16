@@ -1,0 +1,31 @@
+{
+  "physical_microphone_verified": false,
+  "input_kind": "Bailian synthetic wake-word WAV",
+  "gate_checks": true,
+  "asleep_question_blocked": true,
+  "asr": {
+    "text": "小林啊小林。",
+    "seconds": 1.6,
+    "inference_seconds": 0.18732710000006136,
+    "empty": false,
+    "backend": "FunASR",
+    "model": "SenseVoiceSmall",
+    "cloud_calls": 0
+  },
+  "welcome": {
+    "text": "您好，我是小霖，很高兴为您服务，请问有什么可以帮您？",
+    "playback_completed": true,
+    "received": {
+      "audio": 290,
+      "video": 146,
+      "voiced": 193
+    }
+  },
+  "followup": {
+    "answer": "讲解、答疑、陪览、应变。",
+    "playback_completed": true,
+    "still_awake": true
+  },
+  "sleep_cancels_and_resets": true,
+  "status": "WAKE_WELCOME_FOLLOWUP_PASSED"
+}

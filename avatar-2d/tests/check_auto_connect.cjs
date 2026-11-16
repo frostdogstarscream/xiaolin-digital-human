@@ -50,7 +50,8 @@ async function main(){
   await vm.runInContext('health()',context);await settle();
   assert.equal(calls.filter(x=>x==='/api/offer').length,offers,'An older window must not fight the new owner');
   node('#text').value='自动连接测试';await node('#send').onclick();await settle();
-  assert.equal(peers.at(-1).connectionState,'connected');assert.ok(calls.includes('/api/say'),'A user command must automatically reclaim the stream');
+  assert.equal(peers.at(-1).connectionState,'connected');assert.ok(calls.includes('/api/chat'),'A question must automatically reclaim the stream');
+  assert.ok(!calls.includes('/api/say')&&!calls.includes('/api/action'),'No public manual speech or gesture requests');
   peers.at(-1).connectionState='failed';peers.at(-1).onconnectionstatechange();await settle();
   await node('#record').onclick();await settle();
   assert.equal(micOpened,1,'Record must reconnect automatically and reach getUserMedia');
@@ -58,6 +59,7 @@ async function main(){
   await node('#cancel-record').onclick();await settle();assert.ok(micStopped>0);
   const html=fs.readFileSync(path.join(root,'web/live.html'),'utf8');
   assert.ok(!html.includes('id="connect"'),'Manual connection button must be removed');
+  assert.ok(!/data-mode|data-motion|speech-action/.test(html),'Manual mode and action controls must be removed');
   assert.ok(!fs.readFileSync(path.join(root,'web/microphone.js'),'utf8').includes('请先连接实时展示'));
   console.log('PASS: open automatically, failed-offer retry, single-window ownership, command takeover, record reconnect, no manual connection button');
 }

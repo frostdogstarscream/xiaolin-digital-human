@@ -1,0 +1,166 @@
+{
+  "id": "course-fay-big-small-model-collab",
+  "title": "Fay 的大小模型协同工作逻辑",
+  "author": "Fay 开源社区",
+  "date": "",
+  "version": "1.0.0",
+  "color": "#0ea5e9",
+  "icon": "🤝",
+  "cover_image": "course-cover.png",
+  "description": "",
+  "robot": {
+    "normal": "robot/Normal.jpg",
+    "speaking": "robot/Speaking.png",
+    "listening": "robot/Listening.png",
+    "thinking": "robot/Thinking.png",
+    "angry": "robot/Angry.png",
+    "crying": "robot/Crying.png",
+    "gentle": "robot/Gentle.png"
+  },
+  "sections": [
+    {
+      "id": "s01",
+      "title": "为什么 Fay 要搞大小模型协同",
+      "script": "sections/01-s01/script.txt",
+      "font_color": "#0ea5e9",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/01-s01/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/01-s01/assets/demo.code.json",
+          "font_color": "#0ea5e9",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/01-s01/quiz.json"
+    },
+    {
+      "id": "s02",
+      "title": "模型工厂：按 role 切换大小模型",
+      "script": "sections/02-s02/script.txt",
+      "font_color": "#0ea5e9",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/02-s02/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/02-s02/assets/demo.code.json",
+          "font_color": "#0ea5e9",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/02-s02/quiz.json"
+    },
+    {
+      "id": "s03",
+      "title": "小模型当第一响应者：闲聊判断与工具分流",
+      "script": "sections/03-s03/script.txt",
+      "font_color": "#0ea5e9",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/03-s03/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/03-s03/assets/demo.code.json",
+          "font_color": "#0ea5e9",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/03-s03/quiz.json"
+    },
+    {
+      "id": "s04",
+      "title": "大模型后台执行循环：ExecutionManager",
+      "script": "sections/04-s04/script.txt",
+      "font_color": "#0ea5e9",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/04-s04/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/04-s04/assets/demo.code.json",
+          "font_color": "#0ea5e9",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/04-s04/quiz.json"
+    },
+    {
+      "id": "s05",
+      "title": "任务运行中：新消息的意图分类",
+      "script": "sections/05-s05/script.txt",
+      "font_color": "#0ea5e9",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/05-s05/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/05-s05/assets/demo.code.json",
+          "font_color": "#0ea5e9",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/05-s05/quiz.json"
+    },
+    {
+      "id": "s06",
+      "title": "后台完成回填：小模型改写结果与全链路总结",
+      "script": "sections/06-s06/script.txt",
+      "font_color": "#0ea5e9",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/06-s06/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/06-s06/assets/demo.code.json",
+          "font_color": "#0ea5e9",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/06-s06/quiz.json"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,0,4",
+  "title": "播报接口(6000)",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=UuMOwDShOimrSckrgkxcBEhhnXg",
+  "x": 82,
+  "y": 450.5,
+  "token": "UuMOwDShOimrSckrgkxcBEhhnXg",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/UuMOwDShOimrSckrgkxcBEhhnXg",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 3,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/xszyou/Fay/blob/main/test/test_auto_play_server.py",
+          "text": "https://github.com/xszyou/Fay/blob/main/test/test_auto_play_server.py"
+        }
+      ],
+      "text": "想要实现数字人自动播放（如：虚拟教师、虚拟主播、新闻主播、广告机等），需自主搭建自动播放服务器并实现自动播放服务器接口，参考代码：https://github.com/xszyou/Fay/blob/main/test/test_auto_play_server.py。使用时fay需要正确填写并开启自动播放（支持热启动）。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "1.\n获取下一条消息接口",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "接口地址",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:6000/get_auto_play_item",
+          "text": "http://127.0.0.1:6"
+        },
+        {
+          "href": "http://127.0.0.1:6000/get_auto_play_item",
+          "text": "000/get_auto_play_item"
+        }
+      ],
+      "text": "http://127.0.0.1:6000/get_auto_play_item",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "请求参数",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "user：用户名，默认“User”",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "请求示例",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\n复制\n{\n    'user':'张三',\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "返回参数",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "audio：音频url，为空的时候fay会使用文本来合成",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "text：文本内容，存在audio url的时候不会使用此文本",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "timestamp：秒为单位的时间戳浮点值",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "返回示例",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\n复制\n{\n    'audio': 'https://fay.com/test.wav',\n    'text': '接下来我们说一下怎么实现一个数字人',\n     'timestamp': 113434332\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-heading2-block isEmpty"
+    }
+  ],
+  "chars": 488,
+  "last_scroll": {
+    "top": 542,
+    "height": 656,
+    "total": 1198
+  },
+  "captured_at": "2026-11-03T10:44:46.264Z"
+}

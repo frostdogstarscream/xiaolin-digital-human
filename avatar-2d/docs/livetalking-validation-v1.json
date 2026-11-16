@@ -1,0 +1,70 @@
+{
+  "backend": "LiveTalking",
+  "transport": "WebRTC",
+  "cases": [
+    {
+      "action": "welcome-wave",
+      "gesture_frames": 175,
+      "speech_frames": 106,
+      "text_to_first_audio_seconds": 0.9891753196716309,
+      "fay_audio_to_first_audio_seconds": 0.6990764141082764,
+      "voice_seconds": 4.21,
+      "received_non_silent_audio": true
+    },
+    {
+      "action": "goodbye-wave",
+      "gesture_frames": 175,
+      "speech_frames": 91,
+      "text_to_first_audio_seconds": 0.42995285987854004,
+      "fay_audio_to_first_audio_seconds": 0.14844036102294922,
+      "voice_seconds": 3.615,
+      "received_non_silent_audio": true
+    },
+    {
+      "action": "explain-open-palms",
+      "gesture_frames": 225,
+      "speech_frames": 104,
+      "text_to_first_audio_seconds": 0.4305753707885742,
+      "fay_audio_to_first_audio_seconds": 0.18668580055236816,
+      "voice_seconds": 4.155,
+      "received_non_silent_audio": true
+    },
+    {
+      "action": "acknowledge-nod",
+      "gesture_frames": 100,
+      "speech_frames": 93,
+      "text_to_first_audio_seconds": 0.5533514022827148,
+      "fay_audio_to_first_audio_seconds": 0.2985215187072754,
+      "voice_seconds": 3.71,
+      "received_non_silent_audio": true
+    }
+  ],
+  "loopback_guards": true,
+  "interrupt": {
+    "active_job_cancelled": true,
+    "stale_audio_queue_empty": true,
+    "no_late_speech_frames": true,
+    "observed_within_seconds": 1.4221210479736328
+  },
+  "motion_during_speech": true,
+  "bailian_dialogue": {
+    "model": "qwen-plus",
+    "real_audio_played": true,
+    "cloud_llm_calls": 1
+  },
+  "reconnect_received_video": true,
+  "received": {
+    "video": 1260,
+    "audio": 2513,
+    "voiced": 729
+  },
+  "final_stats": {
+    "video_frames": 20,
+    "speech_frames": 0,
+    "motion_frames": 0,
+    "inference_seconds": 0.0,
+    "inference_frames": 0,
+    "last_motion": null
+  },
+  "status": "REAL_FAY_WEBRTC_SPEECH_ACTION_INTERRUPT_RECONNECT_PASSED"
+}

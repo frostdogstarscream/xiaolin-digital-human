@@ -1,0 +1,16 @@
+{
+  "browser": "Codex in-app browser",
+  "observed": true,
+  "real_video_visible": true,
+  "fullscreen_enter_exit_passed": true,
+  "final_state": "WebRTC connected; idle; automatic action selection",
+  "screenshots": [
+    "livetalking-browser-v1.jpg",
+    "livetalking-fullscreen-v1.jpg"
+  ],
+  "limits": [
+    "Microphone ASR not connected",
+    "GTX 1660 target hardware not tested",
+    "Human phoneme and gesture naturalness acceptance pending"
+  ]
+}

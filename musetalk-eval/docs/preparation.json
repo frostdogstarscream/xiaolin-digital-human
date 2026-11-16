@@ -1,0 +1,31 @@
+{
+  "model_load_seconds": 15.442186899999797,
+  "cache_load_or_prepare_seconds": 0.8855297000000064,
+  "cache_stamp": "ace998aba3308238",
+  "actions": [
+    {
+      "action": "welcome-wave",
+      "frames": 175,
+      "source_coords_sha256": "7bffaa736417121055bef9d2d29cbf5557e68137fb1f464a2a1afc69d5a1bcb3",
+      "preparation_seconds": 24.33181149999973
+    },
+    {
+      "action": "goodbye-wave",
+      "frames": 175,
+      "source_coords_sha256": "6625de47f35ed96488b816dddef4c3515bc979cc01aded71dd0e69dd64f03d9e",
+      "preparation_seconds": 16.604787700000088
+    },
+    {
+      "action": "explain-open-palms",
+      "frames": 225,
+      "source_coords_sha256": "32b9086f4906ed9305c8e0c689ca4262fd5d3eb898a26febb4f7b6b3acd6502b",
+      "preparation_seconds": 20.22182530000009
+    },
+    {
+      "action": "acknowledge-nod",
+      "frames": 100,
+      "source_coords_sha256": "dd13d63e83be20c005cf6440ed50ce0499d56e7f6edfd73f27f7bd55081795dc",
+      "preparation_seconds": 8.320355400000153
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "status": "REAL_FAY_LOCAL_SPEECH_ACTION_RENDER_TESTS_PASSED",
+  "cases": [
+    {
+      "action": "welcome-wave",
+      "job_id": "96d88623b81c40d9af9eadefd4eaf12c",
+      "fay_text": "欢迎来到展厅",
+      "report": {
+        "frames": 175,
+        "fps": 25,
+        "seconds": 7.0,
+        "voice_seconds": 2.325,
+        "action": "welcome-wave",
+        "wall_seconds": 6.5026911000004475,
+        "device": "cuda",
+        "precision": "torch.float16",
+        "completion": "Gesture completes once; long speech holds its last pose; short speech is padded with silence",
+        "cloud_render_calls": 0
+      },
+      "strict_decode_passed": true,
+      "end_to_end_generation_seconds": 10.0,
+      "video": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\sessions\\96d88623b81c40d9af9eadefd4eaf12c\\speaking.mp4"
+    },
+    {
+      "action": "goodbye-wave",
+      "job_id": "f3015309162b427fbaa779036aac594c",
+      "fay_text": "再见期待下次见",
+      "report": {
+        "frames": 175,
+        "fps": 25,
+        "seconds": 7.0,
+        "voice_seconds": 2.48,
+        "action": "goodbye-wave",
+        "wall_seconds": 4.438108899999861,
+        "device": "cuda",
+        "precision": "torch.float16",
+        "completion": "Gesture completes once; long speech holds its last pose; short speech is padded with silence",
+        "cloud_render_calls": 0
+      },
+      "strict_decode_passed": true,
+      "end_to_end_generation_seconds": 6.859000000000378,
+      "video": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\sessions\\f3015309162b427fbaa779036aac594c\\speaking.mp4"
+    },
+    {
+      "action": "explain-open-palms",
+      "job_id": "d8a9d859309c4bdab5b3d5ef6aab8158",
+      "fay_text": "比如您可以查看展厅介绍",
+      "report": {
+        "frames": 225,
+        "fps": 25,
+        "seconds": 9.0,
+        "voice_seconds": 3.345,
+        "action": "explain-open-palms",
+        "wall_seconds": 5.595369599999685,
+        "device": "cuda",
+        "precision": "torch.float16",
+        "completion": "Gesture completes once; long speech holds its last pose; short speech is padded with silence",
+        "cloud_render_calls": 0
+      },
+      "strict_decode_passed": true,
+      "end_to_end_generation_seconds": 7.890999999999622,
+      "video": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\sessions\\d8a9d859309c4bdab5b3d5ef6aab8158\\speaking.mp4"
+    },
+    {
+      "action": "acknowledge-nod",
+      "job_id": "954831f4018c45cfa244186674225da3",
+      "fay_text": "明白已收到",
+      "report": {
+        "frames": 100,
+        "fps": 25,
+        "seconds": 4.0,
+        "voice_seconds": 1.98,
+        "action": "acknowledge-nod",
+        "wall_seconds": 2.653913800000737,
+        "device": "cuda",
+        "precision": "torch.float16",
+        "completion": "Gesture completes once; long speech holds its last pose; short speech is padded with silence",
+        "cloud_render_calls": 0
+      },
+      "strict_decode_passed": true,
+      "end_to_end_generation_seconds": 4.79700000000048,
+      "video": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\sessions\\954831f4018c45cfa244186674225da3\\speaking.mp4"
+    }
+  ],
+  "interrupt": {
+    "job_id": "02cf47e2db914290982fc84d918282e1",
+    "status": "cancelled",
+    "epoch": 6,
+    "late_ready_rejected": true
+  },
+  "loopback_guards": true,
+  "unconfigured_chat_gated": true,
+  "cloud_model_calls": 0,
+  "tts_provider": "Windows offline SAPI",
+  "cloud_llm_verified": false,
+  "microphone_asr_verified": false,
+  "target_hardware_verified": false,
+  "browser_full_playback_verified": false
+}

@@ -1,0 +1,4 @@
+{
+  "code": "# llm/execution_manager.py - 模型工厂\ndef _get_llm_instance(role: str = \"small\", streaming: bool = True) -> ChatOpenAI:\n    cfg.load_config()\n\n    if role == \"big\":\n        if cfg.big_model_engine:\n            actual_base_url = cfg.big_model_base_url or cfg.gpt_base_url\n            actual_api_key  = cfg.big_model_api_key  or cfg.key_gpt_api_key\n            return ChatOpenAI(\n                model=cfg.big_model_engine,\n                base_url=actual_base_url,\n                api_key=actual_api_key,\n                streaming=streaming,\n                timeout=120, max_retries=2,\n            )\n        # 无大模型配置 → 降级为小模型\n        util.log(1, \"请求大模型但未配置 big_model_engine，降级为小模型\")\n\n    # small / 降级路径\n    return ChatOpenAI(\n        model=cfg.gpt_model_engine,\n        base_url=cfg.gpt_base_url,\n        api_key=cfg.key_gpt_api_key,\n        streaming=streaming,\n        timeout=60, max_retries=1,\n    )",
+  "font_color": "#0ea5e9"
+}

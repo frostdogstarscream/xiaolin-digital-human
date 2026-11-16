@@ -1,0 +1,129 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,11",
+  "title": "声音模型",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=VnMSw9VDTiQk9nk12UGcNbltntd",
+  "x": 42,
+  "y": -125.5,
+  "token": "VnMSw9VDTiQk9nk12UGcNbltntd",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/VnMSw9VDTiQk9nk12UGcNbltntd",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 6,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "一、模型选择",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "1、离线asr模型可以使用funasr，在线asr模型可以使用aliyun。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "2、在线公模可以使用ali、azure、volcano，在线克隆可以使用ali、elevenlabs，离线克隆gpt-sovits。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "二、ASR逻辑",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n+---------------+     初始化设备   +------------------+\n| fay_booter.py |------------------>| PyAudio          |\n| RecordListener|                      | 默认输入设备   |\n+---------------+                        +------------------+\n       |                                        |\n       | 开始录音                           | 音频数据\n       v                                        v\n+------------------+    音频数据     +------------------+\n|  recorder.py     |<---------------| 麦克风输入        |\n|  音频处理        |   (1024字节/块) | (16bit PCM)      |\n+------------------+                +------------------+\n       |\n       | VAD检测 (音量>阈值)\n       |\n       |  +----------------+\n       |->| 历史数据缓存   |\n       |  | __history_data |\n       |  +----------------+\n       v\n+------------------+     WebSocket   +------------------+\n|   ali_nls.py     |--------------->     |   ASR服务       |\n|   语音识别客户端  |<---------------|                  |\n+------------------+    识别结果     +------------------+\n       |\n       | 文本结果\n       v\n+------------------+     WebSocket   +------------------+\n| wsa_server.py    |--------------->|    客户端通知     |\n| 状态&结果广播     |                |    (数字人/UI)     |\n+------------------+                +------------------+\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "三、VAD逻辑",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n                                    初始化\n                                      |\n                                      v\n                            设置初始状态和时间标记\n                    isSpeaking=False, last_mute_time=now\n                    last_speaking_time=now\n                                      |\n                                      v\n                            +--------------------+\n                            |     录音循环       |\n                            +--------------------+\n                                      |\n                                      v\n                        计算音量百分比(percentage)\n                                      |\n                        +-------------+-------------+\n                        |                          |\n                        v                          v\n                percentage>阈值              percentage<=阈值\n                        |                          |\n                        v                          v\n            更新last_speaking_time          更新last_mute_time\n                        |                          |\n                        v                          |\n            检查是否开始新录音:                     |\n            1.not processing                       |\n            2.not isSpeaking                       |\n            3.time-last_mute_time>0.1s            |\n                        |                          |\n                +-------+-------+                  |\n                |             |                    |\n                v             |                    v\n            条件满足          |              检查是否正在录音\n                |             |              (isSpeaking=True?)\n                v             |                    |\n        1.isSpeaking=True    |            +-------+-------+\n        2.创建ASR客户端      |            |             |\n        3.开始录音处理       |           是            否\n                |             |            |             |\n                |             |            v             |\n                |             |     检查是否结束录音      |\n                |             |     time-last_speaking   |\n                |             |     _time>0.5s          |\n                |             |            |            |\n                |             |     +------+------+     |\n                |             |     |             |     |\n                |             |    是            否     |\n                |             |     |             |     |\n                |             |     v             |     |\n                |             | 1.isSpeaking=False|     |\n                |             | 2.结束ASR         |     |\n                |             | 3.处理录音结果     |     |\n                |             |     |             |     |\n                +-------------+-----+-------------+-----+\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "四、如何增加ASR模型",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "待补充。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "五、tts逻辑",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n+------------------+     文本输入     +------------------+\n| fay_core.py      |--------------->| 情绪分析          |\n| FeiFei类         |                | __update_mood     |\n+------------------+                +------------------+\n       |                                    |\n       | 情绪值(-1到1)                      |\n       v                                    v\n+------------------+     语音风格     +------------------+\n| tts_voice.py     |<---------------| __get_mood_voice  |\n| EnumVoice类      |                | 根据情绪选择风格   |\n+------------------+                +------------------+\n       |\n       | 语音配置(voice_name, style)\n       v\n+------------------+     TTS合成     +------------------+\n| Speech类         |--------------->| Azure/Edge/等     |\n| to_sample方法    |                | TTS服务           |\n+------------------+                +------------------+\n       |\n       | WAV/MP3音频\n       v\n+------------------+     音频处理     +------------------+\n| __process_output |--------------->| AudioSegment      |\n| 音频输出处理      |                | 音频格式转换      |\n+------------------+                +------------------+\n       |\n       | 处理后的音频\n       |\n   +---+---+\n   |       |\n   v       v\n+--------+ +---------+------------+\n| 本地播放|| 远程播放 ||数字人播放|\n| pygame  || Socket    ||WebSocket|\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "六、如何增加tts模型",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "待补充。",
+      "type": "block docx-text-block"
+    }
+  ],
+  "chars": 5511,
+  "captured_at": "2026-11-03T10:42:40.672Z"
+}

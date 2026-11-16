@@ -1,0 +1,50 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,2",
+  "title": "配置模块",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=Pyt7w12Lxi188Qk9Yvwcf3oNnMd",
+  "x": 42,
+  "y": -341.5,
+  "token": "Pyt7w12Lxi188Qk9Yvwcf3oNnMd",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/Pyt7w12Lxi188Qk9Yvwcf3oNnMd",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/xszyou/fay_config_server",
+          "text": "https://github.com/xszyou/fay_config_server"
+        }
+      ],
+      "text": "源码地址 https://github.com/xszyou/fay_config_server",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "注：fay默认启动会从公共配置中心加载配置，启动命令支持指定配置中心对应的projectid，如：python main.py start -config_center xxxx-xxxx-xxxx-xxxxx 。如需修改配置中心服务器地址，请从源码 utils/config_util.py上修改。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 198,
+  "captured_at": "2026-11-03T10:39:28.492Z"
+}

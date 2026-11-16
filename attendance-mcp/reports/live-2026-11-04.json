@@ -1,0 +1,131 @@
+{
+  "cases": [
+    {
+      "case": "text",
+      "input": "请帮我完成一次上班签到测试。",
+      "answer": "我来帮你查一下，稍等…\n搞定，上班签到测试已经成功完成。需要说明的是，这次用的是占位打卡测试，不会记入真实考勤系统。您还需要别的测试吗？",
+      "actual_server_calls": 1,
+      "server_events": [
+        {
+          "event": "attendance_check_in",
+          "result": "success",
+          "time": 1793774656.7198825,
+          "run_id": "01d69fd6660049c8bbf77c668e926662",
+          "call_id": "f85230d0ad854a5b8352ee97fe42f099"
+        }
+      ],
+      "jobs": [
+        {
+          "job_id": "7db0da1ae6fc4d0982e6571938a7841c",
+          "status": "ready",
+          "text": "我来帮你查一下，稍等…",
+          "action": "idle",
+          "epoch": 2,
+          "received_at": 1793774649.6315265,
+          "queued_at": 1793774650.310161,
+          "started_at": 1793774651.0282593,
+          "ended_at": 1793774652.3162487,
+          "voice_seconds": 1.68,
+          "first_delta_at": 1793774650.309633,
+          "generation_ended_at": 1793774651.6212888,
+          "delta_count": 6,
+          "transport": "WebSocket/PCM",
+          "model": "qwen3-tts-flash-realtime",
+          "turn_id": "19630395c37c457c8f8b502730d0ea08",
+          "plan_id": "7a8576194dca4dbcb199bceeb7d7033a",
+          "conversation": "conv_20c99e68-9182-4ad6-bd54-6eb4f2cbf9f3",
+          "motion_started_at": null,
+          "generation": 1
+        },
+        {
+          "job_id": "6202f326be024a18bc36ec93c34c03f2",
+          "status": "ready",
+          "text": "搞定，上班签到测试已经成功完成。需要说明的是，",
+          "action": "acknowledge-nod",
+          "epoch": 2,
+          "received_at": 1793774660.8902934,
+          "queued_at": 1793774661.5208628,
+          "started_at": 1793774661.9310684,
+          "ended_at": 1793774667.2201939,
+          "voice_seconds": 5.36,
+          "first_delta_at": 1793774661.5208628,
+          "generation_ended_at": 1793774663.4995804,
+          "delta_count": 17,
+          "transport": "WebSocket/PCM",
+          "model": "qwen3-tts-flash-realtime",
+          "turn_id": "19630395c37c457c8f8b502730d0ea08",
+          "plan_id": "f9e2515a28f74eec8e3a6b577af70510",
+          "conversation": "conv_20c99e68-9182-4ad6-bd54-6eb4f2cbf9f3",
+          "motion_started_at": 1793774661.9310684,
+          "generation": 1
+        },
+        {
+          "job_id": "47c35fdd697946dba42a34609c0070f4",
+          "status": "ready",
+          "text": "这次用的是占位打卡测试，",
+          "action": "idle",
+          "epoch": 2,
+          "received_at": 1793774663.527025,
+          "queued_at": 1793774664.1791248,
+          "started_at": 1793774667.2491157,
+          "ended_at": 1793774669.6325746,
+          "voice_seconds": 2.4,
+          "first_delta_at": 1793774664.1667764,
+          "generation_ended_at": 1793774665.6345596,
+          "delta_count": 8,
+          "transport": "WebSocket/PCM",
+          "model": "qwen3-tts-flash-realtime",
+          "turn_id": "19630395c37c457c8f8b502730d0ea08",
+          "plan_id": "f9e2515a28f74eec8e3a6b577af70510",
+          "conversation": "conv_20c99e68-9182-4ad6-bd54-6eb4f2cbf9f3",
+          "motion_started_at": null,
+          "generation": 1
+        },
+        {
+          "job_id": "1f60f351e30f4deeb51b8802c8f46525",
+          "status": "ready",
+          "text": "不会记入真实考勤系统。您还需要别的测试吗？",
+          "action": "idle",
+          "epoch": 2,
+          "received_at": 1793774665.6735938,
+          "queued_at": 1793774666.3441968,
+          "started_at": 1793774669.6340778,
+          "ended_at": 1793774673.2786684,
+          "voice_seconds": 3.68,
+          "first_delta_at": 1793774666.3436685,
+          "generation_ended_at": 1793774668.2656374,
+          "delta_count": 12,
+          "transport": "WebSocket/PCM",
+          "model": "qwen3-tts-flash-realtime",
+          "turn_id": "19630395c37c457c8f8b502730d0ea08",
+          "plan_id": "f9e2515a28f74eec8e3a6b577af70510",
+          "conversation": "conv_20c99e68-9182-4ad6-bd54-6eb4f2cbf9f3",
+          "motion_started_at": null,
+          "generation": 1
+        }
+      ],
+      "first_text_seconds": 5.991,
+      "first_playback_seconds": 7.492,
+      "total_seconds": 29.749,
+      "motions": [
+        "acknowledge-nod"
+      ],
+      "native_receipt": {
+        "username": "Avatar2D",
+        "conversation_id": "conv_20c99e68-9182-4ad6-bd54-6eb4f2cbf9f3",
+        "turn_id": "19630395c37c457c8f8b502730d0ea08",
+        "started": 1793774656.712714,
+        "done": true,
+        "success": true,
+        "output": "success",
+        "error": null,
+        "ended": 1793774656.724973
+      },
+      "rpc_seconds": 0.012,
+      "first_final_text_seconds": 17.291,
+      "first_final_playback_seconds": 18.395
+    }
+  ],
+  "physical_microphone_verified": false,
+  "physical_speaker_hearing_verified": false
+}

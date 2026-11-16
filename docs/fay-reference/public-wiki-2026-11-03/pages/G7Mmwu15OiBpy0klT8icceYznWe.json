@@ -1,0 +1,92 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,1,8",
+  "title": "UE5.0如何去掉开场广告",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=G7Mmwu15OiBpy0klT8icceYznWe",
+  "x": 82,
+  "y": 846.5,
+  "token": "G7Mmwu15OiBpy0klT8icceYznWe",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/G7Mmwu15OiBpy0klT8icceYznWe",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 5,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "5.0工程",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "1、开场广告如何去掉？",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "在face蓝图时间图表中找到前置鸡汤循环洗脑里面的Is jitan变量，默认值取消勾选",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 2,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "然后找到“girlpose_NewAnimBlueprint”动画蓝图，双击打开",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "7",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "8",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "9",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "10",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 104,
+  "last_scroll": {
+    "top": 1697,
+    "height": 656,
+    "total": 2353
+  },
+  "captured_at": "2026-11-03T10:45:23.766Z"
+}

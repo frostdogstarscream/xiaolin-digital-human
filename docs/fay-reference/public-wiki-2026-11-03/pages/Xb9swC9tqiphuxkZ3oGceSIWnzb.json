@@ -1,0 +1,106 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,15",
+  "title": "便捷服务",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=Xb9swC9tqiphuxkZ3oGceSIWnzb",
+  "x": 42,
+  "y": 1098.5,
+  "token": "Xb9swC9tqiphuxkZ3oGceSIWnzb",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/Xb9swC9tqiphuxkZ3oGceSIWnzb",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-fallback-block fallback-async-synced_reference fallback-async-align-left"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "1、Fay基础搭建（998/次）（不接受新单）",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "系统：windows10/11",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "设备配置：CPU9700K+，内存16G+，硬盘500G+，显卡3060*12G+（Fay可不需要）。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "2、Fay打造demo（9800/个）（不接受新单）",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "2D真人克隆，3D数字人（Unity、UE）都可以。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "3、数字人技术顾问服务 86800元/项目",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": " ·江湖救急 ·技术路径规划 ·难点指导  ·资源匹配 ·原型搭建 ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 197,
+  "last_scroll": {
+    "top": 280,
+    "height": 656,
+    "total": 936
+  },
+  "captured_at": "2026-11-03T10:45:51.190Z"
+}

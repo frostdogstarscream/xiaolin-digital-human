@@ -1,0 +1,92 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,0,1",
+  "title": "语音交互接口（10001）",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=UmR7wylfliwtkUkHbfFcqVN6nve",
+  "x": 82,
+  "y": 342.5,
+  "token": "UmR7wylfliwtkUkHbfFcqVN6nve",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/UmR7wylfliwtkUkHbfFcqVN6nve",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 7,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "目的：不能直接使用装fay机器的麦克风时使用，用于发送录音和接收数字人回复的音频，更多时候可以配合数字 人接口一起用。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\nimport socket\nimport pyaudio\nimport time\nimport pygame\n\nfrom threading import Thread\nimport wave\nis_speaking = False\ndef get_stream():\n        paudio = pyaudio.PyAudio()\n        device_id = 0\n        if device_id < 0:\n            return\n        stream = paudio.open(input_device_index=device_id, rate=16000, format=pyaudio.paInt16, channels=1, input=True)\n        return stream\n\ndef send_audio(client):\n    global is_speaking\n    stream = get_stream()\n    while stream:\n        time.sleep(0.0001)\n        if is_speaking:\n            continue\n        data = stream.read(1024, exception_on_overflow=False)\n        client.send(data)\n        time.sleep(0.005)\n        print(\".\", end=\"\")\n        \n\ndef receive_audio(client):\n    global is_speaking\n    while True:\n        data = client.recv(9)\n        filedata = b''\n        if b\"\\x00\\x01\\x02\\x03\\x04\\x05\\x06\\x07\\x08\" == data: #文件开始传输标志\n            while True:\n                data = client.recv(1024)\n                filedata += data\n                filedata = filedata.replace(b\"\\xf0\\xf1\\xf2\\xf3\\xf4\\xf5\\xf6\\xf7\\xf8\", b\"\") #去除心跳信息\n                if b\"\\x08\\x07\\x06\\x05\\x04\\x03\\x02\\x01\\x00\" == filedata[-9:]:#文件结束传输标志\n                    filedata = filedata[:-9]\n                    break\n            print(\"receive audio end:{}\".format(len(filedata)), end=\"\")\n\n            filename = \"samples/recv_{}.wav\".format(time.time())\n            with open(filename, 'wb') as wf:\n                wf.write(filedata)\n            with wave.open(filename, 'rb') as wav_file:\n                audio_length = wav_file.getnframes() / float(wav_file.getframerate())\n            is_speaking = True\n            pygame.mixer.music.load(filename)\n            pygame.mixer.music.play()\n            time.sleep(audio_length)\n            is_speaking = False\n\n            \n\nif __name__ == \"__main__\":\n    client = socket.socket()\n    client.connect((\"127.0.0.1\", 10001))\n    # client.send(b\"<username>User</username>\")#指定用户名\n    # client.send(b\"<output>False<output>\")#不回传音频（可以通过websocket 10003数字人接口接收音频http路径和本地路径）\n    time.sleep(1)\n    pygame.mixer.init()\n    Thread(target=send_audio, args=(client,)).start()\n    Thread(target=receive_audio, args=(client,)).start()\n\n    \n",
+      "type": "block docx-fallback-block fallback-async-code fallback-async-align-"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "音频文件开始接收标识：b\"\\x00\\x01\\x02\\x03\\x04\\x05\\x06\\x07\\x08\"",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "音频文件接收完成标识：b\"\\x08\\x07\\x06\\x05\\x04\\x03\\x02\\x01\\x00\"",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "心跳标识：b\"\\xf0\\xf1\\xf2\\xf3\\xf4\\xf5\\xf6\\xf7\\xf8\"",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "接口地址：10001 socket端口 / 9001 websocket端口",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "绑定用户及单向传输配置：\n",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\n复制\nclient.send(b\"<username>user1</username>\")#绑定用户\nclient.send(b\"<output>False</output>\")#单向配置\n注：请在推送音频前绑定\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "\n注：websocket适合用于网页和被nginx之类的服务器做转发，缺点是有安全要求的时候需要上ssl证书。socket就是直接的tcp，适合硬件和原生app对接，可以节省协议数据也没有任何限制。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 2679,
+  "last_scroll": {
+    "top": 3323,
+    "height": 656,
+    "total": 3979
+  },
+  "captured_at": "2026-11-03T10:44:25.982Z"
+}

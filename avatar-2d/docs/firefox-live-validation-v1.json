@@ -1,0 +1,10 @@
+{
+  "browser": "Firefox",
+  "connection": "connected",
+  "ice": "completed",
+  "same_session_stable": true,
+  "video_frames_in_4_seconds": 100,
+  "answer_candidates": 8,
+  "root_cause": "Unresolved mDNS candidates pruned the ICE component before local candidate gathering",
+  "local_services_ready": true
+}

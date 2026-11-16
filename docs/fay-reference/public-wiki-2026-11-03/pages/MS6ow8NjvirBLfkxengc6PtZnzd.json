@@ -1,0 +1,146 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,11,2",
+  "title": "elevenlabs",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=MS6ow8NjvirBLfkxengc6PtZnzd",
+  "x": 62,
+  "y": 54.5,
+  "token": "MS6ow8NjvirBLfkxengc6PtZnzd",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/MS6ow8NjvirBLfkxengc6PtZnzd",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 5,
+  "blocks": [
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "Tip",
+      "type": "block docx-text-block callout-render-unit"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "•\n1月23日消息，英国AI语音克隆创企ElevenLabs 1月22日宣布获得8000万美元B轮融资，由Andreessen Horowitz、Nat Friedman、Daniel Gross联合领投，红杉资本、SV Angel、Smash Capital、BroadLight Capital、Credo Ventures参投。至此，ElevenLabs估值达到11亿美元，成为新晋独角兽企业。单凭一项ai技术就能打入独角兽的企业不多。",
+      "type": "block docx-bullet-block callout-render-unit"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "•\n支持中国银联支付（涉及到信用卡的专有信息随便填就可以了）。",
+      "type": "block docx-bullet-block callout-render-unit"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "1.进入官网，注册账号",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://elevenlabs.io/",
+          "text": "https://elevenlabs.io/"
+        }
+      ],
+      "text": "https://elevenlabs.io/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "2.创建您的声音，并可以进行测试",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "9",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "3.在profile获取您的apikey，并记录",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "4.在ai_module下创建python文件，参考代码\n",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\nimport requests\nimport time\nfrom utils import util\n\nclass Speech:\n    def __init__(self):\n        self.api_key = \"your_api_key\"\n        self.history_data = []\n\n    def connect(self):\n        pass\n\n    def close(self):\n        pass\n\n    def __get_history(self, text):\n        for data in self.history_data:\n            if data[0] == text:\n                return data[1]\n        return None\n\n    def to_speech(self, text, voice_id=\"your_voice_id\", model_id=\"eleven_multilingual_v2\", stability=0.5, similarity_boost=0.5):\n        history = self.__get_history(text)\n        if history is not None:\n            return history\n\n        url = f\"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}\"\n        payload = {\n            \"text\": text,\n            \"model_id\": model_id,\n            \"voice_settings\": {\n                \"stability\": stability,\n                \"similarity_boost\": similarity_boost\n            }\n        }\n        headers = {\n            \"Content-Type\": \"application/json\",\n            \"xi-api-key\": self.api_key\n        }\n\n        try:\n            response = requests.post(url, json=payload, headers=headers)\n            response.raise_for_status()  # 检查HTTP错误\n\n            file_url = './samples/sample-' + str(int(time.time() * 1000)) + '.mp3'\n            with open(file_url, \"wb\") as audio_file:\n                for chunk in response.iter_content(chunk_size=1024):\n                    if chunk:  # 过滤掉保持连接的块\n                        audio_file.write(chunk)\n\n            self.history_data.append((text, file_url))\n            return file_url\n        except Exception as e:\n            util.log(1, \"[x] 文本到语音转换失败！\")\n            util.log(1, f\"[x] 原因: {str(e)}\")\n            return None\n\nif __name__ == '__main__':\n    eleven_labs_tts = Speech()  # 初始化类实例\n    text = \"你好，我是菲菲\"\n    audio_file_url = eleven_labs_tts.to_speech(text)\n\n    print(\"音频文件已保存:\", audio_file_url)\n",
+      "type": "block docx-fallback-block fallback-async-code fallback-async-align-"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "voice_id，api_key 需要替换为您自己的",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "5.修改fay_core.py下引入的ms_tts_sdk 为自己创建的文件",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "from ai_module.ms_tts_sdk import Speech",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "其它声音克隆接口推荐：aliyun、序列猴子、云知声、azure、aws",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.bilibili.com/read/cv25192534/",
+          "text": "https://www.bilibili.com/read/cv25192534/"
+        }
+      ],
+      "text": "离线克隆：https://www.bilibili.com/read/cv25192534/",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 2439,
+  "captured_at": "2026-11-03T10:43:03.013Z"
+}

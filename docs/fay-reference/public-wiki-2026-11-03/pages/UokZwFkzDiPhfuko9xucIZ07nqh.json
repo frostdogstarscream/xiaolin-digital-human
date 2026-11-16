@@ -1,0 +1,191 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,11,1,0",
+  "title": "GPT-SoVITS v1对接指南",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=UokZwFkzDiPhfuko9xucIZ07nqh",
+  "x": 82,
+  "y": -17.5,
+  "token": "UokZwFkzDiPhfuko9xucIZ07nqh",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/UokZwFkzDiPhfuko9xucIZ07nqh",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 3,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "# v1对接指南## ",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/xszyou/Fay",
+          "text": "Fay"
+        },
+        {
+          "href": "https://github.com/RVC-Boss/GPT-SoVITS",
+          "text": "GPT-SoVITS"
+        }
+      ],
+      "text": "\n\n## 软件包准备\n- Fay \n- GPT-SoVITS\n\n## 实施步骤### ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "1. 安装最新的 Fay",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "\n请参照仓库说明安装并运行最新版本的 Fay。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/RVC-Boss/GPT-SoVITS",
+          "text": "GPT-SoVITS"
+        }
+      ],
+      "text": "2. 下载安装 GPT-SoVITS",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/RVC-Boss/GPT-SoVITS",
+          "text": "GPT-SoVITS"
+        }
+      ],
+      "text": "\n请参照仓库说明安装最新版本的 GPT-SoVITS。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "也可以直接下载一键包。\n",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/RVC-Boss/GPT-SoVITS",
+          "text": "GPT-SoVITS"
+        }
+      ],
+      "text": "3. 运行 GPT-SoVITS",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "若安装的是一键包（dr：参考语音，dt ：参考语音的文本，dl ：语言）：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\nruntime\\python.exe api.py -dr \"111.wav\" -dt \"\" -dl \"zh\"  \n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "若直接正常手动安装（dr：参考语音，dt ：参考语音的文本，dl ：语言）：\n",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\npython api.py -dr \"111.wav\" -dt \"\" -dl \"zh\"  \n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "其他参数若想自定义，可以查看api.py了解，自行配置",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/RVC-Boss/GPT-SoVITS",
+          "text": "GPT-SoVITS"
+        }
+      ],
+      "text": "4. 检查Fay上配置（tts\\gptsovits.py）的GPT-SoVITS对接链接",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:9880",
+          "text": "http://127.0.0.1:9880"
+        }
+      ],
+      "text": "（默认http://127.0.0.1:9880）",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "5. 修改配置文件system.conf\n",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\ntts_module=gptsovits\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "5. 运行 Fay",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 546,
+  "captured_at": "2026-11-03T10:42:48.861Z"
+}

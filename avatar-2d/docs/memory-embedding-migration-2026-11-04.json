@@ -1,0 +1,15 @@
+{
+  "model": "Pro/BAAI/bge-m3",
+  "backup": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\memory-model-backups\\20261104T020707Z",
+  "users": [
+    {
+      "user_directory": "Avatar2D",
+      "nodes": 3,
+      "vectors": 3,
+      "dimensions": 1024,
+      "nodes_sha256": "53f25e226235263b102011bcb189c2fe88ad7343326297067e0711693dcb2954"
+    }
+  ],
+  "node_contents_preserved": true,
+  "using_mock_vectors": false
+}

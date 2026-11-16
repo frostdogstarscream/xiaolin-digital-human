@@ -1,0 +1,4 @@
+{
+  "code": "# llm/nlp_cognitive_stream.py - 规划器分流（节选）\nfirst_decision = _call_planner_llm(\n    plan_state,\n    stream_callback=_first_plan_stream_callback,  # finish 边流边出\n    on_tool_detected=_on_tool_detected,            # tool 时提前插过渡语\n)\n\nif first_decision[\"action\"] == \"tool\":\n    # kb_search 场景：硬塞首工具给大模型\n    return _submit_tool_execution(\n        {\"tool\": \"kb_search\", \"args\": {\"query\": search_query}},\n        show_plan_msg=not already_notified,\n    )\n\n# finish 分支的越界兜底：finish 过长 → 自动转核实\nfinish_msg = first_decision.get(\"message\", \"\")\nif has_tools and len(finish_msg) > 80 and len(content.strip()) > 3:\n    write_sentence(\"\\n\\n等等，我再帮你核实一下…\\n\\n---\\n\")\n    return _submit_tool_execution(\n        {\"tool\": None, \"args\": {}},\n        show_plan_msg=False,\n        unverified_response=finish_msg,  # 带上小模型原回复，供大模型对照\n    )",
+  "font_color": "#0ea5e9"
+}

@@ -1,0 +1,67 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,11,1",
+  "title": "GPT-SoVITS",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=SdJDwjaYFifxAhkFJVic9u5hn6c",
+  "x": 62,
+  "y": -53.5,
+  "token": "SdJDwjaYFifxAhkFJVic9u5hn6c",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/SdJDwjaYFifxAhkFJVic9u5hn6c",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 3,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/RVC-Boss/GPT-SoVITS",
+          "text": "https://github.com/RVC-Boss/GPT-SoVITS"
+        }
+      ],
+      "text": "开源地址：https://github.com/RVC-Boss/GPT-SoVITS",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://pan.baidu.com/s/1OE5qL0KreO-ASHwm6Zl9gA?pwd=mqpi",
+          "text": "https://pan.baidu.com/s/1OE5qL0KreO-ASHwm6Zl9gA?pwd=mqpi"
+        }
+      ],
+      "text": "整合包下载：https://pan.baidu.com/s/1OE5qL0KreO-ASHwm6Zl9gA?pwd=mqpi",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://www.codewithgpu.com/i/RVC-Boss/GPT-SoVITS/GPT-SoVITS-Official",
+          "text": "https://www.codewithgpu.com/i/RVC-Boss/GPT-SoVITS/GPT-SoVITS-Official"
+        }
+      ],
+      "text": "云端训练地址：https://www.codewithgpu.com/i/RVC-Boss/GPT-SoVITS/GPT-SoVITS-Official",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-iframe-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 182,
+  "captured_at": "2026-11-03T10:42:45.945Z"
+}

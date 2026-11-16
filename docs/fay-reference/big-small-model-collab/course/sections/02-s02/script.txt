@@ -1,0 +1,9 @@
+第二节看一眼 Fay 如何在一份代码里同时拿到大模型和小模型实例。
+
+关键函数在 llm/execution_manager.py 的 _get_llm_instance。它只有一个参数 role，取值 small 或 big，返回一个 ChatOpenAI 对象。
+
+当 role 是 big 时，它优先读 system.conf 里的 big_model_engine、big_model_base_url、big_model_api_key。如果某个 base_url 或 api_key 为空，会回落到小模型的 gpt_base_url、key_gpt_api_key，也就是说你可以只换模型名不换服务商。
+
+关键的一行是：如果 big_model_engine 本身没配，会打印"请求大模型但未配置，降级为小模型"，然后按小模型参数构造。这让 Fay 对单模型用户依旧可用——协同是增强特性而不是硬依赖。
+
+另外一个细节是超时与重试：大模型 timeout 120 秒、max_retries 2；小模型 timeout 60 秒、max_retries 1。这背后的假设是——大模型要跑工具循环、响应时间本来就长；小模型要扛首句响应，失败了宁可快速失败也别让用户干等。

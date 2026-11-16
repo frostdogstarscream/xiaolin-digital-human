@@ -1,0 +1,838 @@
+{
+  "id": "girl008_preview_v1",
+  "name": "girl008 未校准预览",
+  "license_note": "用户提供本地模型，仅供本次接入检查；发布和再分发许可待补充。",
+  "source_fbx": "incoming/girl008/fbx/girl008_fbx.fbx",
+  "face_driver": "bones",
+  "motion_mode": "reference_pose",
+  "animation_fbx": {},
+  "mesh_yaw": -90,
+  "mesh_scale": 1,
+  "face_bones": {
+    "jaw_open": [
+      {
+        "bone": "JawJoint_M",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "blink_left": [
+      {
+        "bone": "upperLidMain0_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain1_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain2_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain3_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain4_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain5_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain6_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain7_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain8_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain9_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain10_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain11_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain12_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain13_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain14_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain15_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain16_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain1_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain2_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain3_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain4_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain5_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain6_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain7_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain8_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain9_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain10_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain11_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain12_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain13_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain14_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "blink_right": [
+      {
+        "bone": "upperLidMain0_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain1_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain2_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain3_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain4_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain5_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain6_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain7_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain8_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain9_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain10_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain11_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain12_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain13_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain14_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain15_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "upperLidMain16_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain1_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain2_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain3_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain4_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain5_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain6_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain7_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain8_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain9_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain10_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain11_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain12_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain13_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "bone": "lowerLidMain14_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  }
+}

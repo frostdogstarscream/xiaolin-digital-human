@@ -1,0 +1,22 @@
+# Compatibility baseline for the retained Fay source on Windows / Python 3.12.
+# The complete resolved environment is frozen after runtime validation.
+langchain==0.3.27
+langchain-core==0.3.79
+langchain-openai==0.3.35
+langchain-text-splitters==0.3.11
+langsmith==0.4.30
+langgraph==0.6.11
+langgraph-sdk==0.2.9
+langgraph-checkpoint==2.1.2
+langgraph-prebuilt==0.6.4
+mcp==1.18.0
+chromadb==1.1.1
+sentence-transformers==5.1.1
+transformers==4.57.1
+numpy==2.2.6
+opencv-python==4.10.0.84
+PyAudio==0.2.14
+pydantic==2.11.9
+pydantic-settings==2.10.1
+starlette==0.47.3
+sse-starlette==3.0.2

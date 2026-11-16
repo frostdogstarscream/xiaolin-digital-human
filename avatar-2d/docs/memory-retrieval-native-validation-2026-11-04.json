@@ -1,0 +1,19 @@
+{
+  "status": "NATIVE_PAID_EMBEDDING_RERANK_PASSED",
+  "embedding_model": "Pro/BAAI/bge-m3",
+  "native_memory_stream": true,
+  "relevant_document_rank": 1,
+  "metrics": {
+    "embedding_calls": 1,
+    "embedding_ms": 100.232,
+    "rerank_status": "ok",
+    "embedding_dimensions": 1024,
+    "rerank_model": "Pro/BAAI/bge-reranker-v2-m3",
+    "rerank_candidates": 3,
+    "rerank_top_n": 3,
+    "rerank_results": 3,
+    "rerank_ms": 491.611
+  },
+  "production_memory_written": false,
+  "synthetic_memory_in_process_only": true
+}

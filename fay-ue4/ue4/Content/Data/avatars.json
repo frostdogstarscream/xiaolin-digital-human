@@ -1,0 +1,13 @@
+[
+  {
+    "id": "diagnostic_slate", "name": "校准模型 · 标准",
+    "actor_class": "/Script/HoloKiosk.KioskCharacter", "kind": "diagnostic", "engine": "4.27.2",
+    "license_note": "由工程中的几何体组成，仅验证显示、状态与音频；不是正式数字人资产。"
+  },
+  {
+    "id": "diagnostic_compact", "name": "校准模型 · 小尺寸",
+    "actor_class": "/Script/HoloKiosk.KioskCharacter", "kind": "diagnostic", "engine": "4.27.2",
+    "mesh_scale": 0.85,
+    "license_note": "同一校准模型的尺寸变体，用于测试角色配置切换；不计作两名正式人物。"
+  }
+]

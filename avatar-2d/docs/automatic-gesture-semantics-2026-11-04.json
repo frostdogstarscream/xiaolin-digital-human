@@ -1,0 +1,153 @@
+{
+  "results": [
+    {
+      "case": "first_welcome",
+      "question": "你好，我第一次来，请欢迎我。",
+      "gesture": "welcome-wave",
+      "text": "你好，欢迎首次来到这儿！我是小霖，很高兴见到你。有什么想了解的，尽管说吧。",
+      "expected": [
+        "welcome-wave"
+      ],
+      "passed": true,
+      "gesture_seconds": 2.315,
+      "first_body_seconds": 2.315,
+      "total_seconds": 2.499,
+      "raw": "{\"gesture\":\"welcome-wave\",\"text\":\"你好，欢迎首次来到这儿！我是小霖，很高兴见到你。有什么想了解的，尽管说吧。\"}",
+      "model_calls": 1,
+      "model": "deepseek-v4.1-flash"
+    },
+    {
+      "case": "repeat_welcome",
+      "question": "你好，我们刚刚已经打过招呼了。简短回应即可。",
+      "gesture": "idle",
+      "text": "好的，我在。有什么想了解的吗？",
+      "expected": [
+        "idle",
+        "acknowledge-nod"
+      ],
+      "passed": true,
+      "gesture_seconds": 2.69,
+      "first_body_seconds": 2.69,
+      "total_seconds": 2.692,
+      "raw": "{\"gesture\":\"idle\",\"text\":\"好的，我在。有什么想了解的吗？\"}",
+      "model_calls": 1,
+      "model": "deepseek-v4.1-flash"
+    },
+    {
+      "case": "goodbye",
+      "question": "今天就到这里，我要离开了，再见。",
+      "gesture": "goodbye-wave",
+      "text": "好的，再见！下次需要时随时来找我，祝你一切顺利。",
+      "expected": [
+        "goodbye-wave"
+      ],
+      "passed": true,
+      "gesture_seconds": 2.497,
+      "first_body_seconds": 2.497,
+      "total_seconds": 2.605,
+      "raw": "{\"gesture\":\"goodbye-wave\",\"text\":\"好的，再见！下次需要时随时来找我，祝你一切顺利。\"}",
+      "model_calls": 1,
+      "model": "deepseek-v4.1-flash"
+    },
+    {
+      "case": "quoted_goodbye",
+      "question": "“再见”是什么意思？请简短解释。",
+      "gesture": "idle",
+      "text": "“再见”是分别时说的礼貌用语，表示希望以后再见面。",
+      "expected": [
+        "idle",
+        "explain-open-palms"
+      ],
+      "passed": true,
+      "gesture_seconds": 2.274,
+      "first_body_seconds": 2.294,
+      "total_seconds": 2.381,
+      "raw": "{\"gesture\":\"idle\",\"text\":\"“再见”是分别时说的礼貌用语，表示希望以后再见面。\"}",
+      "model_calls": 1,
+      "model": "deepseek-v4.1-flash"
+    },
+    {
+      "case": "confirmation",
+      "question": "我理解了，你只要确认收到，不用解释。",
+      "gesture": "acknowledge-nod",
+      "text": "收到。",
+      "expected": [
+        "acknowledge-nod",
+        "idle"
+      ],
+      "passed": true,
+      "gesture_seconds": 2.805,
+      "first_body_seconds": 2.805,
+      "total_seconds": 2.816,
+      "raw": "{\"gesture\":\"acknowledge-nod\",\"text\":\"收到。\"}",
+      "model_calls": 1,
+      "model": "deepseek-v4.1-flash"
+    },
+    {
+      "case": "negation",
+      "question": "我并不是要离开，请不要跟我告别，简单回应。",
+      "gesture": "idle",
+      "text": "好的，我不说告别的话。",
+      "expected": [
+        "idle",
+        "acknowledge-nod"
+      ],
+      "passed": true,
+      "gesture_seconds": 87.619,
+      "first_body_seconds": 87.639,
+      "total_seconds": 87.709,
+      "raw": "{\"gesture\":\"idle\",\"text\":\"好的，我不说告别的话。\"}",
+      "model_calls": 1,
+      "model": "deepseek-v4.1-flash"
+    },
+    {
+      "case": "explanation",
+      "question": "请分三点说明实时数字人如何将文字转换成说话画面，每点一句话。",
+      "gesture": "explain-open-palms",
+      "text": "实时数字人先把文字输入做语义与韵律分析，拆出音素、停顿和重音。然后驱动语音合成生成音频，并同步口型与面部表情参数。最后通过实时渲染把唇形、表情和动作合成为连贯的说话画面。",
+      "expected": [
+        "explain-open-palms"
+      ],
+      "passed": true,
+      "gesture_seconds": 87.31,
+      "first_body_seconds": 87.31,
+      "total_seconds": 87.678,
+      "raw": "{\"gesture\":\"explain-open-palms\",\"text\":\"实时数字人先把文字输入做语义与韵律分析，拆出音素、停顿和重音。然后驱动语音合成生成音频，并同步口型与面部表情参数。最后通过实时渲染把唇形、表情和动作合成为连贯的说话画面。\"}",
+      "model_calls": 1,
+      "model": "deepseek-v4.1-flash"
+    },
+    {
+      "case": "short",
+      "question": "一加一是多少？仅回答数字。",
+      "gesture": "idle",
+      "text": "2",
+      "expected": [
+        "idle"
+      ],
+      "passed": true,
+      "gesture_seconds": 86.308,
+      "first_body_seconds": 86.322,
+      "total_seconds": 86.327,
+      "raw": "{\"gesture\":\"idle\",\"text\":\"2\"}",
+      "model_calls": 1,
+      "model": "deepseek-v4.1-flash"
+    },
+    {
+      "case": "no_motion",
+      "question": "不要做任何动作。请用两句话介绍你的用途。",
+      "gesture": "idle",
+      "text": "我是小霖，负责用自然简洁的方式为你讲解数字内容与相关信息。你可以直接向我提问，我会尽量清楚地解答。",
+      "expected": [
+        "idle"
+      ],
+      "passed": true,
+      "gesture_seconds": 86.892,
+      "first_body_seconds": 86.905,
+      "total_seconds": 87.287,
+      "raw": "{\"gesture\":\"idle\",\"text\":\"我是小霖，负责用自然简洁的方式为你讲解数字内容与相关信息。你可以直接向我提问，我会尽量清楚地解答。\"}",
+      "model_calls": 1,
+      "model": "deepseek-v4.1-flash"
+    }
+  ],
+  "passed": true
+}

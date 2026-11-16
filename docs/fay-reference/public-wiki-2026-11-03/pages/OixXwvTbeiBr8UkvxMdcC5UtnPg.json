@@ -1,0 +1,295 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,3,4",
+  "title": "funasr的fay使用",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=OixXwvTbeiBr8UkvxMdcC5UtnPg",
+  "x": 62,
+  "y": -377.5,
+  "token": "OixXwvTbeiBr8UkvxMdcC5UtnPg",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/OixXwvTbeiBr8UkvxMdcC5UtnPg",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 6,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程ID：fay_funasr",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "•\n作者：课程作者",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "•\n日期：2026-04-15T15:28",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "•\n版本：1.0.0",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "•\n章节数：7",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://player.fay-agent.com/",
+          "text": "https://player.fay-agent.com/"
+        }
+      ],
+      "text": "•\n播放及修改：https://player.fay-agent.com/",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "•\n导入课程包：",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "\nfay-funasr(1).zip\n1.03MB\n",
+      "type": "block docx-fallback-block fallback-async-file fallback-async-align-"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "目录",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "1.\n前置条件",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "2.\n安装独立虚拟环境",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "3.\n激活虚拟环境",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "4.\n安装依赖",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "5.\n启动funasr",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "6.\nfay配置funasr",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "7.\n测试效果",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "第1节 前置条件",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "20",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "开始之前，我们确保系统上已经安装好conda 及python环境。并下载好fay代码包，通过终端进入到代码根目录。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "第2节 安装独立虚拟环境",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "23",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "我们使用conda 新建一个python 3.12的干净虚拟环境。请在终端输入如下命令。并等待完成，期间应该提问是否安装的，输入\"y\"回车即可。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\nconda create -n funasr312 python=3.12\n",
+      "type": "block docx-fallback-block fallback-async-code fallback-async-align-"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "第3节 激活虚拟环境",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "输入如何命令激活虚拟环境。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\nconda activate funasr312\n",
+      "type": "block docx-fallback-block fallback-async-code fallback-async-align-"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "text": "第4节 安装依赖",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "30",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "在终端输入如下命令安装依赖。等待安装完成。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\npip install -r .\\asr\\funasr\\requirments.txt\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "text": "第5节 启动funasr",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "34",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "终端中进入funasr目录，并输入如下合令启动。首次启动会自动下载权重文件，等待完成。看到loaded字眼，代表已经成功了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\npython -u ASR_server.py --host \"0.0.0.0\" --port 10197 --ngpu 0\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "第6节 fay配置funasr",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "text": "fay中修改根目录system.conf中asr_mode为funasr，local_asr_ip为127.0.0.1，local_asr_port为10197,重启fay完成配置。这里要注意，使用了本地配置，请确保在system.conf的必要配置必须完整。同时根目录还必须保留config.json文件，否则系统会判断本地配置不完整，将自动使用公共配置。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "第7节 测试效果",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "40",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [],
+      "text": "重启fay后，开启麦克风进行测试。",
+      "type": "block docx-text-block"
+    }
+  ],
+  "chars": 942,
+  "captured_at": "2026-11-03T10:40:17.944Z"
+}

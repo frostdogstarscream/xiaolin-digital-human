@@ -1,0 +1,36 @@
+{
+  "requested_action": "Uninstall UE4.27 engine only",
+  "engine_root": "D:\\Develop\\Epic Games\\UE_4.27",
+  "engine_version": "4.27.2",
+  "files_before": 178586,
+  "bytes_before": 44187361169,
+  "project_templates_only": true,
+  "no_reparse_points": true,
+  "project_directory_preserved": "D:\\Code\\3D数字人",
+  "removed": true,
+  "ue5_installed": false,
+  "time_utc": "2026-11-03T09:25:23.5589843Z",
+  "disk_free_change_bytes": 44542980096,
+  "cache_removed": true,
+  "cache_bytes_removed": 97000445.0,
+  "desktop_shortcut_removed": true,
+  "ue5_cache_preserved": true,
+  "verification": {
+    "ue4_engine_removed": true,
+    "ue4_cache_removed": true,
+    "ue4_desktop_shortcut_removed": true,
+    "ue4_project_preserved": [
+      "fay-ue4\\ue4\\HoloKiosk.uproject"
+    ],
+    "liteavatar_code_preserved": true,
+    "fay_runtime_preserved": true,
+    "ue5_cache_preserved": true,
+    "services": {
+      "5000": 200,
+      "8766": 200,
+      "8767": 200,
+      "8780": 200
+    },
+    "ue5_installation_status": "pending Epic Launcher human verification"
+  }
+}

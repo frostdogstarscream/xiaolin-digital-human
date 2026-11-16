@@ -1,0 +1,124 @@
+{
+  "status": "PASSED",
+  "cases": [
+    {
+      "case": "synonym",
+      "question": "请为我办理上班签到。",
+      "expected_action": "tool",
+      "action": "tool",
+      "answer": "占位打卡测试成功，已为您办理上班签到（仅为测试，并非真实考勤记录）。",
+      "actual_server_calls": 1,
+      "judge_seconds": 3.288,
+      "execution_seconds": 4.472,
+      "total_seconds": 13.524,
+      "tool_results": [
+        {
+          "call": {
+            "name": "attendance_check_in",
+            "args": {}
+          },
+          "success": true,
+          "output": "success",
+          "error": null,
+          "attempt": 1
+        }
+      ],
+      "tool_hints": 1,
+      "gesture": "idle",
+      "passed": true
+    },
+    {
+      "case": "standalone_confirmation",
+      "question": "好的。",
+      "expected_action": "finish",
+      "action": "finish",
+      "answer": "好的，有需要随时找我。",
+      "actual_server_calls": 0,
+      "judge_seconds": 2.965,
+      "execution_seconds": null,
+      "total_seconds": 2.967,
+      "tool_results": [],
+      "tool_hints": 0,
+      "gesture": "acknowledge-nod",
+      "passed": true
+    },
+    {
+      "case": "negative",
+      "question": "今天先不打卡，不用帮我签到了。",
+      "expected_action": "finish",
+      "action": "finish",
+      "answer": "好的，那今天就先不打卡了，不帮你签到。需要的时候再跟我说。",
+      "actual_server_calls": 0,
+      "judge_seconds": 2.79,
+      "execution_seconds": null,
+      "total_seconds": 2.792,
+      "tool_results": [],
+      "tool_hints": 0,
+      "gesture": "acknowledge-nod",
+      "passed": true
+    },
+    {
+      "case": "already_done",
+      "question": "我今天已经打过卡了。",
+      "expected_action": "finish",
+      "action": "finish",
+      "answer": "好的，收到。我是小霖，这里的打卡只是占位测试，不连接真实考勤系统，所以不会影响你的正式出勤记录。有需要随时找我测试～",
+      "actual_server_calls": 0,
+      "judge_seconds": 3.208,
+      "execution_seconds": null,
+      "total_seconds": 3.217,
+      "tool_results": [],
+      "tool_hints": 0,
+      "gesture": "acknowledge-nod",
+      "passed": true
+    },
+    {
+      "case": "coffee",
+      "question": "这家咖啡店很适合打卡，你觉得呢？",
+      "expected_action": "finish",
+      "action": "finish",
+      "answer": "听起来氛围不错～不过你说的应该是探店拍照那种打卡吧？我这边只提供占位打卡测试，不接真实考勤，也更适合上班签到，不是咖啡探店打卡哦。",
+      "actual_server_calls": 0,
+      "judge_seconds": 4.388,
+      "execution_seconds": null,
+      "total_seconds": 4.397,
+      "tool_results": [],
+      "tool_hints": 0,
+      "gesture": "explain-open-palms",
+      "passed": true
+    },
+    {
+      "case": "ambiguous",
+      "question": "我到公司了。",
+      "expected_action": "finish",
+      "action": "finish",
+      "answer": "到公司啦，辛苦。需要我帮你做个占位打卡测试吗？这只是测试，不连接真实考勤系统。",
+      "actual_server_calls": 0,
+      "judge_seconds": 4.477,
+      "execution_seconds": null,
+      "total_seconds": 4.486,
+      "tool_results": [],
+      "tool_hints": 0,
+      "gesture": "acknowledge-nod",
+      "passed": true
+    },
+    {
+      "case": "query_records",
+      "question": "我今天是否已经打过卡？",
+      "expected_action": "finish",
+      "action": "finish",
+      "answer": "我这边只提供占位打卡测试，不连接真实考勤系统，所以没法查到你的真实打卡记录。如果你只是想做一次占位打卡测试，告诉我一声，我帮你走一遍。",
+      "actual_server_calls": 0,
+      "judge_seconds": 2.309,
+      "execution_seconds": null,
+      "total_seconds": 2.311,
+      "tool_results": [],
+      "tool_hints": 0,
+      "gesture": "idle",
+      "passed": true
+    }
+  ],
+  "production_history_written": false,
+  "production_tts_called": false,
+  "scope": "Real native judge/execution with actual MCP; isolated context and output"
+}

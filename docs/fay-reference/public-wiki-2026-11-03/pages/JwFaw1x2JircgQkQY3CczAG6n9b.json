@@ -1,0 +1,58 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,13",
+  "title": "fay无印案例",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=JwFaw1x2JircgQkQY3CczAG6n9b",
+  "x": 42,
+  "y": 1026.5,
+  "token": "JwFaw1x2JircgQkQY3CczAG6n9b",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/JwFaw1x2JircgQkQY3CczAG6n9b",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "加入Q群，经常性分享无印数字人案例！",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 2,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 19,
+  "last_scroll": {
+    "top": 294,
+    "height": 656,
+    "total": 950
+  },
+  "rendered_text_if_short": "fay无印案例​\n2025年3月14日修改\n​\n加入Q群，经常性分享无印数字人案例！​\n​\n​\n​\n​",
+  "captured_at": "2026-11-03T10:45:44.677Z"
+}

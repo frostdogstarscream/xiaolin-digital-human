@@ -1,0 +1,54 @@
+{
+  "provider": {
+    "provider": "opencode_go",
+    "label": "OpenCode Go · DeepSeek Flash",
+    "configured": true,
+    "model": "deepseek-v4.1-flash",
+    "base_url": "https://opencode.ai/inference/go/openai/v1",
+    "protocol": "openai_chat_completions",
+    "tts": "bailian",
+    "profiles": {
+      "bailian": {
+        "label": "百炼 · 通义千问",
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "model": "qwen-plus",
+        "configured": true
+      },
+      "opencode_go": {
+        "label": "OpenCode Go · DeepSeek Flash",
+        "base_url": "https://opencode.ai/inference/go/openai/v1",
+        "model": "deepseek-v4.1-flash",
+        "configured": true
+      },
+      "custom": {
+        "label": "自定义 OpenAI 兼容接口",
+        "base_url": "",
+        "model": "",
+        "configured": false
+      }
+    },
+    "big_model_configured": true,
+    "collaboration": {
+      "mode": "dual",
+      "small_model": "deepseek-v4.1-flash",
+      "big_model": "deepseek-v4.1-flash",
+      "big_base_url": "https://opencode.ai/inference/go/openai/v1",
+      "small_generation": {
+        "thinking": "disabled",
+        "reasoning_effort": "low",
+        "effective_reasoning_effort": null
+      },
+      "big_generation": {
+        "thinking": "enabled",
+        "reasoning_effort": "medium",
+        "effective_reasoning_effort": "high"
+      },
+      "same_model_placeholder": true
+    }
+  },
+  "credentials_changed": false,
+  "tts_settings_changed": false,
+  "unrelated_settings_changed": false,
+  "source": "Explicit user request",
+  "note": "DeepSeek maps medium to high; disabled thinking overrides low."
+}

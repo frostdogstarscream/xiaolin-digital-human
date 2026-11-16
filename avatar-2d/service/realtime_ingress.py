@@ -38,13 +38,15 @@ class RealtimeIngress:
         if data.get('user')!='Avatar2D' or not re.fullmatch(r'bailian-realtime-[a-f0-9]{32}\.wav',filename) or not 1<=len(text)<=600:
             raise web.HTTPBadRequest()
         if not self.accepting or conv in self.blocked:raise web.HTTPConflict()
-        first=conv not in self.conversations;self.conversations.add(conv)
-        from app import action_for,FAY
-        action=(action_for({'Action':data.get('action')}) if self.selected_action=='auto' else self.selected_action) if first else 'idle'
+        try:action,plan=self.audio_plan(data.get('action'),conv)
+        except ValueError:raise web.HTTPConflict(text='语音轮次已失效') from None
+        self.conversations.add(conv)
+        from app import FAY
         key=uuid.uuid4().hex
         job=dict(id=key,job_id=key,text=text,epoch=self.epoch,action=action,status='preparing',received_at=time.time(),
                  generation=self.presenter.generation,seq=0,bytes=0,delta_count=0,rate_state=None,pending=b'',frame_started=False,
-                 model=str(data.get('model','')),transport='WebSocket/PCM',conversation=conv,stream_done=False)
+                 model=str(data.get('model','')),transport='WebSocket/PCM',conversation=conv,stream_done=False,
+                 plan=plan,turn_id=plan['turn_id'],plan_id=plan['plan_id'])
         self.jobs[key]=job;self.stream_jobs[key]=job
         self.streamed_sources[(str((FAY/'samples'/filename).resolve()),conv)]+=1
         await self.emit('streaming',**self.public(job))
@@ -53,7 +55,7 @@ class RealtimeIngress:
     def enqueue_pcm(self,job,raw,end=False):
         if not raw and not end:return
         wave=np.frombuffer(raw,dtype='<i2').astype(np.float32)/32768
-        self.presenter.enqueue_stream(wave,{'job_id':job['id'],'epoch':job['epoch'],'action':job['action']},
+        self.presenter.enqueue_stream(wave,dict(job['plan'],job_id=job['id'],epoch=job['epoch'],action=job['action']),
             start=not job['frame_started'],end=end,generation=job['generation'])
         job['frame_started']=True
         if 'queued_at' not in job:job['queued_at']=time.time()

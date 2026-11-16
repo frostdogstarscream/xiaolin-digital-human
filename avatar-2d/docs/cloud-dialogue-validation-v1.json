@@ -1,0 +1,38 @@
+{
+  "status": "REAL_QWEN_FAY_TTS_LIPSYNC_BROWSER_PLAYBACK_PASSED",
+  "model": "qwen-plus",
+  "credentials": "saved locally and not included in this report",
+  "question": "请用一句不超过30个字的话介绍你的讲解员身份。",
+  "observed_answer": "我是展厅数字讲解员，专注讲解、答疑，亲切又靠谱。",
+  "segments": [
+    {
+      "job_id": "9ef82d3e915f4080891b58eec2a1f001",
+      "text": "我是展厅数字讲解员，专注讲解、答疑，",
+      "frames": 132,
+      "seconds": 5.28,
+      "strict_decode_passed": true,
+      "browser_playback_ended_count": 1,
+      "video": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\sessions\\9ef82d3e915f4080891b58eec2a1f001\\speaking.mp4"
+    },
+    {
+      "job_id": "ebf8f1bb40fe4d659f18166124c71526",
+      "text": "亲切又靠谱。",
+      "frames": 55,
+      "seconds": 2.2,
+      "strict_decode_passed": true,
+      "browser_playback_ended_count": 1,
+      "video": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\sessions\\ebf8f1bb40fe4d659f18166124c71526\\speaking.mp4"
+    }
+  ],
+  "complete_text_matches_all_audio_segments": true,
+  "single_playback_owner_verified": true,
+  "fullscreen_button_exit_verified": true,
+  "escape_fullscreen_exit_verified": true,
+  "tts": "Windows offline Chinese SAPI",
+  "cloud_llm_verified": true,
+  "microphone_asr_verified": false,
+  "target_gtx1660_verified": false,
+  "speaker_human_acceptance": false,
+  "console_screenshot": "docs/fay-2d-console-verified.png",
+  "fullscreen_screenshot": "docs/fay-2d-fullscreen-verified-v2.png"
+}

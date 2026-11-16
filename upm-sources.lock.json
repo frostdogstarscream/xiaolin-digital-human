@@ -1,0 +1,62 @@
+[
+  {
+    "package": "com.unity.mathematics",
+    "version": "1.3.2",
+    "url": "https://download-packages.unity.cn/com.unity.mathematics/-/com.unity.mathematics-1.3.2.tgz",
+    "sha1": "8017b507cc74bf0a1dd14b18aa860569f807314d"
+  },
+  {
+    "package": "com.unity.collections",
+    "version": "2.5.1",
+    "url": "https://download-packages.unity.cn/com.unity.collections/-/com.unity.collections-2.5.1.tgz",
+    "sha1": "56bff8827a7ef6d44fcee4f36e558a74da89c1a0"
+  },
+  {
+    "package": "com.unity.timeline",
+    "version": "1.8.7",
+    "url": "https://download-packages.unity.cn/com.unity.timeline/-/com.unity.timeline-1.8.7.tgz",
+    "sha1": "c58b4ee65782ad38338e29f7ee67787cb6998f04"
+  },
+  {
+    "package": "com.unity.nuget.newtonsoft-json",
+    "version": "3.2.1",
+    "url": "https://download-packages.unity.cn/com.unity.nuget.newtonsoft-json/-/com.unity.nuget.newtonsoft-json-3.2.1.tgz",
+    "sha1": "74deb55db2a0c29ddfda576608bcb86abbd13ee6"
+  },
+  {
+    "package": "com.unity.test-framework",
+    "version": "1.4.6",
+    "url": "https://download-packages.unity.cn/com.unity.test-framework/-/com.unity.test-framework-1.4.6.tgz",
+    "sha1": "5ac417e07314c8f6afba8109738c32b82d391e68"
+  },
+  {
+    "package": "com.unity.nuget.mono-cecil",
+    "version": "1.11.4",
+    "url": "https://download-packages.unity.cn/com.unity.nuget.mono-cecil/-/com.unity.nuget.mono-cecil-1.11.4.tgz",
+    "sha1": "d6f9955a5d5f84d45442ff1ad0fb694cc6e2fd62"
+  },
+  {
+    "package": "com.unity.ext.nunit",
+    "version": "2.0.3",
+    "url": "https://download-packages.unity.cn/com.unity.ext.nunit/-/com.unity.ext.nunit-2.0.3.tgz",
+    "sha1": "e9d0d64aaa514a9ed29680de4c7e3c323717bbac"
+  },
+  {
+    "package": "com.unity.test-framework.performance",
+    "version": "3.0.3",
+    "url": "https://download.packages.unity.com/com.unity.test-framework.performance/-/com.unity.test-framework.performance-3.0.3.tgz",
+    "sha1": "fb0dc592af8b524f1a06c50d7caf95552f1bcd2f"
+  },
+  {
+    "package": "com.cysharp.unitask",
+    "version": "2.5.4",
+    "url": "https://codeload.github.com/Cysharp/UniTask/zip/refs/tags/2.5.4",
+    "sha256": "ab8f7d9573932b5d1cf1d3c57e82e8f26bb9c6d0f6b728129a7856b1950db94e"
+  },
+  {
+    "package": "com.unity.burst",
+    "version": "1.8.21",
+    "url": "https://download-packages.unity.cn/com.unity.burst/-/com.unity.burst-1.8.21.tgz",
+    "sha1": "59eb6f11d2422f95682320d9daa3e79fdb076744"
+  }
+]

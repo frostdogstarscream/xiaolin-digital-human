@@ -1,0 +1,11 @@
+{
+  "page_open_auto_connected": true,
+  "page_refresh_auto_connected": true,
+  "new_window_auto_takeover": true,
+  "single_session_stable_observation_seconds": 6,
+  "continuous_video_frames_verified": true,
+  "fay_core_auto_started": true,
+  "manual_connect_button_removed": true,
+  "frontend_failure_retry_regression_passed": true,
+  "physical_microphone_verified": false
+}

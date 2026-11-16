@@ -1,0 +1,362 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,0,5",
+  "title": "意图接口(5000)",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=ZmIAwppguiL2GJk4WX6cYhxgnPh",
+  "x": 82,
+  "y": 486.5,
+  "token": "ZmIAwppguiL2GJk4WX6cYhxgnPh",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/ZmIAwppguiL2GJk4WX6cYhxgnPh",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 5,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "1.\n打招呼接口",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "接口地址",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/to-greet",
+          "text": "http://127.0.0.1:5000/to-greet"
+        }
+      ],
+      "text": "http://127.0.0.1:5000/to-greet",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "参数",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "username：用户名",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "observation：同上",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "请求示例",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\n复制\n{\n    \"username\":\"User\",\n    \"observation\":{\"address\":\"车陂街道\",\"人脸识别\":\"张三（主人的朋友）\"}\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "返回：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\n复制\n{\n    \"data\": \"你好！我是菲菲，随时为你服务！\",\n    \"msg\": \"已进行打招呼\",\n    \"status\": \"success\"\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "2.\n唤醒接口",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "接口地址",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/to-wake",
+          "text": "http://127.0.0.1:5000/to"
+        },
+        {
+          "href": "http://127.0.0.1:5000/to-wake",
+          "text": "-wake"
+        }
+      ],
+      "text": "http://127.0.0.1:5000/to-wake",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "参数",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "username：用户名",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "请求示例",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\n复制\n{\n    \"username\":\"User\"\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "返回：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\n复制\n{\n    \"msg\": \"已唤醒\",\n    \"status\": \"success\"\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-heading2-block isEmpty"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "3.\n打断接口",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "接口地址",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/to-stop-talking",
+          "text": "http://127.0.0.1:5000/to"
+        },
+        {
+          "href": "http://127.0.0.1:5000/to-stop-talking",
+          "text": "-stop-talking"
+        }
+      ],
+      "text": "http://127.0.0.1:5000/to-stop-talking",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "参数",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "username：用户名",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "observation：同上",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "text": "请求示例",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\n复制\n{\n    \"username\":\"User\",\n    \"observation\":{}\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "返回：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\n复制\n{\n    \"msg\": \"已停止说话\",\n    \"status\": \"success\"\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "4.\n消息透传接口",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "接口地址",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:5000/transparent-pass",
+          "text": "http://127.0.0.1:5000/"
+        },
+        {
+          "href": "http://127.0.0.1:5000/transparent-pass",
+          "text": "transparent-pass"
+        }
+      ],
+      "text": "http://127.0.0.1:5000/transparent-pass",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "参数",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "text": "user:非必，用户名",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "text:必须，透传的消息内容",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "text": "audio:非必，透传的音频（存在音频时不对text tts）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [],
+      "text": "请求示例",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "42",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\n复制\n{\n    \"user\":\"User\",\n    \"text\":\"你好，请说？\",\n    \"audio\":\"https://xxx.com/aaaa.wav\"\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "text": "返回：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "44",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\n复制\n{\n    \"code\": 500,\n    \"message\": \"成功\"\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "45",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 913,
+  "last_scroll": {
+    "top": 2586,
+    "height": 656,
+    "total": 3242
+  },
+  "captured_at": "2026-11-03T10:44:49.840Z"
+}

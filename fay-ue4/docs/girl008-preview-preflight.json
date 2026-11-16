@@ -1,0 +1,21 @@
+{
+  "status": "UE_EDITOR_TEXTURED_PREVIEW_VERIFIED_NOT_PRODUCTION",
+  "source_sha256": "ba45be42d6da5fd9e5a7076b474b68ec7ed91f03c51a01e4949b87b60c9543bb",
+  "mapped_bones": 63,
+  "missing_bones": [],
+  "all_deltas_zero": true,
+  "ue_import_verified": true,
+  "cpp_compilation_verified": true,
+  "production_registered": false,
+  "tests": "22 passed; mocked cloud/Fay only",
+  "rendered_preview_verified": true,
+  "engine_version": "4.27.2",
+  "toolchain": "VS2019 14.29.30159",
+  "materials": 16,
+  "textures": 14,
+  "body_animation_verified": false,
+  "face_calibration_verified": false,
+  "cloud_integration_verified": false,
+  "standalone_packaged": false,
+  "screenshot": "girl008-ue4-textured-preview.png"
+}

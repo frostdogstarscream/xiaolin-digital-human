@@ -1,0 +1,6 @@
+{
+  "name": "HoloKiosk.Editor",
+  "references": ["HoloKiosk.Runtime", "uLipSync.Runtime"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

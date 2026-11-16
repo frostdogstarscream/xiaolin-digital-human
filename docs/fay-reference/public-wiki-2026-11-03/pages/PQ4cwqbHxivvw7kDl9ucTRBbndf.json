@@ -1,0 +1,72 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,3",
+  "title": "核心交互",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=PQ4cwqbHxivvw7kDl9ucTRBbndf",
+  "x": 42,
+  "y": -305.5,
+  "token": "PQ4cwqbHxivvw7kDl9ucTRBbndf",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/PQ4cwqbHxivvw7kDl9ucTRBbndf",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/L6EhwS6MKi1pL7kKtRQcx1mvng8",
+          "text": "多通道打断逻辑"
+        }
+      ],
+      "text": "多通道打断逻辑",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/VTiqw4sKTisEhmkWTn6cnIcKnvh",
+          "text": "多用户分发逻辑"
+        }
+      ],
+      "text": "多用户分发逻辑",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/Vs74wNVA4iYaL0k7gonceWM1nvg",
+          "text": "think标签处理逻辑"
+        }
+      ],
+      "text": "think标签处理逻辑",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/Z8KOwATXBij7VykAqOxcftkXn6d",
+          "text": "prestart标签处理逻辑"
+        }
+      ],
+      "text": "prestart标签处理逻辑",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 39,
+  "captured_at": "2026-11-03T10:39:42.120Z"
+}

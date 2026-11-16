@@ -12,6 +12,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 from aiohttp import ClientSession,ClientTimeout,WSMsgType,web
+import provider_config
 
 ROOT=Path(__file__).resolve().parents[1]
 FAY=ROOT.parent/'fay-ue4/runtime/fay-local/app'
@@ -28,13 +29,7 @@ BEHAVIORS={'nod':'acknowledge-nod','explain':'explain-open-palms','invite':'welc
 
 
 def model_settings():
-    c=configparser.ConfigParser(interpolation=None)
-    c.read(FAY/'system.conf',encoding='utf-8-sig')
-    k=c['key']
-    endpoint=k.get('gpt_base_url','')
-    host=urlsplit(endpoint).hostname or ''
-    return dict(configured=bool(k.get('gpt_api_key','').strip()),model=k.get('gpt_model_engine',''),
-                base_url=endpoint if host.endswith('aliyuncs.com') else '',tts=k.get('tts_module',''))
+    return provider_config.public_settings(FAY/'system.conf')
 
 
 def action_for(data):
@@ -209,7 +204,8 @@ class Bridge:
         if not 1<=len(text)<=240:raise web.HTTPBadRequest(text='请输入 1–240 字的播报文本')
         if not self.connected:raise web.HTTPServiceUnavailable(text='Fay 尚未连接')
         await self.interrupt(reason='new_turn');self.accepting=True
-        async with self.http.post(FAY_URL+'/transparent-pass',json={'user':USERNAME,'text':text}) as r:
+        control=self.begin_action_turn(fixed=True) if hasattr(self,'begin_action_turn') else None
+        async with self.http.post(FAY_URL+'/transparent-pass',json={'user':USERNAME,'text':text,'avatar_context':control}) as r:
             result=await r.json()
             if r.status!=200 or result.get('code')!=200:raise web.HTTPBadGateway(text='Fay 未接受播报，请启动核心')
         return web.json_response({'ok':True,'epoch':self.epoch})
@@ -218,14 +214,15 @@ class Bridge:
         await self.claim_viewer(request)
         data=await request.json();text=str(data.get('text','')).strip()
         if not 1<=len(text)<=300:raise web.HTTPBadRequest(text='请输入 1–300 字的问题')
-        if not model_settings()['configured']:raise web.HTTPConflict(text='请先在本机配置百炼 API Key')
+        if not model_settings()['configured']:raise web.HTTPConflict(text='请先在本机配置大模型 API Key')
         await self.interrupt(reason='new_turn');self.accepting=True
+        control=self.begin_action_turn() if hasattr(self,'begin_action_turn') else None
         epoch=self.epoch
         async def fetch():
             chunks=[]
             try:
                 async with self.http.post(FAY_URL+'/v1/chat/completions',json={'model':'fay','user':USERNAME,
-                        'stream':True,'messages':[{'role':'user','content':text}]}) as response:
+                        'stream':True,'messages':[{'role':'user','content':text}],'avatar_context':control}) as response:
                     if response.status!=200:raise ValueError('Fay returned an error')
                     async for line in response.content:
                         if epoch!=self.epoch:return
@@ -245,7 +242,7 @@ class Bridge:
                 await self.emit('answer_complete',text=''.join(chunks))
             except asyncio.CancelledError:raise
             except Exception:
-                if epoch==self.epoch:await self.emit('error',message='Fay 问答失败，请检查百炼密钥、地域和模型权限。')
+                if epoch==self.epoch:await self.emit('error',message='Fay 问答失败，请检查所选服务的密钥、接口地址、模型权限和额度。')
         self.active_http=asyncio.create_task(fetch())
         return web.json_response({'ok':True,'epoch':epoch})
 
@@ -255,23 +252,60 @@ class Bridge:
 
     async def configure(self,request):
         data=await request.json()
-        key=str(data.get('api_key','')).strip()
-        model=str(data.get('model','qwen-plus')).strip()
-        endpoint=str(data.get('base_url','https://dashscope.aliyuncs.com/compatible-mode/v1')).strip().rstrip('/')
-        u=urlsplit(endpoint)
-        if u.scheme!='https' or not (u.hostname=='dashscope.aliyuncs.com' or (u.hostname or '').endswith('.maas.aliyuncs.com')) or u.username or u.password or u.query or u.fragment:
-            raise web.HTTPBadRequest(text='请使用百炼官方 HTTPS 兼容接口地址')
-        if not re.fullmatch(r'[a-zA-Z0-9._-]{1,80}',model):raise web.HTTPBadRequest(text='模型名称格式不正确')
-        c=configparser.ConfigParser(interpolation=None);path=FAY/'system.conf'
-        c.read(path,encoding='utf-8-sig')
-        if key:c['key']['gpt_api_key']=key
-        if not c['key'].get('gpt_api_key'):raise web.HTTPBadRequest(text='请输入 API Key')
-        c['key']['gpt_base_url']=endpoint;c['key']['gpt_model_engine']=model
-        temp=path.with_suffix('.2d-tmp')
-        with temp.open('w',encoding='utf-8') as out:c.write(out)
-        os.replace(temp,path)
+        try:settings=provider_config.save_settings(data,FAY/'system.conf')
+        except provider_config.ConfigurationError as exc:raise web.HTTPBadRequest(text=str(exc)) from None
         self.dialogue_verified=False
-        return web.json_response({'ok':True,'provider':model_settings(),'tested':False})
+        return web.json_response({'ok':True,'provider':settings,'tested':False})
+
+    async def provider_settings(self,request):
+        return web.json_response(model_settings(),headers={'Cache-Control':'no-store'})
+
+    async def configure_collaboration(self,request):
+        data=await request.json()
+        try:settings=provider_config.set_collaboration(data.get('mode'),FAY/'system.conf')
+        except provider_config.ConfigurationError as exc:raise web.HTTPBadRequest(text=str(exc)) from None
+        self.dialogue_verified=False
+        return web.json_response({'ok':True,'provider':settings,'tested':False})
+
+    async def test_provider(self,request):
+        """Explicit text-only probe: no save, Fay history, rendering or TTS."""
+        try:
+            value=provider_config.resolve_submission(await request.json(),provider_config.read_config(FAY/'system.conf'))
+        except provider_config.ConfigurationError as exc:raise web.HTTPBadRequest(text=str(exc)) from None
+        started=time.perf_counter();first=None;parts=[];finished=False
+        headers=provider_config.request_headers(value['base_url'],'probe-'+uuid.uuid4().hex)
+        headers['Authorization']='Bearer '+value['api_key']
+        try:
+            async with self.http.post(value['base_url']+'/chat/completions',headers=headers,
+                    json={'model':value['model'],'stream':True,'max_tokens':48,
+                          'messages':[{'role':'user','content':'仅做接口连接测试，请直接回复：连接成功。'}],
+                          **provider_config.generation_options('small',value['base_url'],value['model'],provider_config.read_config(FAY/'system.conf'))},
+                    timeout=ClientTimeout(total=35),allow_redirects=False) as response:
+                if response.status!=200:
+                    hint={401:'密钥无效或认证方式不匹配',403:'模型权限或地域限制',404:'接口地址或模型 ID 不正确',429:'额度不足或请求过于频繁'}.get(response.status,'上游服务未接受请求')
+                    return web.json_response({'ok':False,'message':f'HTTP {response.status}：{hint}。'},status=502)
+                async for raw_line in response.content:
+                    line=raw_line.decode('utf-8').strip()
+                    if not line.startswith('data:'):continue
+                    raw=line[5:].strip()
+                    if raw=='[DONE]':finished=True;break
+                    chunk=json.loads(raw)
+                    if chunk.get('error'):raise ValueError('upstream error')
+                    for choice in chunk.get('choices',[]):
+                        if choice.get('finish_reason'):finished=True
+                        text=choice.get('delta',{}).get('content')
+                        if isinstance(text,str) and text:
+                            if first is None:first=time.perf_counter()-started
+                            parts.append(text)
+                            if sum(map(len,parts))>2000:raise ValueError('oversized response')
+            if not parts or not finished:raise ValueError('incomplete stream')
+        except (asyncio.TimeoutError,OSError):
+            return web.json_response({'ok':False,'message':'接口连接超时或网络不可达。'},status=502)
+        except Exception:
+            return web.json_response({'ok':False,'message':'未收到完整的 Chat Completions 文字流，请检查接口协议和模型。'},status=502)
+        return web.json_response({'ok':True,'model':value['model'],'reply':''.join(parts),
+            'first_text_ms':round(first*1000),'total_ms':round((time.perf_counter()-started)*1000),
+            'saved':False,'tts_called':False})
 
     async def socket(self,request):
         origin=request.headers.get('Origin')
@@ -309,8 +343,17 @@ async def output_file(request):
 async def index(request):return web.FileResponse(ROOT/'web/index.html')
 
 
+def provider_routes(bridge):
+    async def page(request):return web.FileResponse(ROOT/'web/models.html')
+    async def script(request):return web.FileResponse(ROOT/'web/model-config.js')
+    return [web.get('/models',page),web.get('/model-config.js',script),
+            web.get('/api/provider',bridge.provider_settings),web.post('/api/provider-test',bridge.test_provider),
+            web.post('/api/provider-collaboration',bridge.configure_collaboration)]
+
+
 def main():
     b=Bridge();app=web.Application(middlewares=[local_only],client_max_size=32000)
+    app.add_routes(provider_routes(b))
     app.on_startup.append(b.startup);app.on_cleanup.append(b.shutdown)
     app.add_routes([web.get('/',index),web.get('/api/health',b.health),web.get('/ws',b.socket),
         web.post('/api/start',b.start_core),web.post('/api/say',b.say),web.post('/api/chat',b.chat),

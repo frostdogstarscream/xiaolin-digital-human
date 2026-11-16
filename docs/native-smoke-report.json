@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-11-02T11:25:17.956976+08:00",
+  "unity": "6000.0.65f1",
+  "build": {
+    "result": "Succeeded",
+    "errors": 0,
+    "warnings": 0,
+    "platform": "Windows x64 Mono D3D11"
+  },
+  "native_checks": [
+    "full_body_black_background",
+    "blink_observed",
+    "mouth_movement_during_pcm_playback",
+    "Chinese_admin_panel",
+    "F10_admin_toggle",
+    "welcome_playback_completion",
+    "chapter_pause_keeps_sentence",
+    "resume_replays_interrupted_sentence",
+    "playback_ack_advances_sentence_0_1_2",
+    "packaged_vbs_launches_player_and_two_services",
+    "Ctrl_Shift_Q_normal_exit",
+    "owned_services_and_ports_closed_after_exit"
+  ],
+  "test_audio": {
+    "provider": "Windows Huihui SAPI; not Bailian",
+    "source_seconds": 23.885,
+    "observed_completed_seconds": [
+      24.202,
+      24.169,
+      24.205
+    ]
+  },
+  "cloud_calls": 0,
+  "pending": [
+    "Bailian real ASR LLM TTS embedding",
+    "physical speaker listening assessment",
+    "AEC and hands-free interaction",
+    "alternate VRM acceptance",
+    "multi-monitor and portrait display",
+    "GTX1660Super warehouse display",
+    "500ms interruption and 3s first audio latency",
+    "8-hour soak"
+  ],
+  "test_data": "isolated runtime/native-smoke; excluded from release archive"
+}

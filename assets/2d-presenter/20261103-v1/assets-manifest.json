@@ -1,0 +1,27 @@
+{
+  "generator": "Built-in imagegen; identity-preserving reference edits",
+  "assets": [
+    {
+      "file": "presenter-fullbody-closedmouth-v1.png",
+      "width": 941,
+      "height": 1672,
+      "bytes": 919464,
+      "sha256": "cd77f1d4b467e1b35171fc53623a6b420c50ccdea8e34ebc8c3fc3041af30e80"
+    },
+    {
+      "file": "presenter-waistup-closedmouth-v1.png",
+      "width": 941,
+      "height": 1672,
+      "bytes": 1776853,
+      "sha256": "70036d0ae9a308fec2ff0359a4bd532a7b95ed19bc60f97a4d767a81a94bfcc0"
+    },
+    {
+      "file": "reference-original.png",
+      "width": 486,
+      "height": 1600,
+      "bytes": 726584,
+      "sha256": "fdcf68abbebb7b82b7c5a59d5dd547d4fd41df8493bf8a11536d07ca54d170e1"
+    }
+  ],
+  "video_generated": false
+}

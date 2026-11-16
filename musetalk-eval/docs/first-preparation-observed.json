@@ -1,0 +1,9 @@
+{
+  "provenance": "Observed initial prepare_candidate.py run and its first preparation.json before cache reloads",
+  "model_load_seconds": 22.050320100000135,
+  "all_action_cache_preparation_seconds": 70.3364658999999,
+  "ready_including_warmup_seconds": 95.72744499999999,
+  "prepared_pose_frames": 675,
+  "cache_stamp": "ace998aba3308238",
+  "note": "Subsequent fresh processes reuse these prepared assets; their load times are reported separately. This is an observed first-run measurement, not a guarantee of uncached disk/network time."
+}

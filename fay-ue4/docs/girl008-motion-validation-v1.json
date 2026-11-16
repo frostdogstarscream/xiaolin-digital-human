@@ -1,0 +1,35 @@
+{
+  "status": "LOCAL_EDITOR_PREVIEW_VERIFIED_NOT_PRODUCTION",
+  "engine": "UE4.27.2",
+  "editor_module_compiled": true,
+  "face_bones": {
+    "jaw_open": 41,
+    "blink_left": 31,
+    "blink_right": 31
+  },
+  "body_bones": 5,
+  "local_audio": {
+    "samples": 394308,
+    "sample_rate": 24000,
+    "seconds": 16.4295,
+    "channels": 1,
+    "sample_width": 2
+  },
+  "visual_checks": [
+    "fullbody arms lowered",
+    "front closeup mouth open",
+    "front closeup eyelids closed"
+  ],
+  "runtime_log": "runtime/ue-motion-preview-v1.log",
+  "audio_completed_runs": 2,
+  "tests": "27 passed, 1 dependency deprecation warning; Fay/cloud mocked",
+  "production_registered": false,
+  "unverified": [
+    "human listening acceptance",
+    "phoneme accuracy",
+    "real Fay/cloud end-to-end",
+    "packaged executable",
+    "GTX1660 target performance",
+    "long duration stability"
+  ]
+}

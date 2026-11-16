@@ -1,0 +1,1721 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,7",
+  "title": "Prompt模块",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=AwuDwdHyciu8XTkFI9vcilDPnge",
+  "x": 42,
+  "y": -125.5,
+  "token": "AwuDwdHyciu8XTkFI9vcilDPnge",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/AwuDwdHyciu8XTkFI9vcilDPnge",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 19,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "position": 235.25,
+      "record_id": "Yvpsdzm0bo4xbExn1zKcWoazno5",
+      "text": "Fay Prompt 设计文档",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "position": 281.640625,
+      "record_id": "WPoldcPj6osWNLxFqICchqBKnNc",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "position": 315.640625,
+      "record_id": "FDTedXAwYoDIXux59LDcOvQXnud",
+      "text": "> 提示：使用 AI IDE 对 Fay 进行 Prompt 改造时，可以让 AI 参考 `fay/docs/Prompt设计文档.md`",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "position": 349.640625,
+      "record_id": "YAb5diieHozCnRxI9dpcTa2inec",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "position": 383.640625,
+      "record_id": "RhY2drthmoQGY1xqhV8cVZHFnoc",
+      "text": "本文档详细说明 Fay 数字人系统中使用的各类 Prompt 设计及其工作流程。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "position": 417.625,
+      "record_id": "Z5ZBdo8fqosIoIxjLPBcTK0jnJy",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "position": 465.625,
+      "record_id": "XjyIdVX2XoL9OAxpjjLc4eAGnNU",
+      "text": "1. Prompt 类型与功能对比",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "position": 504.421875,
+      "record_id": "BQbDdbUSCoLU9jxwJ46cbEXEnme",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "position": 559.921875,
+      "record_id": "YL6UdX3QTofhNuxQD5ycIa7anWb",
+      "table_rows": [
+        [
+          "Prompt 类型",
+          "功能定位",
+          "输出格式",
+          "执行方式",
+          "使用场景"
+        ],
+        [
+          "系统 Prompt",
+          "定义 AI 人设和行为规范",
+          "-",
+          "-",
+          "贯穿整个对话流程"
+        ],
+        [
+          "规划器 Prompt",
+          "决策下一步行动（调用工具或直接回复）",
+          "严格 JSON",
+          "同步",
+          "需要工具调用或复杂决策时"
+        ],
+        [
+          "最终输出 Prompt",
+          "生成自然语言回复",
+          "同步",
+          "同步",
+          "生成最终用户可见的回复"
+        ],
+        [
+          "记忆重要性 Prompt",
+          "评估对话内容的记忆价值",
+          "0-10 数值",
+          "异步",
+          "记忆存储时评估重要性"
+        ],
+        [
+          "用户画像 Prompt",
+          "从对话中提取用户特征",
+          "结构化文本",
+          "异步",
+          "更新用户画像信息"
+        ],
+        [
+          "记忆反思 Prompt",
+          "对历史记忆进行归纳总结",
+          "高层次洞察",
+          "异步",
+          "定期反思生成抽象记忆"
+        ]
+      ],
+      "text": "Prompt 类型\t功能定位\t输出格式\t执行方式\t使用场景\n系统 Prompt\t定义 AI 人设和行为规范\t-\t-\t贯穿整个对话流程\n规划器 Prompt\t决策下一步行动（调用工具或直接回复）\t严格 JSON\t同步\t需要工具调用或复杂决策时\n最终输出 Prompt\t生成自然语言回复\t同步\t同步\t生成最终用户可见的回复\n记忆重要性 Prompt\t评估对话内容的记忆价值\t0-10 数值\t异步\t记忆存储时评估重要性\n用户画像 Prompt\t从对话中提取用户特征\t结构化文本\t异步\t更新用户画像信息\n记忆反思 Prompt\t对历史记忆进行归纳总结\t高层次洞察\t异步\t定期反思生成抽象记忆",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "position": 897.921875,
+      "record_id": "UpMjdUIf3ogC3fxTkMNcQeX2nud",
+      "text": "> 说明：Fay 系统采用 双阶段 Prompt 架构，通过规划器和最终输出两个阶段协同工作",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "position": 931.921875,
+      "record_id": "UpetdQHr7ovnFOx91K6cRAI9nPh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "position": 977.921875,
+      "record_id": "ZtjCd8epaoaQP1xktdVcGYoEnVh",
+      "text": "1.1 规划器Prompt及最终输出Prompt功能对比详解",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "49",
+      "images": 0,
+      "links": [],
+      "position": 1013.921875,
+      "record_id": "Nc3GdFeqGo5GotxwuTBckwsanac",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "position": 1069.421875,
+      "record_id": "F9SNdGulMoPFDDxXfS6cUlonnAb",
+      "table_rows": [
+        [
+          "特性",
+          "规划器 Prompt",
+          "最终输出 Prompt"
+        ],
+        [
+          "System Message",
+          "`你负责规划下一步行动，请严格输出合法 JSON。`",
+          "直接输出"
+        ],
+        [
+          "包含可用工具列表",
+          "是",
+          "否"
+        ],
+        [
+          "输出要求",
+          "JSON 格式",
+          "自然口语"
+        ],
+        [
+          "支持流式输出",
+          "是（finish+message 模式）",
+          "是"
+        ],
+        [
+          "预启动工具结果",
+          "包含",
+          "包含"
+        ],
+        [
+          "关联记忆",
+          "包含",
+          "包含"
+        ],
+        [
+          "最近对话",
+          "包含",
+          "包含"
+        ]
+      ],
+      "text": "特性\t规划器 Prompt\t最终输出 Prompt\nSystem Message\t`你负责规划下一步行动，请严格输出合法 JSON。`\t直接输出\n包含可用工具列表\t是\t否\n输出要求\tJSON 格式\t自然口语\n支持流式输出\t是（finish+message 模式）\t是\n预启动工具结果\t包含\t包含\n关联记忆\t包含\t包含\n最近对话\t包含\t包含",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "75",
+      "images": 0,
+      "links": [],
+      "position": 1439.4375,
+      "record_id": "TMCSdjRz5oUKnQxTNJDcQq2cnfe",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "76",
+      "images": 0,
+      "links": [],
+      "position": 1485.4375,
+      "record_id": "OfJXdKyNgo6PhWxzjNvc2RYynjb",
+      "text": "1.2 执行效率对比",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "77",
+      "images": 0,
+      "links": [],
+      "position": 1521.4375,
+      "record_id": "T3n7dlaAoov9buxYvVkc41Xance",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "78",
+      "images": 0,
+      "links": [],
+      "position": 1576.9375,
+      "record_id": "MmgudoQssoi5qMxhgRic27Sznuh",
+      "table_rows": [
+        [
+          "场景",
+          "执行路径",
+          "LLM 调用次数",
+          "适用情况"
+        ],
+        [
+          "简单问答",
+          "规划器 → finish+message",
+          "1 次",
+          "无需工具，直接回复"
+        ],
+        [
+          "单次工具调用",
+          "规划器 → 工具 → 规划器 → finish+message",
+          "2 次",
+          "需要一次工具辅助"
+        ],
+        [
+          "N次工具调用",
+          "规划器 → (工具 → 规划器) × N → finish",
+          "N+1 次",
+          "复杂任务需多次工具"
+        ],
+        [
+          "预启动优化",
+          "预启动 → 规划器 → finish+message",
+          "1 次",
+          "预启动已获取所需信息"
+        ]
+      ],
+      "text": "场景\t执行路径\tLLM 调用次数\t适用情况\n简单问答\t规划器 → finish+message\t1 次\t无需工具，直接回复\n单次工具调用\t规划器 → 工具 → 规划器 → finish+message\t2 次\t需要一次工具辅助\nN次工具调用\t规划器 → (工具 → 规划器) × N → finish\tN+1 次\t复杂任务需多次工具\n预启动优化\t预启动 → 规划器 → finish+message\t1 次\t预启动已获取所需信息",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "99",
+      "images": 0,
+      "links": [],
+      "position": 1888.9375,
+      "record_id": "DZHAdGXUYof55nxUPKecHGpPnGh",
+      "text": "> 说明：每次工具执行后都需要回到规划器决策下一步行动，因此 N 次工具调用需要 N+1 次 LLM 调用。当规划器返回 `finish+message` 时，直接使用 message 内容，无需额外调用最终输出 LLM。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "100",
+      "images": 0,
+      "links": [],
+      "position": 1948.9375,
+      "record_id": "Thc8dCpWrob5slxof3scl0FznNg",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "101",
+      "images": 0,
+      "links": [],
+      "position": 1992.9375,
+      "record_id": "S6s3d7gcuoXoFQxDz5VcRWNcn9d",
+      "text": "效率优化机制",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "102",
+      "images": 0,
+      "links": [],
+      "position": 2026.125,
+      "record_id": "SwztdEVl2oV83mxz5myc62O6n7y",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "103",
+      "images": 0,
+      "links": [],
+      "position": 2060.125,
+      "record_id": "R3rJdHRhOoZptnxEgVOcNdWcnLh",
+      "text": "1. finish+message 快速路径",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "104",
+      "images": 0,
+      "links": [],
+      "position": 2094.125,
+      "record_id": "KWw4dU0N0oZ954xuUyDciZ5hn9g",
+      "text": "   ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "105",
+      "images": 0,
+      "links": [],
+      "position": 2128.125,
+      "record_id": "ElDDdlrxZogJKMxGKFlcxaWZnMd",
+      "text": "•\n规划器直接在 JSON 中返回 {\"action\": \"finish\", \"message\": \"...\"}",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "106",
+      "images": 0,
+      "links": [],
+      "position": 2163.125,
+      "record_id": "SITcdlGGRoBLS5xdoo1cJV4Enrf",
+      "text": "•\n跳过最终输出阶段，节省一次 LLM 调用",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "107",
+      "images": 0,
+      "links": [],
+      "position": 2197.125,
+      "record_id": "AU4Md6ncEozCZnxeOgccuNLbngg",
+      "text": "•\n无论是否使用工具，只要规划器返回 message 就直接使用",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "108",
+      "images": 0,
+      "links": [],
+      "position": 2231.125,
+      "record_id": "GcU6d8z4vobmcBxS7uucavB5nRh",
+      "text": "2. 预启动工具预取",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "109",
+      "images": 0,
+      "links": [],
+      "position": 2265.125,
+      "record_id": "EGL1dxR32o9m8BxBo5ActID9n0v",
+      "text": "   ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "110",
+      "images": 0,
+      "links": [],
+      "position": 2299.125,
+      "record_id": "UlSmdRy9ioUPltxwMbLcfSXUnFh",
+      "text": "•\n常用信息（时间、天气等）在用户提问前自动获取",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "111",
+      "images": 0,
+      "links": [],
+      "position": 2333.125,
+      "record_id": "KH0ud1J3XoQk8axZ4ugcH9YOnYf",
+      "text": "•\n规划器可直接使用预取结果，减少工具调用次数",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "112",
+      "images": 0,
+      "links": [],
+      "position": 2367.125,
+      "record_id": "L6F4dUF17oMQcKxbCz6cz1Hunmf",
+      "text": "•\n适合高频查询场景",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "113",
+      "images": 0,
+      "links": [],
+      "position": 2401.125,
+      "record_id": "YWoQdOyfjokG0LxMfkWcURotnRh",
+      "text": "3. 流式输出",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "114",
+      "images": 0,
+      "links": [],
+      "position": 2435.125,
+      "record_id": "B8QWdc13Koi7YVxWHEJcRju9nSe",
+      "text": "   ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "115",
+      "images": 0,
+      "links": [],
+      "position": 2469.125,
+      "record_id": "KMsVd9LdroJ5ymxaKrScUHB2nhb",
+      "text": "•\n规划器的 message 支持流式输出",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "116",
+      "images": 0,
+      "links": [],
+      "position": 2503.125,
+      "record_id": "LhtPd94Oxo6i5kxj6GvcdWV0nig",
+      "text": "•\n用户无需等待完整生成即可看到内容",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "117",
+      "images": 0,
+      "links": [],
+      "position": 2537.125,
+      "record_id": "BIJIdF2ynoXEGlxDboOcms9UnDd",
+      "text": "•\n提升感知响应速度",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "118",
+      "images": 0,
+      "links": [],
+      "position": 2581.125,
+      "record_id": "V4zMdlIoMoQKrfx9PgOcYQe1nwc",
+      "text": "典型场景 LLM 调用次数",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "119",
+      "images": 0,
+      "links": [],
+      "position": 2614.3125,
+      "record_id": "RXYCdT4idolTl4x7o8kczcdlnbb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "120",
+      "images": 0,
+      "links": [],
+      "position": 2669.8125,
+      "record_id": "TOcXdfcCcoI06pxX60scc1vzndf",
+      "table_rows": [
+        [
+          "场景",
+          "调用次数",
+          "说明"
+        ],
+        [
+          "\"你好\"",
+          "1 次",
+          "规划器直接 finish+message"
+        ],
+        [
+          "\"现在几点\" (有预启动)",
+          "1 次",
+          "预启动已获取时间，规划器直接回复"
+        ],
+        [
+          "\"帮我查天气\"",
+          "2 次",
+          "规划器(1) → 工具 → 规划器(2) → finish"
+        ],
+        [
+          "\"设置闹钟\"",
+          "2 次",
+          "规划器(1) → 工具 → 规划器(2) → finish"
+        ],
+        [
+          "\"查天气并设置提醒\"",
+          "3 次",
+          "规划器(1) → 工具 → 规划器(2) → 工具 → 规划器(3)"
+        ]
+      ],
+      "text": "场景\t调用次数\t说明\n\"你好\"\t1 次\t规划器直接 finish+message\n\"现在几点\" (有预启动)\t1 次\t预启动已获取时间，规划器直接回复\n\"帮我查天气\"\t2 次\t规划器(1) → 工具 → 规划器(2) → finish\n\"设置闹钟\"\t2 次\t规划器(1) → 工具 → 规划器(2) → finish\n\"查天气并设置提醒\"\t3 次\t规划器(1) → 工具 → 规划器(2) → 工具 → 规划器(3)",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "121",
+      "images": 0,
+      "links": [],
+      "position": 3028.8125,
+      "record_id": "VqcjdGGALofb8exxjavcRV8mnve",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "122",
+      "images": 0,
+      "links": [],
+      "position": 3062.8125,
+      "record_id": "ZhibdooCgojhCTxgSf4clkKfnCn",
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "123",
+      "images": 0,
+      "links": [],
+      "position": 3096.8125,
+      "record_id": "O3USdD35rop57NxJgmCcfQkpnWc",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "124",
+      "images": 0,
+      "links": [],
+      "position": 3144.8125,
+      "record_id": "Qi9EddRYkolDIPxXbbccrXFGnlf",
+      "text": "2. Prompt 示例",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "125",
+      "images": 0,
+      "links": [],
+      "position": 3183.609375,
+      "record_id": "UTcVdEMyWoyzTOxVAMFcXuCbnAd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "126",
+      "images": 0,
+      "links": [],
+      "position": 3229.609375,
+      "record_id": "Fnagd4DaloXei6xZZsCcQUrOngb",
+      "text": "2.1 系统 Prompt 示例",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "127",
+      "images": 0,
+      "links": [],
+      "position": 3265.609375,
+      "record_id": "V9Pud5A92oKLBsxQIV9cZTvvnUd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "128",
+      "images": 0,
+      "links": [],
+      "position": 3299.609375,
+      "record_id": "KVqGdHLavo6ZSNxKB1tcXBtOnNa",
+      "text": "系统 Prompt 由用户在配置文件中定义（GUI可管理），用于设定 AI 的人设：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "129",
+      "images": 0,
+      "links": [],
+      "position": 3333.609375,
+      "record_id": "UGwodh1lxogvCBxay4Kc3ZSrnVg",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "130",
+      "images": 0,
+      "links": [],
+      "position": 3375.609375,
+      "record_id": "WnfId0Fnqo7VryxDEt9cj5X4nDc",
+      "text": "\n代码块\nPlain Text\n复制\n**系统设定**\n你是一个名叫Fay的数字人助手。你性格温柔、善解人意，说话简洁明了。\n你会用亲切的语气与用户交流，称呼用户为\"主人\"。\n---\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "131",
+      "images": 0,
+      "links": [],
+      "position": 3547.609375,
+      "record_id": "WslBdZzfqooxSsxzLE1cm0bFn5g",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "132",
+      "images": 0,
+      "links": [],
+      "position": 3593.609375,
+      "record_id": "StOdd76TSoejEzxyZAAcki67nAd",
+      "text": "2.2 规划器 Prompt 示例",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "133",
+      "images": 0,
+      "links": [],
+      "position": 3629.609375,
+      "record_id": "FUjKd0TMZolmJExuHI6cEWoRnpS",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "134",
+      "images": 0,
+      "links": [],
+      "position": 3671.609375,
+      "record_id": "Go7Udwkm7omHX1xrksTc5bcYnrb",
+      "text": "\n代码块\nPlain Text\n复制\n**关联记忆**\n（无相关记忆）\n---\n\n**预启动工具结果**\n【query_weather】(city=北京)\n```\n北京今日晴，气温 -2°C 至 8°C，空气质量良好\n```\n---\n\n**可用工具**\n- query_weather: 查询天气信息\n  参数: city (string) - 城市名称\n- add_schedule: 添加日程\n  参数: title (string), content (string), schedule_time (string)\n---\n\n**历史工具执行**\n（无）\n---\n\n**最近对话**\n主人：\n```\n你好\n```\nFay：\n```\n主人，你好呀！有什么我可以帮你的吗？\n```\n---\n\n请返回 JSON，格式如下：\n- 若需要调用工具：\n    {\"action\": \"tool\", \"tool\": \"工具名\", \"args\": {...}}\n- 若直接回复（需附带回复内容）：\n    {\"action\": \"finish\", \"message\": \"你的回复内容\"}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "135",
+      "images": 0,
+      "links": [],
+      "position": 4899.609375,
+      "record_id": "FXaUdvVXgoSxMgxosJWc1R2Inrb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "136",
+      "images": 0,
+      "links": [],
+      "position": 4933.609375,
+      "record_id": "WSGLdDJMRoCNYYx7fsrctdMXnlI",
+      "text": "规划器输出示例：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "137",
+      "images": 0,
+      "links": [],
+      "position": 4967.609375,
+      "record_id": "XzxddvEikoacgHxpmeqcZ9xGnyW",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "138",
+      "images": 0,
+      "links": [],
+      "position": 5009.609375,
+      "record_id": "PxUgdEJoJofLZSx34DVcVS5Inpb",
+      "text": "\n代码块\nJSON\n复制\n{\"action\": \"finish\", \"message\": \"主人，北京今天是晴天，气温在零下2度到8度之间，空气质量良好，适合出门活动哦！\"}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "139",
+      "images": 0,
+      "links": [],
+      "position": 5128.609375,
+      "record_id": "Y9fddOM5PoecpJx12ewc9sIUnvI",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "140",
+      "images": 0,
+      "links": [],
+      "position": 5174.609375,
+      "record_id": "HRSbd8zbZoWSkzxkAE8cLecBnoc",
+      "text": "2.3 最终输出 Prompt 示例",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "141",
+      "images": 0,
+      "links": [],
+      "position": 5210.609375,
+      "record_id": "IrY9ddq1Yo92ktxAkopcKRd2nkd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "142",
+      "images": 0,
+      "links": [],
+      "position": 5252.609375,
+      "record_id": "VF13dB9pxobnmDxkSYYcm6WBnhg",
+      "text": "\n代码块\nPlain Text\n复制\n**提问内容**\n主人：\n```\n帮我设置一个明天早上9点的闹钟\n```\n---\n**系统设定**\n你是一个名叫Fay的数字人助手...\n---\n\n**关联记忆**\n（无相关记忆）\n---\n\n**其他观察**\n（无补充）\n---\n\n**工具执行摘要**\nadd_schedule(title=早起闹钟, schedule_time=09:00) → 日程添加成功，ID: 15\n---\n\n**最近对话**\n主人：\n```\n帮我设置一个明天早上9点的闹钟\n```\n---\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "143",
+      "images": 0,
+      "links": [],
+      "position": 5952.609375,
+      "record_id": "M0JhdrTunoFl7axkqVTcnf1Wnxc",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "144",
+      "images": 0,
+      "links": [],
+      "position": 5986.609375,
+      "record_id": "LDbwdF2luoHq8Fx0COAcMYNBnpc",
+      "text": "最终输出示例：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "145",
+      "images": 0,
+      "links": [],
+      "position": 6020.609375,
+      "record_id": "B92ZdskNxolDLJxyIHucqBzvnNR",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "146",
+      "images": 0,
+      "links": [],
+      "position": 6062.609375,
+      "record_id": "OCeRdNUe5oEf9bx57MZcGkn5naf",
+      "text": "\n代码块\nPlain Text\n复制\n好的主人，我已经帮你设置好明天早上9点的闹钟了，到时候会提醒你的！\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "147",
+      "images": 0,
+      "links": [],
+      "position": 6175.609375,
+      "record_id": "KmJLdaqc2oWIaRxsX6VcMEgSnUe",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "148",
+      "images": 0,
+      "links": [],
+      "position": 6209.609375,
+      "record_id": "NfyNdnahCod6SNxaPxachefZnLd",
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "149",
+      "images": 0,
+      "links": [],
+      "position": 6243.609375,
+      "record_id": "Bi1sdimvYopqT9xa4tGc363BnQd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "150",
+      "images": 0,
+      "links": [],
+      "position": 6291.609375,
+      "record_id": "NEGxdTbKGonECFxNS5CcAwNmnxc",
+      "text": "3. 工作流程",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "151",
+      "images": 0,
+      "links": [],
+      "position": 6330.40625,
+      "record_id": "RrmxdtvamoZU6TxeJiocuOH0nRh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "152",
+      "images": 0,
+      "links": [],
+      "position": 6376.40625,
+      "record_id": "SPkMdz5f3oU9OTxsMqjcm1iTnQb",
+      "text": "3.1 整体架构",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "153",
+      "images": 0,
+      "links": [],
+      "position": 6412.40625,
+      "record_id": "HumUdRzR1o5J6Px7sV4crSVNnLg",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "154",
+      "images": 0,
+      "links": [],
+      "position": 6454.40625,
+      "record_id": "CZ9hd3Hp5oQjYux2LLUcX41jnwg",
+      "text": "\n代码块\nPlain Text\n复制\n用户输入\n    ↓\n┌─────────────────────────────────────────────────────────┐\n│                    预处理阶段                            │\n│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐     │\n│  │ 加载系统    │  │ 检索关联   │  │ 执行预启动  │     │\n│  │ Prompt     │  │ 记忆       │  │ 工具        │     │\n│  └─────────────┘  └─────────────┘  └─────────────┘     │\n└─────────────────────────────────────────────────────────┘\n    ↓\n┌─────────────────────────────────────────────────────────┐\n│                  规划器阶段 (Planner)                    │\n│                                                         │\n│  输入: 规划器 Prompt (含工具列表、对话历史、记忆等)       │\n│  输出: JSON 决策                                        │\n│        ├─ {\"action\": \"tool\", ...}  → 执行工具 → 循环    │\n│        └─ {\"action\": \"finish\", \"message\": \"...\"}        │\n│                         ↓                               │\n│              (可选) 流式输出 message                     │\n└─────────────────────────────────────────────────────────┘\n    ↓\n┌─────────────────────────────────────────────────────────┐\n│                最终输出阶段 (Final Output)               │\n│                                                         │\n│  输入: 最终输出 Prompt (含工具执行摘要、规划器建议等)     │\n│  输出: 自然语言回复 (流式)                               │\n└─────────────────────────────────────────────────────────┘\n    ↓\n用户看到回复\n    ↓\n┌─────────────────────────────────────────────────────────┐\n│              异步后处理阶段 (Background)                 │\n│                                                         │\n│  ┌─────────────────┐  ┌─────────────────┐              │\n│  │ 记忆重要性评估   │  │ 用户画像更新    │              │\n│  │ (记忆重要性      │  │ (用户画像       │              │\n│  │  Prompt)        │  │  Prompt)        │              │\n│  └─────────────────┘  └─────────────────┘              │\n│           ↓                    ↓                        │\n│  ┌─────────────────────────────────────────┐           │\n│  │           记忆存储与索引                 │           │\n│  └─────────────────────────────────────────┘           │\n│                        ↓                                │\n│  ┌─────────────────────────────────────────┐           │\n│  │    定期反思 (记忆反思 Prompt)            │           │\n│  │    归纳总结历史记忆，生成高层次洞察       │           │\n│  └─────────────────────────────────────────┘           │\n└─────────────────────────────────────────────────────────┘\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "155",
+      "images": 0,
+      "links": [],
+      "position": 7594.40625,
+      "record_id": "K1ADdfW8mo8E7SxQD0vcywPAnDg",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "156",
+      "images": 0,
+      "links": [],
+      "position": 7640.40625,
+      "record_id": "MjaMdrBtUo7ElwxkPJnctGShnob",
+      "text": "3.2 详细流程说明",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "157",
+      "images": 0,
+      "links": [],
+      "position": 7676.40625,
+      "record_id": "DF3od0WeyodTrQxByphcbItsn6d",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "158",
+      "images": 0,
+      "links": [],
+      "position": 7720.40625,
+      "record_id": "FVhPdYvbSoi5HBx185GcSKE6nAd",
+      "text": "阶段一：预处理",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "159",
+      "images": 0,
+      "links": [],
+      "position": 7753.59375,
+      "record_id": "YAlgdRlGNogijrxU2bSciR9qn5c",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "160",
+      "images": 0,
+      "links": [],
+      "position": 7787.59375,
+      "record_id": "F1kMdq7KIoM6LAx17AvccQ66nPe",
+      "text": "1. 加载系统 Prompt：从配置获取 AI 人设定义",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "161",
+      "images": 0,
+      "links": [],
+      "position": 7821.59375,
+      "record_id": "Wi2idm4meozxxjxkF0icgXLinuh",
+      "text": "2. 检索关联记忆：基于用户输入从记忆库中检索相关内容",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "162",
+      "images": 0,
+      "links": [],
+      "position": 7855.59375,
+      "record_id": "GHv9d8YF2oKx8ZxqGxgcfkkNnxd",
+      "text": "3. 执行预启动工具：自动执行配置的预启动 MCP 工具，获取上下文信息",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "163",
+      "images": 0,
+      "links": [],
+      "position": 7889.59375,
+      "record_id": "XpIediYAeo01o5xrti8c1i9gnid",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "164",
+      "images": 0,
+      "links": [],
+      "position": 7933.59375,
+      "record_id": "EAA6dZC4qoAYkpxRp71ck076nfc",
+      "text": "阶段二：规划器决策",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "165",
+      "images": 0,
+      "links": [],
+      "position": 7966.78125,
+      "record_id": "YyTcdrNF6o1bKlxSi7AcVhOSn7c",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "166",
+      "images": 0,
+      "links": [],
+      "position": 8008.78125,
+      "record_id": "ZzyZdx1kSoJwOyxnA3mcPv1tndf",
+      "text": "\n代码块\nPython\n复制\n# 规划器循环\nwhile True:\n    # 构建规划器 Prompt\n    messages = _build_planner_messages(state)\n\n    # 调用 LLM 获取决策\n    result = call_llm(messages)  # 返回 JSON\n\n    if result[\"action\"] == \"tool\":\n        # 执行工具\n        tool_result = execute_tool(result[\"tool\"], result[\"args\"])\n        # 将结果加入历史，继续循环\n        state[\"tool_results\"].append(tool_result)\n\n    elif result[\"action\"] == \"finish\":\n        # 如果有 message，可直接流式输出\n        if result.get(\"message\"):\n            stream_output(result[\"message\"])\n        break\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "167",
+      "images": 0,
+      "links": [],
+      "position": 8510.78125,
+      "record_id": "O32sdrKLoowUWwxtvaqcigzunKd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "168",
+      "images": 0,
+      "links": [],
+      "position": 8554.78125,
+      "record_id": "XDubdgt4BoU2gTx6SKYcoRTlnBg",
+      "text": "阶段三：最终输出",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "169",
+      "images": 0,
+      "links": [],
+      "position": 8587.96875,
+      "record_id": "Uie1d2NvWoHMTUxQTnrcre8rnZf",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "170",
+      "images": 0,
+      "links": [],
+      "position": 8629.96875,
+      "record_id": "XfMwdtg6dor4mExvp0NcMYL2nJd",
+      "text": "\n代码块\nPython\n复制\n# 构建最终输出 Prompt\nmessages = _build_final_messages(state)\n\n# 流式生成自然语言回复\nfor chunk in stream_llm(messages):\n    yield chunk\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "171",
+      "images": 0,
+      "links": [],
+      "position": 8845.96875,
+      "record_id": "VUiQdMR9foRo4dxvTAhc4uDEnTh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "172",
+      "images": 0,
+      "links": [],
+      "position": 8889.96875,
+      "record_id": "AnOpdMJYBoyHaNxzbfKcGvwan2e",
+      "text": "阶段四：异步后处理（后台执行）",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "173",
+      "images": 0,
+      "links": [],
+      "position": 8923.15625,
+      "record_id": "Ky1rdSW5XobU87xkcWRcboFgnrb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "174",
+      "images": 0,
+      "links": [],
+      "position": 8957.15625,
+      "record_id": "DUm2ds4i5opzaUxNhyPcEiJinee",
+      "text": "对话完成后，系统在后台异步执行以下任务，不影响用户体验：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "175",
+      "images": 0,
+      "links": [],
+      "position": 8991.15625,
+      "record_id": "SXrQdYhb6ofqP9xXWOocGK1XnVb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "176",
+      "images": 0,
+      "links": [],
+      "position": 9033.15625,
+      "record_id": "WKZQdoBdcooxMyxRRm6cZQJanag",
+      "text": "\n代码块\nPython\n复制\n# 1. 记忆重要性评估\nimportance = evaluate_importance(conversation)  # 返回 0-10\n\n# 2. 用户画像更新\nprofile_updates = extract_user_profile(conversation)\nupdate_user_profile(user_id, profile_updates)\n\n# 3. 记忆存储\nif importance >= threshold:\n    store_memory(conversation, importance)\n\n# 4. 定期反思（由调度器触发）\nif should_reflect():\n    insights = reflect_on_memories(recent_memories)\n    store_reflection(insights)\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "177",
+      "images": 0,
+      "links": [],
+      "position": 9447.15625,
+      "record_id": "SPdYdoFHdoWCafxNgSxcy00nn2d",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "178",
+      "images": 0,
+      "links": [],
+      "position": 9481.15625,
+      "record_id": "S9rzdvBL0oK0ABxPeywcZOOWnVe",
+      "text": "异步 Prompt 说明：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "179",
+      "images": 0,
+      "links": [],
+      "position": 9515.15625,
+      "record_id": "JYoLdrG51oVQYRxt9TZctjq6n0b",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "180",
+      "images": 0,
+      "links": [],
+      "position": 9570.65625,
+      "record_id": "A0Czd32b2obpIixMYdCc9RGInnb",
+      "table_rows": [
+        [
+          "Prompt 类型",
+          "触发时机",
+          "输入",
+          "输出"
+        ],
+        [
+          "记忆重要性 Prompt",
+          "每轮对话结束后",
+          "对话内容",
+          "0-10 重要性分数"
+        ],
+        [
+          "用户画像 Prompt",
+          "每轮对话结束后",
+          "对话内容 + 现有画像",
+          "画像更新字段"
+        ],
+        [
+          "记忆反思 Prompt",
+          "定期触发",
+          "近期记忆列表",
+          "高层次洞察总结"
+        ]
+      ],
+      "text": "Prompt 类型\t触发时机\t输入\t输出\n记忆重要性 Prompt\t每轮对话结束后\t对话内容\t0-10 重要性分数\n用户画像 Prompt\t每轮对话结束后\t对话内容 + 现有画像\t画像更新字段\n记忆反思 Prompt\t定期触发\t近期记忆列表\t高层次洞察总结",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "181",
+      "images": 0,
+      "links": [],
+      "position": 9757.65625,
+      "record_id": "CBNpdhI5KoCtqMxFliIcBtpCn9b",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "182",
+      "images": 0,
+      "links": [],
+      "position": 9803.65625,
+      "record_id": "BpWadlOWVo6GaExwXgLcvdW2nDc",
+      "text": "3.3 Prompt 各部分说明",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "183",
+      "images": 0,
+      "links": [],
+      "position": 9839.65625,
+      "record_id": "T4SCd8F0wo2RSrxbWLLcCDkCnNe",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "184",
+      "images": 0,
+      "links": [],
+      "position": 9895.15625,
+      "record_id": "DrevduTmeoiM7hx6HK9cVYdtngh",
+      "table_rows": [
+        [
+          "部分",
+          "说明",
+          "来源"
+        ],
+        [
+          "提问内容",
+          "当前用户输入",
+          "用户消息"
+        ],
+        [
+          "系统设定",
+          "AI 人设定义",
+          "配置文件（GUI可管理）"
+        ],
+        [
+          "关联记忆",
+          "与问题相关的历史记忆",
+          "记忆检索模块"
+        ],
+        [
+          "预启动工具结果",
+          "自动执行的工具返回",
+          "MCP 预启动工具"
+        ],
+        [
+          "可用工具",
+          "当前可调用的工具列表",
+          "MCP 工具注册"
+        ],
+        [
+          "历史工具执行",
+          "本轮对话中已执行的工具及结果",
+          "规划器循环累积"
+        ],
+        [
+          "最近对话",
+          "近期对话历史",
+          "对话缓存"
+        ]
+      ],
+      "text": "部分\t说明\t来源\n提问内容\t当前用户输入\t用户消息\n系统设定\tAI 人设定义\t配置文件（GUI可管理）\n关联记忆\t与问题相关的历史记忆\t记忆检索模块\n预启动工具结果\t自动执行的工具返回\tMCP 预启动工具\n可用工具\t当前可调用的工具列表\tMCP 工具注册\n历史工具执行\t本轮对话中已执行的工具及结果\t规划器循环累积\n最近对话\t近期对话历史\t对话缓存",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "185",
+      "images": 0,
+      "links": [],
+      "position": 10265.15625,
+      "record_id": "JUM1dA7DooMjBqxKNewc1xa5nLe",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "186",
+      "images": 0,
+      "links": [],
+      "position": 10311.15625,
+      "record_id": "E5c9dvBapo9kUrxLwDQcTHBynAe",
+      "text": "3.4 特殊标签处理",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "187",
+      "images": 0,
+      "links": [],
+      "position": 10347.15625,
+      "record_id": "I0AAdPoZ2ogXlmxWS0Rc3ezZnib",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "188",
+      "images": 0,
+      "links": [],
+      "position": 10381.15625,
+      "record_id": "GmSSdkND0o1u3vxyC7jc0YSTnBf",
+      "text": "系统使用特殊 XML 标签来标记和管理某些内容：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "189",
+      "images": 0,
+      "links": [],
+      "position": 10415.15625,
+      "record_id": "JR4edgRgeoAnMbx5pD7c9zbqnrc",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "190",
+      "images": 0,
+      "links": [],
+      "position": 10449.15625,
+      "record_id": "B5qgdyGXRoPL6Tx2hvUcCL7xnMb",
+      "text": "#### `<prestart>` 标签",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "191",
+      "images": 0,
+      "links": [],
+      "position": 10483.15625,
+      "record_id": "RZzidau3Do3xk1xDmGbcX8uonDf",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "192",
+      "images": 0,
+      "links": [],
+      "position": 10538.65625,
+      "record_id": "CQFwdShd5oFnktxxILmcgua0njf",
+      "table_rows": [
+        [
+          "属性",
+          "说明",
+          "在 Prompt 中的表现"
+        ],
+        [
+          "无属性",
+          "临时预启动结果",
+          "仅在当前轮对话的 Prompt 中出现，下一轮自动移除"
+        ]
+      ],
+      "text": "属性\t说明\t在 Prompt 中的表现\n无属性\t临时预启动结果\t仅在当前轮对话的 Prompt 中出现，下一轮自动移除",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "193",
+      "images": 0,
+      "links": [],
+      "position": 10668.65625,
+      "record_id": "Qt6ndVTLUoq5YIxqlYyciln1nfd",
+      "text": "| `keep=\"true\"` | 持久预启动结果 | 保留在对话历史中，后续轮次的 最近对话 模块中持续可见 |",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "194",
+      "images": 0,
+      "links": [],
+      "position": 10702.65625,
+      "record_id": "EdoWd61fqoktXgx2lhQcVn0KnMe",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "195",
+      "images": 0,
+      "links": [],
+      "position": 10736.65625,
+      "record_id": "NVoidmBJ5oNTZDx5tHRcWTtYnNf",
+      "text": "使用场景：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "196",
+      "images": 0,
+      "links": [],
+      "position": 10770.65625,
+      "record_id": "Ln24dfqUEo6g8nxFO9kcGodRnBb",
+      "text": "•\n预启动工具配置 include_history: false（默认）时，结果用 <prestart> 包裹",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "197",
+      "images": 0,
+      "links": [],
+      "position": 10805.65625,
+      "record_id": "WqNydCoLioOo1fx7SMGcvsiTndb",
+      "text": "•\n预启动工具配置 include_history: true 时，结果用 <prestart keep=\"true\"> 包裹",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "198",
+      "images": 0,
+      "links": [],
+      "position": 10840.65625,
+      "record_id": "OTsLdDzEIoNeBrxLONPc5LfAnKh",
+      "text": "#### `<think>` 标签",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "199",
+      "images": 0,
+      "links": [],
+      "position": 10874.65625,
+      "record_id": "LFyvdvrP1o1cdVx8MLBctbYdnr5",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "200",
+      "images": 0,
+      "links": [],
+      "position": 10930.15625,
+      "record_id": "J8nFdg07noT8iBxPr1UceKAWnMe",
+      "table_rows": [
+        [
+          "场景",
+          "说明",
+          "在 Prompt 中的表现"
+        ],
+        [
+          "工具调用过程",
+          "包裹规划器的工具调用决策过程",
+          "从对话历史中移除，不进入后续 Prompt"
+        ],
+        [
+          "模型思考内容",
+          "兼容带思考标签的模型（如 DeepSeek R1）",
+          "解析 JSON 前自动移除"
+        ]
+      ],
+      "text": "场景\t说明\t在 Prompt 中的表现\n工具调用过程\t包裹规划器的工具调用决策过程\t从对话历史中移除，不进入后续 Prompt\n模型思考内容\t兼容带思考标签的模型（如 DeepSeek R1）\t解析 JSON 前自动移除",
+      "type": "block docx-table-block"
+    },
+    {
+      "id": "201",
+      "images": 0,
+      "links": [],
+      "position": 11123.15625,
+      "record_id": "J9F2dvauno9LIuxO4wzcc7vNnyd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "202",
+      "images": 0,
+      "links": [],
+      "position": 11157.15625,
+      "record_id": "UzDtdLBzLoLE39x5zwFcT9YcnTf",
+      "text": "处理逻辑：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "203",
+      "images": 0,
+      "links": [],
+      "position": 11191.15625,
+      "record_id": "NFjtdHbgNocR6MxPC2mcBzOhnxc",
+      "text": "- `<think>` 标签内容在构建 最近对话 时会被移除",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "204",
+      "images": 0,
+      "links": [],
+      "position": 11225.15625,
+      "record_id": "DCmhdjWbvoJfYExtguucDwUan9g",
+      "text": "•\n用户看到的流式输出中可能包含 <think> 标签（显示思考过程）",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "205",
+      "images": 0,
+      "links": [],
+      "position": 11260.15625,
+      "record_id": "YgF6dzGqjoQX2ExJcukcGz7Snwd",
+      "text": "•\n但这些内容不会进入后续对话的 Prompt",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "206",
+      "images": 0,
+      "links": [],
+      "position": 11306.15625,
+      "record_id": "GRwXdde9HoAF0Ex1dincYE8RnEf",
+      "text": "3.5 预启动工具结果格式",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "207",
+      "images": 0,
+      "links": [],
+      "position": 11342.15625,
+      "record_id": "V3mqdHM6CoSUMVxS6jmcT2EFnFh",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "208",
+      "images": 0,
+      "links": [],
+      "position": 11376.15625,
+      "record_id": "S3J1dw2aIoZdsTxZuUOc4uJFn8b",
+      "text": "预启动工具的结果采用特定格式展示：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "209",
+      "images": 0,
+      "links": [],
+      "position": 11410.15625,
+      "record_id": "AYjEduLXqoX5BGxiIusc9Bgyn9b",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "210",
+      "images": 0,
+      "links": [],
+      "position": 11452.15625,
+      "record_id": "Ljbid3vsmo3hwwxVNbWcw7Xanug",
+      "text": "\n代码块\nPlain Text\n复制\n**预启动工具结果**\n【工具名】(参数...)\n```\n工具返回的结果内容\n```\n---\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "211",
+      "images": 0,
+      "links": [],
+      "position": 11668.15625,
+      "record_id": "PnQQdl77homJzkxFm6PcBSQlnQO",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "212",
+      "images": 0,
+      "links": [],
+      "position": 11702.15625,
+      "record_id": "GkBgdIHy6oTM4jxll8ycpr2unaf",
+      "text": "如果工具配置了 include_history: true，其结果会以 <prestart keep=\"true\"> 标签保存在对话历史中，在后续对话中持续可见。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "213",
+      "images": 0,
+      "links": [],
+      "position": 11763.15625,
+      "record_id": "CzUxd0eYxoR3IVxHEGJci9W0nrd",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "214",
+      "images": 0,
+      "links": [],
+      "position": 11809.15625,
+      "record_id": "AmjEdZuRSoRTvKxHkRNcTnF0npd",
+      "text": "3.6 流式输出机制",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "215",
+      "images": 0,
+      "links": [],
+      "position": 11845.15625,
+      "record_id": "Pq9Bd6ndWoMD9wxw3hGcclHTn4c",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "216",
+      "images": 0,
+      "links": [],
+      "position": 11879.15625,
+      "record_id": "B6XvdMHexoCqhWxDVfUcMVMKngg",
+      "text": "规划器支持 finish + message 模式的流式输出：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "217",
+      "images": 0,
+      "links": [],
+      "position": 11914.15625,
+      "record_id": "UbAcd7Q8YovK23xmY4XcADBdnth",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "218",
+      "images": 0,
+      "links": [],
+      "position": 11948.15625,
+      "record_id": "Ow9gddRyVoRt5Tx4xsNcCyj3npe",
+      "text": "1.\n当规划器返回 {\"action\": \"finish\", \"message\": \"...\"} 时",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "219",
+      "images": 0,
+      "links": [],
+      "position": 11983.15625,
+      "record_id": "K2Xrdl8Z6oyDu1xEhiHcKgyanSh",
+      "text": "2.\n系统会流式输出 message 内容",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "220",
+      "images": 0,
+      "links": [],
+      "position": 12018.15625,
+      "record_id": "T7hcdIGpcoMGHQx5GN8caxDfnog",
+      "text": "3.\n同时跳过最终输出阶段（避免重复生成）",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "221",
+      "images": 0,
+      "links": [],
+      "position": 12052.15625,
+      "record_id": "EKubdsVkLo3UPCxLkpxc7NBOnPf",
+      "text": "这样可以实现更快的响应速度，用户无需等待两次 LLM 调用。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "222",
+      "images": 0,
+      "links": [],
+      "position": 12086.15625,
+      "record_id": "XwQmdOQs8oTxDuxFkwEchYiQnlb",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "223",
+      "images": 0,
+      "links": [],
+      "position": 12120.15625,
+      "record_id": "Qz7idZI6soA7IvxtJFScrsXcnsc",
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "224",
+      "images": 0,
+      "links": [],
+      "position": 12168.15625,
+      "record_id": "Jqn0dMxWfouq9ZxaWzAcjeScnUh",
+      "text": "4. 最佳实践",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "225",
+      "images": 0,
+      "links": [],
+      "position": 12206.953125,
+      "record_id": "H8tVdt1hao275TxaNP0cs8SAnPe",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "226",
+      "images": 0,
+      "links": [],
+      "position": 12252.953125,
+      "record_id": "AOA6dGxLfolvmQx6efKc2fORnNd",
+      "text": "4.1 系统 Prompt 编写建议",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "227",
+      "images": 0,
+      "links": [],
+      "position": 12288.953125,
+      "record_id": "UBZ5dVCLBoOvCCxjX24caVXHnff",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "228",
+      "images": 0,
+      "links": [],
+      "position": 12322.953125,
+      "record_id": "RjJXdrnCCoSKxhxid1tcbFXrnne",
+      "text": "•\n明确定义 AI 的名称、性格特点",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "229",
+      "images": 0,
+      "links": [],
+      "position": 12356.953125,
+      "record_id": "TYe2dGvDFofWXexMDN2coWernnh",
+      "text": "•\n设定说话风格和语气",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "230",
+      "images": 0,
+      "links": [],
+      "position": 12390.953125,
+      "record_id": "V5OddxuO1oLDVSxBRnVcOXkxnzg",
+      "text": "•\n指定对用户的称呼方式",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "231",
+      "images": 0,
+      "links": [],
+      "position": 12424.953125,
+      "record_id": "FSyQdytABoqEBKxpni0cO5lonsd",
+      "text": "•\n避免过长，控制在 200 字以内",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "232",
+      "images": 0,
+      "links": [],
+      "position": 12470.953125,
+      "record_id": "EVRmdJBgpoqPfux7dyzcwn6JnSd",
+      "text": "4.2 工具设计建议",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "233",
+      "images": 0,
+      "links": [],
+      "position": 12506.953125,
+      "record_id": "L3HQdjurCoJ8QjxeBFic4Wa4nMe",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "234",
+      "images": 0,
+      "links": [],
+      "position": 12540.953125,
+      "record_id": "TbS0dEb1OoBho5xUaICcy4TRnSc",
+      "text": "•\n工具描述要清晰，让 LLM 能准确判断何时使用",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "235",
+      "images": 0,
+      "links": [],
+      "position": 12574.953125,
+      "record_id": "Rho1d1xIKoucnRxbnExcCOoSnfe",
+      "text": "•\n参数说明要完整，包含类型和示例",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "236",
+      "images": 0,
+      "links": [],
+      "position": 12608.953125,
+      "record_id": "JUJ6d0VCooKBd9xssmtca8Y7nSc",
+      "text": "•\n返回结果要简洁，便于 LLM 理解和转述",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "237",
+      "images": 0,
+      "links": [],
+      "position": 12654.953125,
+      "record_id": "ND3sdyZ9oobvrqxF1Pqcxlawnsd",
+      "text": "4.3 预启动工具使用建议",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "238",
+      "images": 0,
+      "links": [],
+      "position": 12690.953125,
+      "record_id": "NSE6dsHkDoRd3UxVYZpcoHXwnsc",
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "239",
+      "images": 0,
+      "links": [],
+      "position": 12724.953125,
+      "record_id": "LjgTdOrqooGIXkxoM5kcWRVyn2b",
+      "text": "•\n用于获取实时上下文（如时间、天气、用户状态）",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "240",
+      "images": 0,
+      "links": [],
+      "position": 12758.953125,
+      "record_id": "H2bKdsrIdoWFwhxLHD1cjbcsnif",
+      "text": "•\n配置 include_history: true（保存到记忆） 可让结果在多轮对话中持续可见",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "241",
+      "images": 0,
+      "links": [],
+      "position": 12793.953125,
+      "record_id": "V1PbdGBhvo1w0AxRzOncGKfhnqb",
+      "text": "•\n避免预启动工具执行时间过长，影响响应速度",
+      "type": "block docx-bullet-block"
+    }
+  ],
+  "chars": 7651,
+  "block_representation": "top_level_with_structured_tables",
+  "captured_at": "2026-11-03T11:05:05.294Z"
+}

@@ -1,0 +1,18 @@
+[Unit]
+Description=Xiaolin digital human services
+Requires=docker.service
+After=docker.service network-online.target nvidia-cdi-refresh.service
+Wants=network-online.target nvidia-cdi-refresh.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/opt/xiaolin/deployment/control.sh start
+ExecStop=/opt/xiaolin/deployment/control.sh stop
+TimeoutStartSec=300
+TimeoutStopSec=180
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

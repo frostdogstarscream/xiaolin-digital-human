@@ -1,0 +1,98 @@
+{
+  "question": "请用两句话介绍你可以如何帮助参观者，总共六十个汉字左右。",
+  "model": "qwen-plus",
+  "input": "text; physical microphone not involved",
+  "same_question_sequential_trials": true,
+  "existing_history_preserved": true,
+  "trials": [
+    {
+      "trial": 1,
+      "trace": {
+        "trace_id": "0a13fb70e3884da9ab0f75476cbea853",
+        "started_unix": 1793694023.0117924,
+        "marks": {
+          "question_enter": 4.540000009001233e-05,
+          "agent_ready": 0.03368380000006255,
+          "role_ready": 0.03369080000015856,
+          "memory_start": 0.033693300000095405,
+          "memory_ready": 0.033694599999989805,
+          "prestart_ready": 0.03551770000012766,
+          "profile_ready": 0.04570170000010876,
+          "resources_ready": 0.04570950000015728,
+          "history_loaded": 0.05821779999996579,
+          "history_ready": 0.058379300000069634,
+          "tools_ready": 0.05838610000000699,
+          "context_ready": 0.09253990000001977,
+          "prompt_build_start": 0.09255789999997432,
+          "prompt_ready": 0.09282440000015413,
+          "llm_request_start": 0.09282520000010663,
+          "llm_first_event": 0.6582499999999527,
+          "llm_first_text": 0.6584239000001162,
+          "reply_first_text": 0.6584282000001167,
+          "first_sentence_ready": 0.8757021999999779,
+          "first_sentence_enqueued": 0.8757375000000138,
+          "llm_stream_done": 1.4653854000000592,
+          "question_done": 1.4654553000000305
+        },
+        "meta": {
+          "question_sha256": "78fef16507245765e20280212a749e71c8d1acf15af74d630b3d69795a8a6118",
+          "memory_nodes": 3,
+          "memory_skipped": true,
+          "bionic_memory_enabled": false,
+          "memory_context_chars": 0,
+          "history_records": 30,
+          "history_messages": 20,
+          "tool_count": 0,
+          "route": "direct",
+          "prompt_chars": 1691,
+          "first_sentence_chars": 17,
+          "first_sentence_accepted": true
+        }
+      },
+      "seconds": {
+        "context_and_setup_seconds": 0.09277980000001662,
+        "agent_load_seconds": 0.033638399999972535,
+        "role_seconds": 7.000000096013537e-06,
+        "memory_retrieval_seconds": 1.2999998943996616e-06,
+        "prestart_tools_seconds": 0.0018231000001378561,
+        "profile_and_prompt_seconds": 0.010183999999981097,
+        "resources_seconds": 7.800000048518996e-06,
+        "history_seconds": 0.012669799999912357,
+        "tools_setup_seconds": 6.799999937356915e-06,
+        "final_prompt_build_seconds": 0.00026650000017980346,
+        "llm_first_text_seconds": 0.5655987000000096,
+        "intent_to_decision_seconds": null,
+        "model_to_reply_text_seconds": 0.5656030000000101,
+        "first_sentence_buffer_seconds": 0.2172739999998612,
+        "sentence_enqueue_seconds": 3.530000003593159e-05,
+        "question_to_first_sentence_seconds": 0.8756920999999238,
+        "model_full_stream_seconds": 1.3725601999999526
+      },
+      "question_to_audio_seconds": 3.9488651752471924,
+      "first_sentence_to_tts_seconds": 0.10424065589904785
+    }
+  ],
+  "median_seconds": {
+    "context_and_setup_seconds": 0.09277980000001662,
+    "agent_load_seconds": 0.033638399999972535,
+    "role_seconds": 7.000000096013537e-06,
+    "memory_retrieval_seconds": 1.2999998943996616e-06,
+    "prestart_tools_seconds": 0.0018231000001378561,
+    "profile_and_prompt_seconds": 0.010183999999981097,
+    "resources_seconds": 7.800000048518996e-06,
+    "history_seconds": 0.012669799999912357,
+    "tools_setup_seconds": 6.799999937356915e-06,
+    "final_prompt_build_seconds": 0.00026650000017980346,
+    "llm_first_text_seconds": 0.5655987000000096,
+    "model_to_reply_text_seconds": 0.5656030000000101,
+    "first_sentence_buffer_seconds": 0.2172739999998612,
+    "sentence_enqueue_seconds": 3.530000003593159e-05,
+    "question_to_first_sentence_seconds": 0.8756920999999238,
+    "model_full_stream_seconds": 1.3725601999999526
+  },
+  "status": "1_REAL_FAY_STAGE_TIMING_TRIALS_COMPLETE",
+  "received": {
+    "audio": 244,
+    "video": 124
+  }
+}

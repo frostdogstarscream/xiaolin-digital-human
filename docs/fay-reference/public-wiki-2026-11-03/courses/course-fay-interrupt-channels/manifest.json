@@ -1,0 +1,166 @@
+{
+  "id": "course-fay-interrupt-channels",
+  "title": "Fay 的多通道打断逻辑",
+  "author": "Fay 开源社区",
+  "date": "",
+  "version": "1.2.0",
+  "color": "#dc2626",
+  "icon": "🛑",
+  "cover_image": "course-cover.png",
+  "description": "",
+  "robot": {
+    "normal": "robot/Normal.jpg",
+    "speaking": "robot/Speaking.png",
+    "listening": "robot/Listening.png",
+    "thinking": "robot/Thinking.png",
+    "angry": "robot/Angry.png",
+    "crying": "robot/Crying.png",
+    "gentle": "robot/Gentle.png"
+  },
+  "sections": [
+    {
+      "id": "s01",
+      "title": "为什么 Fay 需要多通道打断",
+      "script": "sections/01-s01/script.txt",
+      "font_color": "#dc2626",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/01-s01/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/01-s01/assets/demo.code.json",
+          "font_color": "#dc2626",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/01-s01/quiz.json"
+    },
+    {
+      "id": "s02",
+      "title": "打断中枢：clear_Stream_with_audio",
+      "script": "sections/02-s02/script.txt",
+      "font_color": "#dc2626",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/02-s02/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/02-s02/assets/demo.code.json",
+          "font_color": "#dc2626",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/02-s02/quiz.json"
+    },
+    {
+      "id": "s03",
+      "title": "统一闸门：on_interact 的 if not no_reply",
+      "script": "sections/03-s03/script.txt",
+      "font_color": "#dc2626",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/03-s03/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/03-s03/assets/demo.code.json",
+          "font_color": "#dc2626",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/03-s03/quiz.json"
+    },
+    {
+      "id": "s04",
+      "title": "双重防御：conversation_id 校验",
+      "script": "sections/04-s04/script.txt",
+      "font_color": "#dc2626",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/04-s04/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/04-s04/assets/demo.code.json",
+          "font_color": "#dc2626",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/04-s04/quiz.json"
+    },
+    {
+      "id": "s05",
+      "title": "17 条链路对称性总览",
+      "script": "sections/05-s05/script.txt",
+      "font_color": "#dc2626",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/05-s05/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/05-s05/assets/demo.code.json",
+          "font_color": "#dc2626",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/05-s05/quiz.json"
+    },
+    {
+      "id": "s06",
+      "title": "新增入口与潜在坑位",
+      "script": "sections/06-s06/script.txt",
+      "font_color": "#dc2626",
+      "hold_duration_sec": 5,
+      "audio": "",
+      "assets": [
+        {
+          "type": "slide",
+          "title": "讲义",
+          "src": "sections/06-s06/assets/slide1.png",
+          "display_at": 0
+        },
+        {
+          "type": "code",
+          "title": "代码示例",
+          "src": "sections/06-s06/assets/demo.code.json",
+          "font_color": "#dc2626",
+          "display_at": 8
+        }
+      ],
+      "quiz": "sections/06-s06/quiz.json"
+    }
+  ]
+}

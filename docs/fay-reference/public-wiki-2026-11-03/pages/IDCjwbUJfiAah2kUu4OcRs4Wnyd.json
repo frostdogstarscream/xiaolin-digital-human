@@ -1,0 +1,71 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,10,1",
+  "title": "动图数字人",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=IDCjwbUJfiAah2kUu4OcRs4Wnyd",
+  "x": 62,
+  "y": -305.5,
+  "token": "IDCjwbUJfiAah2kUu4OcRs4Wnyd",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/IDCjwbUJfiAah2kUu4OcRs4Wnyd",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 4,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "如果你只是想实现一些简单的动图效果，比如在单片机上或者网页上，你可以参考以下代码使用fay内置的动图数字人。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 2,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "具体操作方式：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "1、替换fay/gui/robot目录下的同名图片（只有Thinking.jpg、Speaking.jpg、Normal.jpg、Listening.jpg有在fay上使用）；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/UwXEwxJMOiRhX1kWc7tcjPdrngc",
+          "text": "数字人接口"
+        }
+      ],
+      "text": "2、使用数字人接口对接fay,接收并显示到合适的地方。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "示例代码：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPython\nimport asyncio\nimport websockets\nimport json\nimport tkinter as tk\nfrom PIL import Image, ImageTk\nimport requests\nfrom io import BytesIO\nimport threading\n\nclass ImageDisplayApp:\n    def __init__(self, root):\n        \"\"\"初始化 Tkinter 窗口和显示图片的 Label。\"\"\"\n        self.root = root\n        self.root.title(\"动态图片显示\")\n        \n        self.label = tk.Label(root, text=\"等待图片...\")\n        self.label.pack(padx=20, pady=20)\n\n    def update_image(self, url: str):\n        \"\"\"根据给定的图片 URL，下载并更新显示。\"\"\"\n        try:\n            response = requests.get(url)\n            response.raise_for_status()\n            image_data = response.content\n\n            pil_image = Image.open(BytesIO(image_data))\n            pil_image = pil_image.resize((400, 400), Image.Resampling.LANCZOS)\n            tk_image = ImageTk.PhotoImage(pil_image)\n\n            self.label.config(image=tk_image, text=\"\")\n            self.label.image = tk_image  # 避免被 Python 垃圾回收\n        except Exception as e:\n            self.label.config(text=f\"图片加载失败：{e}\")\n\nasync def listen_websocket(uri: str, app: ImageDisplayApp):\n    \"\"\"\n    连接指定的 WebSocket，循环接收消息并更新图片。\n    由于 Tkinter 不是线程安全的，需要使用 app.root.after() 在主线程更新 UI。\n    \"\"\"\n    async with websockets.connect(uri) as websocket:\n        while True:\n            message = await websocket.recv()\n            data = json.loads(message)\n\n            # 从 JSON 中解析出图片 URL\n            robot_url = data.get(\"robot\")\n            if robot_url:\n                # 使用 Tkinter 主线程来更新 UI\n                app.root.after(0, app.update_image, robot_url)\n\ndef start_websocket_loop(uri: str, app: ImageDisplayApp):\n    \"\"\"在单独的事件循环中运行 listen_websocket 协程。\"\"\"\n    loop = asyncio.new_event_loop()\n    asyncio.set_event_loop(loop)\n    loop.run_until_complete(listen_websocket(uri, app))\n\ndef main():\n    # 创建 Tkinter 主窗体\n    root = tk.Tk()\n    app = ImageDisplayApp(root)\n\n    # 启动一个线程来跑 websocket 事件循环\n    ws_thread = threading.Thread(\n        target=start_websocket_loop, \n        args=(\"ws://127.0.0.1:10002\", app),\n        daemon=True\n    )\n    ws_thread.start()\n\n    # 启动 Tkinter 主循环\n    root.mainloop()\n\nif __name__ == \"__main__\":\n    main()\n\n",
+      "type": "block docx-fallback-block fallback-async-code fallback-async-align-"
+    }
+  ],
+  "chars": 2315,
+  "captured_at": "2026-11-03T10:42:02.348Z"
+}

@@ -1,0 +1,125 @@
+{
+  "verified_files": 20,
+  "checks": [
+    {
+      "file": "outputs\\comparisons\\idle-short-full.mp4",
+      "video_frames": 49,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\idle-short-mouth.mp4",
+      "video_frames": 47,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\welcome-wave-short-full.mp4",
+      "video_frames": 184,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\welcome-wave-short-mouth.mp4",
+      "video_frames": 184,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\goodbye-wave-short-full.mp4",
+      "video_frames": 184,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\goodbye-wave-short-mouth.mp4",
+      "video_frames": 187,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\explain-open-palms-short-full.mp4",
+      "video_frames": 233,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\explain-open-palms-short-mouth.mp4",
+      "video_frames": 236,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\acknowledge-nod-short-full.mp4",
+      "video_frames": 109,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\acknowledge-nod-short-mouth.mp4",
+      "video_frames": 109,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\idle-long-full.mp4",
+      "video_frames": 404,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\idle-long-mouth.mp4",
+      "video_frames": 404,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\welcome-wave-long-full.mp4",
+      "video_frames": 404,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\welcome-wave-long-mouth.mp4",
+      "video_frames": 406,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\goodbye-wave-long-full.mp4",
+      "video_frames": 404,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\goodbye-wave-long-mouth.mp4",
+      "video_frames": 406,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\explain-open-palms-long-full.mp4",
+      "video_frames": 404,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\explain-open-palms-long-mouth.mp4",
+      "video_frames": 406,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\acknowledge-nod-long-full.mp4",
+      "video_frames": 404,
+      "fps": "25",
+      "audio_streams": 1
+    },
+    {
+      "file": "outputs\\comparisons\\acknowledge-nod-long-mouth.mp4",
+      "video_frames": 404,
+      "fps": "25",
+      "audio_streams": 1
+    }
+  ]
+}

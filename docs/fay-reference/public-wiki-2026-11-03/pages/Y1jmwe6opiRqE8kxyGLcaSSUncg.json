@@ -1,0 +1,287 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,12",
+  "title": "开发指南",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=Y1jmwe6opiRqE8kxyGLcaSSUncg",
+  "x": 42,
+  "y": 234.5,
+  "token": "Y1jmwe6opiRqE8kxyGLcaSSUncg",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/Y1jmwe6opiRqE8kxyGLcaSSUncg",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 6,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-heading2-block isEmpty"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "一、Fay框架的作用",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "1、实现简单的数字人交互",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "这种实现方式最为简单，在Fay框架基础上，你只需要考虑用什么皮肤和llm,以及在什么地方接收用户的信息，然后又把信息输出到那里。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "a、接收的信息",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "接收的信息可以是文本信息（flask_server.py中实现），也可以是语音信息(fay_booter.py中实现)。可以从本机接收，也可以从网络接收。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "b、输出的信息",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "输出的信息可以是文本信息（flask_server.py中实现），也可以是语音信息(fay_booter.py中实现)。可以向本机输出，也可以向网络输出。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "c、皮肤",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "Fay框架通过数字人接口来驱动皮肤，若用户想驱动自己的皮肤，可以对接咱们定义的数字人接口（wsa_server.py,10002端口）。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "d、llm",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "在llm目录下我们已经为大量的llm实现了对接，只需要在system.conf配置chat_module即可，若用户需要补充，可以参考nlp_gpt.py的实现，并在fay_core.py中引入。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "2、为fay提供“眼睛”",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "我们将智能硬件、摄像头、手机等外部终端设备视为眼睛。终端设备把识别的数据和文本交互信息一起发给Fay（flask_server.py中api_send_v1_chat_completions()方法的observation），Fay根据数据进行处理及回应。更复杂的情况可以参照flask_server.py中的打招呼或唤醒补充其他意图接口。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "3、为fay提供“手”",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "通过把chat_module配置为agent,并参照llm/agent/tools/下的工具的实现补充更丰富的工具，可以让数字人的手为我们工作。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "4、调度三方系统",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "构建以数字人为中心的高度智能系统，只需要“让眼看见，让手触达”。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "二、源文件结构（请以仓库为准）",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n├── main.py              # 主程序入口\n├── fay_booter.py        # 启动器，管理录音设备和系统初始化\n├── config.json          # 配置文件\n├── system.conf          # 系统配置\n├── requirements.txt     # 依赖包列表\n├── fay.db              # 主数据库\n├── timer.db            # 定时任务数据库\n├── user_profiles.db    # 用户配置数据库\n├── qa.csv              # QA问答数据\n├── verifier.json       # 验证配置\n│\n├── core/               # 数字人核心目录\n│   ├── fay_core.py     # 核心控制器，处理交互逻辑和TTS\n│   ├── recorder.py     # 录音模块，音频采集和VAD检测\n│   ├── wsa_server.py   # WebSocket服务，处理实时通信\n│   ├── qa_service.py   # QA服务，处理问答逻辑\n│   ├── interact.py     # 交互基类，定义交互接口\n│   ├── content_db.py   # 内容数据库管理\n│   ├── member_db.py    # 用户数据库管理\n│   ├── authorize_tb.py # 认证表管理\n│   ├── stream_manager.py # 流式文本管理\n│   └── socket_bridge_service.py # Socket桥接服务\n│\n├── asr/                # 语音识别模块\n│   ├── ali_nls.py      # 阿里云语音识别\n│   ├── funasr.py       # FunASR语音识别\n│   └── funasr/         # FunASR服务器相关文件\n│\n├── tts/               # 语音合成模块\n│   ├── ms_tts_sdk.py   # 微软TTS实现\n│   ├── ali_tss.py      # 阿里云TTS实现\n│   ├── gptsovits.py    # GPT-SoVITS实现\n│   ├── gptsovits_v3.py # GPT-SoVITS V3实现\n│   ├── volcano_tts.py  # 火山TTS实现\n│   └── tts_voice.py    # 语音类型和风格定义\n│\n├── llm/               # 大语言模型模块\n│   ├── agent/          # AI代理目录\n│   ├── nlp_gpt.py      # GPT实现\n│   ├── nlp_gpt_stream.py# GPT流式实现\n│   ├── nlp_rasa.py     # Rasa实现\n│   ├── nlp_lingju.py   # 灵聚AI实现\n│   ├── nlp_xingchen.py # 星尘AI实现\n│   ├── nlp_coze.py     # Coze AI实现\n│   ├── nlp_qingliu.py  # 清流AI实现\n│   ├── nlp_accompany.py # 陪伴AI实现\n│   ├── nlp_ChatGLM3.py # ChatGLM3实现\n│   ├── nlp_VisualGLM.py # VisualGLM实现\n│   ├── nlp_ollama_api.py # Ollama API实现\n│   ├── nlp_privategpt.py # Private GPT实现\n│   ├── nlp_rwkv.py     # RWKV实现\n│   └── VllmGPT.py      # vLLM GPT实现\n│\n├── ai_module/          # AI功能模块\n│   ├── baidu_emotion.py # 百度情感分析\n│   └── nlp_cemotion.py  # 自定义情感分析\n│\n├── gui/               # 图形界面模块\n│   ├── flask_server.py  # Flask Web服务器\n│   ├── window.py       # 窗口程序实现\n│   ├── robot/          # 机器人资源目录\n│   ├── static/         # 静态资源目录\n│   └── templates/      # 页面模板目录\n│\n├── utils/             # 工具模块\n│   ├── config_util.py  # 配置管理工具\n│   ├── util.py        # 通用工具函数\n│   ├── stream_util.py # 流处理工具\n│   └── openai_api/    # OpenAI API工具\n│\n├── scheduler/         # 调度管理\n│   └── thread_manager.py # 线程管理器\n│\n├── cache_data/        # 缓存数据目录\n│   └── input.wav      # 临时音频文件\n│\n├── samples/          # 音频样本目录\n│   └── sample-*.wav   # TTS生成的音频文件\n│\n├── logs/             # 日志目录\n│   ├── asr_result.txt  # 语音识别结果日志\n│   └── answer_result.txt # 回答结果日志\n│\n├── docker/           # Docker相关\n│   └── Dockerfile    # Docker配置文件\n│\n├── shell/            # Shell脚本\n│   └── *.sh         # 各种脚本文件\n│\n└── test/            # 测试目录\n    └── *            # 测试文件和资源\n\n",
+      "type": "block docx-fallback-block fallback-async-code fallback-async-align-"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/Mcw3wbA3RiNZzwkexz6cnKCsnhh",
+          "text": "fay接口"
+        }
+      ],
+      "text": "三、\nfay接口",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/PNKFwVgUKig6fDkMH03cMPiInIb",
+          "text": "文字交互接口"
+        },
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/UmR7wylfliwtkUkHbfFcqVN6nve",
+          "text": "语音交互接口"
+        }
+      ],
+      "text": "1、文字交互接口，支持多路输入输出，通过文字内容与数字人沟通；\n2、语音交互接口，支持多路输入输出，websocket 的9001端口和tcp 10001端口其实是一样的，相当于远程麦克风和扬声器（可以不使用），在无法直接与fay沟通对话的时候使用；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/UwXEwxJMOiRhX1kWc7tcjPdrngc",
+          "text": "数字人驱动接口"
+        }
+      ],
+      "text": "3、数字人驱动接口，支持多路输出，通过输出声音、文字、情绪和唇形来驱动数字人。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/BJO4wJ7Nmi4AiQkej69ct3knngd",
+          "text": "控制接口"
+        }
+      ],
+      "text": "4、控制接口，支持多路输入输出，把fay界面的所有功能都可以集成到你的产品。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "通过这四个接口的灵活组合其实可以灵活适配各种应用场景。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/UuMOwDShOimrSckrgkxcBEhhnXg",
+          "text": "播报接口"
+        }
+      ],
+      "text": "5、播报接口，用于构建具备“自言自语”逻辑的数字人应用。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/ZmIAwppguiL2GJk4WX6cYhxgnPh",
+          "text": "意图接口"
+        }
+      ],
+      "text": "6、意图接口，用于向fay传达明确的意图：唤醒、打招呼、打断说话。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 3764,
+  "last_scroll": {
+    "top": 3321,
+    "height": 656,
+    "total": 3977
+  },
+  "captured_at": "2026-11-03T10:46:36.887Z"
+}

@@ -1,0 +1,92 @@
+name: xiaolin
+x-service: &service
+  network_mode: host
+  restart: unless-stopped
+  working_dir: /app
+  environment: &environment
+    XIAOLIN_PUBLIC_ORIGIN: https://36.133.88.94:6443
+    XIAOLIN_TURN_HOST: 36.133.88.94
+    XIAOLIN_TURN_PORT: '6478'
+    XIAOLIN_ICE_MIN_PORT: '10050'
+    XIAOLIN_ICE_MAX_PORT: '10099'
+    XIAOLIN_TURN_SECRET_FILE: /shared/config/turn-secret
+    XIAOLIN_BIND_IP: ${XIAOLIN_PRIVATE_IP}
+    OMP_NUM_THREADS: '4'
+    HF_HUB_OFFLINE: '1'
+    MODELSCOPE_OFFLINE: '1'
+    SDL_AUDIODRIVER: dummy
+  volumes: &volumes
+    - ${XIAOLIN_RELEASE}:/app
+    - /opt/xiaolin/shared:/shared
+  logging:
+    driver: json-file
+    options: {max-size: 20m, max-file: '3'}
+services:
+  fay:
+    <<: *service
+    image: xiaolin-fay:${XIAOLIN_VERSION}
+    command: python /app/fay-ue4/tools/run_fay_local.py
+    healthcheck:
+      test: [CMD, python, /app/deployment/healthcheck.py, fay]
+      interval: 30s
+      timeout: 8s
+      start_period: 180s
+  asr:
+    <<: *service
+    image: xiaolin-asr:${XIAOLIN_VERSION}
+    command: python /app/avatar-2d/service/local_asr_server.py
+    healthcheck:
+      test: [CMD, python, /app/deployment/healthcheck.py, asr]
+      interval: 30s
+      timeout: 8s
+      start_period: 180s
+  presenter:
+    <<: *service
+    image: xiaolin-presenter:${XIAOLIN_VERSION}
+    command: python /app/avatar-2d/service/live_app.py
+    environment:
+      <<: *environment
+      XIAOLIN_TURN_TRANSPORTS: tcp
+    devices:
+      - nvidia.com/gpu=${XIAOLIN_GPU_UUID}
+    healthcheck:
+      test: [CMD, python, /app/deployment/healthcheck.py, presenter]
+      interval: 30s
+      timeout: 8s
+      start_period: 180s
+  attendance:
+    <<: *service
+    image: xiaolin-fay:${XIAOLIN_VERSION}
+    command: python /app/attendance-mcp/server.py
+    healthcheck:
+      test: [CMD, python, /app/deployment/healthcheck.py, attendance]
+      interval: 30s
+      timeout: 8s
+      start_period: 30s
+  bootstrap:
+    <<: *service
+    image: xiaolin-fay:${XIAOLIN_VERSION}
+    restart: on-failure
+    command: python /app/deployment/bootstrap.py
+  turn:
+    <<: *service
+    user: '0:0'
+    image: xiaolin-turn:${XIAOLIN_VERSION}
+    volumes:
+      - /opt/xiaolin/shared/config/turnserver.conf:/etc/coturn/turnserver.conf:ro
+    command: ["-c", "/etc/coturn/turnserver.conf", "--log-file=stdout"]
+    healthcheck:
+      test: [CMD, python, -c, "import socket; socket.create_connection(('127.0.0.1',6478),3).close()"]
+      interval: 30s
+      timeout: 5s
+  nginx:
+    <<: *service
+    image: nginx:1.28-alpine
+    healthcheck:
+      test: [CMD, nginx, -t]
+      interval: 30s
+      timeout: 5s
+    volumes:
+      - ${XIAOLIN_RELEASE}/deployment/nginx.conf:/etc/nginx/nginx.conf:ro
+      - /opt/xiaolin/shared/certs:/certs:ro
+      - /opt/xiaolin/shared/config:/config:ro

@@ -1,0 +1,498 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,3,1",
+  "title": "多用户分发逻辑",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=VTiqw4sKTisEhmkWTn6cnIcKnvh",
+  "x": 62,
+  "y": -233.5,
+  "token": "VTiqw4sKTisEhmkWTn6cnIcKnvh",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/VTiqw4sKTisEhmkWTn6cnIcKnvh",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 14,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "•\n课程ID：course-fay-multi-user-dispatch",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "•\n作者：Fay 开源社区",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "•\n版本：1.0.0",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "•\n章节数：6",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://player.fay-agent.com/",
+          "text": "https://player.fay-agent.com/"
+        }
+      ],
+      "text": "•\n播放及修改：https://player.fay-agent.com/",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "•\n导入课程包：",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "封面",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "9",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "目录",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "1.\n设计目标：为什么 Fay 要支持多用户",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "2.\n用户标识体系：username 与 uid",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "3.\nWebSocket 客户端注册：从匿名到绑定",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "4.\nUsername 字段路由：分发的核心机制",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "5.\n会话隔离与并发状态管理",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "6.\n多端协同：面板、数字人、远程音频",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "第1节 设计目标：为什么 Fay 要支持多用户",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "18",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "欢迎来到《Fay 的多用户对话消息分发逻辑》课程。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "Fay 作为开源数字人 Agent 框架，从一开始就被设计为可以同时服务多个用户。一个 Fay 进程能够并行处理多个访客的对话，每个访客都有独立的上下文、独立的思考状态、独立的回复流，互相之间不会串扰。这一节我们先来理解为什么需要多用户支持，以及它解决了什么问题。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "设想一个真实场景：一台办公室前台的接待数字人，上午接待了访客 A 来咨询产品，中午又接待了访客 B 来洽谈合作。如果系统只能处理一个用户，那么 B 的到来就会覆盖掉 A 的对话上下文，A 之前提到的问题、偏好、聊到一半的话题都会丢失。再进一步，如果同时有外部设备接入，比如 IoT 终端或者远程语音设备，每个设备代表一个独立的\"用户\"，也需要拿到自己的回复，而不是收到别人的对话内容。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "Fay 的多用户机制就是为了解决这两类问题而设计的。它的核心目标有三个：第一，每个用户拥有独立的对话历史和记忆；第二，每个用户的消息只发送给该用户对应的客户端，不会被其他客户端收到；第三，多个用户的对话可以并发进行，互不阻塞、互不影响状态。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "接下来的几节课，我们会从用户标识、WebSocket 客户端注册、消息路由、会话隔离一直讲到多端协同，带你完整理解 Fay 是如何在代码层面实现这套机制的。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "第2节 用户标识体系：username 与 uid",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "25",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "这一节我们看 Fay 的用户标识体系。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "每个 Fay 用户都由一对核心标识来表示：username 和 uid。username 是用户的可读名称，比如\"User\"、\"小张\"、\"访客001\"；uid 是数据库主键，由 SQLite 的 T_Member 表自增分配。用户首次出现时，通过 member_db 模块的 add_user 方法插入新记录；后续访问通过 find_user(username) 拿到 uid。代码位于 core/member_db.py。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "为什么需要两个标识？username 是面向客户端的，所有 WebSocket 消息中的 Username 字段都是这个名字；uid 是面向内部存储的，比如对话历史 T_Msg 表用 uid 关联用户、记忆系统用 uid 区分不同用户的画像、思考态字典 think_mode_users 也用 uid 作为 key。username 可读、uid 高效，两者各司其职。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "text": "在消息处理流程中，Fay 通过 interact 对象传递用户身份。interact.data.get(\"user\") 拿到 username，再用 member_db.new_instance().find_user(username) 转换为 uid。这两步几乎出现在 fay_core.py 的所有处理方法开头：on_interact、say、__send_panel_message、__send_digital_human_message 都遵循同样的模式。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "这套标识体系的好处是，无论消息从哪里来——GUI 输入、远程音频、HTTP API、定时任务——只要能够确定 username，就能完成后续所有的用户隔离逻辑。username 是 Fay 多用户世界里的\"通行证\"。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# core/member_db.py - 用户标识查询\ndef find_user(self, username):\n    conn = sqlite3.connect('memory/user_profiles.db')\n    c = conn.cursor()\n    c.execute('SELECT * FROM T_Member WHERE username = ?', (username,))\n    result = c.fetchone()\n    conn.close()\n    return result[0] if result else 0\n\n# core/fay_core.py - 在处理流程中转换 username -> uid\nusername = interact.data.get('user', 'User')\nuid = member_db.new_instance().find_user(username)\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [],
+      "text": "第3节 WebSocket 客户端注册：从匿名到绑定",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "33",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "有了用户标识之后，下一步是要让外部客户端能够\"认领\"自己代表哪个用户。这就是 WebSocket 客户端注册的作用。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "Fay 启动时会拉起两个 WebSocket 服务器：10002 端口的 HumanServer，给数字人渲染端使用；10003 端口的 WebServer，给 GUI 网页前端使用。这两个服务都继承自 core/wsa_server.py 里的 MyServer 基类。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "text": "当一个客户端连接上来，MyServer 会在 __handler 中创建一条 client 记录，初始 username 默认为 \"User\"。这条记录的结构是：{\"id\": \"ip:port\", \"websocket\": ws, \"username\": \"User\"}。注意此时还不知道这个客户端到底代表哪个用户，所以默认绑定到主用户。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "真正的绑定发生在 __consumer_handler 里。客户端连接后通常会主动发一条 JSON 消息，里面包含 Username 字段——也可以包含 Output 字段控制是否需要音频输出。服务端解析到这两个字段后，会查找当前 websocket 对应的 client 记录，把 username 和 output 写进去。从这一刻起，该 WebSocket 连接就和某个 username 绑定了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "text": "后续 Fay 如果想判断某个用户是否在线，就调用 wsa_server.get_instance().is_connected(username)，方法内部遍历 self.__clients，只要存在一个客户端的 username 字段等于目标 username，就返回 True。get_client_output 方法用类似的逻辑判断某个用户是否需要接收音频。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "这套注册机制非常轻量，没有复杂的握手协议——客户端只要发一条带 Username 的 JSON 消息就完成绑定。简单的设计也带来灵活性：同一个 username 可以有多个客户端连接，比如一个用户同时打开数字人渲染端和管理端，两端都会被路由到。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# core/wsa_server.py - 客户端注册与查找\nasync def __consumer_handler(self, websocket, path):\n    username = None\n    async for message in websocket:\n        try:\n            data = json.loads(message)\n            username = data.get('Username')\n        except json.JSONDecodeError:\n            pass\n        if username is not None:\n            unique_id = f'{websocket.remote_address[0]}:{websocket.remote_address[1]}'\n            async with self.lock:\n                for c in self.__clients:\n                    if c['id'] == unique_id:\n                        c['username'] = username\n\ndef is_connected(self, username):\n    if username is None:\n        username = 'User'\n    return any(c['username'] == username for c in self.__clients)\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [],
+      "text": "第4节 Username 字段路由：分发的核心机制",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "42",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "text": "这一节是整个分发机制的核心：消息是怎么从 fay_core 流到对应客户端的。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "44",
+      "images": 0,
+      "links": [],
+      "text": "Fay 发送消息时统一使用 wsa_server.get_instance().add_cmd(content) 方法，把 JSON 命令塞进一个内部队列 __listCmd。content 是一个字典，最外层一般包含三个关键字段：Topic、Data、Username。Topic 标识消息类型，比如 \"human\" 表示发给数字人；Data 是具体的载荷，包含 Key、Value、IsFirst、IsEnd 等；Username 决定了这条消息要发送给谁。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "45",
+      "images": 0,
+      "links": [],
+      "text": "实际的发送由 __producer_handler 协程负责，它在事件循环里不断检查 __listCmd 队列。一旦有消息要发，它会执行这样一段路由逻辑：解析 message 的 Username 字段，如果为 None 则视为群发，对所有连接的客户端逐一发送；如果 Username 有值，就在 self.__clients 里筛选 username 匹配的客户端，仅向匹配的客户端发送。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "text": "这就是 Fay 多用户消息分发的本质：一个简单的字段过滤。所有需要按用户分发的消息，构造时都必须显式带上 Username。在 fay_core.py 里你会看到大量类似这样的代码：content = {'Topic': 'human', 'Data': {...}, 'Username': interact.data.get('user')}。这个 Username 一路从最初的 interact 透传到最终的 add_cmd 调用。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "text": "文本消息走 __send_digital_human_message 方法，构造 Key 为 \"text\" 的命令；带音频的消息在 say 方法中构造 Key 为 \"audio\" 的命令；面板状态消息走 wsa_server.get_web_instance().add_cmd 发到 10003 端。无论走哪条路径，只要 Username 字段正确，路由就一定正确。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "text": "这种设计的优势是分发逻辑极其集中——只有 __producer_handler 一处需要关心如何按用户路由，业务代码只需要保证消息构造时带上 Username 即可。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "49",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# core/wsa_server.py - 按 Username 路由\nasync def __producer_handler(self, websocket, path):\n    while self.__running:\n        await asyncio.sleep(0.01)\n        if len(self.__listCmd) > 0:\n            message = await self.__producer()\n            if message:\n                username = json.loads(message).get('Username')\n                if username is None:\n                    wsclients = [c['websocket'] for c in self.__clients]\n                else:\n                    wsclients = [c['websocket'] for c in self.__clients\n                                 if c.get('username') == username]\n\n# core/fay_core.py - 构造消息时显式带上 Username\ncontent = {\n    'Topic': 'human',\n    'Data': {'Key': 'text', 'Value': full_text,\n             'IsFirst': 1 if is_first else 0,\n             'IsEnd': 1 if is_end else 0},\n    'Username': username,\n}\nwsa_server.get_instance().add_cmd(content)\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "text": "第5节 会话隔离与并发状态管理",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "51",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "52",
+      "images": 0,
+      "links": [],
+      "text": "单纯的消息路由还不够。多用户场景下还要解决会话状态隔离的问题。这一节我们看 Fay 怎么管理这些状态。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "53",
+      "images": 0,
+      "links": [],
+      "text": "最典型的状态是\"思考中\"。当某个用户的 LLM 正在生成回复时，Fay 会向对应客户端推送 \"思考中...\" 的提示，并切换数字人头像。这个状态显然不能跨用户共享——A 在等回复时，B 的界面不应该被意外切到 Thinking 表情。Fay 用 think_mode_users 字典实现隔离，key 是 uid，value 是布尔值。每次进入流式回复前先检查并切换该用户的思考态，结束后再清除。类似的还有 think_time_users 和 think_display_state，都按 uid 分桶。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "54",
+      "images": 0,
+      "links": [],
+      "text": "第二类状态是流式回复的序号。LLM 流式输出时会被切成多个片段先后送给 TTS、再送给数字人。如果同一个用户的多个片段乱序到达数字人端，音频和唇形就会错位。Fay 用 (username, conversation_id) 作为 key 管理 human_audio_order_map，每个 key 维护一个 next_seq 和 buffer，按 conversation_msg_no 顺序投递。不同用户、不同会话之间的序号互不干扰。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "55",
+      "images": 0,
+      "links": [],
+      "text": "第三类状态是 pending_isfirst。当某个流式片段在清理后变成空字符串，Fay 不会立刻把 IsFirst 标记发出去，而是把它\"暂存\"到 pending_isfirst[username] 里，等下一个非空片段时再补上。这个字典也是按 username 隔离的。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "56",
+      "images": 0,
+      "links": [],
+      "text": "会话维度的隔离则用 conversation_id 实现。同一个用户可以有多个并发会话，比如\"主对话\"和\"子任务对话\"。Fay 在 user_conv_map 里以 (username, conversation_id) 作为 key 存储每个会话的元信息。打断检查 should_stop_generation 也是按 (user, conversation_id) 粒度判断的，打断 A 用户的某个会话不会影响他的另一个会话。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "57",
+      "images": 0,
+      "links": [],
+      "text": "整套状态管理的设计原则是一致的：所有用户相关的字典都不要用单一 key，而是用 username 或 (username, conversation_id) 这样的复合 key。这保证了任何两个用户的状态都不会相互影响。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "58",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# core/fay_core.py - 用复合 key 隔离会话序号\nkey = (username or 'User', conversation_id)\nwith self.human_audio_order_lock:\n    state = self.human_audio_order_map.get(key)\n    if state is None:\n        state = {\n            'next_seq': None,\n            'buffer': {},\n        }\n        self.human_audio_order_map[key] = state\n\n# 思考态字典按 uid 分桶\nself.think_mode_users[uid] = True\n\n# pending_isfirst 按 username 暂存\nif is_first and not full_text:\n    self.pending_isfirst[username] = True\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "59",
+      "images": 0,
+      "links": [],
+      "text": "第6节 多端协同：面板、数字人、远程音频",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "60",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "61",
+      "images": 0,
+      "links": [],
+      "text": "前面五节讲的都是从 Fay 内部出发的消息分发。这一节我们看一下端到端的全链路：当一个用户说话之后，他的回复会被同时下发到哪几个端，这些端又是怎么协同的。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "62",
+      "images": 0,
+      "links": [],
+      "text": "一次完整的对话流程是这样的。用户 A 在 GUI 里发送一条消息，flask_server 的 /api/send 接口收到后调用 fay_booter，最终走到 fay_core.on_interact。fay_core 立即把用户原话回写到 GUI 面板（10003 端）和数字人端（10002 端），然后启动 LLM 生成。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "63",
+      "images": 0,
+      "links": [],
+      "text": "LLM 是流式输出的。每收到一个文本片段，fay_core 会做几件事并行进行：第一，把文本拼接到累计回复中，存进 T_Msg 数据库（按 uid 关联）；第二，调用 __send_panel_message 把片段发到 10003 GUI 端，更新聊天气泡；第三，调用 __send_digital_human_message 把片段发到 10002 数字人端；第四，把片段送进 TTS 队列合成音频，音频文件再通过 say 方法构造 audio 类型消息推送到 10002 端，并推送到远程音频设备（如果有的话）。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "64",
+      "images": 0,
+      "links": [],
+      "text": "这四个动作里，每一个发送的 content 都带着相同的 Username，所以只有 A 对应的客户端会收到。如果此时 B 也在和 Fay 对话，B 的回复会沿同样的路径发送，但因为 Username 不同，A 和 B 的客户端不会收到对方的消息。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "65",
+      "images": 0,
+      "links": [],
+      "text": "远程音频设备的分发稍微特殊一些。Fay 维护了一个独立的远程音频套接字服务（10001 端），__send_remote_device_audio 方法通过 username 查找对应的远程设备连接然后单独推送。这条路径独立于 WebSocket，但隔离原则完全一致——按 username 路由。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "66",
+      "images": 0,
+      "links": [],
+      "text": "另外还有一个细节：is_connected 检查。fay_core 在调用 add_cmd 之前几乎都会先用 wsa_server.get_instance().is_connected(username) 判断目标用户是否在线，离线的用户不会触发数字人消息构造，节省资源。GUI 端用类似的 wsa_server.get_web_instance().is_connected(username) 做同样的判断。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "67",
+      "images": 0,
+      "links": [],
+      "text": "到这里，整套多用户消息分发逻辑就完整了：username 是身份证、is_connected 是签到表、add_cmd + Username 是邮政编码，__producer_handler 是邮差。每条消息从产生到送达，全程靠 username 这一个字段串起来。理解了这条主线，你就能定位 Fay 里几乎所有\"为什么 A 的消息发到 B 那里去了\"或\"为什么 B 没收到回复\"这类问题的根因。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "68",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# core/fay_core.py - 同一回复同时下发到三端\ndef __process_text_output(self, text, username, uid, content_id, type,\n                          is_first=False, is_end=False):\n    if text:\n        text = text.strip()\n    # 1) 推送到 GUI 面板（10003 端）\n    self.__send_panel_message(text, username, uid, content_id, type, is_end)\n    # 2) 推送到数字人端（10002 端）\n    self.__send_digital_human_message(text, username, is_first, is_end)\n    # 远程音频设备另起线程异步推送\n    # MyThread(target=self.__send_remote_device_audio, args=[file_url, interact]).start()\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "69",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 8797,
+  "captured_at": "2026-11-03T10:39:57.339Z"
+}

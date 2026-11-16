@@ -1,0 +1,36 @@
+{
+  "scope": "local runtime copy only; vendor retained",
+  "files": [
+    {
+      "runtime_file": "core/fay_core.py",
+      "original_sha256": "c54e85cde15f158da7a3b85526036d7842d8758fc53c411d41d0db6fc3bbfea2",
+      "patched_sha256": "1d2b77a48117eea07aeca7388634dbd8aa68a90d09ac4cafa715a04b89c2b144"
+    },
+    {
+      "runtime_file": "fay_booter.py",
+      "original_sha256": "2c61b86cc629e3576124e2ba57dc4700cfa567eb338d464b14f51a9d590cac2e",
+      "patched_sha256": "83a9b946ad58126b9e27ac72923eaaf25d3acd1efcefc8d3616a303eeab15361"
+    },
+    {
+      "runtime_file": "simulation_engine/gpt_structure.py",
+      "original_sha256": "39cf74fd347e94dccfc2e1437be5792235ee3cf0c583c1fb53a35644a9aff382",
+      "patched_sha256": "924bc665d0243d9fbe4062ae601bc4a912e4f69c1c387838303d8feb09a743f4"
+    },
+    {
+      "runtime_file": "core/stream_manager.py",
+      "original_sha256": "ed350af3c0038be12f04bb35c3b81ebd6b3322fa4f0e1d493eec22c528b66597",
+      "patched_sha256": "6640664e0f44e47eb0c2165afa627043b874c5e8fc93661c3c999924d88f92c5"
+    },
+    {
+      "runtime_file": "gui/flask_server.py",
+      "original_sha256": "98e1677d2beaf2c854cf58b2ac09fd9412ac321ab3b0d8f250e59820c15c780f",
+      "patched_sha256": "cab1fa797785689f76c09ad50d865d867eefa1327bb98b4f9e735c4bb47de4d2"
+    },
+    {
+      "runtime_file": "llm/nlp_cognitive_stream.py",
+      "original_sha256": "e1d2f5a647cd8059456e2095d6205ace3fd7f64e9aac31d0ea0b4dd2f5440660",
+      "patched_sha256": "17c90cbd4a3c55e9511ac98787f2111541f291b7f59f18a98f00768a5ba363f5"
+    }
+  ],
+  "credentials_included": false
+}

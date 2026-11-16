@@ -1,0 +1,5 @@
+FROM python:3.12-slim-bookworm
+RUN sed -i 's|http://deb.debian.org|https://mirrors.ustc.edu.cn|g' /etc/apt/sources.list.d/debian.sources \
+    && apt-get update -o APT::Update::Error-Mode=any && apt-get install -y --no-install-recommends coturn \
+    && rm -rf /var/lib/apt/lists/*
+ENTRYPOINT ["turnserver"]

@@ -10,6 +10,7 @@ from pathlib import Path
 import app as legacy
 from aiohttp import web
 from realtime_ingress import RealtimeIngress
+from gesture_planner import ActionController
 
 ROOT = legacy.ROOT
 legacy.PORT = int(os.environ.get('AVATAR_PORT', '8766'))
@@ -23,7 +24,7 @@ class LiveBridge(RealtimeIngress,legacy.Bridge):
         self.presenter = None
         self.offer_lock = asyncio.Lock()
         self.sessionid = None
-        self.selected_action = 'auto'
+        self.actions = ActionController()
         self.user_to_viewer = None
         self.asr_requests = 0
         self.rtc_debug = {}
@@ -159,20 +160,32 @@ class LiveBridge(RealtimeIngress,legacy.Bridge):
             raise web.HTTPConflict(text='数字人音视频正在连接，请稍候')
 
     async def say(self, request):
-        self.check_rtc()
-        return await super().say(request)
+        raise web.HTTPGone(text='直接播报入口已停用，请使用问答。')
+
+    def begin_action_turn(self,fixed=False):
+        internal=asyncio.current_task() is self.voice_task
+        if not internal:self.actions.begin(self.epoch)
+        return self.actions.context(self.epoch,fixed=fixed)
+
+    def audio_plan(self,signal,conversation):
+        if not self.actions.current(signal,self.epoch) or signal.get('conversation_id')!=conversation:
+            raise ValueError('Stale or missing action metadata')
+        action=self.actions.reserve(signal,self.epoch)
+        return action,{**signal,'action':action}
 
     async def chat(self, request):
         self.check_rtc()
         return await super().chat(request)
 
     async def interrupt(self, reason='user'):
+        internal=reason=='new_turn' and asyncio.current_task() is self.voice_task
         if self.voice_task and not self.voice_task.done() and self.voice_task is not asyncio.current_task():
             self.voice_task.cancel()
             await asyncio.gather(self.voice_task,return_exceptions=True)
         if reason=='viewer_connect':self.wake_gate.reset()
+        if not internal:self.actions.cancel()
         if self.presenter:
-            self.presenter.flush_talk()
+            self.presenter.flush_talk(preserve_motion=internal)
         for job in self.jobs.values():
             if job['status'] in ('streaming', 'preparing'):
                 job['status'] = 'cancelled'
@@ -194,6 +207,7 @@ class LiveBridge(RealtimeIngress,legacy.Bridge):
         decision=self.wake_gate.accept(text)
         if decision['status']=='waiting':return web.json_response(decision)
         await self.interrupt('voice_input')
+        self.actions.begin(self.epoch)
         self.voice_task=asyncio.create_task(self.run_voice(request,decision))
         return web.json_response(decision)
 
@@ -224,17 +238,7 @@ class LiveBridge(RealtimeIngress,legacy.Bridge):
         return web.json_response({'ok':True})
 
     async def action(self, request):
-        await self.claim_viewer(request)
-        data = await request.json()
-        action = data.get('action', 'auto')
-        if action not in ('auto', 'idle') and action not in (self.assets.clips if self.assets else {}):
-            raise web.HTTPBadRequest(text='未知动作')
-        self.selected_action = action
-        if data.get('play'):
-            self.check_rtc()
-            if action in self.assets.clips:
-                self.presenter.request_motion(action)
-        return web.json_response({'ok': True, 'action': action})
+        raise web.HTTPGone(text='手动动作入口已停用，动作由本轮问答自动规划。')
 
     async def asr(self, request):
         viewer=request.headers.get('X-Avatar-Viewer')
@@ -276,7 +280,8 @@ class LiveBridge(RealtimeIngress,legacy.Bridge):
     def public(self, job):
         return {key: job.get(key) for key in ('job_id', 'status', 'text', 'action', 'epoch',
                                              'received_at', 'queued_at', 'started_at', 'ended_at', 'voice_seconds',
-                                             'first_delta_at','generation_ended_at','delta_count','transport','model')}
+                                             'first_delta_at','generation_ended_at','delta_count','transport','model',
+                                             'turn_id','plan_id','conversation','motion_started_at','generation')}
 
     async def receive(self, payload):
         if payload.get('Topic') != 'human' or payload.get('Username') != legacy.USERNAME:
@@ -302,12 +307,13 @@ class LiveBridge(RealtimeIngress,legacy.Bridge):
             await self.emit('error', message='待播语音超过一分钟，请先打断。')
             return
         self.seen.add(marker)
-        first = conv not in self.conversations
+        try:action,plan=self.audio_plan(data.get('Action'),conv)
+        except ValueError:return
         self.conversations.add(conv)
-        action = (legacy.action_for(data) if self.selected_action == 'auto' else self.selected_action) if first else 'idle'
         key = uuid.uuid4().hex
         job = dict(job_id=key, id=key, status='preparing', text=str(data.get('Text') or data.get('text') or ''),
-                   action=action, epoch=self.epoch, received_at=time.time(), cancel=__import__('threading').Event())
+                   action=action, epoch=self.epoch, received_at=time.time(), cancel=__import__('threading').Event(),
+                   plan=plan,turn_id=plan['turn_id'],plan_id=plan['plan_id'],conversation=conv,generation=self.presenter.generation)
         self.jobs[key] = job
         epoch = self.epoch
         try:
@@ -316,7 +322,7 @@ class LiveBridge(RealtimeIngress,legacy.Bridge):
                 job['status'] = 'cancelled'
                 return
             job.update(status='streaming', queued_at=time.time(), voice_seconds=len(wave)/16000)
-            self.presenter.enqueue(wave, dict(job_id=key, epoch=epoch, action=action))
+            self.presenter.enqueue(wave, dict(plan,job_id=key, epoch=epoch, action=action))
             await self.emit('streaming', **self.public(job))
         except Exception:
             job['status'] = 'error'
@@ -341,6 +347,9 @@ class LiveBridge(RealtimeIngress,legacy.Bridge):
         job = self.jobs.get(info.get('job_id'))
         if not job or job['epoch'] != self.epoch or job['status'] == 'cancelled':
             return
+        if info.get('motion_start') and self.actions.started(info):
+            job['motion_started_at']=time.time()
+            await self.emit('action_started',action=info['motion_start'],turn_id=info['turn_id'],plan_id=info['plan_id'])
         if info.get('status') == 'start':
             job['started_at'] = time.time()
             await self.emit('playback_started', **self.public(job))
@@ -358,7 +367,8 @@ class LiveBridge(RealtimeIngress,legacy.Bridge):
         response = await super().health(request)
         data = json.loads(response.text)
         data.update(backend='LiveTalking', transport='WebRTC', native_source=str(SOURCE_NAME),
-                    sessionid=self.sessionid, selected_action=self.selected_action,
+                    sessionid=self.sessionid, action_mode='model',
+                    active_action=self.presenter.motion if self.presenter and self.presenter.motion else 'idle',
                     rtc_connected=bool(self.rtc and any(pc.connectionState == 'connected' for pc in self.rtc.pcs)),
                     render_stats=self.presenter.stats if self.presenter else {},
                     render_error=self.presenter.error if self.presenter else None,
@@ -387,6 +397,7 @@ SOURCE_NAME = 'c7269433a2b6ecebcd9342445d2ecc882c98b0da'
 def main():
     bridge = LiveBridge()
     application = web.Application(middlewares=[legacy.local_only], client_max_size=4*1024*1024)
+    application.add_routes(legacy.provider_routes(bridge))
     application.on_startup.append(bridge.startup)
     application.on_cleanup.append(bridge.shutdown)
     async def index(request):

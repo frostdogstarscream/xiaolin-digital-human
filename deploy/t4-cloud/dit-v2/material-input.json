@@ -1,0 +1,138 @@
+{
+  "returns": {
+    "welcome-wave": 25.2,
+    "acknowledge-nod": 25.2,
+    "goodbye-wave": 13.2,
+    "explain-open-palms": 25.4
+  },
+  "clips": [
+    {
+      "id": "welcome-wave",
+      "frames": 175,
+      "fps": 25,
+      "seconds": 7.0,
+      "source": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\presenter-v2-1080\\avatars\\welcome-wave\\frames.npy",
+      "reference_Lab": [
+        73.992919921875,
+        18.171875,
+        16.4375
+      ],
+      "correction_Lab": [
+        4.2083740234375,
+        0.71875,
+        3.71875
+      ],
+      "before_Lab": [
+        69.7845458984375,
+        17.453125,
+        12.71875
+      ],
+      "after_Lab": [
+        73.748779296875,
+        17.3671875,
+        15.78125
+      ],
+      "before_delta_E76": 5.661811828613281,
+      "after_delta_E76": 1.066672682762146,
+      "output": "D:\\Code\\3D数字人\\avatar-2d\\assets\\presenter-v2-1080\\color-matched-20261111\\welcome-wave.mp4",
+      "sha256": "68205dc7ea6899a737675cde5f58677fd9b833184978b552391afc4f4d1874a2",
+      "elapsed_seconds": 53.75
+    },
+    {
+      "id": "goodbye-wave",
+      "frames": 175,
+      "fps": 25,
+      "seconds": 7.0,
+      "source": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\presenter-v2-1080\\avatars\\goodbye-wave\\frames.npy",
+      "reference_Lab": [
+        73.992919921875,
+        18.171875,
+        16.4375
+      ],
+      "correction_Lab": [
+        3.74755859375,
+        0.4921875,
+        2.8125
+      ],
+      "before_Lab": [
+        70.245361328125,
+        17.6796875,
+        13.625
+      ],
+      "after_Lab": [
+        73.876953125,
+        17.640625,
+        15.59375
+      ],
+      "before_delta_E76": 4.711326599121094,
+      "after_delta_E76": 1.0037872791290283,
+      "output": "D:\\Code\\3D数字人\\avatar-2d\\assets\\presenter-v2-1080\\color-matched-20261111\\goodbye-wave.mp4",
+      "sha256": "cd7f3f5a2d8024f2dda026a0c354bb1fa89261ed2405e5b455d93af82f359d00",
+      "elapsed_seconds": 52.17199999999866
+    },
+    {
+      "id": "explain-open-palms",
+      "frames": 175,
+      "fps": 25,
+      "seconds": 7.0,
+      "source": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\presenter-v2-1080\\avatars\\explain-open-palms\\frames.npy",
+      "reference_Lab": [
+        73.992919921875,
+        18.171875,
+        16.4375
+      ],
+      "correction_Lab": [
+        3.076171875,
+        0.828125,
+        3.25
+      ],
+      "before_Lab": [
+        70.916748046875,
+        17.34375,
+        13.1875
+      ],
+      "after_Lab": [
+        73.7274169921875,
+        17.2734375,
+        16.0703125
+      ],
+      "before_delta_E76": 4.550947666168213,
+      "after_delta_E76": 1.0062347650527954,
+      "output": "D:\\Code\\3D数字人\\avatar-2d\\assets\\presenter-v2-1080\\color-matched-20261111\\explain-open-palms.mp4",
+      "sha256": "1def63dd389ff87e76ab4e63e1987bc8a92609a83e391844e4e4c8f9c8608338",
+      "elapsed_seconds": 53.375
+    },
+    {
+      "id": "acknowledge-nod",
+      "frames": 100,
+      "fps": 25,
+      "seconds": 4.0,
+      "source": "D:\\Code\\3D数字人\\avatar-2d\\runtime\\presenter-v2-1080\\avatars\\acknowledge-nod\\frames.npy",
+      "reference_Lab": [
+        73.992919921875,
+        18.171875,
+        16.4375
+      ],
+      "correction_Lab": [
+        3.6865234375,
+        1.171875,
+        3.421875
+      ],
+      "before_Lab": [
+        70.306396484375,
+        17.0,
+        13.015625
+      ],
+      "after_Lab": [
+        73.9044189453125,
+        18.03125,
+        15.984375
+      ],
+      "before_delta_E76": 5.164588451385498,
+      "after_delta_E76": 0.48262831568717957,
+      "output": "D:\\Code\\3D数字人\\avatar-2d\\assets\\presenter-v2-1080\\color-matched-20261111\\acknowledge-nod.mp4",
+      "sha256": "c396d9f5162169af6232df119dc14b79f5f4f0854865bd637cecadd625fd4cc3",
+      "elapsed_seconds": 31.95300000000134
+    }
+  ]
+}

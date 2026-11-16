@@ -1,0 +1,57 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,1,9",
+  "title": "Could not load the Qt platform plugin \"xcb\"...",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=N2stwVAKNiJZSxkn2xVcyMA9nMb",
+  "x": 82,
+  "y": 882.5,
+  "token": "N2stwVAKNiJZSxkn2xVcyMA9nMb",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/N2stwVAKNiJZSxkn2xVcyMA9nMb",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "linxu系统安装Fay依赖: Could not load the Qt platform plugin \"xcb\"...",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "报错类似如下：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "重装PyQt5，指定PyQt5的版本为5.13",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 93,
+  "last_scroll": {
+    "top": 54,
+    "height": 656,
+    "total": 710
+  },
+  "captured_at": "2026-11-03T10:45:32.371Z"
+}

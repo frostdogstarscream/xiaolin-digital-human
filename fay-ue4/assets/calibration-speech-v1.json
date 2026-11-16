@@ -1,0 +1,9 @@
+﻿{
+    "text":  "你好，我是数字人小慧。这是一段本地动作和口型测试。现在，我会随着声音张嘴，播放结束后恢复待机。欢迎来到我们的展示空间。\n",
+    "provider":  "Windows offline SAPI",
+    "sample_rate":  24000,
+    "channels":  1,
+    "bits":  16,
+    "voice":  "Microsoft Huihui Desktop",
+    "cloud_calls":  0
+}

@@ -1,0 +1,28 @@
+{
+  "provider": "SiliconFlow",
+  "base_url": "https://api.siliconflow.cn/v1",
+  "embedding_model": "Pro/BAAI/bge-m3",
+  "rerank_model": "Pro/BAAI/bge-reranker-v2-m3",
+  "paid_only": true,
+  "saved": true,
+  "memory_enabled": false,
+  "probes": [
+    {
+      "route": "embeddings",
+      "http_status": 200,
+      "seconds": 1.1999,
+      "vectors": 3,
+      "dimensions": 1024,
+      "nonzero": true
+    },
+    {
+      "route": "rerank",
+      "http_status": 200,
+      "seconds": 0.1456,
+      "relevant_document_rank": 1,
+      "score": 0.9342272877693176
+    }
+  ],
+  "chat_and_tts_credentials_unchanged": true,
+  "note": "Credentials saved only in ignored local system.conf; memory flag remains off pending patch/tests/migration."
+}

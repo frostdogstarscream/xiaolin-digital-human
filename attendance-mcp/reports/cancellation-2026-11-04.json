@@ -1,0 +1,9 @@
+{
+  "status": "PASSED",
+  "old_tool_calls": 0,
+  "new_tool_calls": 1,
+  "old_callback_did_not_replace_new_state": true,
+  "cloud_calls": 0,
+  "production_history_written": false,
+  "production_tts_called": false
+}

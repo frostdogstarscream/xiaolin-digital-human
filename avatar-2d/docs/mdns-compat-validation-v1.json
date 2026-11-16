@@ -1,0 +1,11 @@
+{
+  "negative_control_candidates": 0,
+  "fixed_answer_candidates": 8,
+  "authenticated_peer_reflexive_ice_connected": true,
+  "received_audio": true,
+  "received_video": true,
+  "normal_ip_offer_unchanged": true,
+  "external_stun_turn": false,
+  "browser_privacy_or_firewall_modified": false,
+  "status": "REAL_MDNS_ICE_MEDIA_REGRESSION_PASSED"
+}

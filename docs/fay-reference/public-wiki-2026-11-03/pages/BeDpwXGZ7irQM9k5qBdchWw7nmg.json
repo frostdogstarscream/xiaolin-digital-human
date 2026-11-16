@@ -1,0 +1,195 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,10,3",
+  "title": "duix（android）",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=BeDpwXGZ7irQM9k5qBdchWw7nmg",
+  "x": 62,
+  "y": -233.5,
+  "token": "BeDpwXGZ7irQM9k5qBdchWw7nmg",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/BeDpwXGZ7irQM9k5qBdchWw7nmg",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 7,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/GuijiAI/duix.ai",
+          "text": "https://github.com/GuijiAI/duix.ai"
+        },
+        {
+          "href": "https://github.com/xszyou/fay-android",
+          "text": "https://github.com/xszyou/fay-android"
+        }
+      ],
+      "text": "硅基开源仓库(https://github.com/GuijiAI/duix.ai)对接Fay，实现android端数字人。对接思路是把fay android connector工程代码（https://github.com/xszyou/fay-android）集成到duix android工程代码，实现与Fay 10001双向的声音沟通接口的对接。具体操作如下：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 2,
+      "links": [],
+      "text": "\nscreen-20240807-175851\n00:52\n",
+      "type": "block docx-file-block is-in-video-v2"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "1、下载两个仓库代码，并配置安卓环境，以确保两个工程都能在android studio上编译成apk.",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "2、修改duix对应代码：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "增加权限",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "9",
+      "images": 1,
+      "links": [],
+      "text": "\nAndroidManifest.xml\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "把“播放声音按钮”改名为“停止”按钮",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "12",
+      "images": 1,
+      "links": [],
+      "text": "\nactivity_call.xml\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "增加与Fay 10001音频流端口的对接逻辑",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "15",
+      "images": 1,
+      "links": [],
+      "text": "\nCallActivity.kt\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "增加Fay地址输入框和麦克风开关",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "18",
+      "images": 1,
+      "links": [],
+      "text": "\nMainActivity.kt\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "20",
+      "images": 1,
+      "links": [],
+      "text": "\nactivity_main.xml\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "增加保存kv到文件的工具类",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "23",
+      "images": 1,
+      "links": [],
+      "text": "\nKVUtils.java\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/xszyou/Fay",
+          "text": "https://github.com/xszyou/Fay"
+        }
+      ],
+      "text": "3、大功造成，运行时记得启动Fay（https://github.com/xszyou/Fay）哦。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "\ntest-debug.apk\n55.75MB\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "(20241010更新)",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://pan.baidu.com/s/1BtzYH9Hnt7-qTDUjE_hefQ?pwd=trqf",
+          "text": "https://pan.baidu.com/s/1BtzYH9Hnt7-qTDUjE_hefQ?pwd=trqf"
+        }
+      ],
+      "text": "完整工程（sdk上补充了播放状态检测）：https://pan.baidu.com/s/1BtzYH9Hnt7-qTDUjE_hefQ?pwd=trqf",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://pan.baidu.com/s/1ELL9zRZu_AZ383EtfHSwjg?pwd=qb3j",
+          "text": "https://pan.baidu.com/s/1ELL9zRZu_AZ383EtfHSwjg?pwd=qb3j"
+        }
+      ],
+      "text": "网上采集到可用的模型：https://pan.baidu.com/s/1ELL9zRZu_AZ383EtfHSwjg?pwd=qb3j",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "注：duix并非免费商用产品，如需商用请与南京硅基公司联系。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 717,
+  "captured_at": "2026-11-03T10:42:21.740Z"
+}

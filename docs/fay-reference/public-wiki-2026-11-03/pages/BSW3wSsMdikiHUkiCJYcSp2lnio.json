@@ -1,0 +1,801 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,5",
+  "title": "记忆模块",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=BSW3wSsMdikiHUkiCJYcSp2lnio",
+  "x": 42,
+  "y": -269.5,
+  "token": "BSW3wSsMdikiHUkiCJYcSp2lnio",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/BSW3wSsMdikiHUkiCJYcSp2lnio",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 19,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "一、Fay 记忆机制总览（2026-04-27）",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "本文档描述 Fay 当前默认的认知记忆机制。涉及代码： llm/nlp_cognitive_stream.py + genagents/modules/memory_stream.py",
+      "type": "block docx-text-block quote-container-render-unit"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "•\ncore/memory_service.py + core/member_db.py + faymcp/mcp_server.py。",
+      "type": "block docx-bullet-block quote-container-render-unit"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "旧版精简说明见 ",
+      "type": "block docx-text-block quote-container-render-unit"
+    },
+    {
+      "id": "8",
+      "images": 1,
+      "links": [],
+      "text": "\n加载中，请稍候...\nmemory_module.md\n",
+      "type": "block docx-file-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "，本文为增补与扩展。",
+      "type": "block docx-text-block quote-container-render-unit"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "一、三层存储",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-fallback-block fallback-async-sheet fallback-async-align-left"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "ChromaDB 仅用于本地知识库（doc 检索），不参与记忆流。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "二、节点的数据结构",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "每个 ConceptNode 包含：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\nnode_id, node_type, content, importance, datetime,\ncreated (time_step), last_retrieved, pointer_id,\ntags  ← 业务标签列表\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "node_type 只有三种：observation / conversation / reflection。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "tags 走命名空间约定：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\nkind:<decision|event|fact|rule|error|insight|preference|observation>\nsource:<fay_self|claude_code|cursor|user|fay_reflection|...>\npersistent:true              ← 长期保留标志，rule 必带\ndomain:<quant|homecare|education|life_assistant|home_automation|companion|...>\nstrategy:<策略名>  symbol:<标的>  session:<会话ID>  schedule:<表达式>  date:<YYYY-MM-DD>\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "2.1 节点完整事例",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "事例 A：普通对话（conversation，无 tag）",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n  \"node_id\": 142,\n  \"node_type\": \"conversation\",\n  \"content\": \"主人：今天股市怎么样？\\nFay：A股震荡走低，沪指跌 0.8%。\",\n  \"importance\": 4,\n  \"datetime\": \"2026/04/27 10:23:15\",\n  \"created\": 142,\n  \"last_retrieved\": 142,\n  \"pointer_id\": null,\n  \"tags\": []\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [],
+      "text": "当前对话路径暂未打 tag，反思阶段无法从中继承业务标签。",
+      "type": "block docx-text-block quote-container-render-unit"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "事例 B：外部 agent 写入的事件（event）",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n  \"node_id\": 156,\n  \"node_type\": \"observation\",\n  \"content\": \"上午 10:30 AAPL 突破日内高点 187.4，breakout 策略买入信号触发\",\n  \"importance\": 7,\n  \"datetime\": \"2026/04/27 10:30:42\",\n  \"created\": 156,\n  \"last_retrieved\": 156,\n  \"pointer_id\": null,\n  \"tags\": [\n    \"domain:quant\",\n    \"kind:event\",\n    \"session:2026-04-27-am\",\n    \"source:claude_code\",\n    \"strategy:breakout\",\n    \"symbol:AAPL\"\n  ]\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "事例 C：长期规则（rule，必带 persistent:true）",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n  \"node_id\": 88,\n  \"node_type\": \"observation\",\n  \"content\": \"每小时整点检查所有持仓策略是否有未触发的止损单\",\n  \"importance\": 9,\n  \"datetime\": \"2026/04/26 09:00:00\",\n  \"created\": 88,\n  \"last_retrieved\": 130,\n  \"pointer_id\": null,\n  \"tags\": [\n    \"domain:quant\",\n    \"kind:rule\",\n    \"persistent:true\",\n    \"schedule:hourly\",\n    \"source:user\"\n  ]\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "事例 D：用户偏好（preference）",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n  \"node_id\": 31,\n  \"node_type\": \"observation\",\n  \"content\": \"用户希望晚上 22:00 之后不要主动发起对话\",\n  \"importance\": 8,\n  \"datetime\": \"2026/04/15 22:13:05\",\n  \"created\": 31,\n  \"last_retrieved\": 105,\n  \"pointer_id\": null,\n  \"tags\": [\n    \"domain:life_assistant\",\n    \"kind:preference\",\n    \"persistent:true\",\n    \"source:user\"\n  ]\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [],
+      "text": "事例 E：失败事件（error）",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n  \"node_id\": 173,\n  \"node_type\": \"observation\",\n  \"content\": \"买入信号在 AAPL 涨停封板后仍触发，导致 0 成交但占用了风控额度\",\n  \"importance\": 8,\n  \"datetime\": \"2026/04/27 14:02:11\",\n  \"created\": 173,\n  \"last_retrieved\": 173,\n  \"pointer_id\": null,\n  \"tags\": [\n    \"domain:quant\",\n    \"kind:error\",\n    \"session:2026-04-27-pm\",\n    \"source:claude_code\",\n    \"strategy:breakout\",\n    \"symbol:AAPL\"\n  ]\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "事例 F：居家养老观察（event，跨场景示例）",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n  \"node_id\": 412,\n  \"node_type\": \"observation\",\n  \"content\": \"老人晨起血压 158/95，比上周平均高 12 个点\",\n  \"importance\": 7,\n  \"datetime\": \"2026/04/27 07:15:00\",\n  \"created\": 412,\n  \"last_retrieved\": 412,\n  \"pointer_id\": null,\n  \"tags\": [\n    \"domain:homecare\",\n    \"kind:event\",\n    \"source:elderly_monitor\",\n    \"date:2026-04-27\"\n  ]\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "text": "事例 G：Fay 自动生成的反思（reflection，继承+追加 tag）",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nJSON\n复制\n{\n  \"node_id\": 201,\n  \"node_type\": \"reflection\",\n  \"content\": \"用户在 AAPL 上的 breakout 策略本周 3 次假突破亏损，可能需要加 ATR 滤波或限制涨停后入场\",\n  \"importance\": 8,\n  \"datetime\": \"2026/04/27 23:00:14\",\n  \"created\": 201,\n  \"last_retrieved\": 201,\n  \"pointer_id\": [156, 162, 173],\n  \"tags\": [\n    \"domain:quant\",\n    \"kind:insight\",\n    \"source:fay_reflection\",\n    \"strategy:breakout\",\n    \"symbol:AAPL\"\n  ]\n}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "反思节点的 tag 由 MemoryStream.reflect() 自动从 pointer_id 指向的源节点继承（去掉 session:、date:、schedule: 前缀），再覆盖为 kind:insight + source:fay_reflection。",
+      "type": "block docx-text-block quote-container-render-unit"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [],
+      "text": "三、写入路径（共 4 条）",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "42",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-sheet-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "text": "写入的统一管线：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "44",
+      "images": 0,
+      "links": [],
+      "text": "1.\n锁外 算 importance（LLM 评分 0–10）和 embedding（API 向量）",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "45",
+      "images": 0,
+      "links": [],
+      "text": "2.\n持锁 agent_lock，把节点 append 到 memory_stream.seq_nodes，并写 embeddings[content]",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "text": "3.\n内部 4 条只更新内存；只有 core.memory_service.remember 会立即落盘",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "text": "4.\n每天 00:00 save_agent_memory 全量 dump 一次 nodes.json + embeddings.json",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "49",
+      "images": 0,
+      "links": [],
+      "text": "四、检索路径",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "text": "唯一入口：MemoryStream.retrieve(focal_points, time_step, ...)。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "51",
+      "images": 0,
+      "links": [],
+      "text": "打分公式：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "52",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\nscore = recency_w · 衰减(last_retrieved)\n      + relevance_w · cosine(query_embedding, node_embedding)\n      + importance_w · normalized(importance)\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "53",
+      "images": 0,
+      "links": [],
+      "text": "默认权重 [0, 1, 0.5]（纯相关度+重要度），但对话流用的是 [0.8, 0.5, 0.5]（加重时间权重）。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "54",
+      "images": 0,
+      "links": [],
+      "text": "新增 tag 过滤：filter_tags_all（AND）/ filter_tags_any（OR）。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "55",
+      "images": 0,
+      "links": [],
+      "text": "对话时拼提示词的过程（见 nlp_cognitive_stream.py 2329 行附近）：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "56",
+      "images": 0,
+      "links": [],
+      "text": "1.\n用当前用户输入做 query",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "57",
+      "images": 0,
+      "links": [],
+      "text": "2.\n一次 retrieve 拉 30 条候选",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "58",
+      "images": 0,
+      "links": [],
+      "text": "3.\n按 node_type 分成三段：观察记忆 / 对话记忆 / 反思记忆，每段最多 10 条",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "59",
+      "images": 0,
+      "links": [],
+      "text": "4.\n拼成 markdown，塞进系统 prompt 的 memory_context",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "60",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "61",
+      "images": 0,
+      "links": [],
+      "text": "五、定时任务（init_memory_scheduler）",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "62",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-sheet-block"
+    },
+    {
+      "id": "63",
+      "images": 0,
+      "links": [],
+      "text": "启动时还会：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "64",
+      "images": 0,
+      "links": [],
+      "text": "•\nprecheck_embedding_dimensions — 修复维度不一致的旧 embedding",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "65",
+      "images": 0,
+      "links": [],
+      "text": "•\ncreate_agent 默认 username 创建主 agent",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "66",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "67",
+      "images": 0,
+      "links": [],
+      "text": "六、对外接口",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "68",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-sheet-block"
+    },
+    {
+      "id": "69",
+      "images": 0,
+      "links": [],
+      "text": "MCP 的 7 个工具：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "70",
+      "images": 0,
+      "links": [],
+      "text": "•\nmemory_remember — 写入（含 kind 枚举 + persistent + extra_tags）",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "71",
+      "images": 0,
+      "links": [],
+      "text": "•\nmemory_search — 语义检索 + tag 过滤",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "72",
+      "images": 0,
+      "links": [],
+      "text": "•\nmemory_get_recent — 时间倒序最近 N 条",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "73",
+      "images": 0,
+      "links": [],
+      "text": "•\nmemory_get_active_rules — 所有 kind:rule + persistent:true",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "74",
+      "images": 0,
+      "links": [],
+      "text": "•\nmemory_get_reflections — 最近反思",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "75",
+      "images": 0,
+      "links": [],
+      "text": "•\nmemory_get_user_profile — portrait + extra_info",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "76",
+      "images": 0,
+      "links": [],
+      "text": "•\nmemory_get_schema — kind 枚举与 tag 命名空间，外部 agent 拿来对齐参数",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "77",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "78",
+      "images": 0,
+      "links": [],
+      "text": "七、典型流程示例",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "79",
+      "images": 0,
+      "links": [],
+      "text": "7.1 内部场景（Fay 主进程内）",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "80",
+      "images": 0,
+      "links": [],
+      "text": "例 1：普通用户聊天",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "81",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n用户：\"今天天气真不错\"\n└─→ Fay 主流程: question() 拿到内容\n    ├─→ 锁外算 importance/embedding\n    ├─→ remember_conversation_thread 异步写一条 conversation 节点（content=\"主人：...\\nFay：...\"）\n    └─→ 当前提示词组装时调 memory_stream.retrieve(content)\n         ├─→ 取回 30 条候选，分三段塞进 system prompt 的 memory_context\n         └─→ LLM 据此生成回复\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "82",
+      "images": 0,
+      "links": [],
+      "text": "当前 conversation 节点不带 tag，反思阶段无法继承。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "83",
+      "images": 0,
+      "links": [],
+      "text": "例 2：用户主动表达偏好（理想路径）",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "84",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n用户：\"以后晚上 10 点之后别叫我\"\n└─→ Fay 听到后做出回应（写 conversation 节点）\n    └─→ Fay 应该 同时调 core.memory_service.remember(\n            content=\"用户希望晚上 22:00 之后不要主动发起对话\",\n            kind=\"preference\",\n            persistent=True,\n            source=\"fay_self\",\n            extra_tags=[\"domain:life_assistant\"]\n        )\n        └─→ 写入一条 observation 节点（事例 D）\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "86",
+      "images": 0,
+      "links": [],
+      "text": "例 3：每天 22:35 用户画像分析",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "87",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\nschedule.run_pending() 触发 perform_user_portrait_analysis()\n└─→ 读 T_Member.user_portrait（旧画像）\n└─→ 抽取最近 N 条 conversation 节点\n└─→ 调 LLM，按 6 个维度（含\"与 Fay 的关系\"）生成新画像，1000 字以内\n└─→ 写回 T_Member.user_portrait\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "88",
+      "images": 0,
+      "links": [],
+      "text": "例 4：每晚 23:00 反思",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "89",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\nschedule.run_pending() 触发 perform_daily_reflection()\n└─→ 选若干\"主题锚点\"（anchor）\n    └─→ 对每个 anchor 调 memory_stream.reflect(anchor)\n         ├─→ 内部 retrieve 出 120 条相关节点\n         ├─→ LLM 提炼为 5 条 reflection 文本\n         ├─→ 算 importance + embedding\n         └─→ 调 _add_node 写入，tags 自动从源节点继承+覆盖\n              结果如事例 G\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "90",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "91",
+      "images": 0,
+      "links": [],
+      "text": "7.2 外部场景（外部 agent 通过 MCP 调用）",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "93",
+      "images": 0,
+      "links": [],
+      "text": "例 5：Claude Code 开新策略任务前先拉规则 & 写 session 开始",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "94",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n[Claude Code 启动新会话]\n1) call memory_get_active_rules(username=\"trader_zhang\")\n   ← 返回 [事例 C, 例 8 的 homecare 规则等]\n   → Claude Code 把规则塞进自己的 system prompt\n\n2) call memory_remember(\n      content=\"开始 2026-04-27 上午盘量化执行任务\",\n      kind=\"event\",\n      source=\"claude_code\",\n      extra_tags=[\"domain:quant\", \"session:2026-04-27-am\"],\n      username=\"trader_zhang\"\n   )\n   ← {\"ok\": true, \"node_id\": 155, ...}\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "95",
+      "images": 0,
+      "links": [],
+      "text": "例 6：执行过程中实时回写事件",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "96",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n[策略触发 → Claude Code 调 broker API → 成交]\n3) call memory_remember(\n      content=\"上午 10:30 AAPL 突破日内高点 187.4，breakout 策略买入信号触发\",\n      kind=\"event\",\n      source=\"claude_code\",\n      extra_tags=[\"domain:quant\", \"strategy:breakout\", \"symbol:AAPL\", \"session:2026-04-27-am\"],\n      username=\"trader_zhang\"\n   )\n   → 节点 156 落地（事例 B）\n\n[发现策略 bug]\n4) call memory_remember(\n      content=\"买入信号在 AAPL 涨停封板后仍触发，导致 0 成交但占用了风控额度\",\n      kind=\"error\",\n      source=\"claude_code\",\n      extra_tags=[\"domain:quant\", \"strategy:breakout\", \"symbol:AAPL\", \"session:2026-04-27-pm\"],\n      username=\"trader_zhang\"\n   )\n   → 节点 173 落地（事例 E）\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "97",
+      "images": 0,
+      "links": [],
+      "text": "例 7：第二天另一个会话回顾",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "98",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n[次日 Claude Code 新会话开启]\n1) call memory_search(\n      query=\"breakout 策略最近问题\",\n      filter_tags_all=[\"domain:quant\", \"strategy:breakout\"],\n      n=10,\n      username=\"trader_zhang\"\n   )\n   ← 返回:\n      - 节点 173 (kind:error 假突破)\n      - 节点 201 (kind:insight 反思——\"3 次假突破，建议加 ATR 滤波\")\n      - 节点 156 (kind:event 当时的买入)\n\n2) Claude Code 据此调整策略实现，再写一条:\n   call memory_remember(\n      content=\"已在 breakout 策略加 ATR(14)>1.5 滤波，规避涨停后假突破\",\n      kind=\"decision\",\n      source=\"claude_code\",\n      extra_tags=[\"domain:quant\", \"strategy:breakout\"],\n      username=\"trader_zhang\"\n   )\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "99",
+      "images": 0,
+      "links": [],
+      "text": "例 8：居家养老监测脚本（非交易场景）",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "100",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n[ESP32 血压计 → 中转脚本 → MCP]\ncall memory_remember(\n   content=\"老人晨起血压 158/95，比上周平均高 12 个点\",\n   kind=\"event\",\n   source=\"elderly_monitor\",\n   extra_tags=[\"domain:homecare\", \"date:2026-04-27\"],\n   username=\"grandpa_li\"\n)\n→ 节点 412 落地（事例 F）\n\n[家属在 app 设规则]\ncall memory_remember(\n   content=\"爷爷每天早晨必须测血压，9 点前没数据要报警\",\n   kind=\"rule\",\n   persistent=True,\n   source=\"family_app\",\n   extra_tags=[\"domain:homecare\", \"schedule:daily\"],\n   username=\"grandpa_li\"\n)\n→ 一条 persistent rule 入库\n\n[当晚反思]\nFay 23:00 reflect → 检索 grandpa_li 节点\n→ 生成 insight: \"老人本周血压偏高 3 次，建议家属安排复查\" (kind:insight, domain:homecare)\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "101",
+      "images": 0,
+      "links": [],
+      "text": "例 9：Cursor 修 bug 后回写",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "102",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n[Cursor 修了一个内存泄漏]\ncall memory_remember(\n   content=\"发现 stream_manager 在 ws 异常断开时未释放 buffer，已改为 try/finally 关闭\",\n   kind=\"fact\",\n   source=\"cursor\",\n   extra_tags=[\"domain:engineering\", \"module:stream_manager\", \"session:fix-memleak-1\"]\n)\n\n[同时记录决策]\ncall memory_remember(\n   content=\"Fay 项目里所有 ws 路径都要在 finally 里 close buffer\",\n   kind=\"rule\",\n   persistent=True,\n   source=\"cursor\",\n   extra_tags=[\"domain:engineering\"]\n)\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "103",
+      "images": 0,
+      "links": [],
+      "text": "例 10：教育辅导 agent",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "104",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n[家教 agent 完成一节课]\ncall memory_remember(\n   content=\"小明今天独立完成 5 道一元二次方程，全部正确\",\n   kind=\"fact\",\n   source=\"tutor_bot\",\n   extra_tags=[\"domain:education\", \"subject:math\", \"topic:quadratic_eq\"],\n   username=\"xiaoming\"\n)\n\n[下次开课前]\ncall memory_search(\n   query=\"小明数学进度\",\n   filter_tags_all=[\"domain:education\", \"subject:math\"],\n   username=\"xiaoming\"\n)\n→ 拉到上一次的\"已掌握一元二次方程\" → 这次直接进二次函数\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "105",
+      "images": 0,
+      "links": [],
+      "text": "例 11：跨 agent 协作 — Claude Code 写规则、Fay 自身遵守",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "106",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n1) Claude Code 调:\n   memory_remember(\n      content=\"每小时整点检查所有持仓策略是否有未触发的止损单\",\n      kind=\"rule\",\n      persistent=True,\n      source=\"user\",\n      extra_tags=[\"domain:quant\", \"schedule:hourly\"]\n   )\n\n2) Fay 主进程的某个内置 agent（如调度器）\n   每小时启动时调:\n   core.memory_service.get_active_rules(username)\n   ← 返回所有 persistent rules，包含上面这条\n   → 调度器据此触发巡检流程\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "108",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "109",
+      "images": 0,
+      "links": [],
+      "text": "八、还没解决的事",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "110",
+      "images": 0,
+      "links": [],
+      "text": "1.\n对话/观察线程没打 tag：反思继承不到东西，需在 remember_conversation_thread / remember_observation_thread 里加默认 tag（如 source:fay_conversation、source:fay_observation）",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "111",
+      "images": 0,
+      "links": [],
+      "text": "2.\n冷热分层缺失：节点数大了之后 retrieve 全扫，没有按 importance + 年龄做分层或聚类收敛",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "112",
+      "images": 0,
+      "links": [],
+      "text": "3.\n上下文压缩缺失：retrieve 回来的节点直接全文进 prompt，没有 summary 压缩层",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "113",
+      "images": 0,
+      "links": [],
+      "text": "4.\n端到端联调未跑：MCP 工具刚加，需要：启动 Fay → Claude Code 连 SSE → 调 memory_get_schema / memory_remember / memory_search，确认节点正确落盘",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "114",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-divider-block"
+    },
+    {
+      "id": "115",
+      "images": 0,
+      "links": [],
+      "text": "九、文件位置速查",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "116",
+      "images": 0,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-sheet-block"
+    },
+    {
+      "id": "117",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "118",
+      "images": 0,
+      "links": [],
+      "text": "当前 Fay 还没自动做这件事，需要后续在对话流里加\"指令识别 → 调 service\" 的钩子。",
+      "type": "block docx-text-block quote-container-render-unit"
+    },
+    {
+      "id": "119",
+      "images": 0,
+      "links": [],
+      "text": "外部 agent 通过 SSE 连接 http://<fay_host>:8765/sse，按 MCP 协议调用 memory_* 工具。",
+      "type": "block docx-text-block quote-container-render-unit"
+    },
+    {
+      "id": "120",
+      "images": 0,
+      "links": [],
+      "text": "这是\"MCP 工具同时向 Fay 自身暴露\"的核心价值：写入与读取走同一条 service 层，外部 agent 写、内部 agent 读，无 sync 问题。",
+      "type": "block docx-text-block quote-container-render-unit"
+    }
+  ],
+  "chars": 10481,
+  "captured_at": "2026-11-03T10:40:56.832Z"
+}

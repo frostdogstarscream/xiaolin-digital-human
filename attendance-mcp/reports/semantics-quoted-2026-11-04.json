@@ -1,0 +1,23 @@
+{
+  "status": "PASSED",
+  "cases": [
+    {
+      "case": "quoted_request",
+      "question": "同事说“帮我签到”，这句话是什么意思？",
+      "expected_action": "finish",
+      "action": "finish",
+      "answer": "同事是在请求你替他在考勤系统里完成一次签到操作，通常属于代打卡。你可以理解为：他可能不方便亲自打卡，想让你帮忙点一下。需要注意的是，代他人打卡在很多公司属于违规行为，建议先向同事确认原因，并提醒他自己签到或走正规补签流程。如果你想测试签到功能，我这边只有占位打卡测试，不连接真实考勤系统。",
+      "actual_server_calls": 0,
+      "judge_seconds": 5.973,
+      "execution_seconds": null,
+      "total_seconds": 5.978,
+      "tool_results": [],
+      "tool_hints": 0,
+      "gesture": "explain-open-palms",
+      "passed": true
+    }
+  ],
+  "production_history_written": false,
+  "production_tts_called": false,
+  "scope": "Real native judge/execution with actual MCP; isolated context and output"
+}

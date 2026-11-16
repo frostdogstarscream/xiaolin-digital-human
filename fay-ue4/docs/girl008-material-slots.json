@@ -1,0 +1,66 @@
+[
+  {
+    "slot": "aiStandardSurface1",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface1.M_aiStandardSurface1"
+  },
+  {
+    "slot": "Eyes",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_Eyes.M_Eyes"
+  },
+  {
+    "slot": "pasted__Eyes_glass",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_pasted__Eyes_glass.M_pasted__Eyes_glass"
+  },
+  {
+    "slot": "aiStandardSurface14",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface14.M_aiStandardSurface14"
+  },
+  {
+    "slot": "Tear",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_Tear.M_Tear"
+  },
+  {
+    "slot": "pasted__aiStandardSurface6",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_pasted__aiStandardSurface6.M_pasted__aiStandardSurface6"
+  },
+  {
+    "slot": "aiStandardSurface6",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface6.M_aiStandardSurface6"
+  },
+  {
+    "slot": "aiStandardSurface5",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface5.M_aiStandardSurface5"
+  },
+  {
+    "slot": "aiStandardSurface9",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface9.M_aiStandardSurface9"
+  },
+  {
+    "slot": "aiStandardSurface7",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface7.M_aiStandardSurface7"
+  },
+  {
+    "slot": "aiStandardSurface8",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface8.M_aiStandardSurface8"
+  },
+  {
+    "slot": "aiStandardSurface10",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface10.M_aiStandardSurface10"
+  },
+  {
+    "slot": "aiStandardSurface11",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface11.M_aiStandardSurface11"
+  },
+  {
+    "slot": "aiStandardSurface19",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface19.M_aiStandardSurface19"
+  },
+  {
+    "slot": "aiStandardSurface12",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface12.M_aiStandardSurface12"
+  },
+  {
+    "slot": "aiStandardSurface13",
+    "material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface13.M_aiStandardSurface13"
+  }
+]

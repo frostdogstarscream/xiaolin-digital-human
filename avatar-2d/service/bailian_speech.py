@@ -23,7 +23,7 @@ def settings():
     host = base.hostname or ''
     if base.scheme!='https' or not (host in ('dashscope.aliyuncs.com','dashscope-intl.aliyuncs.com') or host.endswith('.maas.aliyuncs.com')):
         raise RuntimeError('请配置百炼官方 HTTPS 服务地址')
-    return dict(api_key=key.get('gpt_api_key','').strip(),
+    return dict(api_key=key.get('bailian_tts_api_key',key.get('gpt_api_key','')).strip(),
                 endpoint=urlunsplit(('https',base.netloc,'/api/v1/services/aigc/multimodal-generation/generation','','')),
                 model=key.get('bailian_tts_model','qwen3-tts-flash'),
                 realtime=key.getboolean('bailian_tts_realtime_enabled',fallback=False),

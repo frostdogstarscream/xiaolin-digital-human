@@ -1,0 +1,416 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,11,6",
+  "title": "Qwen-tts 克隆",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=GtTUwZxQdidBWnkLMXucCMBwnOg",
+  "x": 62,
+  "y": 198.5,
+  "token": "GtTUwZxQdidBWnkLMXucCMBwnOg",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/GtTUwZxQdidBWnkLMXucCMBwnOg",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 9,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "Fay 接入 Qwen3-TTS 声音克隆",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "目录",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "1.\n整体架构与原理",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "2.\n环境与模型准备",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "3.\n配置音色(声音克隆)",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "4.\n启动服务并对接 Fay",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "5.\n性能、监控与常见错误",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "第1节 整体架构与原理",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "欢迎来到 Qwen3-TTS 接入 Fay 的课程。整件事就四步,跟着做就行。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "第一步,装环境。装 Python,装 CUDA 版的 PyTorch,装 Qwen3-TTS,下模型。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "第二步,配音色。把你要克隆的那段音频和对应文字,丢进 speakers 目录。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "第三步,起服务对接 Fay。Fay 改两处配置就好。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "最后是排错速查,跑出问题随时回来看。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# 客户端调用示例\nimport requests\n\nresp = requests.post(\n    \"http://127.0.0.1:9882/tts\",\n    json={\n        \"text\": \"你好,我是小明。\",\n        \"speaker_id\": \"default\",   # 可选,服务端有默认值\n        \"language\": \"Chinese\"      # 可选\n    },\n    timeout=180,\n)\nopen(\"out.wav\", \"wb\").write(resp.content)\n# 响应是 audio/wav 字节流,直接写文件即可\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "第2节 环境与模型准备",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "21",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "先说硬件。Qwen3-TTS 必须用 N 卡,CPU 跑不动。先看一下你的显卡驱动支持哪个 CUDA 版本,后面装 PyTorch 要对得上。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [],
+      "text": "然后装 PyTorch,必须是 CUDA 版。直接 pip 装到的可能是 CPU 版,装完不能用。我们用官方那个 index 链接强制装 CUDA 版。装完用一行 Python 验证,is available 必须返回 True 才行。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "模型推荐用 0.6B 那个版本,跑得快。从 ModelScope 或者 hf-mirror 下载都行。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "最后强调一句,精度选 bfloat16,千万别选 float16,后者会让模型直接报错,这是个常见的坑。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# 完整安装命令(按顺序执行)\nconda create -n qwen3-tts python=3.12 -y\nconda activate qwen3-tts\npip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple\n\n# PyTorch 必须从官方 index 装 CUDA 版(看 nvidia-smi 选 cu121 或 cu118)\npip install torch --index-url https://download.pytorch.org/whl/cu121\n\n# 立刻校验,False 就卸载重装\npython -c \"import torch; print(torch.cuda.is_available(), torch.version.cuda)\"\n# 期望: True 12.1\n\n# 服务依赖\ncd qwen_tts_server\npip install -r requirements.txt\n\n# 模型(任选其一)\nmodelscope download --model Qwen/Qwen3-TTS-12Hz-0.6B-Base \\\n    --local_dir ./models/Qwen3-TTS-12Hz-0.6B-Base\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "第3节 配置音色(声音克隆)",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "33",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "text": "服务端有个 speakers 目录,你想要几个音色,就建几个子目录。目录的名字就是音色的 ID,客户端用这个名字来选。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "每个音色目录里就两个文件。一个是 ref.wav,参考音频,三到十秒就够了,要干净人声,别有杂音和音乐。另一个是 ref.txt,这段音频对应的文字,标点要对齐。把这两个文件丢进去,音色就准备好了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "text": "加完新音色不用重启。直接调一下 reload 接口,服务会重新扫描目录,把每个音色预处理一遍存到内存里。这就是为什么后面调用很快,因为重的活在启动的时候就做完了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# === ref.txt 示例 ===\n# 内容必须和 ref.wav 念出来的完全对应,标点按实际停顿\n你好,我是默认音色,我可以念任何文字。\n\n# === 添加新音色流程 ===\n# 1. mkdir speakers/xiaoming\n# 2. 把准备好的 ref.wav 和 ref.txt 放进去\n# 3. 调 reload (无需重启):\ncurl -X POST http://127.0.0.1:9882/speakers/reload\n\n# === 客户端选音色 ===\n# Fay 端 tts/qwen_tts.py 修改:\nQWEN_TTS_SPEAKER = \"xiaoming\"\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "42",
+      "images": 0,
+      "links": [],
+      "text": "第4节 启动服务并对接 Fay",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "44",
+      "images": 1,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "45",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "text": "把示例 config 复制一份改成 config.yaml,里面三个字段要改:模型路径、注意力实现方式、默认音色。注意力那个,没装 flash-attn 的就改成 sdpa。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "47",
+      "images": 0,
+      "links": [],
+      "text": "启动很简单,python run dot py 加上 config 参数。日志按顺序往下跑,看到最后那行 Uvicorn running 就说明服务好了。中间任何一步报错都要先解决,别往下走。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "text": "Fay 这边只要两步。第一,打开 Fay 的 qwen tts 那个文件,改顶上几个常量,把服务地址和音色名字填进去。第二,Fay 的配置文件 system dot conf 里,把 tts module 改成 qwen。重启 Fay,你说话它就用新音色回你了。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "49",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# === Fay 端: tts/qwen_tts.py 顶部 ===\nQWEN_TTS_URL = \"http://127.0.0.1:9882\"   # 跨机改成服务机 IP\nQWEN_TTS_SPEAKER = \"default\"             # 服务端 speakers/ 下的目录名\nQWEN_TTS_LANGUAGE = \"Chinese\"\nQWEN_TTS_TIMEOUT = 180\n\n# === Fay 端: system.conf ===\n[key]\ntts_module=qwen\n\n# === 服务端: config.yaml 关键字段 ===\nmodel:\n  path: ./models/Qwen3-TTS-12Hz-0.6B-Base\n  device: cuda:0\n  dtype: bfloat16\n  attn_implementation: sdpa     # 没装 flash-attn 就 sdpa\nspeakers:\n  default: default              # 默认音色 ID\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "51",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "52",
+      "images": 0,
+      "links": [],
+      "text": "第5节 性能、监控与常见错误",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "53",
+      "images": 0,
+      "links": [],
+      "text": "每次合成,服务日志会打一行统计,关键看 RTF 这个数。RTF 小于 1,说明模型比实时还快,不会卡。RTF 大于 1 就麻烦了,音频生成跟不上播放,Fay 一定会一断一断。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "54",
+      "images": 0,
+      "links": [],
+      "text": "RTF 太高怎么办,有三个办法。第一,装 flash attention 二代,Linux 一行命令搞定,Windows 要找社区编译的版本,版本号要一一对上。第二,换 0.6B 模型代替 1.7B。第三,Windows 上调不动了,要么换 WSL2,要么直接回去用 GPT 索维茨,别死磕。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "55",
+      "images": 0,
+      "links": [],
+      "text": "说几个常见错误。报 cuda is available 返回 false 的,八成 PyTorch 装错版本了,卸载重装。报 device side assert 的,十有八九 dtype 写成 float16 了,改成 bfloat16。SoX 找不到那个警告,Windows 上不用管。Fay 报 speaker not found,curl 一下 speakers 接口看看有哪些音色。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "56",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "57",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n# 排错速查表\n\n# 1) torch.cuda.is_available() == False\npip uninstall torch -y\npip install torch --index-url https://download.pytorch.org/whl/cu121\n\n# 2) CUDA device-side assert triggered\n# config.yaml: dtype: bfloat16  # 不要 float16\n\n# 3) FlashAttention2 has been toggled on, but it cannot be used\n# config.yaml: attn_implementation: sdpa\n\n# 4) speaker '...' not found\ncurl http://127.0.0.1:9882/speakers      # 看实际加载到的列表\ncurl -X POST http://127.0.0.1:9882/speakers/reload\n\n# 5) RTF 偏高,确认数据\n# 看服务日志: tts: chars=NN audio=X.XXs synth=X.XXs RTF=X.XX\n\n# 6) Windows SoX 警告\n# 不用管,wav 推理不需要\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "58",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 3943,
+  "captured_at": "2026-11-03T10:43:14.526Z"
+}

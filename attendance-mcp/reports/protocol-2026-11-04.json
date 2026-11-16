@@ -1,0 +1,14 @@
+{
+  "status": "PASSED",
+  "protocol": "2025-06-18",
+  "transport": "sse",
+  "tool": "attendance_check_in",
+  "schema": {
+    "properties": {},
+    "title": "attendance_check_inArguments",
+    "type": "object"
+  },
+  "result": "success",
+  "actual_server_calls": 1,
+  "total_seconds": 0.371
+}

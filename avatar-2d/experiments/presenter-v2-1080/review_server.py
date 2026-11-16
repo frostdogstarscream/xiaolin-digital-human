@@ -1,0 +1,21 @@
+"""Loopback-only media review. No Fay credentials, model API, microphone or writes."""
+from pathlib import Path
+from aiohttp import web
+ROOT=Path(__file__).resolve().parents[2]
+HTML='''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>小霖 · 1080p 新素材预览</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#0d1318;color:#dfebee;font:16px/1.7 system-ui,sans-serif}header{padding:18px 28px;border-bottom:1px solid #2a3c45}h1{font-size:22px;margin:0}main{max-width:1420px;margin:auto;padding:22px;display:grid;grid-template-columns:1fr 350px;gap:24px}.stage{height:78vh;background:#000;border:1px solid #2a3c45;border-radius:14px;display:flex;justify-content:center}video{height:100%;max-width:100%;object-fit:contain}aside{background:#16212a;padding:20px;border-radius:14px}button,select{font:inherit;padding:9px 14px;background:#20313c;color:#e7f6f4;border:1px solid #38505c;border-radius:8px;cursor:pointer;margin:4px}button.active{background:#71cdb6;color:#102820}.hint{font-size:14px;color:#abc0c7}a{color:#87d9c7}.controls{display:flex;flex-wrap:wrap}#detail{padding:12px 0;border-bottom:1px solid #38505c}.links a{display:block;margin:10px 0}@media(max-width:850px){main{grid-template-columns:1fr}.stage{height:65vh}}</style>
+<header><h1>小霖 · 新形象 1080p 预览</h1><div class="hint">原生1080p动作／4K待机降采样 · 与线上版本隔离 · 技术预览，非云端实时验收</div></header>
+<main><section><div class="stage"><video id="player" controls autoplay muted playsinline></video></div></section><aside>
+<b>选择素材</b><div id="actions" class="controls"></div><div id="detail"></div><p><label>查看版本 <select id="mode"><option value="raw">动作原片（静音）</option><option value="speech">Wav2Lip 口型预览</option></select></label></p>
+<label><input type="checkbox" id="sound"> 播放测试语音</label><p class="hint">口型预览使用冻结的本地语音，不调用云模型。待机原片30秒循环；待机说话样片10秒；其余动作原速完整保留。</p>
+<div class="links"><a id="download" download>下载当前视频</a><a id="face" target="_blank">查看口型前后对照</a><a href="/prepared/idle-loop-seam.mp4" target="_blank">查看待机首尾衔接（末2秒＋前2秒）</a><a href="/assets/aligned-contact-sheet.jpg" target="_blank">查看五条素材统一比例</a><a href="/outputs/native-rtc-report.json" target="_blank">本机 WebRTC 技术检查记录</a></div>
+<p class="hint">重点看：点头是否合适、手指与人物一致性、动作起止衔接、待机循环接缝，以及说话时嘴部边缘。线上旧版仍保持原状。</p><p id="status"></p></aside></main>
+<script>const entries=[['idle','自然待机',30],['welcome-wave','迎宾挥手',7],['goodbye-wave','告别挥手',7],['explain-open-palms','右手伸手讲解',7],['acknowledge-nod','轻微点头',4]];let current='idle';const player=document.querySelector('#player');
+for(const[id,label]of entries){const b=document.createElement('button');b.textContent=label;b.dataset.id=id;b.onclick=()=>{current=id;load()};document.querySelector('#actions').appendChild(b)}
+function load(){const speech=document.querySelector('#mode').value==='speech';const entry=entries.find(e=>e[0]===current);const url=speech?'/outputs/'+current+'/speaking-1080p.mp4':'/prepared/'+current+'.mp4';player.pause();player.src=url;player.loop=current==='idle';player.muted=!document.querySelector('#sound').checked;document.querySelector('#download').href=url;document.querySelector('#face').href='/outputs/'+current+'/face-before-after.jpg';document.querySelector('#detail').textContent=entry[1]+' · 1080×1920 · 25fps · '+(speech&&current==='idle'?10:entry[2])+'秒';for(const b of document.querySelectorAll('button'))b.classList.toggle('active',b.dataset.id===current);player.play().catch(()=>{});}
+document.querySelector('#mode').onchange=load;document.querySelector('#sound').onchange=e=>player.muted=!e.target.checked;player.onloadedmetadata=()=>document.querySelector('#status').textContent='实际视频：'+player.videoWidth+'×'+player.videoHeight+'，'+player.duration.toFixed(2)+'秒';load();</script></html>'''
+app=web.Application();app.add_routes([web.get('/',lambda r:web.Response(text=HTML,content_type='text/html'))])
+app.router.add_static('/prepared',ROOT/'assets/presenter-v2-1080/prepared',show_index=False)
+app.router.add_static('/assets',ROOT/'assets/presenter-v2-1080',show_index=False)
+app.router.add_static('/outputs',ROOT/'outputs/presenter-v2-1080',show_index=False)
+web.run_app(app,host='127.0.0.1',port=8769,access_log=None)

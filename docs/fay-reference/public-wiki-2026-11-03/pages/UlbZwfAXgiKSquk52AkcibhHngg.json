@@ -1,0 +1,6912 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,0",
+  "title": "升级日志",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=UlbZwfAXgiKSquk52AkcibhHngg",
+  "x": 42,
+  "y": -413.5,
+  "token": "UlbZwfAXgiKSquk52AkcibhHngg",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/UlbZwfAXgiKSquk52AkcibhHngg",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 58,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://gitee.com/xszyou/Fay",
+          "text": "https://git"
+        },
+        {
+          "href": "https://gitee.com/xszyou/Fay",
+          "text": "ee"
+        },
+        {
+          "href": "https://gitee.com/xszyou/Fay",
+          "text": ".com/xszyou/Fay"
+        },
+        {
+          "href": "https://github.com/xszyou/fay-ue5",
+          "text": "https://github.com/xszyou/fay-ue5"
+        },
+        {
+          "href": "https://github.com/xszyou/fay-android",
+          "text": "https://github.com/xszyou/fay-android"
+        },
+        {
+          "href": "https://github.com/xszyou/fay_config_server",
+          "text": "https://github.com/xszyou/fay_config_serve"
+        },
+        {
+          "href": "https://github.com/xszyou/fay_config_server",
+          "text": "r"
+        },
+        {
+          "href": "https://gitee.com/xszyou/easy-deal",
+          "text": "https://gitee.com/xszyou/easy-deal"
+        },
+        {
+          "href": "https://gitee.com/xszyou/officeecho",
+          "text": "https://gitee.com/xs"
+        },
+        {
+          "href": "https://gitee.com/xszyou/officeecho",
+          "text": "zyou/officeecho"
+        },
+        {
+          "href": "https://gitee.com/xszyou/fay-player",
+          "text": "https://gitee.com/xszyou/fay-player"
+        },
+        {
+          "href": "https://gitee.com/garveyer/mate-human",
+          "text": "https://gitee.com/garveyer/mate-human"
+        },
+        {
+          "href": "https://gitee.com/fay-community/scenic-digital",
+          "text": "https://gitee.com/fay-community/scenic-digital"
+        },
+        {
+          "href": "https://github.com/hack-feng/xingyun-history-teacher",
+          "text": "https://github.com/hack-feng/xingyun-history-teacher"
+        }
+      ],
+      "text": "\nFay数字人推荐的免费开源仓库。没有收费项！也没有在任何平台出售！\n1.\nFay数字人开源框架（数字人控制器）：https://gitee.com/xszyou/Fay；\n2.\nfay-ue5（UE建模，3D数字人，可连接Fay使用）：https://github.com/xszyou/fay-ue5；\n3.\nFay-android 远程音频连接器：https://github.com/xszyou/fay-android；\n4.\n config server: https://github.com/xszyou/fay_config_server\n5.\n量化交易agent：https://gitee.com/xszyou/easy-deal\n6.\n办公室助理：https://gitee.com/xszyou/officeecho\n7.\n教程制作器：https://gitee.com/xszyou/fay-player\n8.\nlive2d网页数字人：https://gitee.com/garveyer/mate-human\n9.\n智慧文旅数字人体验平台: https://gitee.com/fay-community/scenic-digital\n10.\n历史教学的数字人: https://github.com/hack-feng/xingyun-history-teacher\n",
+      "type": "block docx-fallback-block fallback-async-synced_source fallback-async-align-left"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://pan.baidu.com/s/1J-W9PZQEMA49wXrWT1wOpA?pwd=kxca",
+          "text": "fay release下载"
+        }
+      ],
+      "text": "升级日志 fay release下载",
+      "type": "block docx-text-block callout-render-unit"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "2026年08月07周",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://gitee.com/xszyou/Fay",
+          "text": "https://gitee.com/xszyou/Fay"
+        }
+      ],
+      "text": "Fay v4.8.1: https://gitee.com/xszyou/Fay",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "大小模型逻辑重构 + 单模型模式 + 多处优化",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "核心改动（大小模型重构）：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "•\n删死代码约 750 行：LangGraph 工作流、本地知识库、ltp_mode、nlp_cemotion、__check_and_clear_chroma_db、QAService Persona/command 分支",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "•\n命名修复：planner -> judge（闲聊判断器）",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "22",
+      "images": 0,
+      "links": [],
+      "text": "•\n删除 80 字兜底核实和 kb_search 硬编码优先",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "23",
+      "images": 0,
+      "links": [],
+      "text": "•\n新增单模型模式：未配置 big_model_engine 时同步执行工具循环",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "24",
+      "images": 0,
+      "links": [],
+      "text": "•\n重写 docs/Prompt设计文档.md",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "25",
+      "images": 0,
+      "links": [],
+      "text": "其他改动：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "26",
+      "images": 0,
+      "links": [],
+      "text": "•\n配置中心 URL 更换为 124.220.24.49:5500",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "27",
+      "images": 0,
+      "links": [],
+      "text": "•\nrecorder.py 录音非 16kHz 时重采样到 16kHz",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "28",
+      "images": 0,
+      "links": [],
+      "text": "•\nfay_booter.py 远程音频连接健壮性修复（recv 空字节/异常退出/socket 关闭/心跳批量清理）",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "29",
+      "images": 0,
+      "links": [],
+      "text": "•\nmcp_service.py 修复（_serialize_mcp_result 递归序列化、add_mcp_server 用 new_id、werkzeug 多线程替代 gevent）",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "30",
+      "images": 0,
+      "links": [],
+      "text": "•\nremote_audio_key0.py 按键通话自动开关唤醒词",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "31",
+      "images": 0,
+      "links": [],
+      "text": "•\n打包默认配置加 big_model_*/embedding_* 字段，system.conf.bak 统一 asr_mode",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "32",
+      "images": 0,
+      "links": [],
+      "text": "•\n新增 packaging/ 打包脚本、fay.spec、samples/、requirements-legacy.txt",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "33",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-heading3-block isEmpty"
+    },
+    {
+      "id": "34",
+      "images": 0,
+      "links": [],
+      "text": "2026年05月04周更新",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "35",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://gitee.com/xszyou/easy-deal",
+          "text": "https://gitee.com/xszyou/easy-deal"
+        }
+      ],
+      "text": "量化交易agent：https://gitee.com/xszyou/easy-deal",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "36",
+      "images": 0,
+      "links": [],
+      "text": "1.\n新增 open_position 工具：市价开仓（buy / sell），自动 quantize volume 到 broker volume_step 倍数 + 兜底 tick 抓 bid/ask + 自动生成稳定 magic（不传时 time.time()*1000 & 0x7FFFFFFF）+ 失败带 retcode 中文诊断",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "37",
+      "images": 0,
+      "links": [],
+      "text": "2.\n两个独立 toggle 互不相干：",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "38",
+      "images": 0,
+      "links": [],
+      "text": "      EASYDEAL_TRADING_WRITE=1 → close_position + modify_position",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "39",
+      "images": 0,
+      "links": [],
+      "text": "      EASYDEAL_TRADING_WRITE_OPEN=1 → open_position",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "40",
+      "images": 0,
+      "links": [],
+      "text": "      用户实战最常见诉求是「让 AI 帮我止损但不让它乱开新仓」——必须拆开两个权限",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "41",
+      "images": 0,
+      "links": [],
+      "text": "3.\n 修「连续调用 modify_position 只成功第一张」",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "42",
+      "images": 0,
+      "links": [],
+      "text": "       加 _MT5_RETCODE_TO_CN — 45 个常见 retcode 中文映射（10004–10045）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "43",
+      "images": 0,
+      "links": [],
+      "text": "       加 _retcode_explain(retcode) — retcode + mt5.last_error() 组合诊断",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "46",
+      "images": 0,
+      "links": [],
+      "text": "之前不带 path 调 mt5.initialize() 随机抓一个 MT5，查盘 / 下单都可能落错户",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "48",
+      "images": 0,
+      "links": [],
+      "text": "6.\n加 _rebind_mt5(new_install_dir) — 切 MT5 install dir 时的 SDK 重绑函数",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "50",
+      "images": 0,
+      "links": [],
+      "text": "_backtest_next_steps_from_hint — 根据 preflight hint 提示具体下一步，不再只返「失败」",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "52",
+      "images": 0,
+      "links": [],
+      "text": "hint 涵盖两个 toggle 各自的诊断路径",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "54",
+      "images": 0,
+      "links": [],
+      "text": "加 magic 字段（跟 magic_number 并列，兼容老消费方）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "55",
+      "images": 0,
+      "links": [],
+      "text": "加 ts 字段（TimeCurrent() unix sec，让消费方知道这份 runtime 写于何时）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "56",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "57",
+      "images": 0,
+      "links": [],
+      "text": "2026年04月04周",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "58",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://gitee.com/xszyou/Fay",
+          "text": "https://gitee.com/xszyou/Fay"
+        }
+      ],
+      "text": "Fay v4.4.4: https://gitee.com/xszyou/Fay",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "59",
+      "images": 0,
+      "links": [],
+      "text": "1.\n用户画像分析增加与fay的关系维度；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "60",
+      "images": 0,
+      "links": [],
+      "text": "2.\nfay向自身及下游mcp客户端暴露7个记忆操作相关的mcp工具；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "61",
+      "images": 0,
+      "links": [],
+      "text": "3.\n记忆流节点增加 tags 字段，retrieve 支持 AND/OR tag 过滤。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "62",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://gitee.com/xszyou/easy-deal",
+          "text": "https://gitee.com/xszyou/easy-deal"
+        }
+      ],
+      "text": "量化交易agent：https://gitee.com/xszyou/easy-deal",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "63",
+      "images": 0,
+      "links": [],
+      "text": "1.\nEA端加入抗风暴 + 自愈：马丁失败退避、对冲两腿分时下单、GUI 重建；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "64",
+      "images": 0,
+      "links": [],
+      "text": "2.\n MCP端：参数源收敛、加入get_klines 行情工具、修复日志读取的编码识别、跨日轮转、ping 单位口径等隐性bug。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "65",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://gitee.com/fay-community/scenic-digital",
+          "text": "https://gitee.com/fay-community/scenic-digital"
+        }
+      ],
+      "text": "智慧文旅数字人体验平台: https://gitee.com/fay-community/scenic-digital",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "66",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/hack-feng/xingyun-history-teacher",
+          "text": "https://github.com/hack-feng/xingyun-history-teacher"
+        }
+      ],
+      "text": "历史教学的数字人: https://github.com/hack-feng/xingyun-history-teacher",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "67",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "68",
+      "images": 0,
+      "links": [],
+      "text": "2026年04月03周",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "69",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://gitee.com/xszyou/Fay",
+          "text": "https://gitee.com/xszyou/Fay"
+        }
+      ],
+      "text": "Fay v4.4.3: https://gitee.com/xszyou/Fay",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "70",
+      "images": 0,
+      "links": [],
+      "text": "1.\nrelease包支持升级功能",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "71",
+      "images": 0,
+      "links": [],
+      "text": "2.\n增加大小模型支持，交互用小模型、执行用大模型、大模型二次校对小模型输出",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "72",
+      "images": 0,
+      "links": [],
+      "text": "3.\nFay 的 MCP 体系支持 Resources 协议，课程知识的目录结构自动注入 LLM prompt",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "73",
+      "images": 0,
+      "links": [],
+      "text": "4.\nOpenAI 兼容接口透传 context_length",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "74",
+      "images": 0,
+      "links": [],
+      "text": "5.\n增强运行过程的 embedding 的自愈机制",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "75",
+      "images": 0,
+      "links": [],
+      "text": "6.\n知识库搜索增强：查询端不拆复合词 + 最低分阈值10.0 + 课程级标题匹配分 + embedding混合评分（通过Fay透传，异步建索引不阻塞MCP）",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "76",
+      "images": 0,
+      "links": [],
+      "text": "7.\n修复反思记忆时的空表报错bug",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "77",
+      "images": 0,
+      "links": [],
+      "text": "8.\n修复funasr识别句子完成没执行问题",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "78",
+      "images": 0,
+      "links": [],
+      "text": "9.\n恢复LLM透传接口支持 model=llm 自动使用配置模型",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "79",
+      "images": 0,
+      "links": [],
+      "text": "10.\n增加mcp服务开机启动功能",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "80",
+      "images": 0,
+      "links": [],
+      "text": "11.\n去除gui回车发送换行问题",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "81",
+      "images": 0,
+      "links": [],
+      "text": "12.\n修复日程管理mcp服务",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "82",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://gitee.com/xszyou/easy-deal",
+          "text": "https://gitee.com/xszyou/easy-deal"
+        }
+      ],
+      "text": "量化交易agent：https://gitee.com/xszyou/easy-deal",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "83",
+      "images": 0,
+      "links": [],
+      "text": "1.\n修复多个工具bug，打通了 MCP ↔ EA 的热更新闭环",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "84",
+      "images": 0,
+      "links": [],
+      "text": "2.\n监测信息将从触发llm的信息移入fay的观察记忆，极大降低词元的消耗",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "85",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://gitee.com/xszyou/fay-player",
+          "text": "https://gitee.com/xszyou/fay-player"
+        }
+      ],
+      "text": "教程制作器：https://gitee.com/xszyou/fay-player",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "86",
+      "images": 0,
+      "links": [],
+      "text": "1.\n正式更名为教程制作器，定位于软件系统的教程制作",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "87",
+      "images": 0,
+      "links": [],
+      "text": "2.\n修复复制章节到另一个课程的bug",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "88",
+      "images": 0,
+      "links": [],
+      "text": "3.\n视频导出包、知识库导出包、课程导出包使用课程名",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "89",
+      "images": 0,
+      "links": [],
+      "text": "4.\n集成xmov星云数字人api",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "90",
+      "images": 0,
+      "links": [],
+      "text": "5.\n所有课程设置（包括fay服务器、数字人sdk key）持久化到课程，意味着这些信息将由教程制作方提供，学习方拿到课程包即可实现数字人教学",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "91",
+      "images": 0,
+      "links": [],
+      "text": "2026年04月12日",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "92",
+      "images": 0,
+      "links": [],
+      "text": "Fay v4.4.2:",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "93",
+      "images": 0,
+      "links": [],
+      "text": "1.\nrelease包更新；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "94",
+      "images": 0,
+      "links": [],
+      "text": "2.\nllm透传补齐对function call的支持；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "95",
+      "images": 0,
+      "links": [],
+      "text": "3.\n优化mcp工具透传功能：强制utf-8、多处bug修复;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "96",
+      "images": 0,
+      "links": [],
+      "text": "4.\n新增选择消息生成分享图功能；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "97",
+      "images": 0,
+      "links": [],
+      "text": "5.\n优化gui窗口markdown格式显示问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "98",
+      "images": 0,
+      "links": [],
+      "text": "6.\n新增图文全量知识库mcp服务；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "99",
+      "images": 0,
+      "links": [],
+      "text": "7.\nfay内置自身知识库；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "100",
+      "images": 0,
+      "links": [],
+      "text": "8.\nthink标签内容和prestart标签内容一致，剥离数字人驱动接口的推送；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "101",
+      "images": 0,
+      "links": [],
+      "text": "9.\n解决大bug：llm请求有可能触发的线程锁。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "102",
+      "images": 0,
+      "links": [],
+      "text": "fay-ue5:",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "103",
+      "images": 0,
+      "links": [],
+      "text": "1.\n更换成ue5.6工程包及运行包；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "104",
+      "images": 0,
+      "links": [],
+      "text": "easy-deal:",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "105",
+      "images": 0,
+      "links": [],
+      "text": "1.\n示例策略加入零损保持机制；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "106",
+      "images": 0,
+      "links": [],
+      "text": "2.\n支持策略的持续自我改进；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "107",
+      "images": 0,
+      "links": [],
+      "text": "3.\n支持fay、claude code、openclaw的agent模式运行；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "108",
+      "images": 0,
+      "links": [],
+      "text": "4.\n新增一组mcp工具。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "109",
+      "images": 0,
+      "links": [],
+      "text": "fay-player:",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "110",
+      "images": 0,
+      "links": [],
+      "text": "1.\n系统逻辑及ui多处优化；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "111",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化mcp知识库工具；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "112",
+      "images": 0,
+      "links": [],
+      "text": "3.\n支持课程另存为及章节复制。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "113",
+      "images": 0,
+      "links": [],
+      "text": "2026年04月05日 ",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "114",
+      "images": 0,
+      "links": [],
+      "text": "fay v4.4.1：",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "115",
+      "images": 0,
+      "links": [],
+      "text": "1.\nrelease包更新；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "116",
+      "images": 0,
+      "links": [],
+      "text": "2.\n解决内置mcp工具在release包不可用的问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "117",
+      "images": 0,
+      "links": [],
+      "text": "3.\nAli tts统一为wav格式；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "118",
+      "images": 0,
+      "links": [],
+      "text": "4.\n修复流式输出小数点数字被切断问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "119",
+      "images": 0,
+      "links": [],
+      "text": "5.\nFay 向下透传的mcp 服务强制为utf-8编码；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "120",
+      "images": 0,
+      "links": [],
+      "text": "6.\n修复tts时的换行符处理问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "121",
+      "images": 0,
+      "links": [],
+      "text": "7.\n修复wav音频非44100采样率不生成视音素问题。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "122",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "123",
+      "images": 0,
+      "links": [],
+      "text": "2026年03月25日 ",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "124",
+      "images": 0,
+      "links": [],
+      "text": "fay v4.3.3：",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "125",
+      "images": 0,
+      "links": [],
+      "text": "1.\n数字人接口增加数字人指定动作、表情等输出；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "126",
+      "images": 0,
+      "links": [],
+      "text": "2.\n解释消息存库时间与日志时间不一致问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "127",
+      "images": 0,
+      "links": [],
+      "text": "3.\n优化对话prompt及规划器prompt；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "128",
+      "images": 0,
+      "links": [],
+      "text": "4.\n解决网络请求阻塞问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "129",
+      "images": 0,
+      "links": [],
+      "text": "5.\n配置中加载system.conf不持久化；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "130",
+      "images": 0,
+      "links": [],
+      "text": "6.\n移除访生记忆保存fay的简洁性；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "131",
+      "images": 0,
+      "links": [],
+      "text": "7.\n上传live2d模型。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "132",
+      "images": 0,
+      "links": [],
+      "text": "OfficeEcho:",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "133",
+      "images": 0,
+      "links": [],
+      "text": "1.\n解决数字人长时间运行的资源释放问题。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "134",
+      "images": 0,
+      "links": [],
+      "text": "Fay-Player:",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "135",
+      "images": 0,
+      "links": [],
+      "text": "1.\n多处逻辑优化。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "136",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "137",
+      "images": 0,
+      "links": [],
+      "text": "2026年03月11日 ",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "138",
+      "images": 0,
+      "links": [],
+      "text": "fay v4.3.2：",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "139",
+      "images": 0,
+      "links": [],
+      "text": "1.\n打出fay release 安装装包；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "140",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化tts前的换行符处理；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "141",
+      "images": 0,
+      "links": [],
+      "text": "3.\n修正prompt模版引入逻辑。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "142",
+      "images": 0,
+      "links": [],
+      "text": "OfficeEcho:",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "143",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加横竖屏切换功能；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "144",
+      "images": 0,
+      "links": [],
+      "text": "2.\n增加画板功能；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "145",
+      "images": 0,
+      "links": [],
+      "text": "3.\n优化资源占用问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "146",
+      "images": 0,
+      "links": [],
+      "text": "4.\n多处小逻辑优化。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "147",
+      "images": 0,
+      "links": [],
+      "text": "Fay-Player:",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "148",
+      "images": 0,
+      "links": [],
+      "text": "1.\n初版发布。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "149",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "150",
+      "images": 0,
+      "links": [],
+      "text": "2026年03月04日 ",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "151",
+      "images": 0,
+      "links": [],
+      "text": "fay v4.3.1：",
+      "type": "block docx-heading4-block"
+    },
+    {
+      "id": "152",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加音频缓存功能，降低tts费率；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "153",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化透传接口流式断句逻辑，域名、版本号等不断句；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "154",
+      "images": 0,
+      "links": [],
+      "text": "3.\n优化数字人接口流式文本输出顺序；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "155",
+      "images": 0,
+      "links": [],
+      "text": "4.\nllm透传功能接入langsmith，配置环境变量后可通过langsmith平台调优prompt；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "156",
+      "images": 0,
+      "links": [],
+      "text": "5.\n优化配置中心加载逻辑，重启后人设配置依然保留。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "157",
+      "images": 0,
+      "links": [],
+      "text": "2026年01月30日：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "158",
+      "images": 0,
+      "links": [],
+      "text": "1.\n[配置模块]修复配置加载逻辑;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "159",
+      "images": 0,
+      "links": [],
+      "text": "2.\n[接口模块]embedding透传接口;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "160",
+      "images": 0,
+      "links": [],
+      "text": "3.\n[知识库模块]优化yueshen知识库初始化逻辑；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "161",
+      "images": 0,
+      "links": [],
+      "text": "4.\n[知识库模块]更新yueshen知识库默认使用fay透传的embedding模型；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "162",
+      "images": 0,
+      "links": [],
+      "text": "5.\n[知识库模块]补充默认知识库目录“新知识库”；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "163",
+      "images": 0,
+      "links": [],
+      "text": "6.\n[核心模块]增加embedding维度检查自动修正逻辑;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "164",
+      "images": 0,
+      "links": [],
+      "text": "7.\n[核心模块]修正对langsmith依赖，在没有配置langsmith环境变量时不导入相关包。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "165",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "166",
+      "images": 0,
+      "links": [],
+      "text": "2026年01月22日：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "167",
+      "images": 0,
+      "links": [],
+      "text": "1.\n[记忆模块]把记忆节点明确区分成对话记忆、观察记忆和反思记忆，并兼容文字沟通接口信息；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "168",
+      "images": 0,
+      "links": [],
+      "text": "2.\n[技能模块]补充远程音频按键拾取技能； ",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "169",
+      "images": 0,
+      "links": [],
+      "text": "3.\n多个bug及多处逻辑优化。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "170",
+      "images": 0,
+      "links": [],
+      "text": "2026年01月15日：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "171",
+      "images": 0,
+      "links": [],
+      "text": "1.\n修复append_to_buffer bug; ",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "172",
+      "images": 0,
+      "links": [],
+      "text": "2.\n文字沟通接口新增透传llm支持； ",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "173",
+      "images": 0,
+      "links": [],
+      "text": "3.\n文字沟通接口支持不回复控制，记录观察信息；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "174",
+      "images": 0,
+      "links": [],
+      "text": "4.\n获取消息接口支持不指定username；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "175",
+      "images": 0,
+      "links": [],
+      "text": "5.\nfay 对外mcp接口支持多连；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "176",
+      "images": 0,
+      "links": [],
+      "text": "6.\nfay启动命令增加参数config_center（python main.py start -config_center xxxx-xxxx-xxxx-xxxxx ）;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "177",
+      "images": 0,
+      "links": [],
+      "text": "7.\n修复多个think标签处理逻辑问题。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "178",
+      "images": 0,
+      "links": [],
+      "text": "2026年01月07日：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "179",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加麦克风、扬声器状态接口及gui自动同步机制;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "180",
+      "images": 0,
+      "links": [
+        {
+          "href": "http://127.0.0.1:8765/sse",
+          "text": "http://127.0.0.1:8765/sse"
+        }
+      ],
+      "text": "2.\n增加支持向其它MCP客户端暴露自带及开启的工具： http://127.0.0.1:8765/sse ；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "181",
+      "images": 0,
+      "links": [],
+      "text": "3.\n补充非开启的预启动工具外部调用接口，如调用查询知识库工具；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "182",
+      "images": 0,
+      "links": [],
+      "text": "4.\n修复prestart标签过滤的正规表达式;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "183",
+      "images": 0,
+      "links": [],
+      "text": "5.\n修复因prestart标签过滤而导致is first标记有可能掉失的问题;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "184",
+      "images": 0,
+      "links": [],
+      "text": "6.\n修复ali tts证书问题。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "185",
+      "images": 0,
+      "links": [],
+      "text": "2025年12月31日：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "186",
+      "images": 0,
+      "links": [],
+      "text": "1.\n修复不开启MCP工具无法使用预启动工具的bug;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "187",
+      "images": 0,
+      "links": [],
+      "text": "2.\n修复llm对工具调用判断时无法处理think标签的bug;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "188",
+      "images": 0,
+      "links": [],
+      "text": "3.\n修复mcp server进程管理的bug;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "189",
+      "images": 0,
+      "links": [],
+      "text": "4.\n增加聊天界面消息加载分页功能;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "190",
+      "images": 0,
+      "links": [],
+      "text": "5.\n优化日程管理mcp;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "191",
+      "images": 0,
+      "links": [],
+      "text": "6.\n修优化系统Prompt、规划器Prompt及最终输出Prompt;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "192",
+      "images": 0,
+      "links": [],
+      "text": "7.\n补充开发文档`docs/Prompt设计文档.md`。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "193",
+      "images": 0,
+      "links": [],
+      "text": "2025年12月24日：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "194",
+      "images": 0,
+      "links": [],
+      "text": "1.\n修复同一用户多消息会话隔离问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "195",
+      "images": 0,
+      "links": [],
+      "text": "2.\n增加用户知识画像功能，包括：生成、更新、获取、查看、应用到对话中；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "196",
+      "images": 0,
+      "links": [],
+      "text": "3.\n解决gui页面加载速度变慢问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "197",
+      "images": 0,
+      "links": [],
+      "text": "4.\ngui界面可以添加及删除对话用户；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "198",
+      "images": 0,
+      "links": [],
+      "text": "2025年12月17日：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "199",
+      "images": 0,
+      "links": [],
+      "text": "1.\n预启动工具执行结果补充key标识；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "200",
+      "images": 0,
+      "links": [],
+      "text": "2.\n清除记忆去除torch的依赖；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "201",
+      "images": 0,
+      "links": [],
+      "text": "3.\n把设备的三个（服务器、数字人、远程音频）连接状态放到首页logo中间；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "202",
+      "images": 0,
+      "links": [],
+      "text": "4.\n美化gui对预启动结果的显示；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "203",
+      "images": 0,
+      "links": [],
+      "text": "5.\nmcp 工具支持预启动及llm调用单独开关控制；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "204",
+      "images": 0,
+      "links": [],
+      "text": "6.\n预执行结果可以选择保存到记忆；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "205",
+      "images": 0,
+      "links": [],
+      "text": "7.\nchat页面使用”主人“替代默认用户标识；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "206",
+      "images": 0,
+      "links": [],
+      "text": "8.\n认知不隔离时使用多用户对话上下文 。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "207",
+      "images": 0,
+      "links": [],
+      "text": "2025年12月10日：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "208",
+      "images": 0,
+      "links": [],
+      "text": "1.\nmcp工具预启动功能；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "209",
+      "images": 0,
+      "links": [],
+      "text": "2.\n更换认知记忆模块的embedding模型；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "210",
+      "images": 0,
+      "links": [],
+      "text": "3.\n去掉原知识库逻辑；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "211",
+      "images": 0,
+      "links": [],
+      "text": "4.\n上传知识库mcp服务器；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "212",
+      "images": 0,
+      "links": [],
+      "text": "5.\n上传window 窗口截图mcp服务器；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "213",
+      "images": 0,
+      "links": [],
+      "text": "6.\n聊天窗口支持markdown排版；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "214",
+      "images": 0,
+      "links": [],
+      "text": "7.\n聊天窗口支持缩略图展示。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "215",
+      "images": 0,
+      "links": [],
+      "text": "2025年12月03日：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "216",
+      "images": 0,
+      "links": [],
+      "text": "一. 美化think内容的ui效果",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "217",
+      "images": 0,
+      "links": [],
+      "text": "1.\n每每条带think内容的消息增加展开窗口；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "218",
+      "images": 0,
+      "links": [],
+      "text": "2.\nthink加载中的效果美。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "219",
+      "images": 0,
+      "links": [],
+      "text": "二. 优化qa（问答对）管理策略",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "220",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化采纳及取消采纳的逻辑；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "221",
+      "images": 0,
+      "links": [],
+      "text": "2.\n采纳不记录think内容；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "222",
+      "images": 0,
+      "links": [],
+      "text": "3.\n相似问题的答案随机选择输出。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "223",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "224",
+      "images": 0,
+      "links": [],
+      "text": "2025年11月12日：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "225",
+      "images": 0,
+      "links": [],
+      "text": "1.\n接入仿生记忆算法;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "226",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化prompt;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "227",
+      "images": 0,
+      "links": [],
+      "text": "3.\n修复若干bug。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "228",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/LjUIwcXRmic1LHk5l57cK4NcnBd",
+          "text": "MCP模块"
+        }
+      ],
+      "text": "2025年10月15日，Fay升级全新的工具调用机制，实现ai ide级的工具调用稳定性。（参考openai codex cli的实现逻辑）: \nMCP模块",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "229",
+      "images": 0,
+      "links": [],
+      "text": "1.\n工具调用逻辑由ReAct替换为更稳定的workflow;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "230",
+      "images": 0,
+      "links": [],
+      "text": "2.\n为mcp服务补充一个编辑功能；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "231",
+      "images": 0,
+      "links": [],
+      "text": "3.\n提供logseq mcp服务器，并作为fay的默认配置之一;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "232",
+      "images": 0,
+      "links": [],
+      "text": "4.\n工具调用的文本支持了流式输出；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "233",
+      "images": 0,
+      "links": [],
+      "text": "5.\n非富了工具调用时的think日志；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "234",
+      "images": 0,
+      "links": [],
+      "text": "6.\n优化agent、llm、工具调用的prompt。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "235",
+      "images": 0,
+      "links": [],
+      "text": "7.\n可用的mcp工具列表单独维护，不在nlp时更新；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "236",
+      "images": 0,
+      "links": [],
+      "text": "8.\n优化日程管理工具；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "237",
+      "images": 0,
+      "links": [],
+      "text": "9.\n修复了若干已知bug。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "238",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "239",
+      "images": 0,
+      "links": [],
+      "text": "2025年09月17日Fay自然进化：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "240",
+      "images": 0,
+      "links": [],
+      "text": "- 重构会话管理逻辑支持以下链路基于llm输出、mcp执行、qa问答对匹配时，文字或音频输出的单向或双向打断：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "241",
+      "images": 0,
+      "links": [],
+      "text": "        - 1、flask_server.api_send()(gui窗口文字发送) <--> flask_server.api_send_v1_chat_completions()（fay对外的openai兼容接口）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "242",
+      "images": 0,
+      "links": [],
+      "text": "        - 2、flask_server.api_send(gui窗口文字发送) <--  flask_server.transparent_pass(消息透传接口)",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "243",
+      "images": 0,
+      "links": [],
+      "text": "        - 3、flask_server.api_send(gui窗口文字发送) <-- flask_server.to_stop_talking(打断接口）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "244",
+      "images": 0,
+      "links": [],
+      "text": "        - 4、flask_server.api_send(gui窗口文字发送) <--> 远程音频",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "245",
+      "images": 0,
+      "links": [],
+      "text": "        - 5、flask_server.api_send(gui窗口文字发送) <-- 唤醒（普通唤醒、前置词唤醒）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "246",
+      "images": 0,
+      "links": [],
+      "text": "        - 6、flask_server.api_send(gui窗口文字发送) <-->日程执行",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "247",
+      "images": 0,
+      "links": [],
+      "text": "        - 7、flask_server.api_send_v1_chat_completions(fay对外的openai兼容接口) <--> flask_server.transparent_pass(消息透传接口)",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "248",
+      "images": 0,
+      "links": [],
+      "text": "        - 8、flask_server.api_send_v1_chat_completions(fay对外的openai兼容接口) <-- flask_server.to_stop_talking(打断接口）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "249",
+      "images": 0,
+      "links": [],
+      "text": "        - 9、flask_server.api_send_v1_chat_completions(fay对外的openai兼容接口) <--> 远程音频",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "250",
+      "images": 0,
+      "links": [],
+      "text": "        - 10、flask_server.api_send_v1_chat_completions(fay对外的openai兼容接口) <-- 唤醒（普通唤醒、前置词唤醒）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "251",
+      "images": 0,
+      "links": [],
+      "text": "        - 11、flask_server.api_send_v1_chat_completions(fay对外的openai兼容接口)  <-->日程执行",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "252",
+      "images": 0,
+      "links": [],
+      "text": "        - 12、flask_server.transparent_pass(消息透传接口) <-- flask_server.to_stop_talking(打断接口）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "253",
+      "images": 0,
+      "links": [],
+      "text": "        - 13、flask_server.transparent_pass(消息透传接口) <--> 远程音频",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "254",
+      "images": 0,
+      "links": [],
+      "text": "        - 14、flask_server.transparent_pass(消息透传接口) <-- 唤醒（普通唤醒、前置词唤醒）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "255",
+      "images": 0,
+      "links": [],
+      "text": "        - 15、flask_server.transparent_pass(消息透传接口) <-->日程执行",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "256",
+      "images": 0,
+      "links": [],
+      "text": "        - 16、远程音频 <-- 唤醒（普通唤醒、前置词唤醒）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "257",
+      "images": 0,
+      "links": [],
+      "text": "        - 17、远程音频 <-->日程执行",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "258",
+      "images": 0,
+      "links": [],
+      "text": "2025年08月28日Fay自然进化：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "259",
+      "images": 0,
+      "links": [],
+      "text": "1、恢复文字、唤醒词、意图接口打断功能；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "260",
+      "images": 0,
+      "links": [],
+      "text": "2、新增支持本地mcp工具调用；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "261",
+      "images": 0,
+      "links": [],
+      "text": "3、支持mcp工具独立控制；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "262",
+      "images": 0,
+      "links": [],
+      "text": "4、内置mcp工具箱及日程管理mcp工具；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "263",
+      "images": 0,
+      "links": [],
+      "text": "5、结束fay时主动关闭（断开）mcp服务；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "264",
+      "images": 0,
+      "links": [],
+      "text": "6、优化线程管理逻辑；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "265",
+      "images": 0,
+      "links": [],
+      "text": "7、支持ctrl+c退出fay。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "266",
+      "images": 0,
+      "links": [],
+      "text": "2025年08月05日Fay自然进化：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "267",
+      "images": 0,
+      "links": [],
+      "text": "1.优化认知机制；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "268",
+      "images": 0,
+      "links": [],
+      "text": "2.funasr依赖更新；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "269",
+      "images": 0,
+      "links": [],
+      "text": "3.更换公共配置中心服务器；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "270",
+      "images": 0,
+      "links": [],
+      "text": "4.优化mcp管理；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "271",
+      "images": 0,
+      "links": [],
+      "text": "5.去除单独情绪计算（llm已经支持）；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "272",
+      "images": 0,
+      "links": [],
+      "text": "6.优化think的“请稍等”提醒逻辑；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "273",
+      "images": 0,
+      "links": [],
+      "text": "7.流式推送给数字人接口的文本补充会话id及消息序号。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "274",
+      "images": 0,
+      "links": [],
+      "text": "2025年06月28日Fay自然进化：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "275",
+      "images": 0,
+      "links": [],
+      "text": "1.\n内置RAG知识库（请把docx、pptx、txt文件存放到llm/data目录）；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "276",
+      "images": 0,
+      "links": [],
+      "text": "2.\n流式回复逻辑优化；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "277",
+      "images": 0,
+      "links": [],
+      "text": "3.\n语音交互逻辑优化；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "278",
+      "images": 0,
+      "links": [],
+      "text": "4.\n线程安全增强；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "279",
+      "images": 0,
+      "links": [],
+      "text": "5.\n数字人驱动接口增加流式输出开始结束标记；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "280",
+      "images": 0,
+      "links": [],
+      "text": "6.\n修复因记忆反思而导致的记忆混乱，无法多轮对话问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "281",
+      "images": 0,
+      "links": [],
+      "text": "7.\n修复mcp工具获取于调用的线程同步问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "282",
+      "images": 0,
+      "links": [],
+      "text": "8.\n修复funasr依赖版本问题。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "283",
+      "images": 0,
+      "links": [],
+      "text": "2025年05月17日Fay自然进化：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "284",
+      "images": 0,
+      "links": [],
+      "text": "1.\n支持mcp sse服务管理及动态功具调用",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "285",
+      "images": 0,
+      "links": [],
+      "text": "--对摩搭社区提供的sse对接的mcp工具做过兼容测试",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "286",
+      "images": 0,
+      "links": [],
+      "text": "2.\nllm模块统一",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "287",
+      "images": 0,
+      "links": [],
+      "text": "--严格匹配openai兼容接口范式，包括token计算及流式控制等",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "288",
+      "images": 0,
+      "links": [],
+      "text": "--把认知模式作为llm对接的方式，并对认知模型进行了优化升级，可控制各用户聊天认知是否隔离",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "289",
+      "images": 0,
+      "links": [],
+      "text": "--使用qwen3-4b作为默认llm，可以平衡速度、角色模拟与MCP工具调用",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "290",
+      "images": 0,
+      "links": [],
+      "text": "3.\n提供配置管理中心，便于多个fay做配置管理",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "291",
+      "images": 0,
+      "links": [],
+      "text": "--当根目录中system.conf或config.json不存在，启动时会自动载入config_uitl.py中指定的配置",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "292",
+      "images": 0,
+      "links": [],
+      "text": "--配置中心代码支持多项目管理，单项目也支持多fay对接，源码地址：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "293",
+      "images": 0,
+      "links": [],
+      "text": "4.\n多个bug修复",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "294",
+      "images": 0,
+      "links": [],
+      "text": "--修复重复反思和重复保存的问题",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "295",
+      "images": 0,
+      "links": [],
+      "text": "--修正认知模型的反思和检索算法",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "296",
+      "images": 0,
+      "links": [],
+      "text": "--处理pygame报错程序不继续执行问题",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "297",
+      "images": 0,
+      "links": [],
+      "text": "--表情不进行tts",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "298",
+      "images": 0,
+      "links": [],
+      "text": "--运行时再判断加载qt5",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "299",
+      "images": 0,
+      "links": [],
+      "text": "--修复文字交互接口流式输出时不会结束问题",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "300",
+      "images": 0,
+      "links": [],
+      "text": "--修复文字交互接口流式输出qa不输出问题",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "301",
+      "images": 0,
+      "links": [],
+      "text": "2025年04月03日Fay自然进化：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "302",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加清除记忆功能；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "303",
+      "images": 0,
+      "links": [],
+      "text": "2.\n增加克隆性格功能；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "304",
+      "images": 0,
+      "links": [],
+      "text": "3.\n增加认知模型（专属的记忆逻辑、反思逻辑）；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "305",
+      "images": 0,
+      "links": [],
+      "text": "4.\n修复自动播报bug；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "306",
+      "images": 0,
+      "links": [],
+      "text": "5.\nfay_url配置响修正；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "307",
+      "images": 0,
+      "links": [],
+      "text": "6.\n修复流式输出前置换行问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "308",
+      "images": 0,
+      "links": [],
+      "text": "7.\n修复没有用户聊天记录前端反复添加默认用户问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "309",
+      "images": 0,
+      "links": [],
+      "text": "8.\n更新dockerfile；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "310",
+      "images": 0,
+      "links": [],
+      "text": "9.\n重构util.py代码。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "311",
+      "images": 0,
+      "links": [],
+      "text": "推荐阅读：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "312",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/FKFywXWaeiBH28k4Q67c3eF7njC",
+          "text": "Fay ai编程指南"
+        }
+      ],
+      "text": "1.\nFay ai编程指南：Fay ai编程指南",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "313",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/BSW3wSsMdikiHUkiCJYcSp2lnio",
+          "text": "记忆模块"
+        }
+      ],
+      "text": "2.Fay认知模型：\n记忆模块",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "314",
+      "images": 0,
+      "links": [],
+      "text": "2025年02月27日Fay进化：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "315",
+      "images": 0,
+      "links": [],
+      "text": "1、stream_manager.py补充注释；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "316",
+      "images": 0,
+      "links": [],
+      "text": "2、 gevent包版本更新；#146",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "317",
+      "images": 0,
+      "links": [],
+      "text": "3、修复booter与core双互引入问题；#148",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "318",
+      "images": 0,
+      "links": [],
+      "text": "4、fay gui支持流式显示，包括<think>标签的内容；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "319",
+      "images": 0,
+      "links": [],
+      "text": "5、修复gpt_stream模式时qa回复不合成语音问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "320",
+      "images": 0,
+      "links": [],
+      "text": "6、优化流式deepseek，fay gui及tts对think内容的处理。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "321",
+      "images": 0,
+      "links": [],
+      "text": "7、重构了部分fay_core.py交互逻辑代码；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "322",
+      "images": 0,
+      "links": [],
+      "text": "8、优化机器人表情显示逻辑;",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "323",
+      "images": 0,
+      "links": [],
+      "text": "9、把数字人驱动接口标识“Unreal”更改成“human”，消除误解。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "324",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "325",
+      "images": 0,
+      "links": [],
+      "text": "2025年02月19日更新：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "326",
+      "images": 0,
+      "links": [],
+      "text": "1、ui显示deepseek 思考窗口；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "327",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/FKFywXWaeiBH28k4Q67c3eF7njC",
+          "text": "使用ai编程工具来二开"
+        }
+      ],
+      "text": "2、提供Fay ai编程工具二开指南：使用ai编程工具来二开",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "328",
+      "images": 0,
+      "links": [],
+      "text": "3、修复使用gpt stream时声音重复合成播放的bug;",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "329",
+      "images": 0,
+      "links": [],
+      "text": "4、优化<think>标签内容处理逻辑，只在显示上和声音输出上做处理；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "330",
+      "images": 0,
+      "links": [],
+      "text": "5、去除开启自动运行脚本功能，提高linux和mac的兼容性；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "331",
+      "images": 0,
+      "links": [],
+      "text": "6、优化前端自动获取后端接口地址的方式；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "332",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/WLg5wde5di5ACqkUu6IcD4w7n0e",
+          "text": "😇\nAgent（兼容deepseek）"
+        }
+      ],
+      "text": "7、agent 模式兼容deepseek。\n😇\nAgent（兼容deepseek）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "333",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "334",
+      "images": 0,
+      "links": [],
+      "text": "2025年02月12日更新：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "335",
+      "images": 0,
+      "links": [],
+      "text": "1、修复录音失败时输出问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "336",
+      "images": 0,
+      "links": [],
+      "text": "2、修复linux端启动时，因subprocess报错问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "337",
+      "images": 0,
+      "links": [],
+      "text": "3、修复获取状态接口报错问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "338",
+      "images": 0,
+      "links": [],
+      "text": "4、新增数字人定位、目标设置；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "339",
+      "images": 0,
+      "links": [],
+      "text": "5、新增启动日志提醒；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "340",
+      "images": 0,
+      "links": [],
+      "text": "6、新增支持流式llm及tts；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "341",
+      "images": 0,
+      "links": [],
+      "text": "7、修正agent多个bug；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "342",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/Ghh9wFpMIiiFxTk8SlQcZLIrnMf",
+          "text": "Deepseek"
+        }
+      ],
+      "text": "8、支持deepseek Deepseek",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "343",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "344",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/CctgwyAnTiUQGvkuCLxcdrinnIg",
+          "text": "应用场景验证3：垂直领域的agent"
+        }
+      ],
+      "text": "2025第3周《应用场景验证3：垂直领域的agent》",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "345",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/CctgwyAnTiUQGvkuCLxcdrinnIg",
+          "text": "应用场景验证3：垂直领域的agent"
+        }
+      ],
+      "text": "应用场景验证3：垂直领域的agent",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "346",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "347",
+      "images": 0,
+      "links": [],
+      "text": "2025第2周《应用场景验证2：大屏数字人中的肢体语言识别》",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "348",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/LyBkwpBJ5is306kV554cIIskncc",
+          "text": "应用场景验证2：大屏数字人中的肢体语言识别"
+        }
+      ],
+      "text": "应用场景验证2：大屏数字人中的肢体语言识别",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "349",
+      "images": 0,
+      "links": [],
+      "text": "1、增加一组意图接口：唤醒、打招呼、打断；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "350",
+      "images": 0,
+      "links": [],
+      "text": "2、增加一个自启动脚本列表；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "351",
+      "images": 0,
+      "links": [],
+      "text": "3、修复aliyun asr错误后无法继续拾音问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "352",
+      "images": 0,
+      "links": [],
+      "text": "4、优化本地拾音逻辑：麦克风启动时间减小、VAD判断时间减小、错误检查机制、拾音音量动态阈值、调整缓冲区大小；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "353",
+      "images": 0,
+      "links": [],
+      "text": "5、补充自动播放时推送数据的检测；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "354",
+      "images": 0,
+      "links": [],
+      "text": "6、更正qa.csv文件默认编码；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "355",
+      "images": 0,
+      "links": [],
+      "text": "7、去掉http请求日志信息。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "356",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "357",
+      "images": 0,
+      "links": [],
+      "text": "2025第1周《场景验证1：量化交易无人直播》",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "358",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/IOKXwADTXikC9AkhPasciBI4n1f",
+          "text": "应用场景验证1：量化交易无人直播"
+        }
+      ],
+      "text": "应用场景验证1：量化交易无人直播",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "359",
+      "images": 0,
+      "links": [],
+      "text": "1、自动播放逻辑优化：交互完停30秒才继续； ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "360",
+      "images": 0,
+      "links": [],
+      "text": "2、降低socket心跳频率，可以一定程序节省安卓远程设备的用电量；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "361",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/PNKFwVgUKig6fDkMH03cMPiInIb",
+          "text": "文字交互接口（5000）"
+        }
+      ],
+      "text": " 3、增加消息透传接口：\n文字交互接口（5000） ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "362",
+      "images": 0,
+      "links": [],
+      "text": "4、修复底部用户列表样式错误；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "363",
+      "images": 0,
+      "links": [],
+      "text": " 5、提高agent日程执行成功率；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "364",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/IDCjwbUJfiAah2kUu4OcRs4Wnyd",
+          "text": "动图数字人"
+        }
+      ],
+      "text": "6、上传动图数字人demo \n动图数字人",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "365",
+      "images": 0,
+      "links": [],
+      "text": "7、ue5商业唇形工程补充打断功能及支持流式",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "366",
+      "images": 0,
+      "links": [],
+      "text": "2024年12月18日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "367",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/xszyou/Fay",
+          "text": "https://github.com/xszyou/Fay"
+        }
+      ],
+      "text": "Fay(https://github.com/xszyou/Fay)",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "368",
+      "images": 0,
+      "links": [],
+      "text": "1、修复UE连接数字人接口不稳定问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "369",
+      "images": 0,
+      "links": [],
+      "text": "2、修复运行途中关闭麦克风依然监听问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "370",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/PNKFwVgUKig6fDkMH03cMPiInIb",
+          "text": "文字交互接口（5000）"
+        }
+      ],
+      "text": "3、增加打招呼接口，\n文字交互接口（5000）；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "371",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/COQwwsqJPiiRkjk9yxPczbV9nIg",
+          "text": "智普清流"
+        }
+      ],
+      "text": "4、智谱清流llm对接，智普清流。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "372",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/xszyou/fay-ue5",
+          "text": "https://github.com/xszyou/fay-ue5"
+        }
+      ],
+      "text": "fay-ue5（https://github.com/xszyou/fay-ue5）",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "373",
+      "images": 0,
+      "links": [],
+      "text": "1、上传商业唇型版本；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "374",
+      "images": 0,
+      "links": [],
+      "text": "2、使用旧模型新场景新布局；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "375",
+      "images": 0,
+      "links": [],
+      "text": "3、后台播放声音；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "376",
+      "images": 0,
+      "links": [],
+      "text": "4、支持fay打招呼接口调用。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "377",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/J2lnwiEYSiKUf3kF6bfcNp2on2q",
+          "text": "手表助手"
+        }
+      ],
+      "text": "推荐阅读（含专项交流群）：手表助手",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "378",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "379",
+      "images": 0,
+      "links": [],
+      "text": "2024年12月11日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "380",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/xszyou/Fay",
+          "text": "https://github.com/xszyou/Fay"
+        }
+      ],
+      "text": "fay（https://github.com/xszyou/Fay）：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "381",
+      "images": 0,
+      "links": [],
+      "text": "1、qa回复新增在范围内多条匹配随机命中；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "382",
+      "images": 0,
+      "links": [],
+      "text": "2、gpt问答补充当前时间；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "383",
+      "images": 0,
+      "links": [],
+      "text": "3、命中qa的回复，标示为采纳；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "384",
+      "images": 0,
+      "links": [],
+      "text": "4、新增执行python main.py start命令可自启动；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "385",
+      "images": 0,
+      "links": [],
+      "text": "5、优化CLI机制；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "386",
+      "images": 0,
+      "links": [],
+      "text": "6、优化运行成功后的操作提醒；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "387",
+      "images": 0,
+      "links": [],
+      "text": "7、删掉langchain nlp mudule，修复langchain新旧版包兼容问题。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "388",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "389",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/xszyou/fay-android",
+          "text": "https://github.com/xszyou/fay-android"
+        }
+      ],
+      "text": "fay-android （https://github.com/xszyou/fay-android）：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "390",
+      "images": 0,
+      "links": [],
+      "text": "1、恢复简洁状态；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "391",
+      "images": 0,
+      "links": [],
+      "text": "2、3mb极简运行；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "392",
+      "images": 0,
+      "links": [],
+      "text": "3、兼容wear os android手表。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "393",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "394",
+      "images": 0,
+      "links": [],
+      "text": "2024年12月04日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "395",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/xszyou/Fay",
+          "text": "https://github.com/xszyou/Fay"
+        }
+      ],
+      "text": "Fay(https://github.com/xszyou/Fay)更新：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "396",
+      "images": 0,
+      "links": [],
+      "text": "1、消灭langchain警告信息； ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "397",
+      "images": 0,
+      "links": [],
+      "text": "2、修复与funasr对接的包兼容性； ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "398",
+      "images": 0,
+      "links": [],
+      "text": "3、推送给数字人的消息区分交互和自动播放； ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "399",
+      "images": 0,
+      "links": [],
+      "text": "4、上传ReWoo agent测试代码。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "400",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "401",
+      "images": 0,
+      "links": [],
+      "text": "2024年11月27日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "402",
+      "images": 0,
+      "links": [],
+      "text": "Fay",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "403",
+      "images": 0,
+      "links": [],
+      "text": "1、去除funasr子协议限制；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "404",
+      "images": 0,
+      "links": [],
+      "text": "2、默认声音替换；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "405",
+      "images": 0,
+      "links": [],
+      "text": "3、修复在服务器上聊天记录时间显示问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "406",
+      "images": 0,
+      "links": [],
+      "text": "4、修复前端font缺失问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "407",
+      "images": 0,
+      "links": [],
+      "text": "5、前端css调整为本地加载；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "408",
+      "images": 0,
+      "links": [],
+      "text": "6、修复因线程问题，导致启动（关闭）失败、tts不合成等问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "409",
+      "images": 0,
+      "links": [],
+      "text": "7、用户切换栏新增左右滑动；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "410",
+      "images": 0,
+      "links": [],
+      "text": "8、修复bs4包安装遗漏问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "411",
+      "images": 0,
+      "links": [],
+      "text": "9、修复聊天记录不自动换行问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "412",
+      "images": 0,
+      "links": [],
+      "text": "10、修复favicon.ico 缺失问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "413",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/Ik1kwO9X5iilnGkFwRhcnmtvn3e",
+          "text": "livetalking（2d）"
+        }
+      ],
+      "text": "11、补充fay与livetalker（2D模型）音频对接livetalking（2d）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "414",
+      "images": 0,
+      "links": [],
+      "text": "2024年11月20日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "415",
+      "images": 0,
+      "links": [],
+      "text": "Fay",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "416",
+      "images": 0,
+      "links": [],
+      "text": "1、升级Agent：升级到langgraph react agent逻辑、集成到主分支fay中、基于自动决策工具调用机制、基于日程跟踪的主动沟通、支持外部观测数据传入；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "417",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/WLg5wde5di5ACqkUu6IcD4w7n0e",
+          "text": "😇\nAgent"
+        }
+      ],
+      "text": "agent使用指引：\n😇\nAgent",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "418",
+      "images": 0,
+      "links": [],
+      "text": "2、 修复因线程同步问题导致的配置文件读写不稳定；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "419",
+      "images": 0,
+      "links": [],
+      "text": "3、聊天采纳功能的bug修复",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "420",
+      "images": 0,
+      "links": [],
+      "text": "Fay-android",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "421",
+      "images": 0,
+      "links": [],
+      "text": "1、支持连接Fay服务器或主机端；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "422",
+      "images": 0,
+      "links": [],
+      "text": "2、支持本地whisper语音识别；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "423",
+      "images": 0,
+      "links": [],
+      "text": "3、支持与Fay的语音互传；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "424",
+      "images": 0,
+      "links": [],
+      "text": "4、支持与Fay的文字消息收发；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "425",
+      "images": 0,
+      "links": [],
+      "text": "5、长驻后台运行；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "426",
+      "images": 0,
+      "links": [],
+      "text": "6、收发数据量实时显示；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "427",
+      "images": 0,
+      "links": [],
+      "text": "2024年11月13日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "428",
+      "images": 0,
+      "links": [],
+      "text": "Fay",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "429",
+      "images": 0,
+      "links": [],
+      "text": "1、接口新增错误处理机制；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "430",
+      "images": 0,
+      "links": [],
+      "text": "2、nlp_gpt代码重构；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "431",
+      "images": 0,
+      "links": [],
+      "text": "3、首页新增服务器麦克风控制；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "432",
+      "images": 0,
+      "links": [],
+      "text": "4、首页新增服务器扬声器控制；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "433",
+      "images": 0,
+      "links": [],
+      "text": "5、优化socket10001映射到websocket连接；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "434",
+      "images": 0,
+      "links": [],
+      "text": "6、新增未启动时也可以在控制台输入exit进行关闭；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "435",
+      "images": 0,
+      "links": [],
+      "text": "7、新增10002数字人接口传入Output参数可设定不合成音频；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "436",
+      "images": 0,
+      "links": [],
+      "text": "8、处理音色接口格式报错问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "437",
+      "images": 0,
+      "links": [],
+      "text": "9、取消edge_tts版本限定；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "438",
+      "images": 0,
+      "links": [],
+      "text": "10、优化手动采纳错误处理。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "439",
+      "images": 0,
+      "links": [],
+      "text": "2024年11月06日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "440",
+      "images": 0,
+      "links": [],
+      "text": "Fay",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "441",
+      "images": 0,
+      "links": [],
+      "text": "1、qa自动缓存改为手动采纳； ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "442",
+      "images": 0,
+      "links": [],
+      "text": "2、socket10001映射到websocket 9001； ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "443",
+      "images": 0,
+      "links": [],
+      "text": "3、修复声音沟通接口无法收音问题； ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "444",
+      "images": 0,
+      "links": [],
+      "text": "4、修复阿里云不稳定问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "445",
+      "images": 0,
+      "links": [],
+      "text": "5、删除意外出的语音合成开关； ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "446",
+      "images": 0,
+      "links": [],
+      "text": "6、唤醒、麦克风、扬声器可以启动后开启和关闭。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "447",
+      "images": 0,
+      "links": [],
+      "text": "2024年10月30日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "448",
+      "images": 0,
+      "links": [],
+      "text": "Fay",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "449",
+      "images": 0,
+      "links": [],
+      "text": "1、修复服务器ip配置，配置页没替换问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "450",
+      "images": 0,
+      "links": [],
+      "text": "2、修复开启状态偶尔没对齐问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "451",
+      "images": 0,
+      "links": [],
+      "text": "3、修复关闭时关闭按钮停留在关闭中问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "452",
+      "images": 0,
+      "links": [],
+      "text": "4、修复星座读取错误问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "453",
+      "images": 0,
+      "links": [],
+      "text": "5、修复刷新重复提醒开启问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "454",
+      "images": 0,
+      "links": [],
+      "text": "6、新增是否进行语音合成的选择；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "455",
+      "images": 0,
+      "links": [],
+      "text": "7、文字沟通接口加入“观察描述”；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "456",
+      "images": 0,
+      "links": [],
+      "text": "8、聊天记录时间改为毫秒级；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "457",
+      "images": 0,
+      "links": [],
+      "text": "9、补充数字人和远程音频的连接状态显示；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "458",
+      "images": 0,
+      "links": [],
+      "text": "10、修复备注填写无法保存问题。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "459",
+      "images": 0,
+      "links": [],
+      "text": "2024年10月23日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "460",
+      "images": 0,
+      "links": [],
+      "text": "•\n全新ui",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "461",
+      "images": 0,
+      "links": [],
+      "text": "•\n全面优化websocket逻辑，提高数字人和ui连接的稳定性及资源开销",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "462",
+      "images": 0,
+      "links": [],
+      "text": "•\n全面优化唤醒逻辑，提供稳定的普通唤醒模式和前置词唤醒模式",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "463",
+      "images": 0,
+      "links": [],
+      "text": "•\n优化拾音质量，支持多声道麦克风拾音",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "464",
+      "images": 0,
+      "links": [],
+      "text": "•\n优化自动播放服务器的对接机制，提供稳定和兼容旧版ue工程的对接模式",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "465",
+      "images": 0,
+      "links": [],
+      "text": "•\n数字人接口输出机器人表情，以适应新fay ui及单片机的数字人表情输出",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "466",
+      "images": 0,
+      "links": [],
+      "text": "•\n使用更高级的音频时长计算方式，可以更精准控制音频播放完成后的逻辑",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "467",
+      "images": 0,
+      "links": [],
+      "text": "•\n修复点击关闭按钮会导致程序退出的bug",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "468",
+      "images": 0,
+      "links": [],
+      "text": "•\n修复没有麦克风的设备开启麦克风会出错的问题",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "469",
+      "images": 0,
+      "links": [],
+      "text": "•\n为服务器主机地址提供配置项，以方便服务器部署",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "470",
+      "images": 0,
+      "links": [],
+      "text": "模块对接：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "471",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/ULaywzVRti0HXWkhCzacoSPAnIg",
+          "text": "Aibote"
+        }
+      ],
+      "text": "•\n更新免推理单机数字人aibote对接方式：Aibote",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "472",
+      "images": 0,
+      "links": [],
+      "text": "行业应用：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "473",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/ZyeawRa5ti23Vpke9TOcTAPvnpg",
+          "text": "躬身入局：数字人教师"
+        }
+      ],
+      "text": "•\n数字人教师：躬身入局：数字人教师",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "474",
+      "images": 0,
+      "links": [],
+      "text": "2024年10月16日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "475",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "476",
+      "images": 0,
+      "links": [],
+      "text": "1、更正默认配置；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "477",
+      "images": 0,
+      "links": [],
+      "text": "2、去除麦克风选项（使用系统麦克风）；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "478",
+      "images": 0,
+      "links": [],
+      "text": "3、去掉 eyes(为全新在cv架构做准备)；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "479",
+      "images": 0,
+      "links": [],
+      "text": "4、新增文字语音穿透功能（为统一带货版和agent版做好准备。穿透功能就是把输入的文字直接输出到面板、声音及声音沟通接口和数字人接口，把输入语音直接输出到面板、声音及声音沟通接口和数字人接口。）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "480",
+      "images": 0,
+      "links": [],
+      "text": "4、ollama提示词对接；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "481",
+      "images": 0,
+      "links": [],
+      "text": "5、修复Azure无法修改音色问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "482",
+      "images": 0,
+      "links": [],
+      "text": "6、修复wsa_server websocket客户端管理的逻辑问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "483",
+      "images": 0,
+      "links": [],
+      "text": "7、修复修复wsa_server websocket线程同步问题。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "484",
+      "images": 0,
+      "links": [],
+      "text": "2024年10月09日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "485",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "486",
+      "images": 0,
+      "links": [],
+      "text": "1、 优化文字沟通接口的流式输出逻辑",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "487",
+      "images": 0,
+      "links": [],
+      "text": "-- fay的文字沟通接口，按标点符号切割并通过http stream返回，这样做语音合成时，能够完整处理每个断句的语音情绪。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "488",
+      "images": 0,
+      "links": [],
+      "text": "2、 去掉内置ngrok.cc内网穿透代码",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "489",
+      "images": 0,
+      "links": [],
+      "text": "-- ngrok内网穿透可以让普通pc当作服务器使用，让移动端或者智能设备随时与fay通讯。如需继续使用可以外部启动ngrok或者其他穿透客户端，效果是一样的。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "490",
+      "images": 0,
+      "links": [],
+      "text": "3、优化ASR处理速度",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "491",
+      "images": 0,
+      "links": [],
+      "text": "-- VAD（语音活动检测）时间由700ms减小到200ms，可以降低fay识别到我们已经说完一句话的时间，从而让fay更快作出响应",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "492",
+      "images": 0,
+      "links": [],
+      "text": "4、优化TTS速度",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "493",
+      "images": 0,
+      "links": [],
+      "text": "-- azure不使用ssml明显加速，使用azure tts平均时间可以减小700ms以上",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "494",
+      "images": 0,
+      "links": [],
+      "text": "-- 修复本地播放完声音再发送音频给数字人的bug，可以让面板播放音频更快让数字人作出响应（虽然不太可能本地播放和数字人播放同时使用）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "495",
+      "images": 0,
+      "links": [],
+      "text": "-- 语音合成之前替换掉“*”，这是大语言模型经常作出的返回，非常影响语音合成的用户体验",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "496",
+      "images": 0,
+      "links": [],
+      "text": "5、优化Q&A文件的应用逻辑",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "497",
+      "images": 0,
+      "links": [],
+      "text": "-- 文件格式由excel更换成csv，可以更好兼容linux环境",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "498",
+      "images": 0,
+      "links": [],
+      "text": "-- 配置上Q&A文件之后会自动缓存大语言模型回复，相同对话的回复时间可以降到1ms以下",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "499",
+      "images": 0,
+      "links": [],
+      "text": "-- csv的第3列可以配置执行脚本，可以实现RPA操作或对智能硬件的控制",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "500",
+      "images": 0,
+      "links": [],
+      "text": "6、完善是否做语音合成的逻辑",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "501",
+      "images": 0,
+      "links": [],
+      "text": "-- 只有在需要发送远程音频或者发送给数字人或者面板播放时才合成音频，避免资源的浪费",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "502",
+      "images": 0,
+      "links": [],
+      "text": "7、修正多用户同时与fay聊天时qa日志有可能混乱的问题",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "503",
+      "images": 0,
+      "links": [],
+      "text": "8、 修复fay_core.py上的变量（usernmae）错识导致的远程音频传输出错",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "504",
+      "images": 0,
+      "links": [],
+      "text": "9、修复pygame init时无扬声器导致出错",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "505",
+      "images": 0,
+      "links": [],
+      "text": "10、去掉面板出现了\"完成!\"、“远程音频设备连接上”、“远程音频输入输出设备已经断开”、“服务已关闭！”等不必要的日志信息",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "506",
+      "images": 0,
+      "links": [],
+      "text": "Fay-UE5：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "507",
+      "images": 0,
+      "links": [],
+      "text": "1、5.4工程，更新为流式对接；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "508",
+      "images": 0,
+      "links": [],
+      "text": "--会从fay小段文字接收然后做tts处理，这样可以更快速作出响应。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "509",
+      "images": 0,
+      "links": [],
+      "text": "2024年09月25日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "510",
+      "images": 0,
+      "links": [],
+      "text": "Fay助理版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "511",
+      "images": 0,
+      "links": [],
+      "text": "1、重写日志系统：适配多用户逻辑下的panel、数字人端、控制台和文件；补充年月日信息。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "512",
+      "images": 0,
+      "links": [],
+      "text": "2、提高代码可读性，整理代码目录区分llm、tts、asr。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "513",
+      "images": 0,
+      "links": [],
+      "text": "3、 修复ui显示的远程音频连接状态不更新问题。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "514",
+      "images": 0,
+      "links": [],
+      "text": "4、 fay对旧版ue兼容性修复。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "515",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/Ik1kwO9X5iilnGkFwRhcnmtvn3e",
+          "text": "metahuman-stream（2d）"
+        }
+      ],
+      "text": "5、更新metahuman-stream的对接方式：metahuman-stream（2d）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "516",
+      "images": 0,
+      "links": [],
+      "text": "6、修复web模式读取控制台输入出错bug",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "517",
+      "images": 0,
+      "links": [],
+      "text": "7、灵聚nlp接口升级支持多用户对接",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "518",
+      "images": 0,
+      "links": [],
+      "text": "8、gpt nlp接口prompt部分接入数字人个人信息，并取消个人信息直接命中匹配",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "519",
+      "images": 0,
+      "links": [],
+      "text": "9、coze nlp升级到v3接口",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "520",
+      "images": 0,
+      "links": [],
+      "text": "2024年09月19日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "521",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版:",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "522",
+      "images": 0,
+      "links": [],
+      "text": "•\n代码重构：标准化了交互代码、提高了可阅读性、删除了多余代码",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "523",
+      "images": 0,
+      "links": [],
+      "text": "•\n数字人接口：多路并发接入支持、按用户路由支持、提高了反应速度、使用http音频地址、优化连接状态的判断逻辑",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "524",
+      "images": 0,
+      "links": [],
+      "text": "•\n远程音频接口：多路并发接入支持、按用户路由支持、单向传输支持、提高了速度、优化连接状态的判断逻辑",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "525",
+      "images": 0,
+      "links": [],
+      "text": "•\n文字沟通接口：多路并发接入支持、按用户路由支持",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "526",
+      "images": 0,
+      "links": [],
+      "text": "•\nui接口：多路并发接入支持、按用户路由支持",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "527",
+      "images": 0,
+      "links": [],
+      "text": "•\n速度提升：azure tts省去音频转换时间；由轮询交互机制更换成直接交互机制；提高了音频读取速度；去掉所有不必要的sleep；阻塞方法都使用单独线程或协程。",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "528",
+      "images": 0,
+      "links": [],
+      "text": "•\n明确声音输出逻辑：远程音频接口是否回送依据接口参数要求；数字人接口是否推送依据接口是否被连接；本机是否播放依据本机播放声音开关是否打开（播放时会阻塞）。",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "529",
+      "images": 0,
+      "links": [],
+      "text": "•\n3.12兼容性修复：websocket工具类把协程转换成任务；pyqt5更换版本。",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "530",
+      "images": 0,
+      "links": [],
+      "text": "•\nasr多路并发支持",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "531",
+      "images": 0,
+      "links": [],
+      "text": "•\nnlp多路并发支持",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "532",
+      "images": 0,
+      "links": [],
+      "text": "•\ntts多路并发（本来就）支持",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "533",
+      "images": 0,
+      "links": [],
+      "text": "•\n修复python远程音频demo变态声音问题",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "534",
+      "images": 0,
+      "links": [],
+      "text": "•\n修复命中qa的判断逻辑",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "535",
+      "images": 0,
+      "links": [],
+      "text": "•\n增加控制台退出进程命令exit",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "536",
+      "images": 0,
+      "links": [],
+      "text": "•\n优化拾音逻辑：只有在展板播放并且没有使用唤醒功能时才会停止拾音",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "537",
+      "images": 0,
+      "links": [],
+      "text": "2024年09月11日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "538",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版:",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "539",
+      "images": 0,
+      "links": [],
+      "text": "1、删除多余文件：datas、ppn；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "540",
+      "images": 0,
+      "links": [],
+      "text": "2、修改readme图片路径；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "541",
+      "images": 0,
+      "links": [],
+      "text": "3、补充注释；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "542",
+      "images": 0,
+      "links": [],
+      "text": "4、删除多余代码；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "543",
+      "images": 0,
+      "links": [],
+      "text": "5、docker文件整理；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "544",
+      "images": 0,
+      "links": [],
+      "text": "6、http验证文件修改；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "545",
+      "images": 0,
+      "links": [],
+      "text": "7、优化音频处理时间；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "546",
+      "images": 0,
+      "links": [],
+      "text": "8、修复数字人接口的音频时长计算。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "547",
+      "images": 0,
+      "links": [],
+      "text": "2024年09月04日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "548",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版&带货版&agent版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "549",
+      "images": 0,
+      "links": [],
+      "text": " 1、websocket服务端连接优化； ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "550",
+      "images": 0,
+      "links": [],
+      "text": "2、接入gptsovits v3接口。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "551",
+      "images": 0,
+      "links": [],
+      "text": "Fay-UE5：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "552",
+      "images": 0,
+      "links": [],
+      "text": "1、解决插件AZSpeech在5.4SoundWave无法播放问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "553",
+      "images": 0,
+      "links": [],
+      "text": "2、支持连接网页端。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "554",
+      "images": 0,
+      "links": [],
+      "text": "2024年08月28日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "555",
+      "images": 0,
+      "links": [],
+      "text": "•\nDONE fay 助理版docker支持多系统",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "556",
+      "images": 0,
+      "links": [],
+      "text": "•\nDONE fay助理版 ui上多用户对话支持（统一用户管理接口）",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "557",
+      "images": 0,
+      "links": [],
+      "text": "•\nDONE fay助理版 添加http验证",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "558",
+      "images": 0,
+      "links": [],
+      "text": "•\nDONE fay-android、python-connector统一音频格式wav",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "559",
+      "images": 0,
+      "links": [],
+      "text": "•\nDONE duix sdk增加音频播放状态检测（工程包已上传）",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "560",
+      "images": 0,
+      "links": [],
+      "text": "•\nDONE ue azure版5.3支持独立用户多终端与fay对接",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "561",
+      "images": 0,
+      "links": [],
+      "text": "•\nDONE ue azure版降级到5.3稳定版",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "562",
+      "images": 0,
+      "links": [],
+      "text": "•\nDONE ue azure版提供最新一键包",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "563",
+      "images": 0,
+      "links": [],
+      "text": "•\nDONE ue azure版支持打包后配置azure key（飞书）",
+      "type": "block docx-bullet-block"
+    },
+    {
+      "id": "564",
+      "images": 0,
+      "links": [],
+      "text": "2024年08月21日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "565",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "566",
+      "images": 0,
+      "links": [],
+      "text": " 1、增加启动模式选择，可选择web模式；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "567",
+      "images": 0,
+      "links": [],
+      "text": " 2、修复用户名不显示问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "568",
+      "images": 0,
+      "links": [],
+      "text": " 3、增加docker安装方式；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "569",
+      "images": 0,
+      "links": [],
+      "text": " 4、修复10001远程音频端口无法重连问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "570",
+      "images": 0,
+      "links": [],
+      "text": "metahuman-stream:",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "571",
+      "images": 0,
+      "links": [],
+      "text": "1、对齐官方版本更新；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "572",
+      "images": 0,
+      "links": [],
+      "text": " 2、优化对接方式。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "573",
+      "images": 0,
+      "links": [],
+      "text": "2024年08月07日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "574",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "575",
+      "images": 0,
+      "links": [],
+      "text": "1、统一tts输出为wav格式。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "576",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "577",
+      "images": 0,
+      "links": [],
+      "text": "1、统一tts输出为wav格式； ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "578",
+      "images": 0,
+      "links": [],
+      "text": "2、优化灵聚授权方式；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "579",
+      "images": 0,
+      "links": [],
+      "text": "3、类gpt接口，远程音频兼容多用户模式；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "580",
+      "images": 0,
+      "links": [],
+      "text": "4、替换默认nlp为moonshot。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "581",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "582",
+      "images": 0,
+      "links": [],
+      "text": "1、统一tts输出为wav格式；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "583",
+      "images": 0,
+      "links": [],
+      "text": "2、优化灵聚授权方式。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "584",
+      "images": 0,
+      "links": [],
+      "text": "3、替换默认nlp为moonshot。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "585",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "586",
+      "images": 0,
+      "links": [],
+      "text": "2024年07月31日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "587",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "588",
+      "images": 0,
+      "links": [],
+      "text": "1、接入volcano_tts；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "589",
+      "images": 0,
+      "links": [],
+      "text": "2、类gpt接口兼容流式方式；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "590",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "591",
+      "images": 0,
+      "links": [],
+      "text": "1、修复启动时配置有误问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "592",
+      "images": 0,
+      "links": [],
+      "text": " 2、接入coze； ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "593",
+      "images": 0,
+      "links": [],
+      "text": "3、接入volcano tts；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "594",
+      "images": 0,
+      "links": [],
+      "text": " 4、类gpt接口兼容流式方式；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "595",
+      "images": 0,
+      "links": [],
+      "text": "5、去除非3.12时报错问题。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "596",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "597",
+      "images": 0,
+      "links": [],
+      "text": "1、接入coze；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "598",
+      "images": 0,
+      "links": [],
+      "text": " 2、接入volcano tts；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "599",
+      "images": 0,
+      "links": [],
+      "text": " 3、加入记录生成到excel； ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "600",
+      "images": 0,
+      "links": [],
+      "text": "4、加入本地违禁词检查可关闭；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "601",
+      "images": 0,
+      "links": [],
+      "text": "5、修复gpt记录不读取问题；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "602",
+      "images": 0,
+      "links": [],
+      "text": "6、修复缺失包问题。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "603",
+      "images": 0,
+      "links": [],
+      "text": "2024年07月24日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "604",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "605",
+      "images": 0,
+      "links": [],
+      "text": "1.\n接入SenseVoice； ",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "606",
+      "images": 0,
+      "links": [],
+      "text": "2.\n接入private-gpt； ",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "607",
+      "images": 0,
+      "links": [],
+      "text": "3.\npython3.12兼容性优化。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "608",
+      "images": 0,
+      "links": [],
+      "text": "Unity：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "609",
+      "images": 0,
+      "links": [],
+      "text": "1.\n补充与fay对接部分。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "610",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "611",
+      "images": 0,
+      "links": [],
+      "text": "2024年07月17日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "612",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "613",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化日程设置； ",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "614",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化日程提醒。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "615",
+      "images": 0,
+      "links": [],
+      "text": "Fay-UE5：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "616",
+      "images": 0,
+      "links": [],
+      "text": "1.\n5.4版本发布；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "617",
+      "images": 0,
+      "links": [],
+      "text": "2.\n唇形算法升级；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "618",
+      "images": 0,
+      "links": [],
+      "text": "3.\n动作优化；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "619",
+      "images": 0,
+      "links": [],
+      "text": "4.\n语音合成队列机制。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "620",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "621",
+      "images": 0,
+      "links": [],
+      "text": "2024年07月10日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "622",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "623",
+      "images": 0,
+      "links": [],
+      "text": "1.\n新增接入gptsovits； ",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "624",
+      "images": 0,
+      "links": [],
+      "text": "2.\n修复聊天信息初始化未成功问题;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "625",
+      "images": 0,
+      "links": [],
+      "text": "3.\n修复历史记录为空时报错问题。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "626",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "627",
+      "images": 0,
+      "links": [],
+      "text": "1.\n新增接入gptsovits；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "628",
+      "images": 0,
+      "links": [],
+      "text": "2.\n修复gpt代理配置空某些base_url出现报错问题。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "629",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "630",
+      "images": 0,
+      "links": [],
+      "text": "1.\n新增接入gptsovits；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "631",
+      "images": 0,
+      "links": [],
+      "text": "2.\n修复gpt代理配置空某些base_url出现报错问题； ",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "632",
+      "images": 0,
+      "links": [],
+      "text": "3.\n页面UI优化。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "633",
+      "images": 0,
+      "links": [],
+      "text": "metahuman-stream对接Fay：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "634",
+      "images": 0,
+      "links": [],
+      "text": "1.\n修复连接不稳定问题。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "635",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "636",
+      "images": 0,
+      "links": [],
+      "text": "2024年07月03日更新：",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "637",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "638",
+      "images": 0,
+      "links": [],
+      "text": "1.\n新增阿里云tts对接； ",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "639",
+      "images": 0,
+      "links": [],
+      "text": "2.\n解决tts前面几个字不读的问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "640",
+      "images": 0,
+      "links": [],
+      "text": "3.\n优化agent调用工具时递归的问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "641",
+      "images": 0,
+      "links": [],
+      "text": "4.\n优化历史记录读取、存储问题；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "642",
+      "images": 0,
+      "links": [],
+      "text": "5.\n增加自定义读取历史记录条数；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "643",
+      "images": 0,
+      "links": [],
+      "text": "6.\n优化prompt逻辑；",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "644",
+      "images": 0,
+      "links": [],
+      "text": "7.\n优化获取结果时，误报错误问题。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "645",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版&带货版：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "646",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化授权表存储逻辑； ",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "647",
+      "images": 0,
+      "links": [],
+      "text": "2.\n新增阿里云tts对接； ",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "648",
+      "images": 0,
+      "links": [],
+      "text": "3.\n解决tts前面几个字不读的问题;",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "649",
+      "images": 0,
+      "links": [],
+      "text": "4.\n优化百度情感分析、灵聚授权问题.",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "650",
+      "images": 0,
+      "links": [],
+      "text": "Fay-UE5：",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "651",
+      "images": 0,
+      "links": [],
+      "text": "1.废弃HttpGPT插件，更换为FayConnector插件；",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "652",
+      "images": 0,
+      "links": [],
+      "text": "2.支持前置词唤醒模式（需要metahuman本身蓝图上打开）。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "653",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "656",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "657",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "662",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "666",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "671",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "674",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "675",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "678",
+      "images": 0,
+      "links": [],
+      "text": "\n🌟\n",
+      "type": "block docx-callout-block"
+    },
+    {
+      "id": "681",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "686",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "689",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "694",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "702",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "706",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "709",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "714",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "718",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "723",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "725",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "729",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "732",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "734",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "742",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "747",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "756",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "782",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "783",
+      "images": 0,
+      "links": [],
+      "text": "失败返回 retcode_explain + pre_validation_warnings + hint，AI 下一轮重试就能调整参数，不再用同款不合规 SL/TP 死循环",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "784",
+      "images": 0,
+      "links": [],
+      "text": "TradingContext.init 显式传 EASYDEAL_MT5_INSTALL_DIR 里的 terminal64.exe 给 mt5.initialize(path=...)，锁定到指定实例",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "785",
+      "images": 0,
+      "links": [],
+      "text": "Attach 后用 _norm_install_dir 归一化路径比对（剥 .exe + 大小写 + 反斜杠），不一致就 shutdown + retry，最多 5 次",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "786",
+      "images": 0,
+      "links": [],
+      "text": "加 _maybe_reload_settings() — 每次工具调用前 cheap stat 一次 EASYDEAL_SETTINGS_PATH 的 mtime，变了就重新加载",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "787",
+      "images": 0,
+      "links": [],
+      "text": "副作用：monitor.symbols / magicNumbers / commentContains / Excludes 同步到 strategy_instance；mt5.installDir 变了 → mt5.shutdown + 重新 initialize(path=新 .exe) + 重试绑定",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "788",
+      "images": 0,
+      "links": [],
+      "text": "_read_log_utf16_or_utf8 — MT5 tester.log 既可能 UTF-16（BOM）也可能 UTF-8，自动嗅探编码（修「日志里全是乱码」）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "789",
+      "images": 0,
+      "links": [],
+      "text": " easydeal_debug_env 加 trading_write_open_enabled 字段",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "790",
+      "images": 0,
+      "links": [],
+      "text": "  ea_name 从 \"GMarket.mq5\" 改成 \"GMarket\"（跟 ex5 / 监控配置 / 排行榜口径统一）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "791",
+      "images": 0,
+      "links": [],
+      "text": "2024年06月26日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "792",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "793",
+      "images": 0,
+      "links": [],
+      "text": "1.\n新增支持azure tts；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "794",
+      "images": 0,
+      "links": [],
+      "text": "2.\ntts配置分离；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "795",
+      "images": 0,
+      "links": [],
+      "text": "3.\n去除农业相关工具；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "796",
+      "images": 0,
+      "links": [],
+      "text": "4.\n重构langchain应用逻辑；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "797",
+      "images": 0,
+      "links": [],
+      "text": "5.\n新增可接入moonshot；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "798",
+      "images": 0,
+      "links": [],
+      "text": "6.\n分离知识库工具，使用需自行在工具内配置。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "799",
+      "images": 0,
+      "links": [],
+      "text": "2024年06月19日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "800",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "801",
+      "images": 0,
+      "links": [],
+      "text": "1.\n修复langchain安装时默认包版本问题；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "802",
+      "images": 0,
+      "links": [],
+      "text": "2.\n提供moonshot对接参考。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "803",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "804",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化入场欢迎文案；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "805",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化闲时文案；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "806",
+      "images": 0,
+      "links": [],
+      "text": "3.\n新增弹幕规范检查；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "807",
+      "images": 0,
+      "links": [],
+      "text": "4.\n新增弹幕违规检查；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "808",
+      "images": 0,
+      "links": [],
+      "text": "5.\n新增本地违禁词配置；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "809",
+      "images": 0,
+      "links": [],
+      "text": "6.\n新增违禁处理方式配置；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "810",
+      "images": 0,
+      "links": [],
+      "text": "7.\n新增弹幕格式过滤；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "811",
+      "images": 0,
+      "links": [],
+      "text": "8.\n优化请求角色定义",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "812",
+      "images": 0,
+      "links": [],
+      "text": "b站弹幕监听：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "813",
+      "images": 0,
+      "links": [],
+      "text": "1.\n修复web接口初始化buvid失败的问题；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "814",
+      "images": 0,
+      "links": [],
+      "text": "2.\n移除开放平台模型的UID。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "815",
+      "images": 0,
+      "links": [],
+      "text": "2024年06月12日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "816",
+      "images": 0,
+      "links": [],
+      "text": "Fay-UE5：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "817",
+      "images": 0,
+      "links": [],
+      "text": "1.\n修复消息窗口消息重叠显示问题；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "818",
+      "images": 0,
+      "links": [],
+      "text": "2.\n开放azure api 区域设置。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "819",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版&agent版&带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "820",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化远程音频连接和数字人连接显示。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "821",
+      "images": 0,
+      "links": [],
+      "text": "2024年06月05日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "822",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "823",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加funasr热词识别",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "824",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "825",
+      "images": 0,
+      "links": [],
+      "text": "1.\n新增面板发送消息工具；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "826",
+      "images": 0,
+      "links": [],
+      "text": "2.\n增加funasr热词识别。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "827",
+      "images": 0,
+      "links": [],
+      "text": "Fay-UE5：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "828",
+      "images": 0,
+      "links": [],
+      "text": "1.\n通讯优化；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "829",
+      "images": 0,
+      "links": [],
+      "text": "2.\n对话框界面优化；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "830",
+      "images": 0,
+      "links": [],
+      "text": "3.\n新增退出按钮。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "831",
+      "images": 0,
+      "links": [],
+      "text": "2024年05月29日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "832",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "833",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化互动逻辑； ",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "834",
+      "images": 0,
+      "links": [],
+      "text": "2、优化互动预料；",
+      "type": "block docx-text-block callout-render-unit"
+    },
+    {
+      "id": "835",
+      "images": 0,
+      "links": [],
+      "text": "2024年05月22日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "836",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "837",
+      "images": 0,
+      "links": [],
+      "text": "1.\n调整gpt代理默认为空。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "838",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "839",
+      "images": 0,
+      "links": [],
+      "text": "1.\n去除语音输出工具，改为语音输出只受“语音合成”按钮影响。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "840",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "841",
+      "images": 0,
+      "links": [],
+      "text": "1.\n调整gpt代理默认为空；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "842",
+      "images": 0,
+      "links": [],
+      "text": "2.\n去除funasr_wss方法；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "843",
+      "images": 0,
+      "links": [],
+      "text": "3.\nrasa 支持llma3并优化接口；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "844",
+      "images": 0,
+      "links": [],
+      "text": "4.\nrasa支持通过vllm部署大模型；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "845",
+      "images": 0,
+      "links": [],
+      "text": "5.\n支持通过vllm部署的本地模型启动项目；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "846",
+      "images": 0,
+      "links": [],
+      "text": "6.\n采用fastchat既可以降低显存，又能提升响应速度，支持主流模型部署；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "847",
+      "images": 0,
+      "links": [],
+      "text": "7.\n修复类 GPT调用失败问题；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "848",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/Ik1kwO9X5iilnGkFwRhcnmtvn3e",
+          "text": "metahuman-stream对接Fay"
+        }
+      ],
+      "text": "8.\n新增metahuman-stream对接示例 metahuman-stream对接Fay",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "849",
+      "images": 0,
+      "links": [],
+      "text": "Fay-UE5：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "850",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加文本输入框（与Fay会同步消息），方便网页端和移动端操作。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "851",
+      "images": 0,
+      "links": [],
+      "text": "2024年05月15日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "852",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "853",
+      "images": 0,
+      "links": [],
+      "text": "1.\n新增baidu情绪分析秘钥为空时不使用情绪分析；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "854",
+      "images": 0,
+      "links": [],
+      "text": "2.\n去除讯飞nlp。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "855",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "856",
+      "images": 0,
+      "links": [],
+      "text": "1.\n新增baidu情绪分析秘钥为空时不使用情绪分析。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "857",
+      "images": 0,
+      "links": [],
+      "text": "Fay-UE5：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "858",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加语音按钮，方便网页端和移动端操作;",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "859",
+      "images": 0,
+      "links": [],
+      "text": "2.\n修复ue4男模工程。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "860",
+      "images": 0,
+      "links": [],
+      "text": "2024年05月08日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "861",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "862",
+      "images": 0,
+      "links": [],
+      "text": "1.\n配置项新增gpt模型配置、gpt代理默认空。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "863",
+      "images": 0,
+      "links": [],
+      "text": "2024年04月29日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "864",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "865",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加百度情绪分析错误解析。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "866",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "867",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加百度情绪分析错误解析。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "868",
+      "images": 0,
+      "links": [],
+      "text": "UE：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "869",
+      "images": 0,
+      "links": [],
+      "text": "1.\n全新模型、支持最新5.3引擎、使用azure全家桶、支持与Fay异地、支持网页推流、支持打包android、ios及pc客户端。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "870",
+      "images": 0,
+      "links": [],
+      "text": "2024年04月22日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "871",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "872",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化获取网页内容工具的兼容性问题；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "873",
+      "images": 0,
+      "links": [],
+      "text": "2.\n新增gpt代理配置；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "874",
+      "images": 0,
+      "links": [],
+      "text": "3.\n优化白屏问题",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "875",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "876",
+      "images": 0,
+      "links": [],
+      "text": "1.\n使用百度情感分析替换讯飞；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "877",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化白屏问题。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "878",
+      "images": 0,
+      "links": [],
+      "text": "3.\n利用vllm对大模型进行加速推理，提升响应时间;",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "879",
+      "images": 0,
+      "links": [],
+      "text": "4.\n修改rasa对接ChatGLM3-6b模型支持，也可以单独接入ChatGLM3-6B，可以让ChatGLM3-6b提供与openai完全一样的接口。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "880",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "881",
+      "images": 0,
+      "links": [],
+      "text": "1.\n使用百度情感分析替换讯飞；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "882",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化白屏问题。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "883",
+      "images": 0,
+      "links": [],
+      "text": "2024年04月15日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "884",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "885",
+      "images": 0,
+      "links": [],
+      "text": "1.\n前端禁止开启后修改；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "886",
+      "images": 0,
+      "links": [],
+      "text": "2.\n提高funasr的稳定性。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "887",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "888",
+      "images": 0,
+      "links": [],
+      "text": "1.\n精简nlp模块；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "889",
+      "images": 0,
+      "links": [],
+      "text": "2.\nazure声音模型列表载入方式修改； ",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "890",
+      "images": 0,
+      "links": [],
+      "text": "3.\n增加自动重新载入知识库； ",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "891",
+      "images": 0,
+      "links": [],
+      "text": "4.\n提高funasr的稳定性； ",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "892",
+      "images": 0,
+      "links": [],
+      "text": "5.\n前端禁止开启后修改；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "893",
+      "images": 0,
+      "links": [],
+      "text": "6.\n增加文字回复也可以声音输出。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "894",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "895",
+      "images": 0,
+      "links": [],
+      "text": "1.\nnlp模块精简；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "896",
+      "images": 0,
+      "links": [],
+      "text": "2.\nazure声音模型列表载入方式修改；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "897",
+      "images": 0,
+      "links": [],
+      "text": "3.\n前端禁止开启后修改",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "898",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block callout-render-unit isEmpty"
+    },
+    {
+      "id": "899",
+      "images": 0,
+      "links": [],
+      "text": "2024年04月08日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "900",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "901",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化gpt兼容接口（为ue新工程架构准备）。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "902",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "903",
+      "images": 0,
+      "links": [],
+      "text": "1.\n*支持azure最新情感音频；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "904",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化gpt兼容接口（为ue新工程架构准备）。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "905",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "906",
+      "images": 0,
+      "links": [],
+      "text": "1.\n*支持azure最新情感音频。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "907",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block callout-render-unit isEmpty"
+    },
+    {
+      "id": "908",
+      "images": 0,
+      "links": [],
+      "text": "2024年04月01日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "909",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "910",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加agent工具：连接本地知识库（pdf）查询、获取网页内容；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "911",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block callout-render-unit isEmpty"
+    },
+    {
+      "id": "912",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "913",
+      "images": 0,
+      "links": [],
+      "text": "1.\n去除已暂停使用的代码",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "914",
+      "images": 0,
+      "links": [],
+      "text": "2.\n 新增langchain连接本地知识库（pdf）查询",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "915",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "916",
+      "images": 0,
+      "links": [],
+      "text": "1.\n去除已暂停使用的代码 ；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "917",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block callout-render-unit isEmpty"
+    },
+    {
+      "id": "918",
+      "images": 0,
+      "links": [],
+      "text": "2024年03月25日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "919",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "920",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加agent工具：python执行器、网页检索器；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "921",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block callout-render-unit isEmpty"
+    },
+    {
+      "id": "922",
+      "images": 0,
+      "links": [],
+      "text": "bilibili弹幕监听：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "923",
+      "images": 0,
+      "links": [],
+      "text": "1.\n修复兼容性问题 ",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "924",
+      "images": 0,
+      "links": [],
+      "text": "2024年03月18日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "925",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "926",
+      "images": 0,
+      "links": [],
+      "text": "1.\n问答优先级调整.",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "927",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "928",
+      "images": 0,
+      "links": [],
+      "text": "1.\n问答优先级调整 ",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "929",
+      "images": 0,
+      "links": [],
+      "text": "2.\n新增接入langchain nlp模块",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "930",
+      "images": 0,
+      "links": [],
+      "text": "3.\n新增输出问题前必须开启服务提醒",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "931",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "932",
+      "images": 0,
+      "links": [],
+      "text": "1.\n清除情绪计算的内容 ",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "933",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block callout-render-unit isEmpty"
+    },
+    {
+      "id": "934",
+      "images": 0,
+      "links": [],
+      "text": "2024年03月11日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "935",
+      "images": 0,
+      "links": [],
+      "text": "Fay-ue5：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "936",
+      "images": 0,
+      "links": [],
+      "text": "1.\n发布5.3模型.",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "937",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "938",
+      "images": 0,
+      "links": [],
+      "text": "1.\n取消重启重置日程功能； ",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "939",
+      "images": 0,
+      "links": [],
+      "text": "2.\n上传主动发送微信消息tool(未引入)。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "940",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block callout-render-unit isEmpty"
+    },
+    {
+      "id": "941",
+      "images": 0,
+      "links": [],
+      "text": "2024年03月04日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "942",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "943",
+      "images": 0,
+      "links": [],
+      "text": "1.\n去除live2d显示，优化白屏问题；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "944",
+      "images": 0,
+      "links": [],
+      "text": "2.\n集成funASR最新版本",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "945",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "946",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化prompt；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "947",
+      "images": 0,
+      "links": [],
+      "text": "2.\n去除llm chain逻辑，减少agent与llm chain切换的token浪费；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "948",
+      "images": 0,
+      "links": [],
+      "text": "3.\n优化“思考中...”log，方便后续数字人设计更友好的交互逻辑；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "949",
+      "images": 0,
+      "links": [],
+      "text": "4.\n集成funASR最新版本。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "950",
+      "images": 0,
+      "links": [],
+      "text": "2024年02月27日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "951",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "952",
+      "images": 0,
+      "links": [],
+      "text": "1.\n新增通义星辰nlp对接。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "953",
+      "images": 0,
+      "links": [],
+      "text": "2024年02月19日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "954",
+      "images": 0,
+      "links": [],
+      "text": "Fay-Android连接器：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "955",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化通知弹出逻辑。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "956",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "957",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加gpt接口节点配置（方便接入镜像站）。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "958",
+      "images": 0,
+      "links": [],
+      "text": "2024年01月29日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "959",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "960",
+      "images": 0,
+      "links": [],
+      "text": "1.\n更新类GPT接口逻辑；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "961",
+      "images": 0,
+      "links": [],
+      "text": "2.\n增强funasr稳定性；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "962",
+      "images": 0,
+      "links": [],
+      "text": "3.\n增加唤醒模式开启时打断数字人说话功能。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "963",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "964",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增强funasr稳定性；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "965",
+      "images": 0,
+      "links": [],
+      "text": "2024年01月22日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "966",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "967",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加问答记录txt(方便obs布局)；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "968",
+      "images": 0,
+      "links": [],
+      "text": "2.\n更新fastgpt接口；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "969",
+      "images": 0,
+      "links": [],
+      "text": "3.\n增强启动控制器稳定性；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "970",
+      "images": 0,
+      "links": [],
+      "text": "4.\n前置唤醒词模式优化。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "971",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "972",
+      "images": 0,
+      "links": [],
+      "text": "1.\n更新fastgpt接口；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "973",
+      "images": 0,
+      "links": [],
+      "text": "2.\n增强启动控制器稳定性；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "974",
+      "images": 0,
+      "links": [],
+      "text": "Fay-ue5：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "975",
+      "images": 0,
+      "links": [],
+      "text": "1.\n发布新站姿绿幕数字人。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "976",
+      "images": 0,
+      "links": [],
+      "text": "2024年01月15日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "977",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版&带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "978",
+      "images": 0,
+      "links": [],
+      "text": "1.\n新增前置词唤醒方式；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "979",
+      "images": 0,
+      "links": [],
+      "text": "2.\n新增gpt兼容接口",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "980",
+      "images": 0,
+      "links": [],
+      "text": "2024年01月08日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "981",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "982",
+      "images": 0,
+      "links": [],
+      "text": "1.\n远程音频连接状态显示；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "983",
+      "images": 0,
+      "links": [],
+      "text": "2.\n执行任务时记录时间；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "984",
+      "images": 0,
+      "links": [],
+      "text": "3.\n去除计算tool，防止用于时间计算而出错。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "985",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "986",
+      "images": 0,
+      "links": [],
+      "text": "1.\n远程音频连接状态显示；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "987",
+      "images": 0,
+      "links": [],
+      "text": "2.\n增加唤醒词自定义功能。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "988",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "989",
+      "images": 0,
+      "links": [],
+      "text": "1.\n远程音频连接状态显示。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "990",
+      "images": 0,
+      "links": [],
+      "text": "Fay-Android连接器：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "991",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化socket管理；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "992",
+      "images": 0,
+      "links": [],
+      "text": "2.\n实测7*24不掉线。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "993",
+      "images": 0,
+      "links": [],
+      "text": "xuniren：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "994",
+      "images": 0,
+      "links": [],
+      "text": "1.\n本地对接Fay时使用流式输出。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "995",
+      "images": 0,
+      "links": [],
+      "text": "2024年01月01日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "996",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "997",
+      "images": 0,
+      "links": [],
+      "text": "1.\nopenai token计算；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "998",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化ReAct Agent 与 LLM Chain自动切换逻辑；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "999",
+      "images": 0,
+      "links": [],
+      "text": "3.\n添加双记忆机制：长时记忆流及短时聊天记忆；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1000",
+      "images": 0,
+      "links": [],
+      "text": "4.\n修复record.py asr bug；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1001",
+      "images": 0,
+      "links": [],
+      "text": "5.\n提高远程音频（android 连接器）的稳定性；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1002",
+      "images": 0,
+      "links": [],
+      "text": "6.\n修复执行时间计算bug；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1003",
+      "images": 0,
+      "links": [],
+      "text": "7.\n优化语音输出逻辑。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1004",
+      "images": 0,
+      "links": [],
+      "text": "2023年12月25日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "1005",
+      "images": 0,
+      "links": [],
+      "text": "android 连接器代码分离及优化：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1006",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/xszyou/fay-android",
+          "text": "https://github.com/xszyou/fay-android"
+        }
+      ],
+      "text": "（https://github.com/xszyou/fay-android）",
+      "type": "block docx-text-block callout-render-unit"
+    },
+    {
+      "id": "1007",
+      "images": 0,
+      "links": [],
+      "text": "1.\n增加重连机制；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1008",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化麦克风及蓝牙sco管理机制；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1009",
+      "images": 0,
+      "links": [],
+      "text": "3.\n增加麦克风开关及服务器地址管理",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1010",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1011",
+      "images": 0,
+      "links": [],
+      "text": "1.\n实现agent ReAct与LLM chain自动切换逻辑；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1012",
+      "images": 0,
+      "links": [],
+      "text": "2.\n聊天窗区分任务消息；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1013",
+      "images": 0,
+      "links": [],
+      "text": "3.\n修复删除日程bug；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1014",
+      "images": 0,
+      "links": [],
+      "text": "4.\n优化远程音频逻辑；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1015",
+      "images": 0,
+      "links": [],
+      "text": "5.\n等待处理引入加载中效果；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1016",
+      "images": 0,
+      "links": [],
+      "text": "6.\n优化prompt以解决日程任务递归调用问题；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1017",
+      "images": 0,
+      "links": [],
+      "text": "7.\n修复一次性日程清除的bug。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1018",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1019",
+      "images": 0,
+      "links": [],
+      "text": "1.\n分离android连接器 app；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1020",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化远程音频逻辑；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1021",
+      "images": 0,
+      "links": [],
+      "text": "3.\n未回复消息引入加载效果。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1022",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1023",
+      "images": 0,
+      "links": [],
+      "text": "1.\n分离android连接器 app；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1024",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化远程音频逻辑。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1025",
+      "images": 0,
+      "links": [],
+      "text": "Fay-ue5：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1026",
+      "images": 0,
+      "links": [],
+      "text": "1.\n更新girl|_night工程地址；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1027",
+      "images": 0,
+      "links": [],
+      "text": "2023年12月18日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "1028",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1029",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化promp；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1030",
+      "images": 0,
+      "links": [],
+      "text": "2.\n解决删除日程错误；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1031",
+      "images": 0,
+      "links": [],
+      "text": "3.\niotm demo tool整体优化。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1032",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1033",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化fastgpt的对接；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1034",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化gpt的对接；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1035",
+      "images": 0,
+      "links": [],
+      "text": "3.\n清除chatgpt的逆向对接方式；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1036",
+      "images": 0,
+      "links": [],
+      "text": "4.\n清除部分多余代码。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1037",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1038",
+      "images": 0,
+      "links": [],
+      "text": "1.\n优化fastgpt的对接；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1039",
+      "images": 0,
+      "links": [],
+      "text": "2.\n优化gpt的对接；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1040",
+      "images": 0,
+      "links": [],
+      "text": "3.\n把代理提取到配置文件。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1041",
+      "images": 0,
+      "links": [],
+      "text": "2023年12月11日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "1042",
+      "images": 0,
+      "links": [],
+      "text": "Fay-agent版第一版上线！",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1043",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版&带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1044",
+      "images": 0,
+      "links": [],
+      "text": "1.\n修复gpt接口报name无效问题；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1045",
+      "images": 0,
+      "links": [],
+      "text": "2.\n修复fastgpt报错问题。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1046",
+      "images": 0,
+      "links": [],
+      "text": "2023年12月04日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "1047",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版&带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1048",
+      "images": 0,
+      "links": [],
+      "text": "1.\n内置了fastgpt nlp模块，可借助其接入gpt4;",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1049",
+      "images": 0,
+      "links": [],
+      "text": "2.\n修复唇形异常报错的问题。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1050",
+      "images": 0,
+      "links": [],
+      "text": "2023年11月27日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "1051",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1052",
+      "images": 0,
+      "links": [],
+      "text": "1.\n 提高websocket稳定性；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1053",
+      "images": 0,
+      "links": [],
+      "text": "2.\n修复唇形程序路径问题;",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1054",
+      "images": 0,
+      "links": [],
+      "text": "3.\n增加SQLLITE稳定性。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1055",
+      "images": 0,
+      "links": [],
+      "text": "Fay-带货版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1056",
+      "images": 0,
+      "links": [],
+      "text": "1.\n提高websocket稳定性；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1057",
+      "images": 0,
+      "links": [],
+      "text": "2.\n修复唇形程序路径问题。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1058",
+      "images": 0,
+      "links": [],
+      "text": "Fay-ue5（更新UE工程10月版）：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1059",
+      "images": 0,
+      "links": [],
+      "text": "1.\n全新模型；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1060",
+      "images": 0,
+      "links": [],
+      "text": "2.\n提供VR运行包；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1061",
+      "images": 0,
+      "links": [],
+      "text": "3.\n优化唇形；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1062",
+      "images": 0,
+      "links": [],
+      "text": "4.\n改进web socket 状态显示逻辑；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1063",
+      "images": 0,
+      "links": [],
+      "text": "5.\n降低性能资源消耗。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1064",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://b23.tv/1W0sJZv",
+          "text": "https://b23.tv/1W0sJZv"
+        }
+      ],
+      "text": "VR效果（【VR数字人-哔哩哔哩】 https://b23.tv/1W0sJZv）",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1065",
+      "images": 0,
+      "links": [],
+      "text": "xuniren：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1066",
+      "images": 0,
+      "links": [],
+      "text": "1.\n提高与Fay对接稳定性。",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1067",
+      "images": 0,
+      "links": [],
+      "text": "2023年11月20日更新：",
+      "type": "block docx-heading1-block callout-render-unit"
+    },
+    {
+      "id": "1068",
+      "images": 0,
+      "links": [],
+      "text": "Fay-助理版：",
+      "type": "block docx-heading2-block callout-render-unit"
+    },
+    {
+      "id": "1069",
+      "images": 0,
+      "links": [],
+      "text": "1.\n唤醒功能修改：更换为字符判断模式；",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1070",
+      "images": 0,
+      "links": [],
+      "text": "2.\n增加yolo稳定性;",
+      "type": "block docx-ordered-block callout-render-unit"
+    },
+    {
+      "id": "1071",
+      "images": 0,
+      "links": [],
+      "text": "3.\n增加SQLLITE稳定性。",
+      "type": "block docx-ordered-block callout-render-unit"
+    }
+  ],
+  "chars": 20592,
+  "captured_at": "2026-11-03T10:39:19.276Z"
+}

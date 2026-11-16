@@ -1,0 +1,195 @@
+{
+  "status": "FRAMEWORK_INSTALLED_LOCAL_WEB_AND_WS_VERIFIED",
+  "checked_at_utc": "2026-11-03T01:07:41.196490+00:00",
+  "python": "3.12.4",
+  "executable": "D:\\Code\\3D数字人\\fay-ue4\\.venv-fay\\Scripts\\python.exe",
+  "requirements": [
+    {
+      "name": "requests",
+      "version": "2.34.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.2.6"
+    },
+    {
+      "name": "pyaudio",
+      "version": "0.2.14"
+    },
+    {
+      "name": "websockets",
+      "version": "10.4"
+    },
+    {
+      "name": "uvicorn",
+      "version": "0.34.3"
+    },
+    {
+      "name": "ws4py",
+      "version": "0.5.1"
+    },
+    {
+      "name": "flask",
+      "version": "3.0.3"
+    },
+    {
+      "name": "openpyxl",
+      "version": "3.0.10"
+    },
+    {
+      "name": "flask_cors",
+      "version": "3.0.10"
+    },
+    {
+      "name": "websocket-client",
+      "version": "1.9.2"
+    },
+    {
+      "name": "azure-cognitiveservices-speech",
+      "version": "1.53.0"
+    },
+    {
+      "name": "aliyun-python-sdk-core",
+      "version": "2.16.1"
+    },
+    {
+      "name": "simhash",
+      "version": "2.1.2"
+    },
+    {
+      "name": "pytz",
+      "version": "2026.6"
+    },
+    {
+      "name": "gevent",
+      "version": "26.9.0"
+    },
+    {
+      "name": "edge_tts",
+      "version": "7.3.1"
+    },
+    {
+      "name": "pydub",
+      "version": "0.25.1"
+    },
+    {
+      "name": "tenacity",
+      "version": "8.2.3"
+    },
+    {
+      "name": "pygame",
+      "version": "2.6.1"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.1"
+    },
+    {
+      "name": "flask-httpauth",
+      "version": "4.8.1"
+    },
+    {
+      "name": "opencv-python",
+      "version": "4.10.0.84"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2"
+    },
+    {
+      "name": "langchain",
+      "version": "0.3.27"
+    },
+    {
+      "name": "langchain_openai",
+      "version": "0.3.35"
+    },
+    {
+      "name": "langgraph",
+      "version": "0.6.11"
+    },
+    {
+      "name": "bs4",
+      "version": "0.0.2"
+    },
+    {
+      "name": "schedule",
+      "version": "1.2.2"
+    },
+    {
+      "name": "mcp",
+      "version": "1.18.0"
+    },
+    {
+      "name": "python-docx",
+      "version": "1.2.0"
+    },
+    {
+      "name": "python-pptx",
+      "version": "1.0.2"
+    },
+    {
+      "name": "chromadb",
+      "version": "1.1.1"
+    },
+    {
+      "name": "sentence_transformers",
+      "version": "5.1.1"
+    }
+  ],
+  "imports": [
+    "flask",
+    "pyaudio",
+    "azure.cognitiveservices.speech",
+    "langchain_openai",
+    "langgraph.graph",
+    "mcp",
+    "chromadb",
+    "sentence_transformers",
+    "torch"
+  ],
+  "http": [
+    {
+      "port": 5000,
+      "path": "/",
+      "status": 200,
+      "bytes": 17624
+    },
+    {
+      "port": 5000,
+      "path": "/static/js/vue.js",
+      "status": 200,
+      "bytes": 356021
+    },
+    {
+      "port": 5000,
+      "path": "/static/css/index.css",
+      "status": 200,
+      "bytes": 24445
+    },
+    {
+      "port": 5010,
+      "path": "/Page3",
+      "status": 200,
+      "bytes": 73464
+    }
+  ],
+  "websockets": [
+    {
+      "port": 10002,
+      "handshake": true,
+      "ping_pong": true
+    },
+    {
+      "port": 10003,
+      "handshake": true,
+      "ping_pong": true
+    }
+  ],
+  "conversation_core_running": false,
+  "limitations": [
+    "No LLM/ASR/TTS/embedding provider credentials configured",
+    "No real model or paid API call in installation checks",
+    "No LiveTalking or 2D mouth inference installed by this Fay-only task"
+  ]
+}

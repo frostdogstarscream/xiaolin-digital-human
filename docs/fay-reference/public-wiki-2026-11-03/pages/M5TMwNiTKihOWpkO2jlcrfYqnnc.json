@@ -1,0 +1,181 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,11,1,1",
+  "title": "GPT-SoVITS V2、V3对接指南",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=M5TMwNiTKihOWpkO2jlcrfYqnnc",
+  "x": 82,
+  "y": 18.5,
+  "token": "M5TMwNiTKihOWpkO2jlcrfYqnnc",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/M5TMwNiTKihOWpkO2jlcrfYqnnc",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 5,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "# V2、V3对接指南## ",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/xszyou/Fay",
+          "text": "Fay"
+        },
+        {
+          "href": "https://github.com/RVC-Boss/GPT-SoVITS",
+          "text": "GPT-SoVITS"
+        }
+      ],
+      "text": "\n\n## 软件包准备\n- Fay \n- GPT-SoVITS(主分支或fast_inference_分支)\n\n## 实施步骤### ",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "1. 安装最新的 Fay",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "\n请参照仓库说明安装并运行最新版本的 Fay。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/RVC-Boss/GPT-SoVITS",
+          "text": "GPT-SoVITS"
+        }
+      ],
+      "text": "2. 下载安装 GPT-SoVITS(fast_inference_分支或者主分支)",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/RVC-Boss/GPT-SoVITS",
+          "text": "GPT-SoVITS"
+        }
+      ],
+      "text": "\n请参照仓库说明安装最新版本的 GPT-SoVITS(fast_inference_分支或者主分支)。\n",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://github.com/RVC-Boss/GPT-SoVITS",
+          "text": "GPT-SoVITS"
+        }
+      ],
+      "text": "3. 运行 GPT-SoVITS api",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "速度问题可以调整tts_infer.yaml的device为cuda",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "主分支：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\npython api_v2.py\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [],
+      "text": "fast_inference_分支：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\npython api_v3.py\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [],
+      "text": "4. 根据官方说明更改Fay上配置（tts\\gptsovits_v3.py）",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [],
+      "text": "例：（参考音频、参考文本一定要按实际情况修改），速度问题可以调整batch_size",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\n  data = {\n        \"text\": text,                   # str.(required) text to be synthesized\n        \"text_lang\": \"zh\",              # str.(required) language of the text to be synthesized\n        \"ref_audio_path\": \"I:/GPT-SoVITS-beta0706/111.wav\",         # str.(required) reference audio path.\n        \"prompt_text\": \"抱歉，我现在太忙了，休息一会，请稍后再试。\",            # str.(optional) prompt text for the reference audio\n        \"prompt_lang\": \"zh\",            # str.(required) language of the prompt text for the reference audio\n        \"top_k\": 5,                   # int.(optional) top k sampling\n        \"top_p\": 1,                   # float.(optional) top p sampling\n        \"temperature\": 1,             # float.(optional) temperature for sampling\n        \"text_split_method\": \"cut5\",  # str.(optional) text split method, see text_segmentation_method.py for details.\n        \"batch_size\": 1,              # int.(optional) batch size for inference\n        \"batch_threshold\": 0.75,      # float.(optional) threshold for batch splitting.\n        \"split_bucket\": True,         # bool.(optional) whether to split the batch into multiple buckets.\n        \"speed_factor\":1.0,           # float.(optional) control the speed of the synthesized audio.\n        \"fragment_interval\":0.3,      # float.(optional) to control the interval of the audio fragment.\n        \"seed\": -1,                   # int.(optional) random seed for reproducibility.\n        \"media_type\": \"wav\",          # str.(optional) media type of the output audio, support \"wav\", \"raw\", \"ogg\", \"aac\".\n        \"streaming_mode\": False,      # bool.(optional) whether to return a streaming response.\n        \"parallel_infer\": True,       # bool.(optional) whether to use parallel inference.\n        \"repetition_penalty\": 1.35    # float.(optional) repetition penalty for T2S model.\n    }\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "18",
+      "images": 0,
+      "links": [],
+      "text": "5. 修改配置文件system.conf\n",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "19",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\ntts_module=gptsovits_v3\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "20",
+      "images": 0,
+      "links": [],
+      "text": "5. 运行 Fay",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "21",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 2361,
+  "captured_at": "2026-11-03T10:42:52.844Z"
+}

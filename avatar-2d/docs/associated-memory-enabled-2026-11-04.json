@@ -1,0 +1,27 @@
+{
+  "enabled": true,
+  "user_isolation": true,
+  "retrieval": {
+    "embedding_model": "Pro/BAAI/bge-m3",
+    "embedding_base_url": "https://api.siliconflow.cn/v1",
+    "embedding_independent_key": true,
+    "require_real_vectors": true,
+    "rerank_enabled": true,
+    "rerank_model": "Pro/BAAI/bge-reranker-v2-m3",
+    "rerank_base_url": "https://api.siliconflow.cn/v1",
+    "rerank_configured": true,
+    "candidate_limit": 30,
+    "top_n": 8
+  },
+  "chat_and_tts_config_unchanged": true,
+  "previous_enabled": false,
+  "migration_users": [
+    {
+      "user_directory": "Avatar2D",
+      "nodes": 3,
+      "vectors": 3,
+      "dimensions": 1024,
+      "nodes_sha256": "53f25e226235263b102011bcb189c2fe88ad7343326297067e0711693dcb2954"
+    }
+  ]
+}

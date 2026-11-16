@@ -1,0 +1,109 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,16",
+  "title": "联系我们",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=F6YWwY3OGiMLjCkvrZtcz4A6nPL",
+  "x": 42,
+  "y": 1134.5,
+  "token": "F6YWwY3OGiMLjCkvrZtcz4A6nPL",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/F6YWwY3OGiMLjCkvrZtcz4A6nPL",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "联系我们",
+      "type": "block docx-heading1-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "1、公众号(关注入群)",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "fay数字人",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 2,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "2、b 站账号",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://space.bilibili.com/2111554564",
+          "text": "xszyou"
+        }
+      ],
+      "text": "xszyou",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/XS8QwfvhbiudEjkw0Hocm3bvnVe",
+          "text": "商务对接"
+        }
+      ],
+      "text": "3、商务对接",
+      "type": "block docx-heading2-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "商务 QQ: 467665317",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 57,
+  "last_scroll": {
+    "top": 389,
+    "height": 656,
+    "total": 1045
+  },
+  "captured_at": "2026-11-03T10:45:53.980Z"
+}

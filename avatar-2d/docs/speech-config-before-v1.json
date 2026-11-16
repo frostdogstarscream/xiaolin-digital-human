@@ -1,0 +1,8 @@
+{
+  "tts_module": "windows_sapi",
+  "bailian_tts_model": null,
+  "bailian_tts_voice": null,
+  "ASR_mode": "local",
+  "local_asr_ip": "127.0.0.1",
+  "local_asr_port": "10100"
+}

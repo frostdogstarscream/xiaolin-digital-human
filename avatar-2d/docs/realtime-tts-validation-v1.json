@@ -1,0 +1,49 @@
+{
+  "physical_microphone_verified": false,
+  "cases": [
+    {
+      "type": "direct_speech",
+      "first_audio_seconds": 1.3244898319244385,
+      "tts_first_pcm_seconds": 0.6178338527679443,
+      "generation_seconds": 2.5243914127349854,
+      "playback_started_before_generation_finished": true,
+      "audio_chunks": 55,
+      "voice_seconds": 17.2,
+      "segments": 4
+    },
+    {
+      "type": "cache_replay",
+      "played_once": true,
+      "segments": 4,
+      "first_audio_seconds": 0.5190513134002686
+    }
+  ],
+  "interruption": {
+    "queue_empty": true,
+    "no_late_speech": true,
+    "old_job_rejected": true,
+    "cancelled_during_generation": true
+  },
+  "chat": {
+    "first_audio_seconds": 12.438377857208252,
+    "segments": 4,
+    "all_segments_streamed": true,
+    "answer": "我是数字讲解员小霖，可为您实时讲解展品背景、历史故事和互动要点。  \n还能根据您的兴趣节奏调整语速、重复重点，或切换成轻松聊天模式。",
+    "question_to_tts_start_seconds": 11.490307331085205,
+    "tts_first_pcm_seconds": 0.5826332569122314,
+    "tts_start_to_audio_seconds": 0.9480705261230469
+  },
+  "received": {
+    "audio": 3237,
+    "video": 1620,
+    "voiced": 2091
+  },
+  "speech": {
+    "provider": "bailian",
+    "model": "qwen3-tts-flash-realtime",
+    "voice": "Cherry",
+    "streaming": true,
+    "transport": "WebSocket/PCM"
+  },
+  "status": "REALTIME_TTS_FAY_WEBRTC_PASSED"
+}

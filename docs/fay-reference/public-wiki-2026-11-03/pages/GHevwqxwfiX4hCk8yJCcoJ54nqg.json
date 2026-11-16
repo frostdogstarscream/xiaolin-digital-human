@@ -1,0 +1,96 @@
+{
+  "collapsed": false,
+  "level": 2,
+  "position": "0,10",
+  "title": "数字人模型",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=2&rootNodeId=TOC-ROOT&wikiToken=GHevwqxwfiX4hCk8yJCcoJ54nqg",
+  "x": 42,
+  "y": -377.5,
+  "token": "GHevwqxwfiX4hCk8yJCcoJ54nqg",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/GHevwqxwfiX4hCk8yJCcoJ54nqg",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/UwXEwxJMOiRhX1kWc7tcjPdrngc",
+          "text": "数字人接口"
+        }
+      ],
+      "text": "如果你已经安装并运行好fay，请选择你的数字人皮肤。当然也可以基于数字人接口开发自己的数字人模型。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/N33FwegdxiRXzCkZlH2czjwvnrg",
+          "text": "👍\nmetahuman(ue)"
+        }
+      ],
+      "text": "1、\n👍\nmetahuman(ue)，擅长超写实3D数字人。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/IDCjwbUJfiAah2kUu4OcRs4Wnyd",
+          "text": "动图数字人"
+        }
+      ],
+      "text": "2、动图数字人，如果你想简化到用几张图片的切换去代表几个数字个状态也是可以的。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/K95swHItqiOFSIkqlFIcZL7Nn6e",
+          "text": "xmov在线模型"
+        }
+      ],
+      "text": "3、\nxmov在线模型，在线平台挑选模型，没有本地算力压力。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/BeDpwXGZ7irQM9k5qBdchWw7nmg",
+          "text": "duix（android）"
+        }
+      ],
+      "text": "4、\nduix（android），硅基公司的移动端推理方案，在2D数字人领域可以节省服务器算力成本。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/C5ORwSBGeiDibhkD4MdcPBHpnih",
+          "text": "live2d网页数字人"
+        }
+      ],
+      "text": "5、\nlive2d网页数字人，日本动画技术，通过分层图实现动态效果，可做动漫、写实、甚至动物。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 246,
+  "captured_at": "2026-11-03T10:41:49.656Z"
+}

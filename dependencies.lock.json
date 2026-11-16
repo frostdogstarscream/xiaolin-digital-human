@@ -1,0 +1,28 @@
+[
+  {
+    "url": "https://github.com/uezo/ChatdollKit/releases/download/v0.8.16/ChatdollKit_0.8.16.unitypackage",
+    "sha256": "f5a519552dd8d08769c4de4103eb67638250d4341626cd1ce80e78303637ebbd",
+    "files": 334
+  },
+  {
+    "url": "https://github.com/uezo/ChatdollKit/releases/download/v0.8.16/ChatdollKit_VRMExtension_0.8.16.unitypackage",
+    "sha256": "ca29439a09766ea337f97ca40ff50b3049b0540a285ac76a9609556884998c1e",
+    "files": 11
+  },
+  {
+    "url": "https://github.com/vrm-c/UniVRM/releases/download/v0.131.4/VRM-0.131.4_efd2.unitypackage",
+    "sha256": "8f91761bfe9cb498f29f7d66b5750e64909078569ffbb397ecbcfa1edd881f27",
+    "files": 1797
+  },
+  {
+    "url": "https://github.com/vrm-c/UniVRM/releases/download/v0.131.4/UniVRM-0.131.4_efd2.unitypackage",
+    "sha256": "3f0e7349f22914232c0621ce1a0f48b549c2553bc5d3308896cd4612730c445a",
+    "files": 1459
+  },
+  {
+    "repository": "https://github.com/hecomi/uLipSync",
+    "tag": "v3.1.4",
+    "tree": "e1e22b204fa29975894cac3d758d51d1e5bce166",
+    "files": 122
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "collapsed": false,
+  "level": 4,
+  "position": "0,12,1,10",
+  "title": "funasr热词接入",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=4&rootNodeId=TOC-ROOT&wikiToken=YatfwG8asimkkqkzEU3cxZU6nfb",
+  "x": 82,
+  "y": 918.5,
+  "token": "YatfwG8asimkkqkzEU3cxZU6nfb",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/YatfwG8asimkkqkzEU3cxZU6nfb",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 3,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "热词：是指在特定应用场景或领域中出现频率较高的重要词汇。\n",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "包括：",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "1.\n高频词汇：在某个特定领域（例如医学、法律、游戏等）中，热词是那些经常被提及的词汇。它们在语音识别系统中被赋予更高的权重，以提高识别的准确率。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [],
+      "text": "2.\n定制词汇：用户可以根据自己的需求添加或调整热词。例如，一个游戏直播平台可能会将一些热门游戏的名称、游戏术语、以及主播昵称设定为热词，以确保这些词在直播中的识别率更高。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [],
+      "text": "3.\n上下文相关性：热词通常与当前语音识别的上下文密切相关。它们可以帮助系统更好地理解和处理特定场景下的语音输入。例如，在一次医学讲座中，“心脏病”、“手术”等词语可能被设定为热词。",
+      "type": "block docx-ordered-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "\n     使用热词的主要目的是增强语音识别系统的性能，使其在特定场景或领域中更加精确和可靠。这样可以确保特定情况下，重要的词汇能够被准确识别和理解，提高用户体验和系统的实用性。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [],
+      "text": "使用方法：",
+      "type": "block docx-heading3-block"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [],
+      "text": "在test\\funasr\\data\\hotword.txt下，输入需要的热词，以回车为分割。\n\n如下：\n",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [],
+      "text": "\n代码块\nPlain Text\n复制\nFay\n菲菲\n",
+      "type": "block docx-code-block"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 454,
+  "last_scroll": {
+    "top": 311,
+    "height": 656,
+    "total": 967
+  },
+  "captured_at": "2026-11-03T10:45:35.605Z"
+}

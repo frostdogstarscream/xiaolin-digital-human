@@ -1,0 +1,19 @@
+{
+  "status": "GO_FAY_STREAMING_TTS_EXISTING_RTC_PASSED",
+  "model": "deepseek-v4.1-flash",
+  "collaboration_mode": "dual",
+  "answer": "我叫小霖，徐州数字讲解员。",
+  "first_answer_text_seconds": 9.141,
+  "first_playback_callback_seconds": 10.632,
+  "tts_first_pcm_seconds": 0.721,
+  "total_seconds": 12.919,
+  "tts_model": "qwen3-tts-flash-realtime",
+  "tts_voice": "Cherry",
+  "all_segments_streamed": true,
+  "segments": 1,
+  "pcm_chunks": 8,
+  "new_speaking_frames": 65,
+  "existing_display_preserved": true,
+  "physical_microphone_verified": false,
+  "physical_audio_hearing_verified": false
+}

@@ -1,0 +1,1465 @@
+{
+  "id": "girl008_motion_preview_v1",
+  "name": "girl008 本地动作预览",
+  "license_note": "用户提供本地模型，仅供本次接入检查；发布和再分发许可待补充。",
+  "morphs": {},
+  "face_driver": "bones",
+  "face_bones": {
+    "jaw_open": [
+      {
+        "bone": "upperLipJoint0_M",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.004039,
+          -0.059863,
+          5e-05
+        ]
+      },
+      {
+        "bone": "upperLipJoint1_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.00764,
+          -0.05879,
+          -0.000682
+        ]
+      },
+      {
+        "bone": "upperLipJoint1_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.002163,
+          -0.058443,
+          -0.0004
+        ]
+      },
+      {
+        "bone": "upperLipJoint2_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.010223,
+          -0.056054,
+          -0.001773
+        ]
+      },
+      {
+        "bone": "upperLipJoint2_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.005972,
+          -0.053958,
+          -0.001607
+        ]
+      },
+      {
+        "bone": "upperLipJoint3_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.011412,
+          -0.051436,
+          -0.002682
+        ]
+      },
+      {
+        "bone": "upperLipJoint3_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.007755,
+          -0.046945,
+          -0.00234
+        ]
+      },
+      {
+        "bone": "upperLipJoint4_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.0112,
+          -0.044464,
+          -0.003101
+        ]
+      },
+      {
+        "bone": "upperLipJoint4_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.007992,
+          -0.038254,
+          -0.00238
+        ]
+      },
+      {
+        "bone": "upperLipJoint5_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.009684,
+          -0.036194,
+          -0.002851
+        ]
+      },
+      {
+        "bone": "upperLipJoint5_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.007345,
+          -0.029483,
+          -0.002003
+        ]
+      },
+      {
+        "bone": "upperLipJoint6_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.00745,
+          -0.027865,
+          -0.002277
+        ]
+      },
+      {
+        "bone": "upperLipJoint6_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.006419,
+          -0.021166,
+          -0.001693
+        ]
+      },
+      {
+        "bone": "upperLipJoint7_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.005059,
+          -0.019875,
+          -0.001737
+        ]
+      },
+      {
+        "bone": "upperLipJoint7_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.00508,
+          -0.013883,
+          -0.001403
+        ]
+      },
+      {
+        "bone": "upperLipJoint8_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.002881,
+          -0.012624,
+          -0.001015
+        ]
+      },
+      {
+        "bone": "upperLipJoint8_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.003259,
+          -0.008035,
+          -0.000875
+        ]
+      },
+      {
+        "bone": "upperLipJoint9_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.001636,
+          -0.007819,
+          -0.000492
+        ]
+      },
+      {
+        "bone": "upperLipJoint9_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.001945,
+          -0.004598,
+          -0.000464
+        ]
+      },
+      {
+        "bone": "lowerLipJoint0_M",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.00905,
+          0.715212,
+          -0.610916
+        ]
+      },
+      {
+        "bone": "lowerLipJoint1_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.086427,
+          0.693345,
+          -0.583364
+        ]
+      },
+      {
+        "bone": "lowerLipJoint1_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.065828,
+          0.699536,
+          -0.589227
+        ]
+      },
+      {
+        "bone": "lowerLipJoint2_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.129934,
+          0.617033,
+          -0.504241
+        ]
+      },
+      {
+        "bone": "lowerLipJoint2_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.112062,
+          0.642168,
+          -0.528829
+        ]
+      },
+      {
+        "bone": "lowerLipJoint3_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.135989,
+          0.512484,
+          -0.405444
+        ]
+      },
+      {
+        "bone": "lowerLipJoint3_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.130389,
+          0.560828,
+          -0.448008
+        ]
+      },
+      {
+        "bone": "lowerLipJoint4_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.12268,
+          0.409296,
+          -0.313441
+        ]
+      },
+      {
+        "bone": "lowerLipJoint4_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.130051,
+          0.465396,
+          -0.359304
+        ]
+      },
+      {
+        "bone": "lowerLipJoint5_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.106397,
+          0.325673,
+          -0.239064
+        ]
+      },
+      {
+        "bone": "lowerLipJoint5_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.119523,
+          0.371983,
+          -0.276395
+        ]
+      },
+      {
+        "bone": "lowerLipJoint6_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.09124,
+          0.259383,
+          -0.178302
+        ]
+      },
+      {
+        "bone": "lowerLipJoint6_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.107236,
+          0.290425,
+          -0.203172
+        ]
+      },
+      {
+        "bone": "lowerLipJoint7_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.073109,
+          0.196935,
+          -0.123782
+        ]
+      },
+      {
+        "bone": "lowerLipJoint7_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.090194,
+          0.212615,
+          -0.133555
+        ]
+      },
+      {
+        "bone": "lowerLipJoint8_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.052544,
+          0.137652,
+          -0.079812
+        ]
+      },
+      {
+        "bone": "lowerLipJoint8_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.06512,
+          0.140635,
+          -0.07835
+        ]
+      },
+      {
+        "bone": "lowerLipJoint9_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.035018,
+          0.09054,
+          -0.049936
+        ]
+      },
+      {
+        "bone": "lowerLipJoint9_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.038054,
+          0.07884,
+          -0.040485
+        ]
+      },
+      {
+        "bone": "JawJoint_M",
+        "rotation": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "translation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "bone": "lowerTeethJoint_M",
+        "rotation": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "translation": [
+          -0.0,
+          0.473179,
+          -0.537645
+        ]
+      },
+      {
+        "bone": "Tongue0Joint_M",
+        "rotation": [
+          0.0,
+          6.0,
+          0.0
+        ],
+        "translation": [
+          -0.470978,
+          -0.394101,
+          0.0
+        ]
+      }
+    ],
+    "blink_left": [
+      {
+        "bone": "upperLidMain0_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.0,
+          0.013056,
+          -0.0
+        ]
+      },
+      {
+        "bone": "upperLidMain1_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.066103,
+          0.001809
+        ]
+      },
+      {
+        "bone": "upperLidMain2_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.157736,
+          0.007953
+        ]
+      },
+      {
+        "bone": "upperLidMain3_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.310952,
+          0.020641
+        ]
+      },
+      {
+        "bone": "upperLidMain4_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.525382,
+          0.040167
+        ]
+      },
+      {
+        "bone": "upperLidMain5_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.731587,
+          0.059202
+        ]
+      },
+      {
+        "bone": "upperLidMain6_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.910583,
+          0.073613
+        ]
+      },
+      {
+        "bone": "upperLidMain7_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          1.042515,
+          0.079887
+        ]
+      },
+      {
+        "bone": "upperLidMain8_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          1.027982,
+          0.077579
+        ]
+      },
+      {
+        "bone": "upperLidMain9_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.923561,
+          0.068635
+        ]
+      },
+      {
+        "bone": "upperLidMain10_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.771118,
+          0.055696
+        ]
+      },
+      {
+        "bone": "upperLidMain11_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.607792,
+          0.041658
+        ]
+      },
+      {
+        "bone": "upperLidMain12_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.439462,
+          0.028434
+        ]
+      },
+      {
+        "bone": "upperLidMain13_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.283386,
+          0.016562
+        ]
+      },
+      {
+        "bone": "upperLidMain14_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.156896,
+          0.006519
+        ]
+      },
+      {
+        "bone": "upperLidMain15_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.082111,
+          0.07033
+        ]
+      },
+      {
+        "bone": "upperLidMain16_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.027731,
+          0.084703
+        ]
+      },
+      {
+        "bone": "lowerLidMain1_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.033639,
+          0.041058
+        ]
+      },
+      {
+        "bone": "lowerLidMain2_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.068306,
+          0.062152
+        ]
+      },
+      {
+        "bone": "lowerLidMain3_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.114249,
+          0.090309
+        ]
+      },
+      {
+        "bone": "lowerLidMain4_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.175625,
+          0.143639
+        ]
+      },
+      {
+        "bone": "lowerLidMain5_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.230269,
+          0.196731
+        ]
+      },
+      {
+        "bone": "lowerLidMain6_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.273698,
+          0.222333
+        ]
+      },
+      {
+        "bone": "lowerLidMain7_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.299435,
+          0.24287
+        ]
+      },
+      {
+        "bone": "lowerLidMain8_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.275876,
+          0.220152
+        ]
+      },
+      {
+        "bone": "lowerLidMain9_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.233938,
+          0.167519
+        ]
+      },
+      {
+        "bone": "lowerLidMain10_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.18763,
+          0.129746
+        ]
+      },
+      {
+        "bone": "lowerLidMain11_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.140447,
+          0.093833
+        ]
+      },
+      {
+        "bone": "lowerLidMain12_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.097499,
+          0.055213
+        ]
+      },
+      {
+        "bone": "lowerLidMain13_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.062213,
+          0.020718
+        ]
+      },
+      {
+        "bone": "lowerLidMain14_L",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.033857,
+          0.003996
+        ]
+      }
+    ],
+    "blink_right": [
+      {
+        "bone": "upperLidMain0_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          0.0,
+          0.022637,
+          -0.0
+        ]
+      },
+      {
+        "bone": "upperLidMain1_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.079695,
+          0.002331
+        ]
+      },
+      {
+        "bone": "upperLidMain2_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.168763,
+          0.008411
+        ]
+      },
+      {
+        "bone": "upperLidMain3_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.311635,
+          0.021087
+        ]
+      },
+      {
+        "bone": "upperLidMain4_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.510397,
+          0.039438
+        ]
+      },
+      {
+        "bone": "upperLidMain5_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.712528,
+          0.058583
+        ]
+      },
+      {
+        "bone": "upperLidMain6_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.902404,
+          0.073394
+        ]
+      },
+      {
+        "bone": "upperLidMain7_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          1.043478,
+          0.079862
+        ]
+      },
+      {
+        "bone": "upperLidMain8_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          1.014937,
+          0.077777
+        ]
+      },
+      {
+        "bone": "upperLidMain9_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.922525,
+          0.069187
+        ]
+      },
+      {
+        "bone": "upperLidMain10_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.785625,
+          0.056328
+        ]
+      },
+      {
+        "bone": "upperLidMain11_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.62467,
+          0.04203
+        ]
+      },
+      {
+        "bone": "upperLidMain12_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.453606,
+          0.028397
+        ]
+      },
+      {
+        "bone": "upperLidMain13_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.29727,
+          0.01634
+        ]
+      },
+      {
+        "bone": "upperLidMain14_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.156493,
+          0.006252
+        ]
+      },
+      {
+        "bone": "upperLidMain15_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.081897,
+          0.072611
+        ]
+      },
+      {
+        "bone": "upperLidMain16_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          0.03123,
+          0.085819
+        ]
+      },
+      {
+        "bone": "lowerLidMain1_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.032478,
+          0.037999
+        ]
+      },
+      {
+        "bone": "lowerLidMain2_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.065571,
+          0.069197
+        ]
+      },
+      {
+        "bone": "lowerLidMain3_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.11031,
+          0.119448
+        ]
+      },
+      {
+        "bone": "lowerLidMain4_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.17119,
+          0.189772
+        ]
+      },
+      {
+        "bone": "lowerLidMain5_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.227796,
+          0.227457
+        ]
+      },
+      {
+        "bone": "lowerLidMain6_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.272082,
+          0.246619
+        ]
+      },
+      {
+        "bone": "lowerLidMain7_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.295803,
+          0.258409
+        ]
+      },
+      {
+        "bone": "lowerLidMain8_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.273604,
+          0.232154
+        ]
+      },
+      {
+        "bone": "lowerLidMain9_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.235882,
+          0.175125
+        ]
+      },
+      {
+        "bone": "lowerLidMain10_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.191238,
+          0.144046
+        ]
+      },
+      {
+        "bone": "lowerLidMain11_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.144079,
+          0.113559
+        ]
+      },
+      {
+        "bone": "lowerLidMain12_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.102585,
+          0.077263
+        ]
+      },
+      {
+        "bone": "lowerLidMain13_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.066348,
+          0.037537
+        ]
+      },
+      {
+        "bone": "lowerLidMain14_R",
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "translation": [
+          -0.0,
+          -0.034471,
+          0.006621
+        ]
+      }
+    ]
+  },
+  "motion_mode": "procedural",
+  "kind": "maya_fbx",
+  "engine": "4.27.2",
+  "actor_class": "/Script/HoloKiosk.KioskCharacter",
+  "skeletal_mesh": "/Game/CharacterPreviews/girl008_preview_v1/SK_girl008_textured_v1.SK_girl008_textured_v1",
+  "animations": {},
+  "mesh_yaw": -90,
+  "mesh_scale": 1,
+  "preview_audio": "../assets/calibration-speech-v1.wav",
+  "preview_jaw": 0,
+  "preview_blink": -1,
+  "preview_camera_distance": 350,
+  "preview_camera_height": 90,
+  "preview_autoplay": false,
+  "body_bones": [
+    {
+      "bone": "Shoulder_L",
+      "rotation": [
+        -76.379025,
+        -22.617809,
+        17.879942
+      ],
+      "idle": [
+        -0.249719,
+        -7e-06,
+        -0.011849
+      ],
+      "speaking": [
+        -2.197527,
+        0.001714,
+        -0.104319
+      ],
+      "phase": 0
+    },
+    {
+      "bone": "Shoulder_R",
+      "rotation": [
+        -76.379117,
+        -22.617932,
+        17.880054
+      ],
+      "idle": [
+        0.249719,
+        5.8e-05,
+        0.011849
+      ],
+      "speaking": [
+        2.197526,
+        0.002288,
+        0.10433
+      ],
+      "phase": 1.7
+    },
+    {
+      "bone": "Spine1_M",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "idle": [
+        0.0,
+        0.25,
+        0.0
+      ],
+      "speaking": [
+        0.0,
+        0.6,
+        0.0
+      ],
+      "phase": 0.5
+    },
+    {
+      "bone": "Chest_M",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "idle": [
+        0.0,
+        0.35,
+        0.0
+      ],
+      "speaking": [
+        0.0,
+        0.75,
+        0.0
+      ],
+      "phase": 0
+    },
+    {
+      "bone": "Head_M",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "idle": [
+        0.0,
+        0.25,
+        0.0
+      ],
+      "speaking": [
+        0.0,
+        1.2,
+        0.0
+      ],
+      "phase": 1.1
+    }
+  ]
+}

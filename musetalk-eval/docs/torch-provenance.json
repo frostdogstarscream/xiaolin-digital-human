@@ -1,0 +1,13 @@
+{
+  "method": "independent physical copy of installed CUDA 12.8 packages; no symlinks or hardlinks",
+  "source": "D:\\Code\\3D\u6570\u5b57\u4eba\\avatar-2d\\.venv\\Lib\\site-packages",
+  "packages": [
+    "torch",
+    "torchgen",
+    "torchvision",
+    "torchaudio",
+    "torch-2.9.1+cu128.dist-info",
+    "torchvision-0.24.1+cu128.dist-info",
+    "torchaudio-2.9.1+cu128.dist-info"
+  ]
+}

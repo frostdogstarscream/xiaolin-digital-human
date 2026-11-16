@@ -1,0 +1,247 @@
+{
+  "dependencies": {
+    "com.cysharp.unitask": {
+      "version": "file:com.cysharp.unitask",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.unity.burst": {
+      "version": "file:com.unity.burst",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      }
+    },
+    "com.unity.collections": {
+      "version": "file:com.unity.collections",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.burst": "1.8.17",
+        "com.unity.nuget.mono-cecil": "1.11.4",
+        "com.unity.test-framework": "1.4.5",
+        "com.unity.test-framework.performance": "3.0.3"
+      }
+    },
+    "com.unity.ext.nunit": {
+      "version": "file:com.unity.ext.nunit",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.unity.mathematics": {
+      "version": "file:com.unity.mathematics",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.unity.nuget.mono-cecil": {
+      "version": "file:com.unity.nuget.mono-cecil",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "file:com.unity.nuget.newtonsoft-json",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.unity.test-framework": {
+      "version": "file:com.unity.test-framework",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.ext.nunit": "2.0.3",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      }
+    },
+    "com.unity.test-framework.performance": {
+      "version": "file:com.unity.test-framework.performance",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.test-framework": "1.1.31",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      }
+    },
+    "com.unity.timeline": {
+      "version": "file:com.unity.timeline",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.modules.director": "1.0.0",
+        "com.unity.modules.animation": "1.0.0",
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.particlesystem": "1.0.0"
+      }
+    },
+    "com.unity.ugui": {
+      "version": "2.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0"
+      }
+    },
+    "com.vrmc.gltf": {
+      "version": "file:com.vrmc.gltf",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.modules.animation": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0",
+        "com.unity.test-framework": "1.4.6",
+        "com.unity.mathematics": "1.2.6"
+      }
+    },
+    "com.vrmc.univrm": {
+      "version": "file:com.vrmc.univrm",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.vrmc.gltf": "0.131.4",
+        "com.unity.ugui": "1.0.0"
+      }
+    },
+    "com.vrmc.vrm": {
+      "version": "file:com.vrmc.vrm",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.timeline": "1.7.6",
+        "com.vrmc.gltf": "0.131.4"
+      }
+    },
+    "com.unity.modules.animation": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.audio": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.cloth": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.physics": "1.0.0"
+      }
+    },
+    "com.unity.modules.director": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.animation": "1.0.0"
+      }
+    },
+    "com.unity.modules.hierarchycore": {
+      "version": "1.0.0",
+      "depth": 1,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.imageconversion": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.imgui": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.jsonserialize": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.particlesystem": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.physics": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.screencapture": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.imageconversion": "1.0.0"
+      }
+    },
+    "com.unity.modules.ui": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.uielements": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.hierarchycore": "1.0.0"
+      }
+    },
+    "com.unity.modules.unitywebrequest": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.unitywebrequestaudio": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.audio": "1.0.0"
+      }
+    },
+    "com.unity.modules.unitywebrequesttexture": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0"
+      }
+    },
+    "com.unity.modules.video": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
+        "com.unity.modules.ui": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0"
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,10,2",
+  "title": "xmov在线模型",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=K95swHItqiOFSIkqlFIcZL7Nn6e",
+  "x": 62,
+  "y": -269.5,
+  "token": "K95swHItqiOFSIkqlFIcZL7Nn6e",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/K95swHItqiOFSIkqlFIcZL7Nn6e",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 4,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://gitee.com/xszyou/officeecho",
+          "text": "https://gitee.com/xszyou/officeecho"
+        }
+      ],
+      "text": "模型sdk : https://gitee.com/xszyou/officeecho",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [],
+      "text": "可以快速与Fay对接，直接调用，本地无算力要求。",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [],
+      "text": "邀请码：JUCAEKF55F（使用邀请码注册，10倍积分）",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://sl.fay-agent.com/6LAzf",
+          "text": "https://sl.fay-agent.com/6LAzf"
+        }
+      ],
+      "text": "魔珐星云官网：https://sl.fay-agent.com/6LAzf",
+      "type": "block docx-text-block"
+    },
+    {
+      "id": "6",
+      "images": 2,
+      "links": [],
+      "text": "\n",
+      "type": "block docx-image-block"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 134,
+  "captured_at": "2026-11-03T10:42:05.535Z"
+}

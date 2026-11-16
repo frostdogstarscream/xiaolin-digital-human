@@ -1,0 +1,204 @@
+{
+  "collapsed": false,
+  "level": 3,
+  "position": "0,12,1",
+  "title": "常见问题",
+  "uid": "firstLevelWikiToken=JzMJw7AghiO8eHktMwlcxznenIg&level=3&rootNodeId=TOC-ROOT&wikiToken=MoWwwZEx0iBpY5kw7zOcaBAnncd",
+  "x": 62,
+  "y": 522.5,
+  "token": "MoWwwZEx0iBpY5kw7zOcaBAnncd",
+  "url": "https://qqk9ntwbcit.feishu.cn/wiki/MoWwwZEx0iBpY5kw7zOcaBAnncd",
+  "status": "TEXT_CAPTURED_TO_END",
+  "scroll_samples": 2,
+  "blocks": [
+    {
+      "id": "2",
+      "images": 0,
+      "links": [],
+      "text": "\n“[!]语音未检测到内容！”如何解决？\n替换自己的 metahuman 角色材质加载不出来怎么办？\n用 pycharm 启动，连接 ue5 数字人，数字人没反应\nue打包错误解决方法\n如何让最小化的UE也保持运行\nFay数字人NLP的选择：如何提高响应速度？如何管理知识库？\nOMP: Error #15: Initializing libomp140.x86_64.dll, but found libiomp5md.dll already initialized.\n百度情感分析接入\nmac上安装pyaudio失败\nUE5.0如何去掉开场广告\n Could not load the Qt platform plugin \"xcb\"...\nfunasr热词接入\nhttp验证用户配置\nhuggingface无法访问\n",
+      "type": "block docx-fallback-block fallback-async-synced_source fallback-async-align-left"
+    },
+    {
+      "id": "3",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/GHf9wVeXsiRqXNk9cXtcnpqonmc",
+          "text": "“[!]语音未检测到内容！”如何解决？"
+        }
+      ],
+      "text": "\n“[!]语音未检测到内容！”如何解决？",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "4",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/SyicwMyhni7jFBkY8tlcN2OsnZc",
+          "text": "替换自己的 metahuman 角色材质加载不出来怎么办？"
+        }
+      ],
+      "text": "\n替换自己的 metahuman 角色材质加载不出来怎么办？",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "5",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/S38JwhQxuiEkc9kEqgycwAVhnEd",
+          "text": "用 pycharm 启动，连接 ue5 数字人，数字人没反应"
+        }
+      ],
+      "text": "\n用 pycharm 启动，连接 ue5 数字人，数字人没反应",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "6",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/KqLfwaUeXi7FEGkunuycYg8unfe",
+          "text": "ue打包错误解决方法"
+        }
+      ],
+      "text": "\nue打包错误解决方法",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "7",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/AG06wXzMoiF02LkeCn4colSyn4d",
+          "text": "如何让最小化的UE也保持运行"
+        }
+      ],
+      "text": "\n如何让最小化的UE也保持运行",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "8",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/Tz4dw6LMUidnqhkv0cvc4FZCnld",
+          "text": "Fay数字人NLP的选择：如何提高响应速度？如何管理知识库？"
+        }
+      ],
+      "text": "\nFay数字人NLP的选择：如何提高响应速度？如何管理知识库？",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "9",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/IVUQwJ04sioRq5koiZqcyO4pnpc",
+          "text": "OMP: Error #15: Initializing libomp140.x86_64.dll, but found libiomp5md.dll already initialized."
+        }
+      ],
+      "text": "\nOMP: Error #15: Initializing libomp140.x86_64.dll, but found libiomp5md.dll already initialized.",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "10",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/WnhywbzPniSSHVkDy9Mcb1QqnPe",
+          "text": "百度情感分析接入"
+        }
+      ],
+      "text": "百度情感分析接入",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "11",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/DivDwgPsSi1WYkkGaNZca9lYn2f",
+          "text": "mac上安装pyaudio失败"
+        }
+      ],
+      "text": "\nmac上安装pyaudio失败",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "12",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/G7Mmwu15OiBpy0klT8icceYznWe",
+          "text": "UE5.0如何去掉开场广告"
+        }
+      ],
+      "text": "\nUE5.0如何去掉开场广告",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "13",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/N2stwVAKNiJZSxkn2xVcyMA9nMb",
+          "text": " Could not load the Qt platform plugin \"xcb\"..."
+        }
+      ],
+      "text": "\n Could not load the Qt platform plugin \"xcb\"...",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "14",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/YatfwG8asimkkqkzEU3cxZU6nfb",
+          "text": "funasr热词接入"
+        }
+      ],
+      "text": "\nfunasr热词接入",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "15",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/EKsOwkLpeix5zbkkOnyc4cupnRc",
+          "text": "http验证用户配置"
+        }
+      ],
+      "text": "\nhttp验证用户配置",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "16",
+      "images": 0,
+      "links": [
+        {
+          "href": "https://qqk9ntwbcit.feishu.cn/wiki/SVY1wdMpLigBULkSabcc9th6nIf",
+          "text": "huggingface无法访问"
+        }
+      ],
+      "text": "\nhuggingface无法访问",
+      "type": "block docx-heading3-block synced-source-render-unit"
+    },
+    {
+      "id": "17",
+      "images": 0,
+      "links": [],
+      "text": "",
+      "type": "block docx-text-block isEmpty"
+    }
+  ],
+  "chars": 720,
+  "last_scroll": {
+    "top": 536,
+    "height": 656,
+    "total": 1193
+  },
+  "captured_at": "2026-11-03T10:44:52.078Z"
+}

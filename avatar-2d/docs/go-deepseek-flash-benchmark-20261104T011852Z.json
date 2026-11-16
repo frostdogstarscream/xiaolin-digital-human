@@ -1,0 +1,2123 @@
+{
+  "started_utc": "20261104T011852Z",
+  "endpoint": "https://opencode.ai/inference/go/openai/v1",
+  "system_prompt": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。",
+  "scope": "Direct streaming LLM; no ASR, Fay orchestration, TTS or RTC",
+  "schedule": "Five identical questions from previous Flash benchmark; sequential calls; rotated case order; fresh session each round shared by cases",
+  "max_requests": 15,
+  "retries": 0,
+  "config_sha256_before": "a9343bee31b3e98254f8096a6f279aca6432ce108c26a1c3ae9b521a79dc1c96",
+  "results": [
+    {
+      "case": "deepseek-low",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "low"
+      },
+      "round": 1,
+      "question": "你好，小霖，请介绍一下你自己。",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "你好，小霖，请介绍一下你自己。"
+          }
+        ],
+        "reasoning_effort": "low"
+      },
+      "events": [
+        {
+          "ms": 5457.65,
+          "text": "你好，"
+        },
+        {
+          "ms": 5467.98,
+          "text": "我是数字人"
+        },
+        {
+          "ms": 5495.2,
+          "text": "讲解员小霖"
+        },
+        {
+          "ms": 5516.71,
+          "text": "，可以陪你了解"
+        },
+        {
+          "ms": 5560.49,
+          "text": "知识、解答疑问"
+        },
+        {
+          "ms": 5586.13,
+          "text": "并带来"
+        },
+        {
+          "ms": 5612.54,
+          "text": "清晰自然的讲解服务"
+        },
+        {
+          "ms": 5627.51,
+          "text": "。我会"
+        },
+        {
+          "ms": 5657.59,
+          "text": "用亲切易懂"
+        },
+        {
+          "ms": 5677.43,
+          "text": "的方式和你"
+        },
+        {
+          "ms": 5701.79,
+          "text": "交流，让"
+        },
+        {
+          "ms": 5740.98,
+          "text": "每次介绍都更轻松"
+        },
+        {
+          "ms": 5747.88,
+          "text": "顺畅。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 89,
+        "completion_tokens": 462,
+        "total_tokens": 551,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 420
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 0.0005811,
+          "allowance": 0.00034866,
+          "tokens": {
+            "input": 89,
+            "output": 462,
+            "reasoning": 420,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 2405.6,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_reasoning_ms": 2405.67,
+      "first_content_ms": 5457.65,
+      "chars20_ms": 5516.71,
+      "tts_buffer_ms": 5516.71,
+      "first_sentence_ms": 5627.51,
+      "finish_reason": "stop",
+      "total_ms": 5768.62,
+      "reply": "你好，我是数字人讲解员小霖，可以陪你了解知识、解答疑问并带来清晰自然的讲解服务。我会用亲切易懂的方式和你交流，让每次介绍都更轻松顺畅。",
+      "reply_chars": 67,
+      "reasoning_chars": 633,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-off-none",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "none"
+      },
+      "round": 1,
+      "question": "你好，小霖，请介绍一下你自己。",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "你好，小霖，请介绍一下你自己。"
+          }
+        ],
+        "reasoning_effort": "none"
+      },
+      "events": [
+        {
+          "ms": 879.85,
+          "text": "你好"
+        },
+        {
+          "ms": 892.52,
+          "text": "呀"
+        },
+        {
+          "ms": 907.56,
+          "text": "，我是数字"
+        },
+        {
+          "ms": 936.62,
+          "text": "人讲解员小霖，"
+        },
+        {
+          "ms": 952.02,
+          "text": "很高兴"
+        },
+        {
+          "ms": 1008.22,
+          "text": "能"
+        },
+        {
+          "ms": 1025.21,
+          "text": "在这里和你用"
+        },
+        {
+          "ms": 1053.54,
+          "text": "声音"
+        },
+        {
+          "ms": 1079.99,
+          "text": "交流"
+        },
+        {
+          "ms": 1094.75,
+          "text": "。我会"
+        },
+        {
+          "ms": 1120.4,
+          "text": "用自然"
+        },
+        {
+          "ms": 1141.01,
+          "text": "亲切的语气为你"
+        },
+        {
+          "ms": 1158.88,
+          "text": "讲解各种"
+        },
+        {
+          "ms": 1208.2,
+          "text": "内容，希望能"
+        },
+        {
+          "ms": 1214.53,
+          "text": "帮到你。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 64,
+        "completion_tokens": 34,
+        "total_tokens": 98,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 6e-05,
+          "allowance": 3.6e-05,
+          "tokens": {
+            "input": 64,
+            "output": 34,
+            "reasoning": 0,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 879.8,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_content_ms": 879.85,
+      "chars20_ms": 1025.21,
+      "tts_buffer_ms": 1025.21,
+      "first_sentence_ms": 1094.75,
+      "finish_reason": "stop",
+      "total_ms": 1253.32,
+      "reply": "你好呀，我是数字人讲解员小霖，很高兴能在这里和你用声音交流。我会用自然亲切的语气为你讲解各种内容，希望能帮到你。",
+      "reply_chars": 56,
+      "reasoning_chars": 0,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-off-low",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "low",
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "round": 1,
+      "question": "你好，小霖，请介绍一下你自己。",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "你好，小霖，请介绍一下你自己。"
+          }
+        ],
+        "reasoning_effort": "low",
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "events": [
+        {
+          "ms": 903.02,
+          "text": "我是"
+        },
+        {
+          "ms": 903.04,
+          "text": "数字人讲解"
+        },
+        {
+          "ms": 903.05,
+          "text": "员小霖，很高兴"
+        },
+        {
+          "ms": 922.11,
+          "text": "能"
+        },
+        {
+          "ms": 944.71,
+          "text": "为你提供"
+        },
+        {
+          "ms": 967.35,
+          "text": "讲解服务。"
+        },
+        {
+          "ms": 995.27,
+          "text": "我会"
+        },
+        {
+          "ms": 1013.19,
+          "text": "用自然"
+        },
+        {
+          "ms": 1050.2,
+          "text": "亲切的语言"
+        },
+        {
+          "ms": 1068.62,
+          "text": "，"
+        },
+        {
+          "ms": 1093.0,
+          "text": "陪你"
+        },
+        {
+          "ms": 1123.97,
+          "text": "轻松"
+        },
+        {
+          "ms": 1153.6,
+          "text": "了解各种"
+        },
+        {
+          "ms": 1183.3,
+          "text": "内容。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 64,
+        "completion_tokens": 28,
+        "total_tokens": 92,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 5.28e-05,
+          "allowance": 3.168e-05,
+          "tokens": {
+            "input": 64,
+            "output": 28,
+            "reasoning": 0,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 902.97,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_content_ms": 903.02,
+      "chars20_ms": 967.35,
+      "first_sentence_ms": 967.35,
+      "tts_buffer_ms": 967.35,
+      "finish_reason": "stop",
+      "total_ms": 1190.55,
+      "reply": "我是数字人讲解员小霖，很高兴能为你提供讲解服务。我会用自然亲切的语言，陪你轻松了解各种内容。",
+      "reply_chars": 46,
+      "reasoning_chars": 0,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-off-none",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "none"
+      },
+      "round": 2,
+      "question": "参观时应该注意哪些基本礼仪？",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "参观时应该注意哪些基本礼仪？"
+          }
+        ],
+        "reasoning_effort": "none"
+      },
+      "events": [
+        {
+          "ms": 702.33,
+          "text": "参观"
+        },
+        {
+          "ms": 734.34,
+          "text": "时"
+        },
+        {
+          "ms": 742.98,
+          "text": "请保持安静"
+        },
+        {
+          "ms": 760.55,
+          "text": "并"
+        },
+        {
+          "ms": 775.31,
+          "text": "尊重展"
+        },
+        {
+          "ms": 790.42,
+          "text": "品"
+        },
+        {
+          "ms": 804.9,
+          "text": "，"
+        },
+        {
+          "ms": 828.32,
+          "text": "不要触摸"
+        },
+        {
+          "ms": 837.46,
+          "text": "或随意移动"
+        },
+        {
+          "ms": 858.51,
+          "text": "物品"
+        },
+        {
+          "ms": 876.4,
+          "text": "。遵守现场"
+        },
+        {
+          "ms": 880.61,
+          "text": "指引和"
+        },
+        {
+          "ms": 905.8,
+          "text": "拍照"
+        },
+        {
+          "ms": 927.25,
+          "text": "规定"
+        },
+        {
+          "ms": 936.91,
+          "text": "，共同"
+        },
+        {
+          "ms": 952.65,
+          "text": "维护良好的"
+        },
+        {
+          "ms": 966.35,
+          "text": "参观环境"
+        },
+        {
+          "ms": 996.87,
+          "text": "。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 63,
+        "completion_tokens": 31,
+        "total_tokens": 94,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 5.61e-05,
+          "allowance": 3.366e-05,
+          "tokens": {
+            "input": 63,
+            "output": 31,
+            "reasoning": 0,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 694.71,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_content_ms": 702.33,
+      "chars20_ms": 837.46,
+      "tts_buffer_ms": 837.46,
+      "first_sentence_ms": 876.4,
+      "finish_reason": "stop",
+      "total_ms": 996.95,
+      "reply": "参观时请保持安静并尊重展品，不要触摸或随意移动物品。遵守现场指引和拍照规定，共同维护良好的参观环境。",
+      "reply_chars": 50,
+      "reasoning_chars": 0,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-off-low",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "low",
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "round": 2,
+      "question": "参观时应该注意哪些基本礼仪？",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "参观时应该注意哪些基本礼仪？"
+          }
+        ],
+        "reasoning_effort": "low",
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "events": [
+        {
+          "ms": 776.01,
+          "text": "参观"
+        },
+        {
+          "ms": 807.23,
+          "text": "时"
+        },
+        {
+          "ms": 832.01,
+          "text": "请保持安静"
+        },
+        {
+          "ms": 845.17,
+          "text": "并"
+        },
+        {
+          "ms": 855.8,
+          "text": "遵守现场"
+        },
+        {
+          "ms": 874.65,
+          "text": "指引"
+        },
+        {
+          "ms": 890.77,
+          "text": "，不要"
+        },
+        {
+          "ms": 907.26,
+          "text": "触摸"
+        },
+        {
+          "ms": 932.22,
+          "text": "展"
+        },
+        {
+          "ms": 945.66,
+          "text": "品或越过"
+        },
+        {
+          "ms": 956.16,
+          "text": "防护"
+        },
+        {
+          "ms": 984.57,
+          "text": "区域。尊重其他"
+        },
+        {
+          "ms": 986.71,
+          "text": "观众的"
+        },
+        {
+          "ms": 1016.84,
+          "text": "体验"
+        },
+        {
+          "ms": 1024.42,
+          "text": "，拍照"
+        },
+        {
+          "ms": 1036.61,
+          "text": "前"
+        },
+        {
+          "ms": 1058.49,
+          "text": "先"
+        },
+        {
+          "ms": 1072.04,
+          "text": "确认是否"
+        },
+        {
+          "ms": 1088.89,
+          "text": "允许并"
+        },
+        {
+          "ms": 1105.68,
+          "text": "关闭"
+        },
+        {
+          "ms": 1135.66,
+          "text": "闪光灯。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 63,
+        "completion_tokens": 36,
+        "total_tokens": 99,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 6.21e-05,
+          "allowance": 3.726e-05,
+          "tokens": {
+            "input": 63,
+            "output": 36,
+            "reasoning": 0,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 774.05,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_content_ms": 776.01,
+      "chars20_ms": 907.26,
+      "tts_buffer_ms": 907.26,
+      "first_sentence_ms": 984.57,
+      "finish_reason": "stop",
+      "total_ms": 1135.73,
+      "reply": "参观时请保持安静并遵守现场指引，不要触摸展品或越过防护区域。尊重其他观众的体验，拍照前先确认是否允许并关闭闪光灯。",
+      "reply_chars": 57,
+      "reasoning_chars": 0,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-low",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "low"
+      },
+      "round": 2,
+      "question": "参观时应该注意哪些基本礼仪？",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "参观时应该注意哪些基本礼仪？"
+          }
+        ],
+        "reasoning_effort": "low"
+      },
+      "events": [
+        {
+          "ms": 2520.2,
+          "text": "参观"
+        },
+        {
+          "ms": 2534.74,
+          "text": "时请保持安静并"
+        },
+        {
+          "ms": 2557.72,
+          "text": "尊重展品，不"
+        },
+        {
+          "ms": 2574.36,
+          "text": "触摸展品、"
+        },
+        {
+          "ms": 2594.33,
+          "text": "不越过防护"
+        },
+        {
+          "ms": 2613.08,
+          "text": "线，也请听从现场"
+        },
+        {
+          "ms": 2632.01,
+          "text": "工作人员引导。拍照前先"
+        },
+        {
+          "ms": 2653.07,
+          "text": "确认是否允许，垃圾随身"
+        },
+        {
+          "ms": 2678.35,
+          "text": "带走，让每个人都能舒适"
+        },
+        {
+          "ms": 2706.66,
+          "text": "观展。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 88,
+        "completion_tokens": 416,
+        "total_tokens": 504,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 369
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 0.0005256,
+          "allowance": 0.00031536,
+          "tokens": {
+            "input": 88,
+            "output": 416,
+            "reasoning": 369,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 858.79,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_reasoning_ms": 862.39,
+      "first_content_ms": 2520.2,
+      "chars20_ms": 2574.36,
+      "tts_buffer_ms": 2574.36,
+      "first_sentence_ms": 2632.01,
+      "finish_reason": "stop",
+      "total_ms": 2706.74,
+      "reply": "参观时请保持安静并尊重展品，不触摸展品、不越过防护线，也请听从现场工作人员引导。拍照前先确认是否允许，垃圾随身带走，让每个人都能舒适观展。",
+      "reply_chars": 69,
+      "reasoning_chars": 555,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-off-low",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "low",
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "round": 3,
+      "question": "我只有十分钟，应该怎样安排参观？",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "我只有十分钟，应该怎样安排参观？"
+          }
+        ],
+        "reasoning_effort": "low",
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "events": [
+        {
+          "ms": 874.73,
+          "text": "建议"
+        },
+        {
+          "ms": 915.19,
+          "text": "您"
+        },
+        {
+          "ms": 935.26,
+          "text": "先快速"
+        },
+        {
+          "ms": 960.12,
+          "text": "浏览核心"
+        },
+        {
+          "ms": 960.16,
+          "text": "展区，抓住"
+        },
+        {
+          "ms": 993.12,
+          "text": "重点"
+        },
+        {
+          "ms": 1008.55,
+          "text": "展品了解"
+        },
+        {
+          "ms": 1032.66,
+          "text": "主线"
+        },
+        {
+          "ms": 1045.31,
+          "text": "内容"
+        },
+        {
+          "ms": 1053.83,
+          "text": "；剩余"
+        },
+        {
+          "ms": 1071.7,
+          "text": "时间可"
+        },
+        {
+          "ms": 1094.39,
+          "text": "挑选"
+        },
+        {
+          "ms": 1102.94,
+          "text": "一"
+        },
+        {
+          "ms": 1117.35,
+          "text": "两个感兴趣的亮点"
+        },
+        {
+          "ms": 1141.87,
+          "text": "细"
+        },
+        {
+          "ms": 1154.88,
+          "text": "看，避免贪"
+        },
+        {
+          "ms": 1177.11,
+          "text": "多走"
+        },
+        {
+          "ms": 1188.59,
+          "text": "马"
+        },
+        {
+          "ms": 1211.57,
+          "text": "观花。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 64,
+        "completion_tokens": 37,
+        "total_tokens": 101,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 6.36e-05,
+          "allowance": 3.816e-05,
+          "tokens": {
+            "input": 64,
+            "output": 37,
+            "reasoning": 0,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 874.68,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_content_ms": 874.73,
+      "chars20_ms": 1008.55,
+      "tts_buffer_ms": 1008.55,
+      "first_sentence_ms": 1053.83,
+      "finish_reason": "stop",
+      "total_ms": 1211.64,
+      "reply": "建议您先快速浏览核心展区，抓住重点展品了解主线内容；剩余时间可挑选一两个感兴趣的亮点细看，避免贪多走马观花。",
+      "reply_chars": 54,
+      "reasoning_chars": 0,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-low",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "low"
+      },
+      "round": 3,
+      "question": "我只有十分钟，应该怎样安排参观？",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "我只有十分钟，应该怎样安排参观？"
+          }
+        ],
+        "reasoning_effort": "low"
+      },
+      "events": [
+        {
+          "ms": 2889.44,
+          "text": "您可以"
+        },
+        {
+          "ms": 2907.6,
+          "text": "先在入口查看"
+        },
+        {
+          "ms": 2923.71,
+          "text": "导览图，锁定"
+        },
+        {
+          "ms": 2938.35,
+          "text": "最感兴趣的一两处核心"
+        },
+        {
+          "ms": 2959.0,
+          "text": "展区，再用"
+        },
+        {
+          "ms": 2978.98,
+          "text": "余下"
+        },
+        {
+          "ms": 2994.84,
+          "text": "时间快速浏览其他"
+        },
+        {
+          "ms": 3016.75,
+          "text": "部分。最后"
+        },
+        {
+          "ms": 3034.37,
+          "text": "记得提前两分钟回到"
+        },
+        {
+          "ms": 3070.67,
+          "text": "出口，避免因留恋"
+        },
+        {
+          "ms": 3083.37,
+          "text": "展项而"
+        },
+        {
+          "ms": 3104.56,
+          "text": "耽误后续安排。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 89,
+        "completion_tokens": 418,
+        "total_tokens": 507,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 371
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 0.0005283,
+          "allowance": 0.00031698,
+          "tokens": {
+            "input": 89,
+            "output": 418,
+            "reasoning": 371,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 653.6,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_reasoning_ms": 653.65,
+      "first_content_ms": 2889.44,
+      "chars20_ms": 2938.35,
+      "tts_buffer_ms": 2938.35,
+      "first_sentence_ms": 3016.75,
+      "finish_reason": "stop",
+      "total_ms": 3104.64,
+      "reply": "您可以先在入口查看导览图，锁定最感兴趣的一两处核心展区，再用余下时间快速浏览其他部分。最后记得提前两分钟回到出口，避免因留恋展项而耽误后续安排。",
+      "reply_chars": 72,
+      "reasoning_chars": 565,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-off-none",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "none"
+      },
+      "round": 3,
+      "question": "我只有十分钟，应该怎样安排参观？",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "我只有十分钟，应该怎样安排参观？"
+          }
+        ],
+        "reasoning_effort": "none"
+      },
+      "events": [
+        {
+          "ms": 908.22,
+          "text": "建议"
+        },
+        {
+          "ms": 922.4,
+          "text": "您"
+        },
+        {
+          "ms": 940.05,
+          "text": "先快速"
+        },
+        {
+          "ms": 959.4,
+          "text": "浏览核心"
+        },
+        {
+          "ms": 982.12,
+          "text": "展区"
+        },
+        {
+          "ms": 999.27,
+          "text": "，把握"
+        },
+        {
+          "ms": 1008.31,
+          "text": "整体脉络"
+        },
+        {
+          "ms": 1029.46,
+          "text": "，再挑选"
+        },
+        {
+          "ms": 1045.7,
+          "text": "最"
+        },
+        {
+          "ms": 1064.73,
+          "text": "感兴趣的部分"
+        },
+        {
+          "ms": 1077.78,
+          "text": "重点"
+        },
+        {
+          "ms": 1093.54,
+          "text": "观看"
+        },
+        {
+          "ms": 1115.46,
+          "text": "。这样"
+        },
+        {
+          "ms": 1125.89,
+          "text": "十分钟"
+        },
+        {
+          "ms": 1144.71,
+          "text": "内既能"
+        },
+        {
+          "ms": 1157.38,
+          "text": "有所"
+        },
+        {
+          "ms": 1173.86,
+          "text": "了解"
+        },
+        {
+          "ms": 1191.78,
+          "text": "，又能留下"
+        },
+        {
+          "ms": 1207.88,
+          "text": "深刻"
+        },
+        {
+          "ms": 1233.34,
+          "text": "印象。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 64,
+        "completion_tokens": 34,
+        "total_tokens": 98,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 6e-05,
+          "allowance": 3.6e-05,
+          "tokens": {
+            "input": 64,
+            "output": 34,
+            "reasoning": 0,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 908.17,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_content_ms": 908.22,
+      "chars20_ms": 1029.46,
+      "tts_buffer_ms": 1029.46,
+      "first_sentence_ms": 1115.46,
+      "finish_reason": "stop",
+      "total_ms": 1233.41,
+      "reply": "建议您先快速浏览核心展区，把握整体脉络，再挑选最感兴趣的部分重点观看。这样十分钟内既能有所了解，又能留下深刻印象。",
+      "reply_chars": 57,
+      "reasoning_chars": 0,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-low",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "low"
+      },
+      "round": 4,
+      "question": "我有点听不清，你能用简单的话解释什么是数字人吗？",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "我有点听不清，你能用简单的话解释什么是数字人吗？"
+          }
+        ],
+        "reasoning_effort": "low"
+      },
+      "events": [
+        {
+          "ms": 2610.73,
+          "text": "数字"
+        },
+        {
+          "ms": 2627.15,
+          "text": "人就是电脑做"
+        },
+        {
+          "ms": 2642.48,
+          "text": "出来的虚拟形象，能"
+        },
+        {
+          "ms": 2651.49,
+          "text": "像真人一样说话、"
+        },
+        {
+          "ms": 2676.65,
+          "text": "做动作并和人"
+        },
+        {
+          "ms": 2692.49,
+          "text": "互动。你可以把它当成会"
+        },
+        {
+          "ms": 2706.57,
+          "text": "讲解、会回答问题的虚拟"
+        },
+        {
+          "ms": 2728.94,
+          "text": "助手。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 95,
+        "completion_tokens": 417,
+        "total_tokens": 512,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 382
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 0.0005289,
+          "allowance": 0.00031734,
+          "tokens": {
+            "input": 95,
+            "output": 417,
+            "reasoning": 382,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 790.74,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_reasoning_ms": 790.79,
+      "first_content_ms": 2610.73,
+      "chars20_ms": 2651.49,
+      "tts_buffer_ms": 2651.49,
+      "first_sentence_ms": 2692.49,
+      "finish_reason": "stop",
+      "total_ms": 2729.13,
+      "reply": "数字人就是电脑做出来的虚拟形象，能像真人一样说话、做动作并和人互动。你可以把它当成会讲解、会回答问题的虚拟助手。",
+      "reply_chars": 56,
+      "reasoning_chars": 560,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-off-none",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "none"
+      },
+      "round": 4,
+      "question": "我有点听不清，你能用简单的话解释什么是数字人吗？",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "我有点听不清，你能用简单的话解释什么是数字人吗？"
+          }
+        ],
+        "reasoning_effort": "none"
+      },
+      "events": [
+        {
+          "ms": 2089.52,
+          "text": "数字"
+        },
+        {
+          "ms": 2127.23,
+          "text": "人"
+        },
+        {
+          "ms": 2136.98,
+          "text": "就是电脑"
+        },
+        {
+          "ms": 2154.05,
+          "text": "做"
+        },
+        {
+          "ms": 2173.14,
+          "text": "出来的"
+        },
+        {
+          "ms": 2190.37,
+          "text": "虚拟形象，能"
+        },
+        {
+          "ms": 2207.87,
+          "text": "像真人"
+        },
+        {
+          "ms": 2226.99,
+          "text": "一样说话和"
+        },
+        {
+          "ms": 2249.95,
+          "text": "做"
+        },
+        {
+          "ms": 2266.06,
+          "text": "动作。你听到"
+        },
+        {
+          "ms": 2287.25,
+          "text": "的声音"
+        },
+        {
+          "ms": 2308.09,
+          "text": "和"
+        },
+        {
+          "ms": 2318.71,
+          "text": "看到的"
+        },
+        {
+          "ms": 2336.24,
+          "text": "画面都是"
+        },
+        {
+          "ms": 2359.95,
+          "text": "程序"
+        },
+        {
+          "ms": 2371.84,
+          "text": "生成的。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 70,
+        "completion_tokens": 29,
+        "total_tokens": 99,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 5.58e-05,
+          "allowance": 3.348e-05,
+          "tokens": {
+            "input": 70,
+            "output": 29,
+            "reasoning": 0,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 2089.46,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_content_ms": 2089.52,
+      "chars20_ms": 2207.87,
+      "tts_buffer_ms": 2207.87,
+      "first_sentence_ms": 2266.06,
+      "finish_reason": "stop",
+      "total_ms": 2371.9,
+      "reply": "数字人就是电脑做出来的虚拟形象，能像真人一样说话和做动作。你听到的声音和看到的画面都是程序生成的。",
+      "reply_chars": 49,
+      "reasoning_chars": 0,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-off-low",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "low",
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "round": 4,
+      "question": "我有点听不清，你能用简单的话解释什么是数字人吗？",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "我有点听不清，你能用简单的话解释什么是数字人吗？"
+          }
+        ],
+        "reasoning_effort": "low",
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "events": [
+        {
+          "ms": 877.13,
+          "text": "数字"
+        },
+        {
+          "ms": 908.57,
+          "text": "人"
+        },
+        {
+          "ms": 919.24,
+          "text": "就是用"
+        },
+        {
+          "ms": 942.6,
+          "text": "电脑做"
+        },
+        {
+          "ms": 957.94,
+          "text": "出来的虚拟"
+        },
+        {
+          "ms": 972.99,
+          "text": "形象，能"
+        },
+        {
+          "ms": 992.71,
+          "text": "像真人"
+        },
+        {
+          "ms": 1007.93,
+          "text": "一样说话和"
+        },
+        {
+          "ms": 1036.19,
+          "text": "做动作"
+        },
+        {
+          "ms": 1053.25,
+          "text": "。你可以"
+        },
+        {
+          "ms": 1055.61,
+          "text": "把它想"
+        },
+        {
+          "ms": 1077.63,
+          "text": "成一个会聊天"
+        },
+        {
+          "ms": 1097.44,
+          "text": "、会"
+        },
+        {
+          "ms": 1115.23,
+          "text": "讲解"
+        },
+        {
+          "ms": 1129.38,
+          "text": "的电子"
+        },
+        {
+          "ms": 1147.37,
+          "text": "帮手。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 70,
+        "completion_tokens": 32,
+        "total_tokens": 102,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 5.94e-05,
+          "allowance": 3.564e-05,
+          "tokens": {
+            "input": 70,
+            "output": 32,
+            "reasoning": 0,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 877.08,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_content_ms": 877.13,
+      "chars20_ms": 992.71,
+      "tts_buffer_ms": 992.71,
+      "first_sentence_ms": 1053.25,
+      "finish_reason": "stop",
+      "total_ms": 1152.31,
+      "reply": "数字人就是用电脑做出来的虚拟形象，能像真人一样说话和做动作。你可以把它想成一个会聊天、会讲解的电子帮手。",
+      "reply_chars": 52,
+      "reasoning_chars": 0,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-off-none",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "none"
+      },
+      "round": 5,
+      "question": "谢谢你的讲解，我准备离开了。",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "谢谢你的讲解，我准备离开了。"
+          }
+        ],
+        "reasoning_effort": "none"
+      },
+      "events": [
+        {
+          "ms": 1284.51,
+          "text": "感谢"
+        },
+        {
+          "ms": 1288.28,
+          "text": "您的"
+        },
+        {
+          "ms": 1341.46,
+          "text": "聆听"
+        },
+        {
+          "ms": 1360.8,
+          "text": "与"
+        },
+        {
+          "ms": 1389.14,
+          "text": "陪伴，希望"
+        },
+        {
+          "ms": 1389.18,
+          "text": "今天的"
+        },
+        {
+          "ms": 1447.7,
+          "text": "讲解能让"
+        },
+        {
+          "ms": 1468.16,
+          "text": "您有所"
+        },
+        {
+          "ms": 1504.66,
+          "text": "收获。祝您一路"
+        },
+        {
+          "ms": 1519.26,
+          "text": "顺利"
+        },
+        {
+          "ms": 1537.36,
+          "text": "，期待"
+        },
+        {
+          "ms": 1573.26,
+          "text": "未来"
+        },
+        {
+          "ms": 1583.58,
+          "text": "还能"
+        },
+        {
+          "ms": 1608.96,
+          "text": "有机会"
+        },
+        {
+          "ms": 1630.09,
+          "text": "为您"
+        },
+        {
+          "ms": 1648.76,
+          "text": "继续分享"
+        },
+        {
+          "ms": 1677.59,
+          "text": "。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 63,
+        "completion_tokens": 28,
+        "total_tokens": 91,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 5.25e-05,
+          "allowance": 3.15e-05,
+          "tokens": {
+            "input": 63,
+            "output": 28,
+            "reasoning": 0,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 1284.46,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_content_ms": 1284.51,
+      "chars20_ms": 1468.16,
+      "first_sentence_ms": 1504.66,
+      "tts_buffer_ms": 1504.66,
+      "finish_reason": "stop",
+      "total_ms": 1694.53,
+      "reply": "感谢您的聆听与陪伴，希望今天的讲解能让您有所收获。祝您一路顺利，期待未来还能有机会为您继续分享。",
+      "reply_chars": 48,
+      "reasoning_chars": 0,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-off-low",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "low",
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "round": 5,
+      "question": "谢谢你的讲解，我准备离开了。",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "谢谢你的讲解，我准备离开了。"
+          }
+        ],
+        "reasoning_effort": "low",
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "events": [
+        {
+          "ms": 1048.25,
+          "text": "感谢"
+        },
+        {
+          "ms": 1076.76,
+          "text": "您的"
+        },
+        {
+          "ms": 1093.49,
+          "text": "聆听"
+        },
+        {
+          "ms": 1115.36,
+          "text": "与"
+        },
+        {
+          "ms": 1123.19,
+          "text": "陪伴"
+        },
+        {
+          "ms": 1169.54,
+          "text": "，希望"
+        },
+        {
+          "ms": 1185.59,
+          "text": "今天的"
+        },
+        {
+          "ms": 1197.84,
+          "text": "讲解能让"
+        },
+        {
+          "ms": 1256.08,
+          "text": "您有所"
+        },
+        {
+          "ms": 1310.93,
+          "text": "收获。祝您一路"
+        },
+        {
+          "ms": 1329.22,
+          "text": "顺利"
+        },
+        {
+          "ms": 1371.38,
+          "text": "，期待"
+        },
+        {
+          "ms": 1390.6,
+          "text": "未来"
+        },
+        {
+          "ms": 1448.3,
+          "text": "还能继续"
+        },
+        {
+          "ms": 1464.62,
+          "text": "为您分享更多"
+        },
+        {
+          "ms": 1491.34,
+          "text": "有趣的内容。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 63,
+        "completion_tokens": 30,
+        "total_tokens": 93,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 5.49e-05,
+          "allowance": 3.294e-05,
+          "tokens": {
+            "input": 63,
+            "output": 30,
+            "reasoning": 0,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 1048.2,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_content_ms": 1048.25,
+      "chars20_ms": 1256.08,
+      "first_sentence_ms": 1310.93,
+      "tts_buffer_ms": 1310.93,
+      "finish_reason": "stop",
+      "total_ms": 1511.62,
+      "reply": "感谢您的聆听与陪伴，希望今天的讲解能让您有所收获。祝您一路顺利，期待未来还能继续为您分享更多有趣的内容。",
+      "reply_chars": 52,
+      "reasoning_chars": 0,
+      "sse_done": true
+    },
+    {
+      "case": "deepseek-low",
+      "requested_model": "deepseek-v4.1-flash",
+      "parameters": {
+        "reasoning_effort": "low"
+      },
+      "round": 5,
+      "question": "谢谢你的讲解，我准备离开了。",
+      "request_body": {
+        "model": "deepseek-v4.1-flash",
+        "stream": true,
+        "max_tokens": 1024,
+        "stream_options": {
+          "include_usage": true
+        },
+        "messages": [
+          {
+            "role": "system",
+            "content": "你是数字人讲解员小霖。请用简体中文直接回答，每次两句，总计40至70个汉字。第一句不少于20个汉字。语气自然，适合朗读，不使用列表和Markdown。不要虚构具体场馆信息。"
+          },
+          {
+            "role": "user",
+            "content": "谢谢你的讲解，我准备离开了。"
+          }
+        ],
+        "reasoning_effort": "low"
+      },
+      "events": [
+        {
+          "ms": 2980.75,
+          "text": "感谢您的"
+        },
+        {
+          "ms": 3005.88,
+          "text": "聆听与陪伴"
+        },
+        {
+          "ms": 3036.19,
+          "text": "，很高兴这次"
+        },
+        {
+          "ms": 3086.52,
+          "text": "讲解能为您带来一点"
+        },
+        {
+          "ms": 3086.56,
+          "text": "收获。祝您一路顺利"
+        },
+        {
+          "ms": 3107.16,
+          "text": "，期待下次再为您服务"
+        },
+        {
+          "ms": 3137.44,
+          "text": "。"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 88,
+        "completion_tokens": 295,
+        "total_tokens": 383,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 267
+        },
+        "cost": 0,
+        "opencode": {
+          "billing_source": "go",
+          "list_cost": 0.0003804,
+          "allowance": 0.00022824,
+          "tokens": {
+            "input": 88,
+            "output": 295,
+            "reasoning": 267,
+            "cache_read": 0,
+            "cache_write_5m": 0,
+            "cache_write_1h": 0
+          }
+        }
+      },
+      "ok": true,
+      "http_status": 200,
+      "headers_ms": 947.6,
+      "returned_model": "deepseek-v4.1-flash",
+      "first_reasoning_ms": 947.66,
+      "first_content_ms": 2980.75,
+      "chars20_ms": 3086.52,
+      "first_sentence_ms": 3086.56,
+      "tts_buffer_ms": 3086.56,
+      "finish_reason": "stop",
+      "total_ms": 3152.93,
+      "reply": "感谢您的聆听与陪伴，很高兴这次讲解能为您带来一点收获。祝您一路顺利，期待下次再为您服务。",
+      "reply_chars": 44,
+      "reasoning_chars": 398,
+      "sse_done": true
+    }
+  ],
+  "rejected_cases": [],
+  "summary": {
+    "deepseek-low": {
+      "attempts": 5,
+      "completed": 5,
+      "reasoning_observed": 5,
+      "headers_ms": {
+        "median": 858.79,
+        "min": 653.6,
+        "max": 2405.6
+      },
+      "first_content_ms": {
+        "median": 2889.44,
+        "min": 2520.2,
+        "max": 5457.65
+      },
+      "chars20_ms": {
+        "median": 2938.35,
+        "min": 2574.36,
+        "max": 5516.71
+      },
+      "first_sentence_ms": {
+        "median": 3016.75,
+        "min": 2632.01,
+        "max": 5627.51
+      },
+      "tts_buffer_ms": {
+        "median": 2938.35,
+        "min": 2574.36,
+        "max": 5516.71
+      },
+      "total_ms": {
+        "median": 3104.64,
+        "min": 2706.74,
+        "max": 5768.62
+      },
+      "reply_chars": [
+        67,
+        69,
+        72,
+        56,
+        44
+      ],
+      "reasoning_chars": [
+        633,
+        555,
+        565,
+        560,
+        398
+      ]
+    },
+    "deepseek-off-none": {
+      "attempts": 5,
+      "completed": 5,
+      "reasoning_observed": 0,
+      "headers_ms": {
+        "median": 908.17,
+        "min": 694.71,
+        "max": 2089.46
+      },
+      "first_content_ms": {
+        "median": 908.22,
+        "min": 702.33,
+        "max": 2089.52
+      },
+      "chars20_ms": {
+        "median": 1029.46,
+        "min": 837.46,
+        "max": 2207.87
+      },
+      "first_sentence_ms": {
+        "median": 1115.46,
+        "min": 876.4,
+        "max": 2266.06
+      },
+      "tts_buffer_ms": {
+        "median": 1029.46,
+        "min": 837.46,
+        "max": 2207.87
+      },
+      "total_ms": {
+        "median": 1253.32,
+        "min": 996.95,
+        "max": 2371.9
+      },
+      "reply_chars": [
+        56,
+        50,
+        57,
+        49,
+        48
+      ],
+      "reasoning_chars": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "deepseek-off-low": {
+      "attempts": 5,
+      "completed": 5,
+      "reasoning_observed": 0,
+      "headers_ms": {
+        "median": 877.08,
+        "min": 774.05,
+        "max": 1048.2
+      },
+      "first_content_ms": {
+        "median": 877.13,
+        "min": 776.01,
+        "max": 1048.25
+      },
+      "chars20_ms": {
+        "median": 992.71,
+        "min": 907.26,
+        "max": 1256.08
+      },
+      "first_sentence_ms": {
+        "median": 1053.25,
+        "min": 967.35,
+        "max": 1310.93
+      },
+      "tts_buffer_ms": {
+        "median": 992.71,
+        "min": 907.26,
+        "max": 1310.93
+      },
+      "total_ms": {
+        "median": 1190.55,
+        "min": 1135.73,
+        "max": 1511.62
+      },
+      "reply_chars": [
+        46,
+        57,
+        54,
+        52,
+        52
+      ],
+      "reasoning_chars": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "config_sha256_after": "a9343bee31b3e98254f8096a6f279aca6432ce108c26a1c3ae9b521a79dc1c96",
+  "production_config_unchanged": true,
+  "finished_utc": "2026-11-04T01:19:23.944715+00:00"
+}

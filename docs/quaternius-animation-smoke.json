@@ -1,0 +1,430 @@
+[
+  {
+    "name": "idle",
+    "passed": true,
+    "maxBoneAngle": 3.048625,
+    "rootDrift": 0.0,
+    "parameter": 0,
+    "clips": [
+      "Idle_Loop"
+    ]
+  },
+  {
+    "name": "talking",
+    "passed": true,
+    "maxBoneAngle": 21.8533726,
+    "rootDrift": 0.0,
+    "parameter": 3,
+    "clips": [
+      "Idle_Talking_Loop"
+    ]
+  },
+  {
+    "name": "interact",
+    "passed": true,
+    "maxBoneAngle": 31.10335,
+    "rootDrift": 0.0,
+    "parameter": 111,
+    "clips": [
+      "Interact"
+    ]
+  },
+  {
+    "name": "resume-talking",
+    "passed": true,
+    "maxBoneAngle": 15.011487,
+    "rootDrift": 0.0,
+    "parameter": 3,
+    "clips": [
+      "Idle_Talking_Loop"
+    ]
+  },
+  {
+    "name": "stop-idle",
+    "passed": true,
+    "maxBoneAngle": 2.51451,
+    "rootDrift": 0.0,
+    "parameter": 0,
+    "clips": [
+      "Idle_Loop"
+    ]
+  },
+  {
+    "name": "Crouch_Fwd_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 100,
+    "actualClips": [
+      "Crouch_Fwd_Loop"
+    ]
+  },
+  {
+    "name": "Crouch_Idle_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 101,
+    "actualClips": [
+      "Crouch_Idle_Loop"
+    ]
+  },
+  {
+    "name": "Dance_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 102,
+    "actualClips": [
+      "Dance_Loop"
+    ]
+  },
+  {
+    "name": "Death01",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 103,
+    "actualClips": [
+      "Death01"
+    ]
+  },
+  {
+    "name": "Driving_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 104,
+    "actualClips": [
+      "Driving_Loop"
+    ]
+  },
+  {
+    "name": "Fixing_Kneeling",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 105,
+    "actualClips": [
+      "Fixing_Kneeling"
+    ]
+  },
+  {
+    "name": "Hit_Chest",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 106,
+    "actualClips": [
+      "Hit_Chest"
+    ]
+  },
+  {
+    "name": "Hit_Head",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 107,
+    "actualClips": [
+      "Hit_Head"
+    ]
+  },
+  {
+    "name": "Idle_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 108,
+    "actualClips": [
+      "Idle_Loop"
+    ]
+  },
+  {
+    "name": "Idle_Talking_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 109,
+    "actualClips": [
+      "Idle_Talking_Loop"
+    ]
+  },
+  {
+    "name": "Idle_Torch_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 110,
+    "actualClips": [
+      "Idle_Torch_Loop"
+    ]
+  },
+  {
+    "name": "Interact",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 111,
+    "actualClips": [
+      "Interact"
+    ]
+  },
+  {
+    "name": "Jog_Fwd_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 112,
+    "actualClips": [
+      "Jog_Fwd_Loop"
+    ]
+  },
+  {
+    "name": "Jump_Land",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 113,
+    "actualClips": [
+      "Jump_Land"
+    ]
+  },
+  {
+    "name": "Jump_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 114,
+    "actualClips": [
+      "Jump_Loop"
+    ]
+  },
+  {
+    "name": "Jump_Start",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 115,
+    "actualClips": [
+      "Jump_Start"
+    ]
+  },
+  {
+    "name": "PickUp_Table",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 116,
+    "actualClips": [
+      "PickUp_Table"
+    ]
+  },
+  {
+    "name": "Pistol_Aim_Down",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 117,
+    "actualClips": [
+      "Pistol_Aim_Down"
+    ]
+  },
+  {
+    "name": "Pistol_Aim_Neutral",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 118,
+    "actualClips": [
+      "Pistol_Aim_Neutral"
+    ]
+  },
+  {
+    "name": "Pistol_Aim_Up",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 119,
+    "actualClips": [
+      "Pistol_Aim_Up"
+    ]
+  },
+  {
+    "name": "Pistol_Idle_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 120,
+    "actualClips": [
+      "Pistol_Idle_Loop"
+    ]
+  },
+  {
+    "name": "Pistol_Reload",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 121,
+    "actualClips": [
+      "Pistol_Reload"
+    ]
+  },
+  {
+    "name": "Pistol_Shoot",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 122,
+    "actualClips": [
+      "Pistol_Shoot"
+    ]
+  },
+  {
+    "name": "Punch_Cross",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 123,
+    "actualClips": [
+      "Punch_Cross"
+    ]
+  },
+  {
+    "name": "Punch_Jab",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 124,
+    "actualClips": [
+      "Punch_Jab"
+    ]
+  },
+  {
+    "name": "Push_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 125,
+    "actualClips": [
+      "Push_Loop"
+    ]
+  },
+  {
+    "name": "Roll",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 126,
+    "actualClips": [
+      "Roll"
+    ]
+  },
+  {
+    "name": "Sitting_Enter",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 127,
+    "actualClips": [
+      "Sitting_Enter"
+    ]
+  },
+  {
+    "name": "Sitting_Exit",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 128,
+    "actualClips": [
+      "Sitting_Exit"
+    ]
+  },
+  {
+    "name": "Sitting_Idle_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 129,
+    "actualClips": [
+      "Sitting_Idle_Loop"
+    ]
+  },
+  {
+    "name": "Sitting_Talking_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 130,
+    "actualClips": [
+      "Sitting_Talking_Loop"
+    ]
+  },
+  {
+    "name": "Spell_Simple_Enter",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 131,
+    "actualClips": [
+      "Spell_Simple_Enter"
+    ]
+  },
+  {
+    "name": "Spell_Simple_Exit",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 132,
+    "actualClips": [
+      "Spell_Simple_Exit"
+    ]
+  },
+  {
+    "name": "Spell_Simple_Idle_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 133,
+    "actualClips": [
+      "Spell_Simple_Idle_Loop"
+    ]
+  },
+  {
+    "name": "Spell_Simple_Shoot",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 134,
+    "actualClips": [
+      "Spell_Simple_Shoot"
+    ]
+  },
+  {
+    "name": "Sprint_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 135,
+    "actualClips": [
+      "Sprint_Loop"
+    ]
+  },
+  {
+    "name": "Swim_Fwd_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 136,
+    "actualClips": [
+      "Swim_Fwd_Loop"
+    ]
+  },
+  {
+    "name": "Swim_Idle_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 137,
+    "actualClips": [
+      "Swim_Idle_Loop"
+    ]
+  },
+  {
+    "name": "Sword_Attack",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 138,
+    "actualClips": [
+      "Sword_Attack"
+    ]
+  },
+  {
+    "name": "Sword_Idle",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 139,
+    "actualClips": [
+      "Sword_Idle"
+    ]
+  },
+  {
+    "name": "Walk_Formal_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 140,
+    "actualClips": [
+      "Walk_Formal_Loop"
+    ]
+  },
+  {
+    "name": "Walk_Loop",
+    "kind": "catalog-playback",
+    "passed": true,
+    "actualParameter": 141,
+    "actualClips": [
+      "Walk_Loop"
+    ]
+  }
+]

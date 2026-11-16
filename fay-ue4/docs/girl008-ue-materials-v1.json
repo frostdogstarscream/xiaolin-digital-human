@@ -1,0 +1,200 @@
+[
+  {
+    "source_material": "aiStandardSurface1",
+    "models": [
+      "girl02_st"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface1.M_aiStandardSurface1",
+    "linked_channels": [
+      "Maya|baseColor",
+      "Maya|specularRoughness"
+    ],
+    "normal_camera_skipped": true,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "Eyes",
+    "models": [
+      "eye_r",
+      "eye_l"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_Eyes.M_Eyes",
+    "linked_channels": [
+      "Maya|baseColor"
+    ],
+    "normal_camera_skipped": true,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "pasted__Eyes_glass",
+    "models": [
+      "glass_r",
+      "glass_l"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_pasted__Eyes_glass.M_pasted__Eyes_glass",
+    "linked_channels": [],
+    "normal_camera_skipped": false,
+    "glass_approximation": true
+  },
+  {
+    "source_material": "model:aiStandardSurface14",
+    "models": [
+      "eyelash",
+      "eyelash1",
+      "eyebrow"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface14.M_aiStandardSurface14",
+    "linked_channels": [],
+    "normal_camera_skipped": false,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "Tear",
+    "models": [
+      "Tear_r"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_Tear.M_Tear",
+    "linked_channels": [],
+    "normal_camera_skipped": false,
+    "glass_approximation": true
+  },
+  {
+    "source_material": "model:pasted__aiStandardSurface6",
+    "models": [
+      "tongue"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_pasted__aiStandardSurface6.M_pasted__aiStandardSurface6",
+    "linked_channels": [
+      "Maya|baseColor"
+    ],
+    "normal_camera_skipped": true,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "aiStandardSurface6",
+    "models": [
+      "tooth_s",
+      "tooth_x"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface6.M_aiStandardSurface6",
+    "linked_channels": [
+      "Maya|baseColor"
+    ],
+    "normal_camera_skipped": false,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "aiStandardSurface5",
+    "models": [
+      "tooth_s",
+      "tooth_x"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface5.M_aiStandardSurface5",
+    "linked_channels": [
+      "Maya|baseColor"
+    ],
+    "normal_camera_skipped": false,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "aiStandardSurface9",
+    "models": [
+      "pCube1",
+      "pCube1"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface9.M_aiStandardSurface9",
+    "linked_channels": [],
+    "normal_camera_skipped": false,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "aiStandardSurface7",
+    "models": [
+      "pTorus15",
+      "pTorus15"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface7.M_aiStandardSurface7",
+    "linked_channels": [],
+    "normal_camera_skipped": false,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "aiStandardSurface8",
+    "models": [
+      "polySurface34",
+      "polySurface34"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface8.M_aiStandardSurface8",
+    "linked_channels": [],
+    "normal_camera_skipped": false,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "aiStandardSurface10",
+    "models": [
+      "pasted__hairStrips_06",
+      "pasted__hairStrips_07",
+      "pasted__hairStrips_08",
+      "pasted__hairStrips_09",
+      "pasted__hairStrips_010"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface10.M_aiStandardSurface10",
+    "linked_channels": [
+      "Maya|baseColor",
+      "Maya|specularRoughness",
+      "Maya|opacity"
+    ],
+    "normal_camera_skipped": false,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "aiStandardSurface11",
+    "models": [
+      "hair_tp"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface11.M_aiStandardSurface11",
+    "linked_channels": [
+      "Maya|opacity"
+    ],
+    "normal_camera_skipped": false,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "cg029_bd:aiStandardSurface19",
+    "models": [
+      "xz"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface19.M_aiStandardSurface19",
+    "linked_channels": [
+      "Maya|baseColor"
+    ],
+    "normal_camera_skipped": true,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "aiStandardSurface12",
+    "models": [
+      "beidaiquan"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface12.M_aiStandardSurface12",
+    "linked_channels": [
+      "Maya|baseColor",
+      "Maya|specularRoughness",
+      "Maya|metalness"
+    ],
+    "normal_camera_skipped": true,
+    "glass_approximation": false
+  },
+  {
+    "source_material": "aiStandardSurface13",
+    "models": [
+      "yifu"
+    ],
+    "ue_material": "/Game/CharacterPreviews/girl008_preview_v1/MaterialsV1/M_aiStandardSurface13.M_aiStandardSurface13",
+    "linked_channels": [
+      "Maya|baseColor"
+    ],
+    "normal_camera_skipped": true,
+    "glass_approximation": false
+  }
+]

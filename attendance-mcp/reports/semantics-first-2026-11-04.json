@@ -1,0 +1,75 @@
+{
+  "status": "PASSED",
+  "cases": [
+    {
+      "case": "direct",
+      "question": "我要打卡",
+      "expected_action": "tool",
+      "action": "tool",
+      "answer": "占位打卡测试成功，注意这只是模拟测试，并未记录到真实考勤系统。",
+      "actual_server_calls": 1,
+      "judge_seconds": 2.198,
+      "execution_seconds": 3.635,
+      "total_seconds": 9.635,
+      "tool_results": [
+        {
+          "call": {
+            "name": "attendance_check_in",
+            "args": {}
+          },
+          "success": true,
+          "output": "success",
+          "error": null,
+          "attempt": 1
+        }
+      ],
+      "tool_hints": 1,
+      "gesture": "idle",
+      "passed": true
+    },
+    {
+      "case": "context_confirmation",
+      "question": "好的，帮我办一下。",
+      "expected_action": "tool",
+      "action": "tool",
+      "answer": "好的，占位打卡测试已经执行成功。需要说明的是，这只是测试，并没有记录到真实考勤系统。",
+      "actual_server_calls": 1,
+      "judge_seconds": 2.613,
+      "execution_seconds": 2.422,
+      "total_seconds": 7.633,
+      "tool_results": [
+        {
+          "call": {
+            "name": "attendance_check_in",
+            "args": {}
+          },
+          "success": true,
+          "output": "success",
+          "error": null,
+          "attempt": 1
+        }
+      ],
+      "tool_hints": 1,
+      "gesture": "acknowledge-nod",
+      "passed": true
+    },
+    {
+      "case": "concept",
+      "question": "打卡是什么意思？",
+      "expected_action": "finish",
+      "action": "finish",
+      "answer": "打卡一般是指员工上下班时做一次签到记录，证明自己到岗、离岗的时间，常见方式有刷工卡、指纹、人脸识别或手机App定位签到。除了考勤，这个词也常被用来表示“到某个地方或完成某件事留个记录”，比如旅游打卡、咖啡店打卡。我这边目前只提供占位打卡测试，不连接真实考勤系统，需要的话可以帮你做个测试。",
+      "actual_server_calls": 0,
+      "judge_seconds": 3.173,
+      "execution_seconds": null,
+      "total_seconds": 3.181,
+      "tool_results": [],
+      "tool_hints": 0,
+      "gesture": "explain-open-palms",
+      "passed": true
+    }
+  ],
+  "production_history_written": false,
+  "production_tts_called": false,
+  "scope": "Real native judge/execution with actual MCP; isolated context and output"
+}
