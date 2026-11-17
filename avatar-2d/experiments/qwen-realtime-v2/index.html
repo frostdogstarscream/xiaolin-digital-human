@@ -83,6 +83,27 @@
     .stage.stage-expanded video#avatar {
       object-fit: contain;
     }
+    .stage:fullscreen.fs-cover video#avatar,
+    .stage.stage-expanded.fs-cover video#avatar {
+      object-fit: cover;
+    }
+    .stage .top-hud,
+    .stage .bottom-dock,
+    .stage .scrim-top {
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .stage.fs-idle {
+      cursor: none;
+    }
+    .stage.fs-idle .top-hud,
+    .stage.fs-idle .bottom-dock,
+    .stage.fs-idle .scrim-top {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .stage.fs-idle .subtitle-layer {
+      bottom: max(28px, env(safe-area-inset-bottom));
+    }
     @media (max-aspect-ratio: 10/16), (max-width: 720px) {
       .studio { padding: 0; }
       .stage {
@@ -96,6 +117,10 @@
       .stage:fullscreen video#avatar,
       .stage.stage-expanded video#avatar {
         object-fit: cover;
+      }
+      .stage:fullscreen.fs-contain video#avatar,
+      .stage.stage-expanded.fs-contain video#avatar {
+        object-fit: contain;
       }
     }
 
@@ -294,7 +319,7 @@
       align-items: center;
       gap: 8px;
       pointer-events: none;
-      transition: opacity 0.38s ease, transform 0.38s ease;
+      transition: bottom 0.35s ease, opacity 0.38s ease, transform 0.38s ease;
     }
     .subtitle-layer.faded {
       opacity: 0;
@@ -711,7 +736,8 @@
           <button type="button" id="fay-persona-btn" class="hud-btn" title="打开Fay原生性格与人设控制台">🎭 人设</button>
           <button type="button" id="fay-mcp-btn" class="hud-btn" title="打开Fay原生MCP服务管理">🔌 MCP <span id="mcp-count-badge" class="pill-count">0</span></button>
           <button type="button" id="workbench-btn" class="hud-btn" title="对话记录、模型能力与业务资料">⚙️ 工作台</button>
-          <button type="button" id="fullscreen" class="hud-btn" aria-pressed="false" title="切换全屏展示">⛶</button>
+          <button type="button" id="fs-fit-btn" class="hud-btn hidden" title="切换全屏画面比例（完整全身 / 铺满屏幕）">📐 完整全身</button>
+          <button type="button" id="fullscreen" class="hud-btn" aria-pressed="false" title="切换人物全屏展示（双击人物画面也可切换）">⛶ 人物全屏</button>
         </div>
       </header>
 
@@ -874,6 +900,6 @@
     </div>
   </div>
 
-  <script src="/demo.js?v=20261117-portrait-fay"></script>
+  <script src="/demo.js?v=20261117-fullscreen2"></script>
 </body>
 </html>

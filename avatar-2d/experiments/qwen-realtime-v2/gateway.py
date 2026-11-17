@@ -55,7 +55,7 @@ class Session:
         self.close_lock=asyncio.Lock();self.wake_pending=bytearray()
         self.model_connects=0;self.wake_checks=0;self.wake_detections=0
         self.fay_voice=FayVoiceBuffer();self.fay_task=None;self.fay_active=False;self.fay_item_id=None
-        self.direct_tools_ok=True
+        self.direct_tools_ok=True;self.created_at=time.monotonic()
     def is_fay_mode(self):
         return self.gateway.settings.value.get('dialogue_mode')=='fay_agent'
     def active_tools(self):
@@ -551,6 +551,7 @@ class Gateway:
         session=self.owner
         return web.json_response(dict(status='ready',model=self.settings.value['model'],dialogue_mode=self.settings.value.get('dialogue_mode','qwen_realtime'),
             voice=VOICE,profile='presenter-v2-1080',lipsync_backend=self.settings.value['lipsync_backend'],lipsync_decoder='original',
+            precision=str(getattr(self.assets,'dtype','fp16')),
             provider_connected=bool(session and (session.provider or session.fay_active)),rtc_connected=bool(session and session.pc and session.pc.connectionState=='connected'),
             mic_bytes=session.mic_bytes if session else 0,render_stats=session.p.stats if session and session.p else {},
             audio_queue=session.p.asr.queue.qsize() if session and session.p else 0,
@@ -640,9 +641,13 @@ class Gateway:
         scope=request.query.get('scope','default')
         if not re.fullmatch(r'[a-zA-Z0-9_-]{1,48}',scope):raise web.HTTPBadRequest()
         async with self.owner_lock:
-            if self.owner and request.query.get('takeover')=='1' and request.headers.get('X-Xiaolin-User'):
+            if self.owner and request.query.get('takeover')=='1' and (request.headers.get('Origin') in ALLOWED or request.headers.get('X-Xiaolin-User')):
                 await self.owner.close(code=4001);self.owner=None
-            if self.owner and (self.owner.closed or (self.owner.pc and self.owner.pc.connectionState=='failed')):
+            if self.owner and (
+                self.owner.closed
+                or (self.owner.pc and self.owner.pc.connectionState in ('failed','closed','disconnected'))
+                or (self.owner.pc is None and time.monotonic()-self.owner.created_at>12.0)
+            ):
                 await self.owner.close();self.owner=None
             if self.owner:raise web.HTTPConflict(text='实时实验已有一个展示会话')
             ws=web.WebSocketResponse(heartbeat=20,max_msg_size=512*1024);await ws.prepare(request)

@@ -7,12 +7,36 @@ const demo=window.qwenDemo={
 };
 demo.takeoverPending=new URLSearchParams(location.search).get('takeover')==='1';
 const stage=document.querySelector('.stage');
-let stageScroll=0;
+let stageScroll=0,fsIdleTimer=null;
+let fsFitMode=localStorage.getItem('xiaolin_fs_fit')||(window.innerWidth/Math.max(1,window.innerHeight)<=10/16?'cover':'contain');
 
+function isFullscreenActive(){
+  return document.fullscreenElement===stage||stage.classList.contains('stage-expanded');
+}
+function applyFsFit(){
+  stage.classList.toggle('fs-cover',fsFitMode==='cover');
+  stage.classList.toggle('fs-contain',fsFitMode==='contain');
+  const fitBtn=$('#fs-fit-btn');
+  if(fitBtn){
+    fitBtn.textContent=fsFitMode==='cover'?'📐 铺满全屏':'📐 完整全身';
+    fitBtn.classList.toggle('hidden',!isFullscreenActive());
+  }
+}
+function resetFsIdle(){
+  stage.classList.remove('fs-idle');
+  clearTimeout(fsIdleTimer);
+  if(!isFullscreenActive())return;
+  fsIdleTimer=setTimeout(()=>{
+    if(isFullscreenActive()&&document.activeElement!==$('#text'))stage.classList.add('fs-idle');
+  },3500);
+}
 function updateFullscreen(){
-  const active=document.fullscreenElement===stage||stage.classList.contains('stage-expanded');
-  $('#fullscreen').textContent=active?'✕ 退出':'⛶';
+  const active=isFullscreenActive();
+  $('#fullscreen').textContent=active?'✕ 退出全屏':'⛶ 人物全屏';
   $('#fullscreen').setAttribute('aria-pressed',String(active));
+  applyFsFit();
+  if(active)resetFsIdle();
+  else{clearTimeout(fsIdleTimer);stage.classList.remove('fs-idle');}
 }
 function exitStageFallback(){
   if(!stage.classList.contains('stage-expanded'))return;
@@ -22,7 +46,7 @@ async function ensureNotNativeFullscreen(){
   if(document.fullscreenElement===stage){try{await document.exitFullscreen();}catch{}}
   updateFullscreen();
 }
-$('#fullscreen').onclick=async()=>{
+async function toggleFullscreen(){
   try{
     if(document.fullscreenElement===stage)await document.exitFullscreen();
     else if(stage.classList.contains('stage-expanded'))exitStageFallback();
@@ -32,7 +56,16 @@ $('#fullscreen').onclick=async()=>{
     }
     updateFullscreen();
   }catch(reason){error('全屏切换失败：'+reason.message);}
+}
+$('#fullscreen').onclick=toggleFullscreen;
+if($('#fs-fit-btn'))$('#fs-fit-btn').onclick=()=>{
+  fsFitMode=fsFitMode==='cover'?'contain':'cover';
+  localStorage.setItem('xiaolin_fs_fit',fsFitMode);
+  applyFsFit();resetFsIdle();
 };
+['mousemove','mousedown','touchstart'].forEach(evt=>stage.addEventListener(evt,resetFsIdle,{passive:true}));
+$('#text').addEventListener('blur',resetFsIdle);
+updateFullscreen();
 document.addEventListener('fullscreenchange',updateFullscreen);
 document.addEventListener('keydown',event=>{
   if(event.key==='Escape'){
@@ -156,7 +189,14 @@ function updateControls(){
 }
 async function connectRtc(){
   const responseConfig=await fetch('/api/rtc-config');if(!responseConfig.ok)throw Error('媒体配置读取失败：'+responseConfig.status);
-  const config=await responseConfig.json();const pc=demo.pc=new RTCPeerConnection({...config,iceTransportPolicy:reconnectAttempts?'relay':'all'});
+  const config=await responseConfig.json();
+  if(navigator.userAgent.includes('Firefox/')&&Array.isArray(config.iceServers)){
+    config.iceServers=config.iceServers.map(server=>{
+      const urls=Array.isArray(server.urls)?server.urls:[server.urls];
+      return {...server,urls:[...new Set(urls.flatMap(u=>typeof u==='string'&&u.startsWith('turn:')&&u.includes('transport=tcp')?[u.replace('transport=tcp','transport=udp'),u]:[u]))]};
+    });
+  }
+  const pc=demo.pc=new RTCPeerConnection({...config,iceTransportPolicy:reconnectAttempts?'relay':'all'});
   const media=new MediaStream();$('#avatar').srcObject=media;
   pc.ontrack=event=>media.addTrack(event.track);
   pc.onconnectionstatechange=()=>{
@@ -218,12 +258,13 @@ function applyFaySummary(fay){
 function controlConnect(){
   const scope=new URLSearchParams(location.search).get('scope');
   const params=new URLSearchParams();if(scope)params.set('scope',scope);if(demo.takeoverPending)params.set('takeover','1');
+  let wsGotReady=false;
   const ws=demo.ws=new WebSocket((location.protocol==='https:'?'wss://':'ws://')+location.host+'/ws'+(params.size?'?'+params.toString():''));
   ws.onmessage=async message=>{
     if(demo.ws!==ws||leaving)return;
     const event=JSON.parse(message.data);demo.events.push(event);if(demo.events.length>300)demo.events.shift();
     if(event.type==='ready'){
-      demo.session=event.session_id;demo.takeoverPending=false;const cleanUrl=new URL(location.href);cleanUrl.searchParams.delete('takeover');history.replaceState(null,'',cleanUrl);
+      wsGotReady=true;demo.session=event.session_id;demo.takeoverPending=false;reconnectAttempts=0;const cleanUrl=new URL(location.href);cleanUrl.searchParams.delete('takeover');history.replaceState(null,'',cleanUrl);
       applySettings(event.settings);applyFaySummary(event.fay);
       state('准备连接');
       try{await connectRtc();}catch(reason){if(demo.ws===ws)reconnectMedia(reason.message);}
@@ -283,8 +324,18 @@ function controlConnect(){
       $('#gesture-state').textContent=labels[event.gesture]||'自然待机';
     }else if(event.type==='error'){error(event.message);state('请检查提示');}
   };
-  ws.onclose=event=>{if(demo.ws===ws){if(event.code===4001){reconnectAttempts=3;demo.takeoverPending=true;}reconnectMedia(event.code===4001?'展示已切换至其他设备':'控制连接已断开');}};
-  ws.onerror=()=>{if(demo.ws===ws)error('控制连接失败，正在尝试恢复');};
+  ws.onclose=event=>{
+    if(demo.ws!==ws)return;
+    if(event.code===4001){reconnectAttempts=3;demo.takeoverPending=true;reconnectMedia('展示已切换至新窗口');return;}
+    if(!wsGotReady&&!demo.takeoverPending&&document.visibilityState==='visible'){
+      demo.takeoverPending=true;demo.ws=null;reconnectAttempts=0;
+      $('#rtc').textContent='正在接管展示会话…';
+      reconnectTimer=setTimeout(()=>{reconnectTimer=null;controlConnect();},350);
+      return;
+    }
+    reconnectMedia('控制连接已断开');
+  };
+  ws.onerror=()=>{if(demo.ws===ws&&wsGotReady)error('控制连接失败，正在尝试恢复');};
 }
 
 $('#question').onsubmit=async event=>{
@@ -296,11 +347,19 @@ $('#question').onsubmit=async event=>{
 $('#sound').onclick=()=>sound().catch(reason=>error(reason.message));
 $('#sound-prompt').onclick=()=>sound().catch(reason=>error(reason.message));
 $('#avatar').onclick=()=>{if(!demo.soundUnlocked&&$('#avatar').muted)sound().catch(()=>{});};
+$('#avatar').ondblclick=()=>toggleFullscreen();
 $('#mic').onclick=()=>startMic().catch(reason=>error(reason.message));
 $('#interrupt').onclick=()=>send({type:'interrupt'});
 $('#stop').onclick=async()=>{await stopMic();send({type:'stop'});};
 $('#sleep').onclick=()=>send({type:'sleep'});
-$('#reconnect').onclick=()=>{demo.takeoverPending=true;reconnectAttempts=0;$('#reconnect').hidden=true;reconnectMedia('重新连接');};
+$('#reconnect').onclick=()=>{
+  clearTimeout(reconnectTimer);reconnectTimer=null;
+  clearTimeout(connectDeadline);clearTimeout(disconnectTimer);
+  demo.takeoverPending=true;reconnectAttempts=0;$('#reconnect').hidden=true;error('');
+  const old=demo.ws;demo.ws=null;if(old){old.onclose=null;old.onerror=null;old.close();}
+  if(demo.pc){demo.pc.onconnectionstatechange=null;demo.pc.close();demo.pc=null;}
+  $('#rtc').textContent='正在重新连接…';controlConnect();
+};
 addEventListener('pagehide',()=>{leaving=true;clearTimeout(reconnectTimer);clearTimeout(connectDeadline);clearTimeout(disconnectTimer);demo.mic?.stream.getTracks().forEach(track=>track.stop());demo.ws?.close();demo.pc?.close();});
 
 const flagNames=['coordinator_enabled','mcp_enabled','knowledge_enabled','memory_enabled','gestures_enabled'];
