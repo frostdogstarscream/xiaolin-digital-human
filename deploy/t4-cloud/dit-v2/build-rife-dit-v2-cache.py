@@ -22,7 +22,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from transformers import AutoFeatureExtractor, WhisperModel
-from grade_presenter_v2 import grade
 from xiaolin_student256_gan import (
     XiaolinStudent256UNet,
     get_student_box256,
@@ -32,6 +31,30 @@ from xiaolin_student256_gan import (
 )
 
 cv2.setNumThreads(4)
+
+
+def skin_mask(frame: np.ndarray) -> np.ndarray:
+    ycrcb = cv2.cvtColor(frame, cv2.COLOR_BGR2YCrCb).astype(np.float32)
+    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV).astype(np.float32)
+    luminance, cr, cb = cv2.split(ycrcb)
+    factors = [
+        np.clip((luminance - 30) / 25, 0, 1),
+        np.clip((cr - 130) / 10, 0, 1),
+        np.clip((180 - cr) / 10, 0, 1),
+        np.clip((138 - cb) / 12, 0, 1),
+        np.clip((cb - 70) / 12, 0, 1),
+        np.clip((hsv[:, :, 1] - 18) / 18, 0, 1),
+        np.clip((28 - hsv[:, :, 0]) / 8, 0, 1),
+    ]
+    return cv2.GaussianBlur(np.minimum.reduce(factors), (0, 0), 2.5)
+
+
+def grade(frame: np.ndarray, correction: np.ndarray) -> np.ndarray:
+    lab = cv2.cvtColor(frame, cv2.COLOR_BGR2LAB).astype(np.float32)
+    shift = correction * np.array([2.55, 1.0, 1.0], dtype=np.float32)
+    corrected = cv2.cvtColor(np.clip(lab + shift, 0, 255).astype(np.uint8), cv2.COLOR_LAB2BGR)
+    mask = skin_mask(frame)[..., None]
+    return np.rint(frame * (1.0 - mask) + corrected * mask).clip(0, 255).astype(np.uint8)
 
 ASSETS_DIR = Path("/formal/dit-v2-assets")
 EVAL_AVATAR = Path("/eval/avatar-2d")
@@ -155,10 +178,19 @@ def descriptor(frame: np.ndarray) -> np.ndarray:
     return np.concatenate(feats)
 
 
-def load_25fps_clip(clip_id: str):
-    vid = EVAL_AVATAR / "assets/presenter-v2-1080/prepared" / f"{clip_id}.mp4"
-    crd_path = EVAL_AVATAR / "runtime/presenter-v2-1080/avatars" / clip_id / "coords.json"
+def load_25fps_clip(clip_id: str, slc: slice | None = None):
+    av_dir = EVAL_AVATAR / "runtime/presenter-v2-1080/avatars" / clip_id
+    crd_path = av_dir / "coords.json"
     coords_25 = json.loads(crd_path.read_text(encoding="utf-8"))
+    npy_path = av_dir / "frames.npy"
+    if npy_path.exists():
+        mm = np.load(npy_path, mmap_mode="r")
+        assert len(mm) == len(coords_25), (clip_id, len(mm), len(coords_25))
+        if slc is not None:
+            return [mm[i].copy() for i in range(*slc.indices(len(mm)))], coords_25[slc]
+        return [mm[i].copy() for i in range(len(mm))], coords_25
+
+    vid = EVAL_AVATAR / "assets/presenter-v2-1080/prepared" / f"{clip_id}.mp4"
     cap = cv2.VideoCapture(str(vid))
     frames = []
     while True:
@@ -168,6 +200,8 @@ def load_25fps_clip(clip_id: str):
         frames.append(fr)
     cap.release()
     assert len(frames) == len(coords_25), (clip_id, len(frames), len(coords_25))
+    if slc is not None:
+        return frames[slc], coords_25[slc]
     return frames, coords_25
 
 
@@ -265,8 +299,8 @@ def main():
     (OUTPUT / "idle-plan.json").write_text(json.dumps(idle_plan, indent=2), encoding="utf-8")
 
     if not (idle_dir / "complete.json").exists():
-        idle25_f, idle25_c = load_25fps_clip("idle")
-        fwd50_f, fwd50_c = upsample_25_to_50_rife(idle25_f[104:305], idle25_c[104:305], rife)
+        idle25_f, idle25_c = load_25fps_clip("idle", slice(104, 305))
+        fwd50_f, fwd50_c = upsample_25_to_50_rife(idle25_f, idle25_c, rife)
         fwd50_f, fwd50_c = fwd50_f[:-1], fwd50_c[:-1]
         idle50_f = fwd50_f + fwd50_f[-2:0:-1]
         idle50_c = fwd50_c + fwd50_c[-2:0:-1]
