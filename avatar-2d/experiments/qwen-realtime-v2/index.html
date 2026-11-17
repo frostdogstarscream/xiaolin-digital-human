@@ -1,20 +1,879 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><title>小霖 · 实时语音新模式</title>
-<style>*{box-sizing:border-box}body{margin:0;background:#0d141b;color:#e6eef3;font:15px/1.65 system-ui,sans-serif}header{padding:18px 28px;border-bottom:1px solid #263b48;display:flex;align-items:center;justify-content:space-between}h1{margin:0;font-size:23px}a{color:#8cddcc}.badge{font-size:12px;background:#173c37;color:#94e6ce;border-radius:20px;padding:5px 12px}main{max-width:1500px;margin:auto;padding:20px;display:grid;grid-template-columns:minmax(330px,1fr) 450px;gap:20px}.stage{background:#000;border-radius:14px;height:calc(100vh - 145px);display:flex;justify-content:center;position:relative;overflow:hidden}video{height:100%;max-width:100%;object-fit:contain}.overlay{position:absolute;bottom:16px;left:18px;right:18px;display:flex;justify-content:space-between;gap:8px;color:#cbdce6;font-size:13px}.panel{background:#14232e;border:1px solid #29404e;border-radius:14px;padding:20px;display:flex;flex-direction:column;max-height:calc(100vh - 145px)}.muted{font-size:13px;color:#a6bac6}.config{padding:12px;background:#0d1b24;border-radius:8px;margin:12px 0}.config div{display:flex;justify-content:space-between;gap:12px}.config strong{font-size:12px;font-weight:500;word-break:break-all}button,input{font:inherit;border-radius:8px;padding:10px 14px;border:1px solid #395361}button{background:#243c4c;color:#e4eff5;cursor:pointer}button.primary{background:#83d7c3;color:#0e2c26;border-color:#83d7c3;font-weight:650}button:disabled{opacity:.45;cursor:default}.buttons{display:flex;gap:8px;flex-wrap:wrap}#messages{flex:1;min-height:180px;overflow:auto;margin:16px 0;background:#0c1a23;border-radius:8px;padding:12px}.message{padding:8px 10px;margin:8px 0;border-radius:8px;background:#213544;white-space:pre-wrap;word-break:break-word}.message.user{background:#1d443e;margin-left:24px}.message.assistant{margin-right:16px}.message label{display:block;font-size:11px;opacity:.65}form{display:flex;gap:8px}input{min-width:0;flex:1;background:#0d1b24;color:#e6eef3}.error{color:#ffc2a9;min-height:24px}#metrics{font-size:12px;color:#92b5c6;margin:8px 0}.notice{border-top:1px solid #29404e;margin-top:14px;padding-top:12px}@media(max-width:900px){main{grid-template-columns:1fr}.stage{height:60vh}.panel{max-height:none}#messages{height:260px;flex:none}}</style></head>
-<style>.tabs{display:flex;gap:6px;margin:10px 0}.tabs button{flex:1;padding:8px}.tabs button.selected{color:#0e2c26;background:#83d7c3}.view{display:flex;flex-direction:column;flex:1;min-height:0;overflow:auto}.hidden{display:none!important}.switch{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid #29404e}.switch input{flex:none;width:20px;height:20px;accent-color:#83d7c3}.switch small{display:block;color:#a6bac6;font-size:12px}select,textarea{font:inherit;background:#0d1b24;color:#e6eef3;border:1px solid #395361;border-radius:8px;padding:10px;width:100%;margin:8px 0}textarea{min-height:160px;resize:vertical}#knowledge-title{flex:none;width:100%;margin-top:10px}.doc{padding:8px 0;border-bottom:1px solid #29404e}.doc button{float:right;padding:3px 8px;font-size:12px}#audit{font-size:12px;white-space:pre-wrap;word-break:break-word;color:#a6bac6}.settings-help{margin:14px 0}.save-row{display:flex;gap:10px;margin-top:16px}#settings-message,#knowledge-message{color:#98decb;font-size:13px;margin:8px 0}.status-line{font-size:12px;color:#95b8c7;margin-top:8px}.stage:fullscreen{width:100vw;height:100vh;max-width:none;border-radius:0;margin:0;background:#000}.stage.stage-expanded{position:fixed;inset:0;width:100vw;height:100dvh;max-width:none;border-radius:0;z-index:1000}.stage:fullscreen video,.stage.stage-expanded video{width:100%;height:100%;object-fit:contain}.stage-fullscreen{overflow:hidden}.overlay>span:last-child{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.stage:fullscreen .overlay,.stage.stage-expanded .overlay{bottom:20px;left:24px;right:24px}</style>
-<body><header><div><h1>小霖 · 模型与能力管理</h1><span class="muted">实时语音 · 1080p · 模型自动协调</span></div><span class="badge">独立版本 · 原正式版保留</span></header>
-<main><section class="stage"><video id="avatar" autoplay playsinline muted></video><div class="overlay"><span id="rtc">音视频连接中</span><span><button id="reconnect" hidden>重新连接</button> <button id="sound">开启声音</button> <button id="fullscreen" aria-pressed="false">人物全屏</button></span></div></section>
-<section class="panel"><b>数字人工作台</b><nav class="tabs"><button class="selected" data-view="chat">对话</button><button data-view="settings">模型与能力</button><button data-view="knowledge">知识与记录</button></nav><section id="chat-view" class="view"><div class="config"><div><span class="muted">模型</span><strong id="current-model">qwen-audio-3.1-realtime-flash</strong></div><div><span class="muted">音色</span><strong>longanqian_v3.1</strong></div><div><span class="muted">状态</span><strong id="state">正在准备</strong></div><div><span class="muted">动作</span><strong id="gesture-state">自然待机</strong></div></div>
-<div class="buttons"><button class="primary" id="mic" disabled>开启唤醒监听</button><button id="sleep" disabled>返回待唤醒</button><button id="interrupt" disabled>打断</button><button id="stop" disabled>停止对话</button></div>
-<p id="wake-state" class="muted">唤醒词：小霖小霖</p><div id="messages" aria-live="polite"></div><form id="question"><input id="text" aria-label="输入问题" placeholder="输入问题，或开启麦克风交流" maxlength="500" autocomplete="off"><button id="send" disabled>发送</button></form><div id="metrics"></div><div class="error" id="error" role="alert"></div>
-<div class="muted notice"><span id="capability-status">正在读取能力开关</span><br>点击开启唤醒监听并允许麦克风后，说“小霖小霖”唤醒。连续60秒无交互返回待唤醒。<br><a href="https://36.133.88.94:6443/" target="_blank" rel="noopener">切换至原 Fay 正式模式</a></div></section>
-<section id="settings-view" class="view hidden"><label for="lipsync-choice">唇动模型</label><select id="lipsync-choice"><option value="wav2lip">Wav2Lip（响应更快）</option><option value="musetalk">MuseTalk 1.5（原版，T4 上播放较慢）</option></select><p class="muted">切换唇动模型后会自动重新连接音视频，首次加载需要稍等。</p><label for="model-choice">实时语音模型</label><select id="model-choice"><option value="qwen-audio-3.1-realtime-flash">Qwen Audio 3.1 Flash</option><option value="qwen-audio-3.1-realtime-plus">Qwen Audio 3.1 Plus</option></select>
-<label class="switch"><span><b>模型能力协同总开关</b><small>由模型统一规划本轮要使用的能力</small></span><input id="coordinator_enabled" type="checkbox"></label>
-<label class="switch"><span>MCP 占位打卡<small>真实调用工具后才能确认测试成功</small></span><input id="mcp_enabled" type="checkbox"></label>
-<label class="switch"><span>业务知识库<small>按业务问题检索已录入的资料</small></span><input id="knowledge_enabled" type="checkbox"></label>
-<label class="switch"><span>关联记忆<small>本模式独立持久化，保存完整播报后的问答</small></span><input id="memory_enabled" type="checkbox"></label>
-<label class="switch"><span>自动手势<small>每轮至多一个动作，同动作冷却15秒</small></span><input id="gestures_enabled" type="checkbox"></label>
-<p class="muted settings-help">保存会停止当前对话并清理旧轮次；下一次提问使用新配置。总开关关闭时，四项能力都不执行，恢复纯语音对话。模型凭据继续使用服务端现有配置。</p><div class="save-row"><button id="save-settings" class="primary">保存并应用</button><button id="reload-settings">重新读取</button></div><div id="settings-message" role="status"></div></section>
-<section id="knowledge-view" class="view hidden"><b>业务资料</b><p class="muted">支持录入文本资料。入库与检索复用现有付费向量、重排模型。资料为空时，明确回答未查到。</p><input id="knowledge-title" aria-label="资料标题" placeholder="资料标题" maxlength="100"><textarea id="knowledge-content" aria-label="资料正文" placeholder="粘贴业务资料正文（最多12000字）" maxlength="12000"></textarea><div class="buttons"><button id="add-knowledge" class="primary">入库资料</button><button id="refresh-capabilities">刷新记录</button></div><div id="knowledge-message" role="status"></div><div id="knowledge-documents"></div><p id="retrieval-models" class="muted"></p><p id="memory-count" class="muted"></p><b>能力调用记录</b><div id="audit"></div></section>
-</section></main><script src="/demo.js?v=20261111-firefox-complete2"></script></body></html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <link rel="icon" href="data:,">
+  <title>小霖 · 50fps 沉浸式数字人展台</title>
+  <style>
+    :root {
+      --bg-deep: #05080f;
+      --bg-panel: rgba(11, 18, 29, 0.86);
+      --glass: rgba(11, 19, 31, 0.68);
+      --glass-strong: rgba(9, 15, 25, 0.84);
+      --border-soft: rgba(255, 255, 255, 0.14);
+      --border-hi: rgba(131, 215, 195, 0.42);
+      --text-main: #eef5f9;
+      --text-dim: #9db4c4;
+      --accent: #7ce2cc;
+      --accent-2: #58b8ff;
+      --accent-dark: #082722;
+      --warn: #ff9c7a;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background:
+        radial-gradient(60vw 60vh at 22% 24%, rgba(62, 168, 150, 0.16), transparent 65%),
+        radial-gradient(55vw 55vh at 78% 76%, rgba(56, 128, 214, 0.14), transparent 65%),
+        var(--bg-deep);
+      color: var(--text-main);
+      font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .studio {
+      width: 100%;
+      height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      position: relative;
+    }
+    .stage {
+      position: relative;
+      height: min(96dvh, 1920px);
+      aspect-ratio: 9 / 16;
+      max-width: 100%;
+      background: #020408;
+      border-radius: 26px;
+      overflow: hidden;
+      box-shadow:
+        0 32px 96px rgba(0, 0, 0, 0.78),
+        0 0 0 1px rgba(255, 255, 255, 0.14);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    video#avatar {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      background: #000;
+    }
+    .stage:fullscreen,
+    .stage.stage-expanded {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100dvh;
+      max-width: none;
+      aspect-ratio: auto;
+      border-radius: 0;
+      box-shadow: none;
+      z-index: 900;
+      background: #000;
+    }
+    .stage:fullscreen video#avatar,
+    .stage.stage-expanded video#avatar {
+      object-fit: contain;
+    }
+    @media (max-aspect-ratio: 10/16), (max-width: 720px) {
+      .studio { padding: 0; }
+      .stage {
+        width: 100vw;
+        height: 100dvh;
+        max-height: none;
+        aspect-ratio: auto;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .stage:fullscreen video#avatar,
+      .stage.stage-expanded video#avatar {
+        object-fit: cover;
+      }
+    }
 
+    /* Ambient top & bottom contrast scrims */
+    .scrim-top {
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 132px;
+      background: linear-gradient(180deg, rgba(4, 8, 15, 0.72) 0%, rgba(4, 8, 15, 0.24) 60%, transparent 100%);
+      pointer-events: none;
+      z-index: 4;
+    }
+    .scrim-bottom {
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 36%;
+      background: linear-gradient(0deg, rgba(4, 8, 15, 0.88) 0%, rgba(4, 8, 15, 0.48) 54%, transparent 100%);
+      pointer-events: none;
+      z-index: 4;
+    }
+
+    /* Top HUD */
+    .top-hud {
+      position: absolute;
+      top: max(12px, env(safe-area-inset-top));
+      left: 12px;
+      right: 12px;
+      z-index: 12;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      pointer-events: none;
+    }
+    .hud-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      pointer-events: auto;
+    }
+    .glass-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 11px;
+      border-radius: 999px;
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-soft);
+      color: var(--text-main);
+      font-size: 12px;
+      line-height: 1.2;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.26);
+    }
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #f5b963;
+      box-shadow: 0 0 8px rgba(245, 185, 99, 0.75);
+      flex: none;
+    }
+    .live-dot.connected {
+      background: var(--accent);
+      box-shadow: 0 0 10px rgba(124, 226, 204, 0.85);
+      animation: pulse-dot 2.4s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(0.86); }
+    }
+    #persona-name {
+      font-weight: 650;
+      font-size: 13px;
+      color: #fff;
+    }
+    .divider {
+      width: 1px;
+      height: 11px;
+      background: rgba(255, 255, 255, 0.22);
+    }
+    .gesture-tag {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* A / B Switcher */
+    .mode-switch {
+      display: inline-flex;
+      padding: 3px;
+      border-radius: 999px;
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-soft);
+      gap: 2px;
+    }
+    .mode-pill {
+      border: 0;
+      background: transparent;
+      color: var(--text-dim);
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .mode-pill:hover { color: #fff; }
+    .mode-pill.active {
+      background: linear-gradient(135deg, var(--accent), #5dc4f0);
+      color: var(--accent-dark);
+      font-weight: 650;
+      box-shadow: 0 2px 10px rgba(124, 226, 204, 0.35);
+    }
+
+    .hud-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      border: 1px solid var(--border-soft);
+      background: var(--glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      color: var(--text-main);
+      padding: 6px 10px;
+      min-height: 32px;
+      border-radius: 999px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: background 0.18s ease, border-color 0.18s ease, transform 0.12s ease;
+    }
+    .hud-btn:hover {
+      background: rgba(34, 52, 72, 0.78);
+      border-color: var(--border-hi);
+    }
+    .hud-btn:active { transform: scale(0.96); }
+    .hud-btn.active {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .pill-count {
+      background: rgba(124, 226, 204, 0.2);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 1px 6px;
+      font-size: 11px;
+      font-weight: 650;
+    }
+
+    /* Floating sound prompt & reconnect CTA */
+    .center-cta {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 15;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      pointer-events: none;
+    }
+    .cta-btn {
+      pointer-events: auto;
+      border: 1px solid var(--border-hi);
+      background: rgba(10, 22, 34, 0.78);
+      backdrop-filter: blur(18px);
+      color: #fff;
+      padding: 11px 20px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+      animation: float-cta 2.6s ease-in-out infinite;
+    }
+    @keyframes float-cta {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-4px); }
+    }
+    .hidden { display: none !important; }
+
+    /* Cinema Live Subtitles */
+    .subtitle-layer {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: calc(92px + env(safe-area-inset-bottom));
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      pointer-events: none;
+      transition: opacity 0.38s ease, transform 0.38s ease;
+    }
+    .subtitle-layer.faded {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    .subtitle-user {
+      max-width: 88%;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: rgba(16, 48, 46, 0.72);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(124, 226, 204, 0.28);
+      color: #ccf6eb;
+      font-size: clamp(12px, 1.45vh, 15px);
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
+    }
+    .subtitle-assistant {
+      max-width: 94%;
+      padding: 10px 18px;
+      border-radius: 16px;
+      background: rgba(8, 13, 22, 0.72);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      color: #ffffff;
+      font-size: clamp(16px, 2.05vh, 24px);
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.015em;
+      text-align: center;
+      white-space: pre-line;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.42);
+    }
+    .subtitle-assistant.speaking {
+      border-color: rgba(124, 226, 204, 0.42);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.48), 0 0 0 1px rgba(124, 226, 204, 0.16);
+    }
+
+    /* Toast / Error strip above dock */
+    .stage-toast {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: calc(74px + env(safe-area-inset-bottom));
+      z-index: 11;
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+    }
+    .error-pill {
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(68, 22, 18, 0.85);
+      border: 1px solid rgba(255, 156, 122, 0.45);
+      color: #ffd5c7;
+      font-size: 12px;
+      max-width: 92%;
+      text-align: center;
+    }
+    .error-pill:empty { display: none; }
+
+    /* Bottom Floating Glass Dock */
+    .bottom-dock {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: max(14px, env(safe-area-inset-bottom));
+      z-index: 12;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 22px;
+      background: rgba(10, 17, 28, 0.78);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.48);
+    }
+    .mic-orb {
+      flex: none;
+      height: 42px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(124, 226, 204, 0.35);
+      background: rgba(24, 48, 56, 0.85);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .mic-orb.listening {
+      background: linear-gradient(135deg, #1b685c, #18516d);
+      color: #fff;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 0 rgba(124, 226, 204, 0.55);
+      animation: mic-halo 2s infinite;
+    }
+    .mic-orb.awake {
+      background: linear-gradient(135deg, var(--accent), #4dbff2);
+      color: var(--accent-dark);
+      border-color: #fff;
+      box-shadow: 0 0 18px rgba(124, 226, 204, 0.55);
+    }
+    .mic-orb:disabled { opacity: 0.45; cursor: default; animation: none; }
+    @keyframes mic-halo {
+      0% { box-shadow: 0 0 0 0 rgba(124, 226, 204, 0.5); }
+      70% { box-shadow: 0 0 0 10px rgba(124, 226, 204, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(124, 226, 204, 0); }
+    }
+    .dock-form {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .dock-form input {
+      flex: 1;
+      min-width: 0;
+      height: 42px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.06);
+      color: #fff;
+      border-radius: 14px;
+      padding: 0 13px;
+      font-size: 14px;
+      outline: none;
+    }
+    .dock-form input::placeholder { color: #8da5b6; }
+    .dock-form input:focus { border-color: var(--accent); background: rgba(255, 255, 255, 0.09); }
+    .dock-btn {
+      flex: none;
+      height: 42px;
+      padding: 0 14px;
+      border-radius: 14px;
+      border: 1px solid var(--border-soft);
+      background: rgba(34, 52, 72, 0.85);
+      color: #edf5fa;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .dock-btn.primary {
+      background: linear-gradient(135deg, var(--accent), #5bc0f2);
+      color: var(--accent-dark);
+      border-color: transparent;
+    }
+    .dock-btn.warn {
+      background: rgba(255, 138, 101, 0.2);
+      border-color: rgba(255, 156, 122, 0.55);
+      color: #ffcdb9;
+    }
+    .dock-btn:disabled { opacity: 0.42; cursor: default; }
+
+    /* Slide-over Workbench Drawer */
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 6, 12, 0.56);
+      backdrop-filter: blur(4px);
+      z-index: 950;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .drawer-panel {
+      width: min(460px, 100vw);
+      height: 100%;
+      background: var(--bg-panel);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border-left: 1px solid var(--border-soft);
+      display: flex;
+      flex-direction: column;
+      padding: 18px;
+      color: var(--text-main);
+      box-shadow: -20px 0 60px rgba(0, 0, 0, 0.55);
+    }
+    .drawer-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .drawer-head h2 { margin: 0; font-size: 16px; }
+    .drawer-sub { font-size: 12px; color: var(--text-dim); }
+    .tabs { display: flex; gap: 6px; margin: 12px 0; }
+    .tabs button {
+      flex: 1;
+      padding: 8px 6px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-main);
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .tabs button.selected {
+      background: linear-gradient(135deg, var(--accent), #5bc0f2);
+      color: var(--accent-dark);
+      border-color: transparent;
+      font-weight: 650;
+    }
+    .view {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-height: 0;
+      overflow: auto;
+      padding-right: 2px;
+    }
+    .config {
+      padding: 11px 12px;
+      background: rgba(6, 12, 20, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+    .config > div {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 2px 0;
+    }
+    .muted { color: var(--text-dim); font-size: 12px; }
+    .buttons { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0; }
+    .panel-btn {
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(34, 52, 72, 0.85);
+      color: #fff;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .panel-btn.primary {
+      background: linear-gradient(135deg, var(--accent), #5bc0f2);
+      color: var(--accent-dark);
+      border-color: transparent;
+      font-weight: 650;
+    }
+    .panel-btn:disabled { opacity: 0.45; cursor: default; }
+    #messages {
+      flex: 1;
+      min-height: 180px;
+      overflow: auto;
+      margin: 10px 0;
+      background: rgba(6, 12, 20, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 12px;
+    }
+    .message {
+      padding: 9px 12px;
+      margin: 8px 0;
+      border-radius: 12px;
+      background: rgba(32, 51, 70, 0.82);
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-size: 13px;
+    }
+    .message.user { background: rgba(25, 74, 67, 0.85); margin-left: 24px; }
+    .message.assistant { margin-right: 16px; }
+    .message label { display: block; font-size: 11px; color: var(--text-dim); margin-bottom: 2px; }
+    .switch {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+      gap: 12px;
+    }
+    .switch input { flex: none; width: 20px; height: 20px; accent-color: var(--accent); }
+    .switch small { display: block; color: var(--text-dim); font-size: 12px; }
+    .drawer-panel select,
+    .drawer-panel textarea,
+    .drawer-panel input[type="text"],
+    #knowledge-title {
+      font: inherit;
+      background: rgba(6, 12, 20, 0.82);
+      color: var(--text-main);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 10px;
+      padding: 9px 11px;
+      width: 100%;
+      margin: 6px 0 10px;
+    }
+    .drawer-panel textarea { min-height: 135px; resize: vertical; }
+    .doc { padding: 8px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.09); font-size: 13px; }
+    .doc button { float: right; padding: 3px 9px; font-size: 12px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.18); background: rgba(255, 138, 101, 0.18); color: #ffd4c6; cursor: pointer; }
+    #audit { font-size: 12px; white-space: pre-wrap; word-break: break-word; color: var(--text-dim); }
+    #settings-message, #knowledge-message { color: var(--accent); font-size: 12px; margin: 8px 0; min-height: 18px; }
+    #metrics { font-size: 12px; color: var(--text-dim); margin: 4px 0; }
+    .fay-quick {
+      display: flex;
+      gap: 8px;
+      margin: 8px 0;
+    }
+    .fay-quick button { flex: 1; }
+
+    /* Fay Native Admin Modal */
+    .fay-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 980;
+      background: rgba(2, 6, 12, 0.72);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .fay-modal-card {
+      width: min(1240px, 96vw);
+      height: min(88dvh, 880px);
+      background: #0d1522;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 28px 90px rgba(0, 0, 0, 0.72);
+    }
+    .fay-modal-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 14px;
+      background: rgba(16, 26, 40, 0.96);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .fay-modal-tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+    .fay-modal-tab {
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-dim);
+      font-size: 12px;
+      cursor: pointer;
+    }
+    .fay-modal-tab.active {
+      background: var(--accent);
+      color: var(--accent-dark);
+      border-color: transparent;
+      font-weight: 650;
+    }
+    .fay-modal-actions { display: flex; align-items: center; gap: 8px; }
+    .fay-modal-actions a {
+      color: var(--accent);
+      font-size: 12px;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(124, 226, 204, 0.3);
+    }
+    .fay-frame-wrap {
+      flex: 1;
+      min-height: 0;
+      background: #f5f7fa;
+      overflow: auto;
+    }
+    .fay-frame-wrap iframe {
+      width: 100%;
+      height: 100%;
+      min-width: 900px;
+      border: 0;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="studio">
+    <section class="stage" aria-label="数字人展示舞台">
+      <video id="avatar" autoplay playsinline muted></video>
+      <div class="scrim-top"></div>
+      <div class="scrim-bottom"></div>
+
+      <!-- Top Glass HUD -->
+      <header class="top-hud">
+        <div class="hud-group">
+          <div class="glass-pill" id="status-pill" title="点击查看连接详情">
+            <span class="live-dot" id="rtc-dot"></span>
+            <strong id="persona-name">小霖</strong>
+            <span class="divider"></span>
+            <span id="state">连接中</span>
+            <span class="divider"></span>
+            <span id="gesture-state" class="gesture-tag">自然待机</span>
+          </div>
+          <div class="mode-switch" role="group" aria-label="对话模式切换">
+            <button type="button" id="mode-qwen" class="mode-pill active" data-mode="qwen_realtime" title="端到端低延迟实时语音 + 挂载Fay人设与MCP">⚡ 极速语音</button>
+            <button type="button" id="mode-fay" class="mode-pill" data-mode="fay_agent" title="完整Fay认知流：人设、qa.csv、仿生记忆、MCP与TTS">🧠 Fay 认知</button>
+          </div>
+        </div>
+
+        <div class="hud-group">
+          <button type="button" id="sound" class="hud-btn" title="开启或查看音频状态">🔊 声音</button>
+          <button type="button" id="subtitle-btn" class="hud-btn active" title="切换字幕显示模式">💬 字幕·智能</button>
+          <button type="button" id="fay-persona-btn" class="hud-btn" title="打开Fay原生性格与人设控制台">🎭 人设</button>
+          <button type="button" id="fay-mcp-btn" class="hud-btn" title="打开Fay原生MCP服务管理">🔌 MCP <span id="mcp-count-badge" class="pill-count">0</span></button>
+          <button type="button" id="workbench-btn" class="hud-btn" title="对话记录、模型能力与业务资料">⚙️ 工作台</button>
+          <button type="button" id="fullscreen" class="hud-btn" aria-pressed="false" title="切换全屏展示">⛶</button>
+        </div>
+      </header>
+
+      <!-- Centered Sound / Reconnect CTA -->
+      <div class="center-cta">
+        <button type="button" id="sound-prompt" class="cta-btn hidden">🔊 点击开启小霖声音</button>
+        <button type="button" id="reconnect" class="cta-btn" hidden>↻ 重新连接音视频</button>
+      </div>
+
+      <!-- Cinema Live Subtitles -->
+      <div id="subtitle-layer" class="subtitle-layer faded" aria-live="polite">
+        <div id="subtitle-user" class="subtitle-user hidden"></div>
+        <div id="subtitle-assistant" class="subtitle-assistant hidden"></div>
+      </div>
+
+      <div class="stage-toast">
+        <div class="error-pill" id="error" role="alert"></div>
+      </div>
+
+      <!-- Bottom Floating Dock -->
+      <footer class="bottom-dock">
+        <button type="button" id="mic" class="mic-orb" disabled>🎙️ 开启唤醒</button>
+        <button type="button" id="interrupt" class="dock-btn warn" disabled>⏹ 打断</button>
+        <form id="question" class="dock-form">
+          <input id="text" aria-label="输入问题" placeholder="说“小霖小霖”，或输入问题…" maxlength="500" autocomplete="off">
+          <button type="submit" id="send" class="dock-btn primary" disabled>发送</button>
+        </form>
+      </footer>
+    </section>
+  </div>
+
+  <!-- Slide-over Workbench Drawer -->
+  <aside id="workbench-drawer" class="drawer-backdrop hidden" aria-label="数字人工作台">
+    <section class="drawer-panel">
+      <div class="drawer-head">
+        <div>
+          <h2>数字人工作台</h2>
+          <div class="drawer-sub" id="rtc">音视频连接中</div>
+        </div>
+        <button type="button" id="close-workbench" class="panel-btn">✕ 关闭</button>
+      </div>
+
+      <nav class="tabs">
+        <button type="button" class="selected" data-view="chat">对话</button>
+        <button type="button" data-view="settings">模型与能力</button>
+        <button type="button" data-view="knowledge">知识与记录</button>
+      </nav>
+
+      <section id="chat-view" class="view">
+        <div class="config">
+          <div><span class="muted">当前引擎</span><strong id="current-engine">极速语音（Qwen + Fay同步）</strong></div>
+          <div><span class="muted">实时模型</span><strong id="current-model">qwen-audio-3.1-realtime-flash</strong></div>
+          <div><span class="muted">音色 / 形象</span><strong>longanqian_v3.1 · 50fps DiT-v2</strong></div>
+          <div><span class="muted">唤醒状态</span><span id="wake-state">唤醒词：小霖小霖</span></div>
+        </div>
+
+        <div class="buttons">
+          <button type="button" id="sleep" class="panel-btn" disabled>返回待唤醒</button>
+          <button type="button" id="stop" class="panel-btn" disabled>停止对话</button>
+        </div>
+
+        <div id="messages" aria-live="polite"></div>
+        <div id="metrics"></div>
+        <div class="muted" style="margin-top:6px;">
+          <span id="capability-status">正在读取能力开关</span><br>
+          点击「🎭 人设」或「🔌 MCP」可直接管理 Fay 性格配置与 MCP 工具，保存后自动同步。
+        </div>
+      </section>
+
+      <section id="settings-view" class="view hidden">
+        <div class="fay-quick">
+          <button type="button" id="open-fay-from-settings" class="panel-btn">🎭 管理 Fay 人设</button>
+          <button type="button" id="open-mcp-from-settings" class="panel-btn">🔌 管理 MCP 服务</button>
+        </div>
+
+        <label for="dialogue-mode-choice" class="muted">对话大脑模式</label>
+        <select id="dialogue-mode-choice">
+          <option value="qwen_realtime">模式 A · 极速实时语音（推荐：端到端低延迟 + Fay人设/MCP）</option>
+          <option value="fay_agent">模式 B · Fay 完整认知引擎（人设/qa.csv/仿生记忆/MCP/TTS）</option>
+        </select>
+
+        <label for="lipsync-choice" class="muted">唇动模型</label>
+        <select id="lipsync-choice">
+          <option value="wav2lip">Xiaolin DiT-v2 50fps（高清露齿全下半脸）</option>
+          <option value="musetalk">MuseTalk 1.5（25 fps 兼容备选）</option>
+        </select>
+
+        <label for="model-choice" class="muted">实时语音模型（模式 A）</label>
+        <select id="model-choice">
+          <option value="qwen-audio-3.1-realtime-flash">Qwen Audio 3.1 Flash</option>
+          <option value="qwen-audio-3.1-realtime-plus">Qwen Audio 3.1 Plus</option>
+        </select>
+
+        <label class="switch">
+          <span><b>模型能力协同总开关</b><small>由模型统一规划本轮要使用的能力</small></span>
+          <input id="coordinator_enabled" type="checkbox">
+        </label>
+        <label class="switch">
+          <span>Fay MCP 在线工具联动<small>实时发现并调用 Fay MCP 中心全部在线工具</small></span>
+          <input id="mcp_enabled" type="checkbox">
+        </label>
+        <label class="switch">
+          <span>业务知识库<small>按业务问题检索已录入的资料</small></span>
+          <input id="knowledge_enabled" type="checkbox">
+        </label>
+        <label class="switch">
+          <span>关联记忆<small>保存完整播报后的问答记录</small></span>
+          <input id="memory_enabled" type="checkbox">
+        </label>
+        <label class="switch">
+          <span>自动手势<small>每轮至多一个动作，同动作冷却15秒</small></span>
+          <input id="gestures_enabled" type="checkbox">
+        </label>
+
+        <p class="muted" style="margin:10px 0;">仅切换模式 A/B 或能力开关时，50fps 画面保持不断流；仅切换唇动模型时自动重建音视频。</p>
+        <div class="buttons">
+          <button type="button" id="save-settings" class="panel-btn primary">保存并应用</button>
+          <button type="button" id="reload-settings" class="panel-btn">重新读取</button>
+          <button type="button" id="sync-fay-now" class="panel-btn">同步 Fay 状态</button>
+        </div>
+        <div id="settings-message" role="status"></div>
+      </section>
+
+      <section id="knowledge-view" class="view hidden">
+        <b>业务资料</b>
+        <p class="muted">支持录入文本资料。入库与检索复用现有向量与重排模型。</p>
+        <input id="knowledge-title" aria-label="资料标题" placeholder="资料标题" maxlength="100">
+        <textarea id="knowledge-content" aria-label="资料正文" placeholder="粘贴业务资料正文（最多12000字）" maxlength="12000"></textarea>
+        <div class="buttons">
+          <button type="button" id="add-knowledge" class="panel-btn primary">入库资料</button>
+          <button type="button" id="refresh-capabilities" class="panel-btn">刷新记录</button>
+        </div>
+        <div id="knowledge-message" role="status"></div>
+        <div id="knowledge-documents"></div>
+        <p id="retrieval-models" class="muted"></p>
+        <p id="memory-count" class="muted"></p>
+        <b>能力调用记录</b>
+        <div id="audit"></div>
+      </section>
+    </section>
+  </aside>
+
+  <!-- Passwordless Fay Native Console Modal -->
+  <div id="fay-modal" class="fay-modal-backdrop hidden" role="dialog" aria-modal="true" aria-label="Fay 原生控制台">
+    <div class="fay-modal-card">
+      <div class="fay-modal-bar">
+        <div class="fay-modal-tabs">
+          <button type="button" class="fay-modal-tab" data-fay-src="/fay/setting">🎭 性格与人设</button>
+          <button type="button" class="fay-modal-tab" data-fay-src="/Page3">🔌 MCP 服务中心</button>
+          <button type="button" class="fay-modal-tab" data-fay-src="/fay/">💬 Fay 消息记录</button>
+        </div>
+        <div class="fay-modal-actions">
+          <a id="fay-open-tab" href="/fay/setting" target="_blank" rel="noopener">↗ 新标签页打开</a>
+          <button type="button" id="fay-sync-close" class="panel-btn primary">✓ 完成并同步生效</button>
+        </div>
+      </div>
+      <div class="fay-frame-wrap">
+        <iframe id="fay-frame" title="Fay 控制台" src="about:blank"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="/demo.js?v=20261117-portrait-fay"></script>
+</body>
+</html>
